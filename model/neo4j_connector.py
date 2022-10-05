@@ -76,6 +76,17 @@ class NEO4JConnector:
             self.create_node(item, cls_name, session)
         print("# nodes after adding: %d", self.query_node_count())
 
+    def create_links(self, items, session: Session = None):
+        if session is None:
+            session = self.driver.session()
+        cql_match = """MATCH (a:Organ), (b:Vessel) WHERE a.fmaID = "{0}" AND b.fmaID = "{1}" """
+        cql_create = """CREATE (a)-[:Microcirculation {type: $rel_type}]->(b)"""
+        for item in items:
+            print("# rels before adding: %d", self.query_rel_count())
+            query = cql_match.format(item["organFMA"], item["vesselFMA"]) + cql_create
+            session.run(query, rel_type = item["type"])
+            print("# rels after adding: %d", self.query_rel_count())
+
     @staticmethod
     def create_node(item, cls_name: str, session: Session):
         cql_create = """CREATE (:{0} {1})"""
@@ -92,8 +103,8 @@ class NEO4JConnector:
             print(branch)
             s_id = branch["source"]
             t_id = branch["target"]
-            s_name = branch["sourceName"]
-            t_name = branch["targetName"]
+            # s_name = branch["sourceName"]
+            # t_name = branch["targetName"]
             order = branch["order"]
 
             if prev_s and prev_s==s_id:
@@ -101,12 +112,14 @@ class NEO4JConnector:
             else:
                 s = self.query_node(s_id)
                 if s is None:
-                    s = {"nodeID": s_id, "fmaID": s_id, "name": s_name}
+                    # s = {"nodeID": s_id, "fmaID": s_id, "name": s_name}
+                    s = {"nodeID": s_id, "fmaID": s_id}
                     self.create_node(s, "Node", session)
 
             t = self.query_node(t_id)
             if t is None:
-                t = {"nodeID": t_id, "fmaID": t_id, "name": t_name}
+                # t = {"nodeID": t_id, "fmaID": t_id, "name": t_name}
+                t = {"nodeID": t_id, "fmaID": t_id}
                 self.create_node(t, "Node", session)
 
             m_id = s_id + "_" + t_id + "_" + str(order)

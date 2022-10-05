@@ -32,6 +32,18 @@ class MySQLConnector:
         cursor.close()
         return vessels
 
+    def query_micro(self):
+        links = []
+        cursor = self.driver.cursor()
+        query = ('SELECT ORGAN, VESSEL, TYPE FROM microcirculations')
+        cursor.execute(query)
+        for item in cursor:
+            obj = {"organFMA": item[0], "vesselFMA": item[1], "type": item[2]}
+            # print(obj)
+            links.append(obj)
+        cursor.close()
+        return links
+
     # All body structure definitions
     def query_structures(self):
         structures = []

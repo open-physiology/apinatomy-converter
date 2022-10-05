@@ -16,14 +16,25 @@ if __name__ == '__main__':
 	# Connect to apinatomy
 	mysql_db = MySQLConnector("db8h1l9gpgullg", mysql_user, mysql_pwd, "es35.siteground.eu", "3306")
 
-	# organs = mysql_db.query_organs()
-	# vessels = mysql_db.query_vessels()
-	# neo4j_db.create_nodes(organs, "Organ")
-	# neo4j_db.create_nodes(vessels, "Vessel")
-	# OR
+	#neo4j_db.clear_graph()
+
+	# Microcirculation organs and vessels
+	organs = mysql_db.query_organs()
+	vessels = mysql_db.query_vessels()
+	neo4j_db.create_nodes(organs, "Organ")
+	neo4j_db.create_nodes(vessels, "Vessel")
+
+	# Microcirculation links
+	links = mysql_db.query_micro()
+	neo4j_db.create_links(links)
+
+	# Microcirculation connections in branching order
+	branches = mysql_db.query_branches()
+	neo4j_db.create_branches_all(branches)
+
+	# All data (structures + branching_order)
 	# nodes = mysql_db.query_structures()
 	# neo4j_db.create_nodes(nodes, "Node")
-
-	branches = mysql_db.query_branches_all()
-	neo4j_db.create_branches_all(branches)
+	# branches = mysql_db.query_branches_all()
+	# neo4j_db.create_branches_all(branches)
 
