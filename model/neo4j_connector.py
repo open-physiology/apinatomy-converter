@@ -79,11 +79,11 @@ class NEO4JConnector:
     def create_links(self, items, session: Session = None):
         if session is None:
             session = self.driver.session()
-        cql_match = """MATCH (a:Organ), (b:Vessel) WHERE a.fmaID = "{0}" AND b.fmaID = "{1}" """
-        cql_create = """CREATE (a)-[:Microcirculation {type: $rel_type}]->(b)"""
+        cql_match = """MATCH (a), (b) WHERE a.fmaID = "{0}" AND b.fmaID = "{1}" """
+        cql_create = """CREATE (a)-[:Connects {type: $rel_type}]->(b)"""
         for item in items:
             print("# rels before adding: %d", self.query_rel_count())
-            query = cql_match.format(item["organFMA"], item["vesselFMA"]) + cql_create
+            query = cql_match.format(item["source"], item["target"]) + cql_create
             session.run(query, rel_type = item["type"])
             print("# rels after adding: %d", self.query_rel_count())
 
@@ -103,8 +103,6 @@ class NEO4JConnector:
             print(branch)
             s_id = branch["source"]
             t_id = branch["target"]
-            # s_name = branch["sourceName"]
-            # t_name = branch["targetName"]
             order = branch["order"]
 
             if prev_s and prev_s==s_id:
@@ -112,19 +110,17 @@ class NEO4JConnector:
             else:
                 s = self.query_node(s_id)
                 if s is None:
-                    # s = {"nodeID": s_id, "fmaID": s_id, "name": s_name}
                     s = {"nodeID": s_id, "fmaID": s_id}
-                    self.create_node(s, "Node", session)
+                    self.create_node(s, "Structure", session)
 
             t = self.query_node(t_id)
             if t is None:
-                # t = {"nodeID": t_id, "fmaID": t_id, "name": t_name}
                 t = {"nodeID": t_id, "fmaID": t_id}
-                self.create_node(t, "Node", session)
+                self.create_node(t, "Structure", session)
 
             m_id = s_id + "_" + t_id + "_" + str(order)
             m = {"nodeID": m_id}
-            self.create_node(m, "Node", session)
+            self.create_node(m, "Connector", session)
 
             q = """MATCH (a),(b) WHERE a.nodeID=$s_id AND b.nodeID=$t_id CREATE(a)-[:Connects]->(b)"""
             session.run(q.format(order), s_id=s["nodeID"], t_id=m_id)
@@ -135,5 +131,9 @@ class NEO4JConnector:
 
         print("# relationships after adding: %d", self.query_rel_count())
 
-        # To get a path from a given resource
-        # MATCH p = ({fmaID:"3802"})-[*]-() RETURN nodes(p)
+        # To get a path between two resources
+        # MATCH p = ({fmaID:"7101"})-[*]->({fmaID:"66363"}) RETURN nodes(p)
+
+        # To get a path between two resources with attached nodes representing FMA structures:
+        #MATCH p = ({fmaID:"7101"})-[*]->({fmaID:"66363"}) with  nodes(p) as path unwind path as m match (m:Connector)-[]->(n) return path, n
+

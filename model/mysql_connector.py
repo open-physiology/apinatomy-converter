@@ -38,7 +38,7 @@ class MySQLConnector:
         query = ('SELECT ORGAN, VESSEL, TYPE FROM microcirculations')
         cursor.execute(query)
         for item in cursor:
-            obj = {"organFMA": item[0], "vesselFMA": item[1], "type": item[2]}
+            obj = {"source": item[0], "target": item[1], "type": item[2]}
             # print(obj)
             links.append(obj)
         cursor.close()
@@ -57,7 +57,7 @@ class MySQLConnector:
         return structures
 
     # Body structure by fmaID
-    def query_structure(self, fma_id):
+    def query_structure_by_fma_id(self, fma_id):
         obj = None
         cursor = self.driver.cursor()
         query = ('SELECT FMA_ID, STRUCTURE_NAME FROM structures where FMA_ID=$fma_id')
@@ -68,15 +68,49 @@ class MySQLConnector:
         cursor.close()
         return obj
 
-    # Connections which are in microcirculations
-    def query_branches(self):
+    def query_connected_structures(self):
+        cursor = self.driver.cursor()
+        query = """SELECT DISTINCT v.node, s.STRUCTURE_NAME FROM (
+SELECT vn.VESSEL_FROM AS node FROM venous_network vn
+UNION SELECT vn.VESSEL_TO AS node FROM venous_network vn
+UNION SELECT an.VESSEL_FROM AS node FROM arterial_network an
+UNION SELECT an.VESSEL_TO AS node FROM arterial_network an
+UNION SELECT br.MAIN_VESSEL AS node FROM branching_order br
+UNION SELECT br.BRANCH as node FROM branching_order br
+UNION SELECT mc.ORGAN FROM microcirculations mc
+UNION SELECT mc.VESSEL FROM microcirculations mc) v, structures s where v.node = s.FMA_ID"""
+        cursor.execute(query)
+        nodes = []
+        for item in cursor:
+            obj = {"nodeID": item[0], "fmaID": item[0], "name": item[1]}
+            nodes.append(obj)
+        cursor.close()
+        return nodes
+
+    # Venous connections which are not in branching order
+    def query_venous_connections(self):
         branches = []
         cursor = self.driver.cursor()
-        query = ('SELECT DISTINCT MAIN_VESSEL, BRANCH, SEQUENCE FROM branching_order, microcirculations m1, '
-                 'microcirculations m2 where MAIN_VESSEL = m1.VESSEL and BRANCH = m2.VESSEL order by MAIN_VESSEL, SEQUENCE')
+        query =  """SELECT DISTINCT vn.VESSEL_FROM, vn.VESSEL_TO, 'VEN' as type from venous_network vn
+LEFT JOIN branching_order br ON vn.VESSEL_FROM = br.MAIN_VESSEL and vn.VESSEL_TO = br.BRANCH
+WHERE br.MAIN_VESSEL is NULL"""
         cursor.execute(query)
         for item in cursor:
-            obj = {"source": str(item[0]), "target": str(item[1]), "order": item[2]}
+            obj = {"source": str(item[0]), "target": str(item[1]), "type": item[2]}
+            branches.append(obj)
+        cursor.close()
+        return branches
+
+    # Arterial connections which are not in branching order
+    def query_arterial_connections(self):
+        branches = []
+        cursor = self.driver.cursor()
+        query = """SELECT DISTINCT an.VESSEL_FROM, an.VESSEL_TO, 'ART' as type from arterial_network an
+LEFT JOIN branching_order br ON an.VESSEL_FROM = br.MAIN_VESSEL and an.VESSEL_TO = br.BRANCH
+WHERE br.MAIN_VESSEL is NULL"""
+        cursor.execute(query)
+        for item in cursor:
+            obj = {"source": str(item[0]), "target": str(item[1]), "type": item[2]}
             branches.append(obj)
         cursor.close()
         return branches
@@ -85,13 +119,10 @@ class MySQLConnector:
     def query_branches_all(self):
         branches = []
         cursor = self.driver.cursor()
-        query = ('SELECT DISTINCT MAIN_VESSEL, BRANCH, SEQUENCE, s1.STRUCTURE_NAME, s2.STRUCTURE_NAME FROM '
-                 'branching_order, structures s1, structures s2 where MAIN_VESSEL = s1.FMA_ID and BRANCH = s2.FMA_ID '
-                 'order by MAIN_VESSEL, SEQUENCE')
+        query = ('SELECT DISTINCT MAIN_VESSEL, BRANCH, SEQUENCE FROM branching_order order by MAIN_VESSEL, SEQUENCE')
         cursor.execute(query)
         for item in cursor:
-            obj = {"source": str(item[0]), "target": str(item[1]), "order": item[2],
-                   "sourceName": item[3], "targetName": item[4]}
+            obj = {"source": str(item[0]), "target": str(item[1]), "order": item[2]}
             branches.append(obj)
         cursor.close()
         return branches
