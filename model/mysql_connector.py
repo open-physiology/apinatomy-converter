@@ -119,10 +119,14 @@ WHERE br.MAIN_VESSEL is NULL"""
     def query_branches_all(self):
         branches = []
         cursor = self.driver.cursor()
-        query = ('SELECT DISTINCT MAIN_VESSEL, BRANCH, SEQUENCE FROM branching_order order by MAIN_VESSEL, SEQUENCE')
+        query = """SELECT DISTINCT MAIN_VESSEL, BRANCH, SEQUENCE, TYPE FROM branching_order br,
+(SELECT DISTINCT FMA_ID, TYPE from vascular_segments) vs
+where vs.FMA_ID = br.MAIN_VESSEL 
+order by MAIN_VESSEL, SEQUENCE"""
         cursor.execute(query)
         for item in cursor:
-            obj = {"source": str(item[0]), "target": str(item[1]), "order": item[2]}
+            obj = {"source": str(item[0]), "target": str(item[1]), "order": item[2], "type": item[3]}
             branches.append(obj)
         cursor.close()
         return branches
+

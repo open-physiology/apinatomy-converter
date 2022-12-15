@@ -18,10 +18,25 @@ class NEO4JConnector:
     def clear_graph(self, session: Session = None):
         if session is None:
             session = self.driver.session()
-        cql_delete_relationships = "MATCH (a) -[r] -> () DELETE a, r"
+        self.clear_relationships(session)
         cql_delete_nodes = "MATCH (a) DELETE a"
-        session.run(cql_delete_relationships)
         session.run(cql_delete_nodes)
+
+    def clear_relationships(self, session: Session = None):
+        if session is None:
+            session = self.driver.session()
+        print("# relationships before deleting: %d", self.query_rel_count())
+        cql_delete_relationships = "MATCH (a) -[r] -> () DELETE r"
+        session.run(cql_delete_relationships)
+        print("# relationships after deleting: %d", self.query_rel_count())
+
+    def clear_node_cls(self, cls_name, session: Session = None):
+        if session is None:
+            session = self.driver.session()
+        print("# nodes before deleting: %d", self.query_node_count())
+        cql_delete_nodes = "MATCH (a: {0}) DELETE a".format(cls_name)
+        session.run(cql_delete_nodes)
+        print("# nodes after deleting: %d", self.query_node_count())
 
     def delete_node(self, node_uuid: str, session: Session = None):
         if session is None:
@@ -81,11 +96,43 @@ class NEO4JConnector:
             session = self.driver.session()
         cql_match = """MATCH (a), (b) WHERE a.fmaID = "{0}" AND b.fmaID = "{1}" """
         cql_create = """CREATE (a)-[:Connects {type: $rel_type}]->(b)"""
+        print("# rels before adding: %d", self.query_rel_count())
         for item in items:
-            print("# rels before adding: %d", self.query_rel_count())
             query = cql_match.format(item["source"], item["target"]) + cql_create
-            session.run(query, rel_type = item["type"])
-            print("# rels after adding: %d", self.query_rel_count())
+            session.run(query, rel_type=item["type"])
+        print("# rels after adding: %d", self.query_rel_count())
+
+    def create_microcirculations(self, items, session: Session = None):
+        if session is None:
+            session = self.driver.session()
+        cql_match = """MATCH (a), (b) WHERE a.fmaID = "{0}" AND b.nodeID = "{1}" """
+        cql_create = """CREATE (a)-[:{0}]->(b)"""
+        cql_create_reverse = """CREATE (b)-[:{0}]->(a)"""
+
+        print("# rels before adding: %d", self.query_rel_count())
+        for item in items:
+            mc_id = "mc_" + str(item["source"]) + "_" + str(item["target"])
+            mc_type = item["type"]
+            self.create_node({"nodeID": mc_id, "type": mc_type}, "Microcirculation", session)
+            q_organ_to_mc = cql_match.format(item["source"], mc_id)
+            q_vessel_to_mc = cql_match.format(item["target"], mc_id)
+            if mc_type == "VEN":
+                q = q_organ_to_mc + cql_create.format("Supplies")
+                # print(q)
+                session.run(q)
+                q = q_vessel_to_mc + cql_create_reverse.format("Drains")
+                # print(q)
+                session.run(q)
+            elif mc_type == "ART":
+                q = q_vessel_to_mc + cql_create.format("Supplies")
+                # print(q)
+                session.run(q)
+                q = q_organ_to_mc + cql_create_reverse.format("Drains")
+                # print(q)
+                session.run(q)
+
+        print("# rels after adding: %d", self.query_rel_count())
+
 
     @staticmethod
     def create_node(item, cls_name: str, session: Session):
@@ -96,7 +143,14 @@ class NEO4JConnector:
     def create_branches_all(self, branches, session: Session = None):
         if session is None:
             session = self.driver.session()
+
+        def get_label(type, main_name, prev_name, branch_name):
+            segment = "Arterial" if type == 1 else "Venous"
+            return segment + " segment of " + main_name + " from " + prev_name + " to " + branch_name
+
         print("# relationships before adding: %d", self.query_rel_count())
+        main_name = None
+        prev_name = "origin"
         prev_s = None
         prev_m = None
         for branch in branches:
@@ -104,23 +158,29 @@ class NEO4JConnector:
             s_id = branch["source"]
             t_id = branch["target"]
             order = branch["order"]
+            type = branch["type"]
 
-            if prev_s and prev_s==s_id:
+            if prev_s and prev_s == s_id:
                 s = prev_m
             else:
                 s = self.query_node(s_id)
                 if s is None:
-                    s = {"nodeID": s_id, "fmaID": s_id}
-                    self.create_node(s, "Structure", session)
+                    print("Failed to find resource: ", s_id)
+                    return
+                main_name = s["name"]
+                prev_name = "origin"
 
             t = self.query_node(t_id)
             if t is None:
-                t = {"nodeID": t_id, "fmaID": t_id}
-                self.create_node(t, "Structure", session)
+                print("Failed to find resource: ", t_id)
+                return
+            branch_name = t["name"]
 
+            label = get_label(type, main_name, prev_name, branch_name)
             m_id = s_id + "_" + t_id + "_" + str(order)
-            m = {"nodeID": m_id}
+            m = {"nodeID": m_id, "name": label, "type": 'ART' if type == 1 else 'VEN'}
             self.create_node(m, "Connector", session)
+            prev_name = branch_name
 
             q = """MATCH (a),(b) WHERE a.nodeID=$s_id AND b.nodeID=$t_id CREATE(a)-[:Connects]->(b)"""
             session.run(q.format(order), s_id=s["nodeID"], t_id=m_id)
@@ -135,5 +195,6 @@ class NEO4JConnector:
         # MATCH p = ({fmaID:"7101"})-[*]->({fmaID:"66363"}) RETURN nodes(p)
 
         # To get a path between two resources with attached nodes representing FMA structures:
-        #MATCH p = ({fmaID:"7101"})-[*]->({fmaID:"66363"}) with  nodes(p) as path unwind path as m match (m:Connector)-[]->(n) return path, n
+        # MATCH p = ({fmaID:"7101"})-[*]->({fmaID:"66363"}) with  nodes(p)
+        # as path unwind path as m match (m:Connector)-[]->(n) return path, n
 
