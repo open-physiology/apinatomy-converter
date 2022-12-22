@@ -128,8 +128,8 @@ chains = df_chains.values.tolist()
 materials = df_materials.values.tolist()
 
 gc = gspread.service_account(filename='./data/service_account.json')
-sh = gc.open_by_url("https://docs.google.com/spreadsheets/d/1BcUBExy-kk-03ceeFuuz8comX3-O0xL1_owTkmZQTCU/edit#gid=1006273879")
-
+# sh = gc.open_by_url("https://docs.google.com/spreadsheets/d/1BcUBExy-kk-03ceeFuuz8comX3-O0xL1_owTkmZQTCU/edit#gid=1006273879")
+sh = gc.open_by_url("https://docs.google.com/spreadsheets/d/1767M7gt18creGSaW1BraTUH9D7oS9WACUowxRRkZJ4w/edit#gid=1006273879")
 
 def replace_sheet(df, name):
     columns = df.columns.tolist()
@@ -142,6 +142,69 @@ def replace_sheet(df, name):
     ws.format(["A1:Z1"], {"textFormat": {"bold": True}})
 
 
-replace_sheet(df_lyphs, "lyphs")
-replace_sheet(df_chains, "chains")
-replace_sheet(df_materials, "materials")
+def db_to_ws(db_row, ws_row):
+    pass
+
+
+def ws_to_db(ws_row, db_row):
+    pass
+
+
+def compare_rows(db_row, ws_row):
+    diff = []
+    for col_name in db_row:
+        val_db = db_row[col_name].replace(" ", "") if isinstance(db_row[col_name], str) else db_row[col_name]
+        val_ws = ws_row[col_name].replace(" ", "") if isinstance(ws_row[col_name], str) else ws_row[col_name]
+        if val_db != val_ws:
+            diff.append(col_name)
+    return diff
+
+
+def compare_sheet(df, name):
+    db_records = df.to_dict('records')
+    ws = sh.worksheet(name)
+    ws_records = ws.get_all_records()
+    print("Comparing ", name)
+    missing = []
+    changed = []
+    extra_ws = []
+    for i, db_row in enumerate(db_records):
+        j = 0
+        while j < len(ws_records):
+            if ws_records[j]['id'].strip() == db_row["id"].strip():
+                diff = compare_rows(db_row, ws_records[j])
+                if len(diff) > 0:
+                    changed.append([{
+                        "ROW": i+2,
+                        "COL": col_name,
+                        "DB": db_row[col_name],
+                        "WS": ws_records[j][col_name]} for col_name in diff])
+                break
+            j += 1
+        if j >= len(ws_records):
+            missing.append(db_row["id"])
+
+    print("The DB " + name + " not found in the WS:")
+    print(missing)
+    print()
+    print("The DB " + name + " that differ in WS:")
+    for entry in changed:
+        print(entry)
+    print()
+
+    for i, ws_row in enumerate(ws_records):
+        j = 0
+        while j < len(db_records):
+            if db_records[j]['id'].strip() == ws_row["id"].strip():
+                break
+            j += 1
+        if j >= len(db_records):
+            extra_ws.append(ws_row["id"])
+    print("The WS " + name + " not found in the DB:")
+    print(extra_ws)
+    print()
+
+
+compare_sheet(df_lyphs, "lyphs")
+compare_sheet(df_chains, "chains")
+compare_sheet(df_materials, "materials")
