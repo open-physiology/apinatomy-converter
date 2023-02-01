@@ -102,35 +102,12 @@ login = json.load(open('./data/wbkg_db.json', 'r'))
 db_name, db_user, db_pwd, db_server, db_port = (login.values())
 mysql_db = MySQLApinatomyDB(db_name, db_user, db_pwd, db_server, db_port)
 
-lyphs = mysql_db.query_lyphs()
-chains = mysql_db.query_chains()
-materials = mysql_db.query_materials()
-df_lyphs = pd.DataFrame.from_records(lyphs)
-df_chains = pd.DataFrame.from_records(chains)
-df_materials = pd.DataFrame.from_records(materials)
-
-# Save imported data in a local Excel file
-# create_local_excel(df_lyphs, df_chains, df_materials, FILE_NAME)
-
-# Alternatively - read from local excel file (created by the line above) instead of MySQL
-# df_lyphs = pd.read_excel(FILE_NAME, sheet_name='lyphs',dtype=str)
-# df_chains = pd.read_excel(FILE_NAME, sheet_name='chains',dtype=str)
-# df_materials = pd.read_excel(FILE_NAME, sheet_name='materials',dtype=str)
-# df_lyphs = df_lyphs.replace(np.nan, '')
-# df_chains = df_chains.replace(np.nan, '')
-# df_materials = df_materials.replace(np.nan, '')
-
-# Reorder columns
-df_lyphs = df_lyphs[['id', 'ontologyTerms', 'name',	'isTemplate', 'topology', 'layers',	'supertype', 'internalLyphs', 'internalLyphsInLayers', 'hostedBy']]
-
-lyphs = df_lyphs.values.tolist()
-chains = df_chains.values.tolist()
-materials = df_materials.values.tolist()
-
 gc = gspread.service_account(filename='./data/service_account.json')
 # sh = gc.open_by_url("https://docs.google.com/spreadsheets/d/1BcUBExy-kk-03ceeFuuz8comX3-O0xL1_owTkmZQTCU/edit#gid=1006273879")
-sh = gc.open_by_url("https://docs.google.com/spreadsheets/d/1767M7gt18creGSaW1BraTUH9D7oS9WACUowxRRkZJ4w/edit#gid=1006273879")
+sh = gc.open_by_url("https://docs.google.com/spreadsheets/d/1h1uO8BZ6BWt55YPZqs0TOJZ8LeughISsnlcDgEw1f_U/edit#gid=1006273879")
 
+
+# Replaces the spreadsheet completely (not a good option as we lose editting history
 def replace_sheet(df, name):
     columns = df.columns.tolist()
     lst = df.values.tolist()
@@ -142,32 +119,91 @@ def replace_sheet(df, name):
     ws.format(["A1:Z1"], {"textFormat": {"bold": True}})
 
 
-def db_to_ws(db_row, ws_row):
-    pass
+# Insert rows with new DB identifiers to the spreadsheet
+def insert_missing_to_ws(missing, db_records, ws, name):
+    print("Inserting missing rows to WS:", len(missing))
+    rows_to_insert = filter(lambda row: row["id"] in missing, db_records)
+    headers = ws.row_values(1)
+    new_rows = []
+    for x in rows_to_insert:
+        row = []
+        for h in headers:
+            row.append(x[h] if h in x else '')
+        new_rows.append(row)
+    for row in new_rows:
+        print(row)
+    sh.values_append(name, {'valueInputOption': 'USER_ENTERED'}, {'values': new_rows})
 
 
-def ws_to_db(ws_row, db_row):
-    pass
+# Delete rows with no DB identifiers from the spreadsheet
+def delete_missing_from_ws(extra, db_records, ws, name):
+    print("Deleting extra rows from WS:", len(extra))
+    offset = 0
+    for el in extra:
+        print(el)
+        ws.delete_rows(el[1]-offset)
+        offset += 1
 
 
+# Update properties of records if they are different
+def update_in_ws(changed, db_records, ws, name):
+    print("Updating", name, "in WS:", len(changed))
+    headers = ws.row_values(1)
+    for changed_row in changed:
+        for d in changed_row:
+            changed = d["ID"].strip()
+            cell = ws.find(changed, in_column=headers.index("id")+1)
+            if cell:
+                col = headers.index(d["COL"]) + 1
+                if col > 0:
+                    print("Updating ({},{}):".format(cell.row, col), d["ID"], ": {} -> {}".format(d["WS"], d["DB"]) )
+                    ws.update_cell(cell.row, col, d["DB"])
+            else:
+                print("Row with given ID not found - skipping...")
+
+# def insert_missing_to_db(extra, db_records, ws, name):
+#     print("Inserting missing rows to DB...")
+
+# def update_in_db(changed, db_records, ws, name):
+#     print("Updating", name, "in DB...")
+
+
+# Match two given rows from worksheet and DB table
 def compare_rows(db_row, ws_row):
     diff = []
     for col_name in db_row:
         val_db = db_row[col_name].replace(" ", "") if isinstance(db_row[col_name], str) else db_row[col_name]
         val_ws = ws_row[col_name].replace(" ", "") if isinstance(ws_row[col_name], str) else ws_row[col_name]
-        if val_db != val_ws:
+        if val_db is None:
+            val_db = ""
+        if str(val_db) != str(val_ws):
             diff.append(col_name)
     return diff
 
 
+# print found differences
+def print_differences(name, missing, changed, extra):
+    print("The DB " + name + " not found in the WS:")
+    print(missing)
+    print()
+    print("The DB " + name + " that differ in WS:")
+    for entry in changed:
+        print(entry)
+    print()
+    print("The WS " + name + " not found in the DB:")
+    print(extra)
+    print()
+
+
+# Compare worksheet with DB table
 def compare_sheet(df, name):
     db_records = df.to_dict('records')
     ws = sh.worksheet(name)
     ws_records = ws.get_all_records()
-    print("Comparing ", name)
+    print("Comparing", name)
     missing = []
     changed = []
-    extra_ws = []
+    extra = []
     for i, db_row in enumerate(db_records):
         j = 0
         while j < len(ws_records):
@@ -175,7 +211,7 @@ def compare_sheet(df, name):
                 diff = compare_rows(db_row, ws_records[j])
                 if len(diff) > 0:
                     changed.append([{
-                        "ROW": i+2,
+                        "ID": db_row["id"].strip(),
                         "COL": col_name,
                         "DB": db_row[col_name],
                         "WS": ws_records[j][col_name]} for col_name in diff])
@@ -184,14 +220,6 @@ def compare_sheet(df, name):
         if j >= len(ws_records):
             missing.append(db_row["id"])
 
-    print("The DB " + name + " not found in the WS:")
-    print(missing)
-    print()
-    print("The DB " + name + " that differ in WS:")
-    for entry in changed:
-        print(entry)
-    print()
-
     for i, ws_row in enumerate(ws_records):
         j = 0
         while j < len(db_records):
@@ -199,12 +227,57 @@ def compare_sheet(df, name):
                 break
             j += 1
         if j >= len(db_records):
-            extra_ws.append(ws_row["id"])
-    print("The WS " + name + " not found in the DB:")
-    print(extra_ws)
-    print()
+            extra.append([ws_row["id"], i+2])
+
+    # print_differences(name, missing, changed, extra)
+
+    # Synchronize worksheet with DB
+
+    choice = input("Insert missing " + name + " to WS (y)?")
+    if choice == "y":
+        insert_missing_to_ws(missing, db_records, ws, name)
+
+    choice = input("Delete missing " + name + " from WS (y)?")
+    if choice == "y":
+        delete_missing_from_ws(extra, db_records, ws, name)
+
+    choice = input("Update " + name + " in WS (y)?")
+    if choice == "y":
+        update_in_ws(changed, db_records, ws, name)
 
 
-compare_sheet(df_lyphs, "lyphs")
-compare_sheet(df_chains, "chains")
-compare_sheet(df_materials, "materials")
+# Commented lines are for reading from local excel file instead of MySQL
+
+yes_to_all = False
+
+# Lyphs
+action = 'y' if yes_to_all else input("Compare lyphs (y)?")
+if action == 'y':
+    df_lyphs = pd.DataFrame.from_records(mysql_db.query_lyphs())
+    # df_lyphs = pd.read_excel(FILE_NAME, sheet_name='lyphs',dtype=str)
+    # df_lyphs = df_lyphs.replace(np.nan, '')
+    df_lyphs = df_lyphs[['id', 'ontologyTerms', 'name',	'isTemplate', 'topology', 'layers',	'supertype', 'internalLyphs',
+                         'internalLyphsInLayers', 'hostedBy']]
+    lyphs = df_lyphs.values.tolist()
+    compare_sheet(df_lyphs, "lyphs")
+
+# Chains
+action = 'y' if yes_to_all else input("Compare chains (y)?")
+if action == 'y':
+    df_chains = pd.DataFrame.from_records(mysql_db.query_chains())
+    # df_chains = pd.read_excel(FILE_NAME, sheet_name='chains',dtype=str)
+    # df_chains = df_chains.replace(np.nan, '')
+    chains = df_chains.values.tolist()
+    compare_sheet(df_chains, "chains")
+
+# Materials
+action = 'y' if yes_to_all else input("Compare materials (y)?")
+if action == 'y':
+    df_materials = pd.DataFrame.from_records(mysql_db.query_materials())
+    # df_materials = pd.read_excel(FILE_NAME, sheet_name='materials',dtype=str)
+    # df_materials = df_materials.replace(np.nan, '')
+    materials = df_materials.values.tolist()
+    compare_sheet(df_materials, "materials")
+
+# Save imported data in a local Excel file
+# create_local_excel(df_lyphs, df_chains, df_materials, FILE_NAME)
