@@ -4,7 +4,6 @@ import mysql.connector
 import pandas as pd
 import gspread
 import json
-import numpy as np
 
 
 class MySQLApinatomyDB:
@@ -58,6 +57,34 @@ class MySQLApinatomyDB:
         cursor.close()
         return items
 
+    def insert_lyphs(self, rows_to_insert):
+        cursor = self.driver.cursor()
+        for row in rows_to_insert:
+            row["isTemplate"] = 1 if row['isTemplate'] == 'TRUE' else 0
+        rows = [tuple(d.values()) for d in rows_to_insert]
+        # WS: id,ontologyTerms,name,isTemplate,topology,layers,supertype,internalLyphs,internalLyphsInLayers,hostedBy
+        sql = "INSERT INTO lyphs (ID, ontologyTerm, label, isTemplate, topology, layers, supertype, hostedBy, " \
+              "internalLyphs, internalLyphsInLayers) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+        cursor.executemany(sql, rows)
+        self.driver.commit()
+        cursor.close()
+
+    def insert_materials(self, rows_to_insert):
+        cursor = self.driver.cursor()
+        rows = [tuple(d.values()) for d in rows_to_insert]
+        sql = "INSERT INTO materials (id, ontologyTerms, name, materials) VALUES (%s, %s, %s, %s)"
+        cursor.executemany(sql, rows)
+        self.driver.commit()
+        cursor.close()
+
+    def insert_chains(self, rows_to_insert):
+        cursor = self.driver.cursor()
+        rows = [tuple(d.values()) for d in rows_to_insert]
+        sql = "INSERT INTO chains (id, name, lyphs, wiredTo) VALUES (%s, %s, %s, %s)"
+        cursor.executemany(sql, rows)
+        self.driver.commit()
+        cursor.close()
+
 
 def create_local_excel(df_lyphs, df_chains, df_materials, file_path):
     writer = pd.ExcelWriter(file_path, engine='xlsxwriter')
@@ -98,7 +125,9 @@ def create_local_excel(df_lyphs, df_chains, df_materials, file_path):
 
 FILE_NAME = './data/wbkg2.xlsx'
 
-login = json.load(open('./data/wbkg_db.json', 'r'))
+# login = json.load(open('./data/wbkg_db.json', 'r'))
+login = json.load(open('./data/wbkg_db_nk.json', 'r'))
+
 db_name, db_user, db_pwd, db_server, db_port = (login.values())
 mysql_db = MySQLApinatomyDB(db_name, db_user, db_pwd, db_server, db_port)
 
@@ -107,7 +136,7 @@ gc = gspread.service_account(filename='./data/service_account.json')
 sh = gc.open_by_url("https://docs.google.com/spreadsheets/d/1h1uO8BZ6BWt55YPZqs0TOJZ8LeughISsnlcDgEw1f_U/edit#gid=1006273879")
 
 
-# Replaces the spreadsheet completely (not a good option as we lose editting history
+# Replaces the spreadsheet completely (not a good option as we lose editing history
 def replace_sheet(df, name):
     columns = df.columns.tolist()
     lst = df.values.tolist()
@@ -117,55 +146,6 @@ def replace_sheet(df, name):
     ws.insert_rows(lst)
     ws.insert_rows([columns])
     ws.format(["A1:Z1"], {"textFormat": {"bold": True}})
-
-
-# Insert rows with new DB identifiers to the spreadsheet
-def insert_missing_to_ws(missing, db_records, ws, name):
-    print("Inserting missing rows to WS:", len(missing))
-    rows_to_insert = filter(lambda row: row["id"] in missing, db_records)
-    headers = ws.row_values(1)
-    new_rows = []
-    for x in rows_to_insert:
-        row = []
-        for h in headers:
-            row.append(x[h] if h in x else '')
-        new_rows.append(row)
-    for row in new_rows:
-        print(row)
-    sh.values_append(name, {'valueInputOption': 'USER_ENTERED'}, {'values': new_rows})
-
-
-# Delete rows with no DB identifiers from the spreadsheet
-def delete_missing_from_ws(extra, db_records, ws, name):
-    print("Deleting extra rows from WS:", len(extra))
-    offset = 0
-    for el in extra:
-        print(el)
-        ws.delete_rows(el[1]-offset)
-        offset += 1
-
-
-# Update properties of records if they are different
-def update_in_ws(changed, db_records, ws, name):
-    print("Updating", name, "in WS:", len(changed))
-    headers = ws.row_values(1)
-    for changed_row in changed:
-        for d in changed_row:
-            changed = d["ID"].strip()
-            cell = ws.find(changed, in_column=headers.index("id")+1)
-            if cell:
-                col = headers.index(d["COL"]) + 1
-                if col > 0:
-                    print("Updating ({},{}):".format(cell.row, col), d["ID"], ": {} -> {}".format(d["WS"], d["DB"]) )
-                    ws.update_cell(cell.row, col, d["DB"])
-            else:
-                print("Row with given ID not found - skipping...")
-
-# def insert_missing_to_db(extra, db_records, ws, name):
-#     print("Inserting missing rows to DB...")
-
-# def update_in_db(changed, db_records, ws, name):
-#     print("Updating", name, "in DB...")
 
 
 # Match two given rows from worksheet and DB table
@@ -184,15 +164,86 @@ def compare_rows(db_row, ws_row):
 # print found differences
 def print_differences(name, missing, changed, extra):
     print("The DB " + name + " not found in the WS:")
-    print(missing)
+    for entry in missing:
+        print(entry)
     print()
     print("The DB " + name + " that differ in WS:")
     for entry in changed:
         print(entry)
     print()
     print("The WS " + name + " not found in the DB:")
-    print(extra)
+    for entry in extra:
+        print(entry)
     print()
+
+# DB -> WS
+
+
+# Insert rows with new DB identifiers to the WS
+def insert_to_ws(dataset, db_records, headers, name):
+    print("Inserting to WS:", len(dataset))
+    rows_to_insert = filter(lambda row: row["id"] in dataset, db_records)
+    new_rows = []
+    for x in rows_to_insert:
+        row = []
+        for h in headers:
+            row.append(x[h] if h in x else '')
+        new_rows.append(row)
+    for row in new_rows:
+        print(row)
+    sh.values_append(name, {'valueInputOption': 'USER_ENTERED'}, {'values': new_rows})
+
+
+# Delete rows with no DB identifiers from the WS
+def delete_from_ws(dataset, ws):
+    print("Deleting from WS:", len(dataset))
+    offset = 0
+    for el in dataset:
+        ws.delete_rows(el[1]-offset)
+        offset += 1
+
+
+# Update properties of records in WS if they are different
+def update_in_ws(dataset, ws):
+    print("Updating in WS:", len(dataset))
+    headers = ws.row_values(1)
+    for changed_row in dataset:
+        for d in changed_row:
+            dataset = d["ID"].strip()
+            cell = ws.find(dataset, in_column=headers.index("id") + 1)
+            if cell:
+                col = headers.index(d["COL"]) + 1
+                if col > 0:
+                    print("Updating ({},{}):".format(cell.row, col), d["ID"], ": {} -> {}".format(d["WS"], d["DB"]) )
+                    ws.update_cell(cell.row, col, d["DB"])
+            else:
+                print("Row with given ID not found - skipping...")
+
+# WS -> DB
+
+
+# Insert
+def insert_to_db(dataset, ws, name):
+    print("Inserting to DB: ", len(dataset))
+    ws_records = ws.get_all_records()
+    if len(dataset) == 0:
+        return
+    ids = list(zip(*dataset))[0]
+    rows_to_insert = [row for row in ws_records if row['id'] in ids]
+    if name == 'lyphs':
+        mysql_db.insert_lyphs(rows_to_insert)
+    if name == 'chains':
+        mysql_db.insert_chains(rows_to_insert)
+    if name == 'materials':
+        mysql_db.insert_materials(rows_to_insert)
+
+
+def delete_from_db(dataset, ws, name):
+    print("Deleting from DB: ", len(dataset))
+
+
+def update_in_db(dataset, ws, name):
+    print("Updating in DB: ", len(dataset))
 
 
 # Compare worksheet with DB table
@@ -201,9 +252,12 @@ def compare_sheet(df, name):
     ws = sh.worksheet(name)
     ws_records = ws.get_all_records()
     print("Comparing", name)
+    # in DB, no WS
     missing = []
-    changed = []
+    # in WS, no DB
     extra = []
+    # WS != DB
+    changed = []
     for i, db_row in enumerate(db_records):
         j = 0
         while j < len(ws_records):
@@ -229,21 +283,39 @@ def compare_sheet(df, name):
         if j >= len(db_records):
             extra.append([ws_row["id"], i+2])
 
-    # print_differences(name, missing, changed, extra)
+    print_differences(name, missing, changed, extra)
 
-    # Synchronize worksheet with DB
-
-    choice = input("Insert missing " + name + " to WS (y)?")
+    # DB -> WS
+    choice = input("DB -> WS (y)?")
     if choice == "y":
-        insert_missing_to_ws(missing, db_records, ws, name)
+        choice = input("Insert " + name + " to WS (y)?")
+        if choice == "y":
+            headers = ws.row_values(1)
+            insert_to_ws(missing, db_records, headers, name)
 
-    choice = input("Delete missing " + name + " from WS (y)?")
-    if choice == "y":
-        delete_missing_from_ws(extra, db_records, ws, name)
+        choice = input("Delete " + name + " from WS (y)?")
+        if choice == "y":
+            delete_from_ws(extra, ws)
 
-    choice = input("Update " + name + " in WS (y)?")
-    if choice == "y":
-        update_in_ws(changed, db_records, ws, name)
+        choice = input("Update " + name + " in WS (y)?")
+        if choice == "y":
+            update_in_ws(changed, ws)
+    else:
+        choice = input("WS -> DB (y)?")
+        if choice == "y":
+            # WS -> DB
+
+            choice = input("Insert " + name + " to DB (y)?")
+            if choice == "y":
+                insert_to_db(extra, ws, name)
+
+            choice = input("Delete " + name + " from DB (y)?")
+            if choice == "y":
+                delete_from_db(missing, ws, name)
+
+            choice = input("Update " + name + " in DB (y)?")
+            if choice == "y":
+                update_in_db(changed, ws, name)
 
 
 # Commented lines are for reading from local excel file instead of MySQL
