@@ -85,6 +85,56 @@ class MySQLApinatomyDB:
         self.driver.commit()
         cursor.close()
 
+    def delete_list(self, dataset, name):
+        if len(dataset) == 0:
+            return
+        cursor = self.driver.cursor()
+        sql = "DELETE FROM {0} WHERE id in ({1})".format(name, ",".join(f"'{w}'" for w in dataset))
+        cursor.execute(sql)
+        self.driver.commit()
+        cursor.close()
+
+    def update_lyphs(self, dataset):
+        if len(dataset) == 0:
+            return
+        cursor = self.driver.cursor()
+        for entries in dataset:
+            for row in entries:
+                # @Example
+                # {'ID': 'lyph-L6-spinal-segment', 'COL': 'ontologyTerms', 'DB': 'ILX:0793358', 'WS': 'ILX:0738432'}
+                col = 'ontologyTerm' if row['COL'] == 'ontologyTerms' else 'label' if row['COL'] == 'name' else row['COL']
+                val = row['WS']
+                if col == 'isTemplate':
+                    val = 1 if row['WS'] == 'TRUE' else 0
+                sql = "UPDATE lyphs SET {0} = '{1}' WHERE ID = '{2}'".format(col, val, row['ID'])
+                cursor.execute(sql)
+        self.driver.commit()
+        cursor.close()
+
+    def update_chains(self, dataset):
+        if len(dataset) == 0:
+            return
+        cursor = self.driver.cursor()
+        for entries in dataset:
+            for row in entries:
+                col = 'lyph_sequence' if row['COL'] == 'lyphs' else 'label' if row['COL'] == 'name' else \
+                    'wire_id' if row['COL'] == 'wiredTo' else row['COL']
+                sql = "UPDATE chains SET {0} = '{1}' WHERE ID = '{2}'".format(col, row['WS'], row['ID'])
+                cursor.execute(sql)
+        self.driver.commit()
+        cursor.close()
+
+    def update_materials(self, dataset):
+        if len(dataset) == 0:
+            return
+        cursor = self.driver.cursor()
+        for entries in dataset:
+            for row in entries:
+                sql = "UPDATE materials SET {0} = '{1}' WHERE ID = '{2}'".format(row['COL'], row['WS'], row['ID'])
+                cursor.execute(sql)
+        self.driver.commit()
+        cursor.close()
+
 
 def create_local_excel(df_lyphs, df_chains, df_materials, file_path):
     writer = pd.ExcelWriter(file_path, engine='xlsxwriter')
@@ -163,20 +213,18 @@ def compare_rows(db_row, ws_row):
 
 # print found differences
 def print_differences(name, missing, changed, extra):
-    print("The DB " + name + " not found in the WS:")
+    print("The DB " + name + " not found in the WS:", len(missing))
     for entry in missing:
         print(entry)
     print()
-    print("The DB " + name + " that differ in WS:")
+    print("The DB " + name + " that differ in WS:", len(changed))
     for entry in changed:
         print(entry)
     print()
-    print("The WS " + name + " not found in the DB:")
+    print("The WS " + name + " not found in the DB:", len(extra))
     for entry in extra:
         print(entry)
     print()
-
-# DB -> WS
 
 
 # Insert rows with new DB identifiers to the WS
@@ -238,13 +286,19 @@ def insert_to_db(dataset, ws, name):
         mysql_db.insert_materials(rows_to_insert)
 
 
-def delete_from_db(dataset, ws, name):
+def delete_from_db(dataset, name):
     print("Deleting from DB: ", len(dataset))
+    mysql_db.delete_list(dataset, name)
 
 
-def update_in_db(dataset, ws, name):
+def update_in_db(dataset, name):
     print("Updating in DB: ", len(dataset))
-
+    if name == 'lyphs':
+        mysql_db.update_lyphs(dataset)
+    if name == 'chains':
+        mysql_db.update_chains(dataset)
+    if name == 'materials':
+        mysql_db.update_materials(dataset)
 
 # Compare worksheet with DB table
 def compare_sheet(df, name):
@@ -285,37 +339,43 @@ def compare_sheet(df, name):
 
     print_differences(name, missing, changed, extra)
 
-    # DB -> WS
-    choice = input("DB -> WS (y)?")
-    if choice == "y":
-        choice = input("Insert " + name + " to WS (y)?")
+    if len(missing) > 0 or len(changed) > 0 or len(extra) > 0:
+        # DB -> WS
+        choice = input("DB -> WS (y)?")
         if choice == "y":
-            headers = ws.row_values(1)
-            insert_to_ws(missing, db_records, headers, name)
+            if len(missing) > 0:
+                choice = input("Insert " + name + " to WS (y)?")
+                if choice == "y":
+                    headers = ws.row_values(1)
+                    insert_to_ws(missing, db_records, headers, name)
 
-        choice = input("Delete " + name + " from WS (y)?")
-        if choice == "y":
-            delete_from_ws(extra, ws)
+            if len(extra) > 0:
+                choice = input("Delete " + name + " from WS (y)?")
+                if choice == "y":
+                    delete_from_ws(extra, ws)
 
-        choice = input("Update " + name + " in WS (y)?")
-        if choice == "y":
-            update_in_ws(changed, ws)
-    else:
-        choice = input("WS -> DB (y)?")
-        if choice == "y":
-            # WS -> DB
-
-            choice = input("Insert " + name + " to DB (y)?")
+            if len(changed) > 0:
+                choice = input("Update " + name + " in WS (y)?")
+                if choice == "y":
+                    update_in_ws(changed, ws)
+        else:
+            choice = input("WS -> DB (y)?")
             if choice == "y":
-                insert_to_db(extra, ws, name)
+                # WS -> DB
 
-            choice = input("Delete " + name + " from DB (y)?")
-            if choice == "y":
-                delete_from_db(missing, ws, name)
+                if len(extra) > 0:
+                    choice = input("Insert " + name + " to DB (y)?")
+                    if choice == "y":
+                        insert_to_db(extra, ws, name)
 
-            choice = input("Update " + name + " in DB (y)?")
-            if choice == "y":
-                update_in_db(changed, ws, name)
+                if len(missing) > 0:
+                    choice = input("Delete " + name + " from DB (y)?")
+                    if choice == "y":
+                        delete_from_db(missing, name)
+                if len(changed) > 0:
+                    choice = input("Update " + name + " in DB (y)?")
+                    if choice == "y":
+                        update_in_db(changed, name)
 
 
 # Commented lines are for reading from local excel file instead of MySQL
