@@ -1,4 +1,4 @@
-# Convert vascular data from MySQL to Neo4J
+# Synchronize MySQL WBKG with Google spreadsheet WBKG
 
 import mysql.connector
 import pandas as pd
@@ -193,18 +193,6 @@ sh = gc.open_by_url("https://docs.google.com/spreadsheets/d/1BcUBExy-kk-03ceeFuu
 # sh = gc.open_by_url("https://docs.google.com/spreadsheets/d/1Y1nPCiRTiM1A8xUQn8NwNOlsz7z32hGd6W6U_ZQOrLY/edit#gid=1006273879")
 # sh = gc.open_by_url("https://docs.google.com/spreadsheets/d/1h1uO8BZ6BWt55YPZqs0TOJZ8LeughISsnlcDgEw1f_U/edit#gid=1006273879")
 # sh = gc.open_by_url("https://docs.google.com/spreadsheets/d/1jDtLrfm1Kz25oAcjRGEFu3qXqh5iz1_4lAEaQzuHQDc/edit?pli=1#gid=855732402")
-
-
-# Replaces the spreadsheet completely (not a good option as we lose editing history
-def replace_sheet(df, name):
-    columns = df.columns.tolist()
-    lst = df.values.tolist()
-    ws = sh.worksheet(name)
-    sh.del_worksheet(ws)
-    ws = sh.add_worksheet(title=name, rows=len(lst) + 1, cols=len(columns))
-    ws.insert_rows(lst)
-    ws.insert_rows([columns])
-    ws.format(["A1:Z1"], {"textFormat": {"bold": True}})
 
 
 # Match two given rows from worksheet and DB table
