@@ -84,12 +84,12 @@ for row in rows:
                print("Conflicting lyphs: ", ontID, lyphsByOntologyTerms[ontID]["id"], lyphID)
 
 # Import .ttl to Neo4j
-neo4j_uri = 'neo4j+ssc://ff1eebe1.databases.neo4j.io'
-neo4j_pwd = 'VybgorZDYdV_77gSVH3WQMQ9yAIyGNA2AvHdYYpYXmw'
+login = json.load(open('./data/nlp_db.json', 'r'))
+db_uri, db_pwd = (login.values())
 
 # Populate Neo4J DB (AuraDB instance)
 # g = Graph(store='neo4j-cypher')
-# config = {'uri': neo4j_uri, 'database': 'neo4j', 'auth': {'user': "neo4j", 'pwd': neo4j_pwd}}
+# config = {'uri': db_uri, 'database': 'neo4j', 'auth': {'user': "neo4j", 'pwd': db_pwd}}
 # g.open(config, create=False)
 # g.store.startBatchedWrite()
 # g.parse("./data/sparc-nlp.ttl")
@@ -110,7 +110,7 @@ df_chains = pd.DataFrame([], columns=CHAIN_COLUMNS)
 df_groups = pd.DataFrame([], columns=GROUP_COLUMNS)
 
 # Access Neo4j
-driver = GraphDatabase.driver(neo4j_uri, auth=('neo4j', neo4j_pwd))
+driver = GraphDatabase.driver(db_uri, auth=('neo4j', db_pwd))
 
 # Get a list of neurons
 cql_neurons = 'match (n: Class)-[r:neuronPartialOrder]->(m) return n'
