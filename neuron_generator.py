@@ -125,7 +125,7 @@ with driver.session() as session:
     for neuron in neurons:
         uri = neuron['n']['uri']
         # To create only one neuron
-        # if uri != "http://uri.interlex.org/tgbugs/uris/readable/sparc-nlp/mmset1/2":
+        # if uri != "http://uri.interlex.org/tgbugs/uris/readable/sparc-nlp/mmset4/1":
         #     continue
         print("Neuron:", uri)
         res = session.run(cql_partial_order, uri = uri)
@@ -189,6 +189,11 @@ with driver.session() as session:
         baseID = uri.replace("http://uri.interlex.org/tgbugs/uris/readable/sparc-nlp/", "")
         baseName = neuron['n']['label'][:50]
 
+        # Retrieve chain lyph topology
+
+        # lt-axon-bag, lt-axon-tube, lt-axon-bag2
+        # lt-dend-bag, lt-dend-tube, lt-dend-bag2
+
         if len(chains) == 1:
             lyph_str = ",".join(chains[0])
             df_chains.loc[len(df_chains.index)] = [baseID, baseName, "wbkg:lt-cell-cyst", "", "", lyph_str, ""]
@@ -198,9 +203,38 @@ with driver.session() as session:
             # for housingLyphs in chains:
             #     for lyph in housingLyphs:
             #         lyph_set.add(lyph)
-            for i, housingLyphs in enumerate(chains):
+
+            # Assign chain node names via property levelTargets so that ApiNATOMY generator can combine chains
+            # To leave chains disjoint, set levelTargets to ""
+            sources = {}
+            targets = {}
+            bags = set()
+            bags2 = set()
+            idx = 1
+            level_targets_all = []
+            for housing_lyphs in chains:
+                if len(housing_lyphs) == 0:
+                    continue
+                level_targets = []
+                for j, lyph in enumerate(housing_lyphs):
+                    if lyph not in sources:
+                        if j == 0:
+                            sources[lyph] = baseID + "_n" + str(idx)
+                            idx += 1
+                        else:
+                            sources[lyph] = targets[housing_lyphs[j - 1]]
+                    if lyph not in targets:
+                        targets[lyph] = baseID + "_n" + str(idx)
+                        idx += 1
+                    level_targets.append(str(j)+":"+targets[lyph])
+                level_targets_all.append(level_targets)
+
+            for i, housing_lyphs in enumerate(chains):
+                if len(housing_lyphs) == 0:
+                    continue
                 ext = "_" + str(i+1)
-                df_chains.loc[len(df_chains.index)] = [baseID + ext, baseName + ext, "wbkg:lt-cell-cyst", "", "", ",".join(housingLyphs), ""]
+                df_chains.loc[len(df_chains.index)] = [baseID + ext, baseName + ext,
+                    "wbkg:lt-cell-cyst", sources[housing_lyphs[0]], "", ",".join(housing_lyphs), ','.join(level_targets_all[i])]
                 # df_groups.loc[len(df_groups.index)] = ["g_"+ baseID, "Group " + baseID, ",".join(list(lyph_set))]
 
     # Unknown: ontologyTerms for non-existing WBKG lyphs (helped to improve WBKG)
