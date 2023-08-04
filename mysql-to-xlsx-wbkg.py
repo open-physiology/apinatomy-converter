@@ -142,46 +142,6 @@ class MySQLApinatomyDB:
         self.driver.commit()
         cursor.close()
 
-
-def create_local_excel(df_lyphs, df_chains, df_materials, file_path):
-    writer = pd.ExcelWriter(file_path, engine='xlsxwriter')
-    # main
-    df_main = pd.DataFrame(columns=["id", "name", "author", "namespace", "description", "imports"])
-    df_main.loc[len(df_main.index)] = ["wbrcm", "TOO-map-linked reference connectivity model", "Bernard de Bono",
-                                       "wbkg", "Imported from mySQL",
-                                       "https://raw.githubusercontent.com/open-physiology/apinatomy-models/master/models/too-map/source/too-map.json"]
-    df_main.to_excel(writer, sheet_name='main', index=False)
-    # lyphs, materials, chains
-    df_lyphs.to_excel(writer, sheet_name='lyphs', index=False)
-    df_chains.to_excel(writer, sheet_name='chains', index=False)
-    df_materials.to_excel(writer, sheet_name='materials', index=False)
-    # local conventions
-    local_conventions = {
-        "prefix": ["UBERON", "CHEBI", "FMA", "GO", "ILX", "NLX", "SAO", "PMID", "EMAPA", "CL", "NCBITaxon", "wbkg",
-                   "too"],
-        "namespace": [
-            "http://purl.obolibrary.org/obo/UBERON_",
-            "http://purl.obolibrary.org/obo/CHEBI_",
-            "http://purl.org/sig/ont/fma/fma",
-            "http://purl.obolibrary.org/obo/GO_",
-            "http://uri.interlex.org/base/ilx_",
-            "http://uri.neuinfo.org/nif/nifstd/nlx_",
-            "http://uri.neuinfo.org/nif/nifstd/sao",
-            "http://www.ncbi.nlm.nih.gov/pubmed/",
-            "http://purl.obolibrary.org/obo/EMAPA_",
-            "http://purl.obolibrary.org/obo/CL_",
-            "http://purl.obolibrary.org/obo/NCBITaxon_",
-            "https://apinatomy.org/uris/models/wbrcm/ids/",
-            "https://apinatomy.org/uris/models/too-map/ids/"
-        ]
-    }
-    df_local_conventions = pd.DataFrame(local_conventions)
-    df_local_conventions.to_excel(writer, sheet_name='localConventions', index=False)
-    writer.save()
-
-
-FILE_NAME = './data/wbkg2.xlsx'
-
 login = json.load(open('./data/wbkg_db.json', 'r'))
 # login = json.load(open('./data/wbkg_db_nk.json', 'r'))
 
@@ -376,8 +336,6 @@ def compare_sheet(df, name):
                         update_in_db(changed, name)
 
 
-# Commented lines are for reading from local excel file instead of MySQL
-
 yes_to_all = False
 
 LYPH_COLUMNS = ['id', 'ontologyTerms', 'name', 'varianceSpecs', 'isTemplate', 'topology', 'layers',
@@ -401,8 +359,6 @@ MATERIAL_VARS_STR = ', '.join(['%s' for x in range(len(MATERIAL_COLUMNS))])
 action = 'y' if yes_to_all else input("Compare lyphs (y)?")
 if action == 'y':
     df_lyphs = pd.DataFrame.from_records(mysql_db.query_lyphs())
-    # df_lyphs = pd.read_excel(FILE_NAME, sheet_name='lyphs',dtype=str)
-    # df_lyphs = df_lyphs.replace(np.nan, '')
     df_lyphs = df_lyphs[LYPH_COLUMNS]
     lyphs = df_lyphs.values.tolist()
     compare_sheet(df_lyphs, "lyphs")
@@ -412,8 +368,6 @@ action = 'y' if yes_to_all else input("Compare chains (y)?")
 if action == 'y':
     df_chains = pd.DataFrame.from_records(mysql_db.query_chains())
     df_chains = df_chains[CHAIN_COLUMNS]
-    # df_chains = pd.read_excel(FILE_NAME, sheet_name='chains',dtype=str)
-    # df_chains = df_chains.replace(np.nan, '')
     chains = df_chains.values.tolist()
     compare_sheet(df_chains, "chains")
 
@@ -422,10 +376,5 @@ action = 'y' if yes_to_all else input("Compare materials (y)?")
 if action == 'y':
     df_materials = pd.DataFrame.from_records(mysql_db.query_materials())
     df_materials = df_materials[MATERIAL_COLUMNS]
-    # df_materials = pd.read_excel(FILE_NAME, sheet_name='materials',dtype=str)
-    # df_materials = df_materials.replace(np.nan, '')
     materials = df_materials.values.tolist()
     compare_sheet(df_materials, "materials")
-
-# Save imported data in a local Excel file
-# create_local_excel(df_lyphs, df_chains, df_materials, FILE_NAME)
