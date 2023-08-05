@@ -44,7 +44,7 @@ def create_local_excel(df_chains, df_groups, df_lyphs, df_links, file_path):
     }
     df_local_conventions = pd.DataFrame(local_conventions)
     df_local_conventions.to_excel(writer, sheet_name='localConventions', index=False)
-    writer.save()
+    writer.close()
 
 
 # Create a dictionary of ontology terms vs lyphs from WBKG
