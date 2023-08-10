@@ -149,10 +149,13 @@ db_name, db_user, db_pwd, db_server, db_port = (login.values())
 mysql_db = MySQLApinatomyDB(db_name, db_user, db_pwd, db_server, db_port)
 
 gc = gspread.service_account(filename='./data/service_account.json')
-sh = gc.open_by_url("https://docs.google.com/spreadsheets/d/1BcUBExy-kk-03ceeFuuz8comX3-O0xL1_owTkmZQTCU/edit#gid=1006273879")
-# sh = gc.open_by_url("https://docs.google.com/spreadsheets/d/1Y1nPCiRTiM1A8xUQn8NwNOlsz7z32hGd6W6U_ZQOrLY/edit#gid=1006273879")
-# sh = gc.open_by_url("https://docs.google.com/spreadsheets/d/1h1uO8BZ6BWt55YPZqs0TOJZ8LeughISsnlcDgEw1f_U/edit#gid=1006273879")
-# sh = gc.open_by_url("https://docs.google.com/spreadsheets/d/1jDtLrfm1Kz25oAcjRGEFu3qXqh5iz1_4lAEaQzuHQDc/edit?pli=1#gid=855732402")
+
+# For testing material and lyph editors
+url = "https://docs.google.com/spreadsheets/d/1PmuQTQZ2xf1EJRBREO6ACd59nkNtVn_6glV4AaROvGk/edit#gid=1423037257"
+
+# Official WBKG spreadsheet synchronized with the DB
+# url = "https://docs.google.com/spreadsheets/d/1BcUBExy-kk-03ceeFuuz8comX3-O0xL1_owTkmZQTCU/edit#gid=1006273879"
+sh = gc.open_by_url(url)
 
 
 # Match two given rows from worksheet and DB table

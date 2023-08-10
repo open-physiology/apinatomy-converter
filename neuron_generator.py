@@ -326,7 +326,7 @@ with driver.session() as session:
                             if len(match) == 0:
                                 free = [x for x in next_all if "source" not in x]
                                 if len(free) > 1:
-                                    # There should not be links more than one link with undefined source
+                                    # There should not be more than one link with undefined source
                                     print("Something weird...", j)
                                 if len(free) > 0 and ("target" not in free[0] or free[0]["target"] != curr["target"]):
                                     # If there is a free link (with undefined source and no conflict), assign its source
@@ -380,7 +380,7 @@ with driver.session() as session:
                     # print(j, [x for x in node_pairs])
 
                 ext = "_" + str(i+1)
-                levels_str = ','.join([x["id"] for x  in levels])
+                levels_str = ','.join([x["id"] for x in levels])
 
                 housings = ["wbkg:" + lyphsByURIs[x]["id"] for x in housing_lyphs if x in lyphsByURIs]
                 housing_lyphs_str = ','.join(housings)
