@@ -138,6 +138,11 @@ def get_supertypes(uri, housingLyphs):
 lyphsByURIs = {}
 create_ontology_term_dict()
 
+# print(len(lyphsByURIs))
+# for key in lyphsByURIs:
+#     print(key, ' -> ', lyphsByURIs[key]["id"])
+
+
 lyph_to_template = {}
 assign_neuron_segment_lyph_tempates()
 
@@ -233,7 +238,7 @@ df_groups = pd.DataFrame([], columns=GROUP_COLUMNS)
 driver = GraphDatabase.driver(db_uri, auth=('neo4j', db_pwd))
 
 # Get a list of neurons
-cql_neurons = 'match (n: Class)-[r:neuronPartialOrder]->(m) return n'
+cql_neurons = 'match (n: Class)-[r:neuronPartialOrder]->(m) return distinct n'
 cql_partial_order = '''
     match (src {uri:$uri})-[r: neuronPartialOrder|first|rest*..]->(dst) return r, dst
 '''
@@ -242,17 +247,19 @@ cql_partial_order = '''
 with driver.session() as session:
     res = session.run(cql_neurons)
     neurons = [record for record in res.data()]
+    print(len(neurons))
     file_ext = ""
     for neuron in neurons:
         uri = neuron['n']['uri']
+        print("Found neuron:", uri)
         baseID = uri.replace("http://uri.interlex.org/tgbugs/uris/readable/sparc-nlp/", "")
         baseName = neuron['n']['label'][:50] # Too long names get into group names and do not fit the Setting Panel
         # To create only one neuron
-        # if uri != "http://uri.interlex.org/tgbugs/uris/readable/sparc-nlp/mmset4/2":
-        #     continue
-        # else:
-        #     file_ext = "_" + baseID.replace("/", "_")
-        print("Neuron:", uri)
+        if uri != "http://uri.interlex.org/tgbugs/uris/readable/sparc-nlp/prostate/13":
+            continue
+        else:
+            file_ext = "_" + baseID.replace("/", "_")
+        print("Processing neuron: ", uri)
 
         # extract chains of housing lyphs
         res = session.run(cql_partial_order, uri=uri)
@@ -406,7 +413,7 @@ with driver.session() as session:
             # Create neuron group
             df_groups.loc[len(df_groups.index)] = ["g_neuron_"+baseID, "Group "+baseID, "", lnk_set_str, node_set_str]
         else:
-            # Single chain, ApiNATAOMY chain is defined by lyphs and housingLyphs
+            # Single chain, ApiNATOMY chain is defined by lyphs and housingLyphs
             lyphs = []
             for i, host in enumerate(chains[0]):
                 # To generate lyph instances instead of abstract lyphs
@@ -417,7 +424,7 @@ with driver.session() as session:
             lyphs_str = ','.join(lyphs)
             housing_lyphs_str = ','.join(["wbkg:"+lyphsByURIs[x]["id"] for x in chains[0] if x in lyphsByURIs])
             df_chains.loc[len(df_chains.index)] = [baseID, baseName, housing_lyphs_str, lyphs_str, ""]
-        
+
         # Housing group - useless until open-physiology-viewer handles group extensions from other namespace resources
         # housing_lyphs_set_str = ",".join(["wbkg:"+lyphsByURIs[x]["id"] for x in housing_ont_set if x in lyphsByURIs])
         # df_groups.loc[len(df_groups.index)] = ["g_" + baseID, "Housing group " + baseID, housing_lyphs_set_str, "", ""]

@@ -4,13 +4,33 @@ import mysql.connector
 import pandas as pd
 import gspread
 import json
+import gspread_dataframe
+
+# Map ApiNATOMY schema lyph fields to MySQL WBKG DB
+def get_db_lyphs_name(name):
+    col_map = {
+        'ontologyTerms': 'ontologyTerm',
+        'name'   : 'label'
+    }
+    return col_map[name] if name in col_map else name
 
 
-class MySQLApinatomyDB:
+# Map ApiNATOMY schema chain fields to MySQL WBKG DB
+def get_db_chains_name(name):
+    col_map = {
+        'lyphs': 'lyph_sequence',
+        'wiredTo': 'wire_id',
+        'name'   : 'label'
+    }
+    return col_map[name] if name in col_map else name
+
+
+# Class to handle CRUD operations on MySQL WBKG DB
 
     def __init__(self, database: str, user: str, password: str, host: str, port: str):
         self.driver = mysql.connector.connect(user=user, password=password, database=database, host=host, port=port)
 
+    # Read DB lyphs and map to ApiNATOMY schema
     def query_lyphs(self):
         cursor = self.driver.cursor()
         cursor.execute('SELECT * FROM lyphs')
@@ -21,12 +41,13 @@ class MySQLApinatomyDB:
             row.pop('num_id')
             row['id'] = row.pop('ID')
             row['ontologyTerms'] = row.pop('ontologyTerm')
-            row['isTemplate'] = 'TRUE' if row.pop('isTemplate') == 1 else ''
             row['name'] = row.pop('label')
+            row['isTemplate'] = 'TRUE' if row.pop('isTemplate') == 1 else ''
             items.append(row)
         cursor.close()
         return items
 
+    # Read DB chains and map to ApiNATOMY schema
     def query_chains(self):
         cursor = self.driver.cursor()
         cursor.execute('SELECT * FROM chains')
@@ -43,6 +64,7 @@ class MySQLApinatomyDB:
         cursor.close()
         return items
 
+    # Read DB materials and map to ApiNATOMY schema
     def query_materials(self):
         cursor = self.driver.cursor()
         cursor.execute('SELECT * FROM materials')
@@ -56,6 +78,18 @@ class MySQLApinatomyDB:
         cursor.close()
         return items
 
+    # Read DB coalescences (TODO: create table)
+    def query_coalescences(self):
+        cursor = self.driver.cursor()
+        cursor.execute('SELECT * FROM coalescences')
+        col_names = cursor.column_names
+        items = []
+        for item in cursor:
+            row = dict(zip(col_names, item))
+            items.append(row)
+        cursor.close()
+        return items
+
     def insert_lyphs(self, rows_to_insert):
         cursor = self.driver.cursor()
         for row in rows_to_insert:
@@ -63,8 +97,6 @@ class MySQLApinatomyDB:
             if "color" in row:
                 del row["color"]
         rows = [tuple(d.values()) for d in rows_to_insert]
-        # WS: id,ontologyTerms,name,varianceSpecs,isTemplate,topology,layers,supertype,internalLyphs,internalLyphsInLayers,hostedBy
-
         sql = "INSERT INTO lyphs ({0}) VALUES ({1})".format(LYPH_COLUMNS_STR, LYPH_VARS_STR)
         cursor.executemany(sql, rows)
         self.driver.commit()
@@ -92,12 +124,26 @@ class MySQLApinatomyDB:
         self.driver.commit()
         cursor.close()
 
+    def insert_coalescences(self, rows_to_insert):
+        cursor = self.driver.cursor()
+        for row in rows_to_insert:
+            if "color" in row:
+                del row["color"]
+        rows = [tuple(d.values()) for d in rows_to_insert]
+        sql = "INSERT INTO coalescences ({0}) VALUES ({1})".format(COALESCENCE_COLUMNS_STR, COALESCENCE_VARS_STR)
+        cursor.executemany(sql, rows)
+        self.driver.commit()
+        cursor.close()
+
     def delete_list(self, dataset, name):
         if len(dataset) == 0:
             return
         cursor = self.driver.cursor()
-        sql = "DELETE FROM %s WHERE id in (%s)"
-        cursor.execute(sql, (name, ",".join(f"'{w}'" for w in dataset)))
+
+        # sql = "DELETE FROM %s WHERE id in (%s)"
+        # cursor.execute(sql, (name, ",".join(f"'{w}'" for w in dataset)))
+        sql = "DELETE FROM {0} WHERE id in ({1})".format(name, ",".join(f"'{w}'" for w in dataset))
+        cursor.execute(sql)
         self.driver.commit()
         cursor.close()
 
@@ -109,7 +155,7 @@ class MySQLApinatomyDB:
             for row in entries:
                 # @Example
                 # {'ID': 'lyph-L6-spinal-segment', 'COL': 'ontologyTerms', 'DB': 'ILX:0793358', 'WS': 'ILX:0738432'}
-                col = 'ontologyTerm' if row['COL'] == 'ontologyTerms' else 'label' if row['COL'] == 'name' else row['COL']
+                col = get_db_lyphs_name(row['COL'])
                 val = row['WS']
                 if col == 'isTemplate':
                     val = 1 if row['WS'] == 'TRUE' else 0
@@ -124,8 +170,7 @@ class MySQLApinatomyDB:
         cursor = self.driver.cursor()
         for entries in dataset:
             for row in entries:
-                col = 'lyph_sequence' if row['COL'] == 'lyphs' else 'label' if row['COL'] == 'name' else \
-                    'wire_id' if row['COL'] == 'wiredTo' else row['COL']
+                col = get_db_chains_name(row['COL'])
                 sql = "UPDATE chains SET {0} = %s WHERE ID = %s".format(col)
                 cursor.execute(sql, (row['WS'], row['ID']))
         self.driver.commit()
@@ -142,20 +187,40 @@ class MySQLApinatomyDB:
         self.driver.commit()
         cursor.close()
 
-login = json.load(open('./data/wbkg_db.json', 'r'))
-# login = json.load(open('./data/wbkg_db_nk.json', 'r'))
 
-db_name, db_user, db_pwd, db_server, db_port = (login.values())
+# login = json.load(open('./data/wbkg_db.json', 'r'))
+login = json.load(open('./data/wbkg_db_nk.json', 'r'))
+
+db_name, db_user, db_pwd, db_server, db_port, ws_url, db_backup = (login.values())
 mysql_db = MySQLApinatomyDB(db_name, db_user, db_pwd, db_server, db_port)
 
 gc = gspread.service_account(filename='./data/service_account.json')
 
-# For testing material and lyph editors
-url = "https://docs.google.com/spreadsheets/d/1PmuQTQZ2xf1EJRBREO6ACd59nkNtVn_6glV4AaROvGk/edit#gid=1423037257"
+# For testing material and lyph editors, reset worksheet URL
+ws_url = "https://docs.google.com/spreadsheets/d/1PmuQTQZ2xf1EJRBREO6ACd59nkNtVn_6glV4AaROvGk/edit#gid=1423037257"
 
-# Official WBKG spreadsheet synchronized with the DB
-# url = "https://docs.google.com/spreadsheets/d/1BcUBExy-kk-03ceeFuuz8comX3-O0xL1_owTkmZQTCU/edit#gid=1006273879"
-sh = gc.open_by_url(url)
+
+def create_local():
+    print("Creating Google spreadsheet from local file '.data/wbrcm-converted'...")
+    sh = gc.create('wbkg')
+    local_lyphs = pd.read_excel('./data/wbrcm-converted.xlsx', sheet_name='lyphs', dtype=str)
+    local_chains = pd.read_excel('./data/wbrcm-converted.xlsx', sheet_name='chains', dtype=str)
+    local_materials = pd.read_excel('./data/wbrcm-converted.xlsx', sheet_name='materials', dtype=str)
+
+    def add_sheet(df, title):
+        sh.add_worksheet(title=title, rows=df.shape[0], cols=df.shape[1])
+        ws = sh.worksheet(title)
+        gspread_dataframe.set_with_dataframe(ws, df)
+
+    add_sheet(local_lyphs, "lyphs")
+    add_sheet(local_chains, "chains")
+    add_sheet(local_materials, "materials")
+    return sh
+
+
+# Prepare gspread from local file wbcrm-converted.xlsx?
+local = input("Update from local file './data/wbrcm-converted.xlsx' (y)?")
+sh = create_local() if local == 'y' else gc.open_by_url(ws_url)
 
 
 # Match two given rows from worksheet and DB table
@@ -262,11 +327,11 @@ def update_in_db(dataset, name):
 
 
 # Compare worksheet with DB table
-def compare_sheet(df, name):
+def compare_sheet(df, ws):
+    name = ws.title
+    print("Comparing ", name)
     db_records = df.to_dict('records')
-    ws = sh.worksheet(name)
     ws_records = ws.get_all_records()
-    print("Comparing", name)
     # in DB, no WS
     missing = []
     # in WS, no DB
@@ -339,20 +404,70 @@ def compare_sheet(df, name):
                         update_in_db(changed, name)
 
 
+def create_db_backup():
+    cursor = mysql_db.driver.cursor()
+    if db_backup is None:
+        print("Backup DB name is not specified!")
+        return
+
+    # Method 1
+    # Fetch all table names
+    table_names = []
+    cursor.execute('SHOW TABLES;')
+    for record in cursor.fetchall():
+        table_names.append(record[0])
+    cursor.execute(f"USE {db_backup}")
+    for table_name in table_names:
+        cursor.execute( f'DROP TABLE IF EXISTS {table_name}')
+        cursor.execute(
+            f'CREATE TABLE {table_name} SELECT * FROM {db_name}.{table_name}')
+
+    # Method 2
+    # backup_dir = 'C:/backup'
+    # backup_file = 'mydatabase_backup_' + str(datetime.now().strftime('%Y%m%d_%H%M%S')) + '.bak'
+    # command = f"BACKUP DATABASE mydatabase TO DISK='{backup_file}'"
+    # cursor.execute(command)
+
+    # Method 3
+    # import subprocess
+    # now = os.strftime("%Y-%m-%d-%H-%M-%S")
+    # subprocess.run(
+    #     [
+    #         "mysqldump",
+    #         "-u",
+    #         db_user,
+    #         "-p" + db_pwd,
+    #         db_name,
+    #         ">",
+    #         backup_dir + "/" + db_name + "-" + now + ".sql",
+    #     ]
+    # )
+    # subprocess.run(["gzip", backup_dir + "/" + db_name + "-" + now + ".sql"])
+
+
+action = input("Back-up MySQL (y)?")
+if action == 'y':
+    create_db_backup()
+
+
 yes_to_all = False
 
-LYPH_COLUMNS = ['id', 'ontologyTerms', 'name', 'varianceSpecs', 'isTemplate', 'topology', 'layers',
-                         'supertype', 'internalLyphs', 'internalLyphsInLayers', 'hostedBy']
+# List of fields that are used to synchronize data
+LYPH_COLUMNS = ['id', 'ontologyTerms', 'name', 'varianceSpecs', 'isTemplate', 'topology', 'layers', 'supertype', 'internalLyphs', 'internalLyphsInLayers', 'hostedBy']
 CHAIN_COLUMNS = ['id', 'name', 'lyphs', 'wiredTo']
 MATERIAL_COLUMNS = ['id', 'ontologyTerms', 'name', 'materials']
+COALESCENCE_COLUMNS = ['id', 'name', 'ontologyTerms', 'lyphs']
 
-LYPH_COLUMNS_STR = ', '.join(LYPH_COLUMNS)
-CHAIN_COLUMNS_STR = ', '.join(CHAIN_COLUMNS)
+LYPH_COLUMNS_STR = ', '.join(map(get_db_lyphs_name,LYPH_COLUMNS))
+CHAIN_COLUMNS_STR = ', '.join(map(get_db_chains_name,CHAIN_COLUMNS))
+# NK In 'materials all column names coincide
 MATERIAL_COLUMNS_STR = ', '.join(MATERIAL_COLUMNS)
+COALESCENCE_COLUMNS_STR = ', '.join(COALESCENCE_COLUMNS)
 
-print(LYPH_COLUMNS_STR)
-print(CHAIN_COLUMNS_STR)
-print(MATERIAL_COLUMNS_STR)
+# print("Note, the data is compared based on the following fields:)
+# print("Lyphs: ", LYPH_COLUMNS_STR)
+# print("Chains:", CHAIN_COLUMNS_STR)
+# print("Materials: ", MATERIAL_COLUMNS_STR)
 
 LYPH_VARS_STR = ', '.join(['%s' for x in range(len(LYPH_COLUMNS))])
 CHAIN_VARS_STR = ', '.join(['%s' for x in range(len(CHAIN_COLUMNS))])
@@ -364,7 +479,8 @@ if action == 'y':
     df_lyphs = pd.DataFrame.from_records(mysql_db.query_lyphs())
     df_lyphs = df_lyphs[LYPH_COLUMNS]
     lyphs = df_lyphs.values.tolist()
-    compare_sheet(df_lyphs, "lyphs")
+    ws = sh.worksheet("lyphs")
+    compare_sheet(df_lyphs, ws)
 
 # Chains
 action = 'y' if yes_to_all else input("Compare chains (y)?")
@@ -372,7 +488,8 @@ if action == 'y':
     df_chains = pd.DataFrame.from_records(mysql_db.query_chains())
     df_chains = df_chains[CHAIN_COLUMNS]
     chains = df_chains.values.tolist()
-    compare_sheet(df_chains, "chains")
+    ws = sh.worksheet("chains")
+    compare_sheet(df_chains, ws)
 
 # Materials
 action = 'y' if yes_to_all else input("Compare materials (y)?")
@@ -380,4 +497,6 @@ if action == 'y':
     df_materials = pd.DataFrame.from_records(mysql_db.query_materials())
     df_materials = df_materials[MATERIAL_COLUMNS]
     materials = df_materials.values.tolist()
-    compare_sheet(df_materials, "materials")
+    ws = sh.worksheet("materials")
+    compare_sheet(df_materials, ws)
+

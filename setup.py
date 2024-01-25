@@ -1,13 +1,20 @@
 from distutils.core import setup
 
 setup(
-    name='apinatomy',
+    name='sync-WBKG',
     version='1',
     packages=[''],
+    scripts=['mysql-to-xlsx-wbkg'],
+    data_files=[('', ['data/wbkg_db.json', 'data/service_account.json'])],
+    entry_points={
+        'console_scripts': [
+            'sync=mysql-to-xlsx-wbkg'
+        ],
+    },
     url='',
     license='',
     author='Natallia Kokash',
     author_email='natallia.kokash@gmail.com',
-    description='Generates cardio-vascular graph from MySQL DB',
-    install_requires=['mysql', 'neo4j', 'numpy', 'pandas', 'gspread', 'json']
+    description='Synchronize WBKG between Google spreadsheet and MySQL DB',
+    install_requires=['mysql', 'pandas', 'gspread', 'openpyx'gspread_dataframe']
 )
