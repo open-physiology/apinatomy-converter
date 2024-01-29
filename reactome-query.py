@@ -1,4 +1,5 @@
 from neo4j import GraphDatabase
+import csv
 
 neo4j_uri = "neo4j+ssc://ffc8f87e.databases.neo4j.io"
 neo4j_pwd = "zJ_lVZeI29XAdLIVMZU0PMC_B-k961i0UpB2tVJeJqY"
@@ -136,19 +137,64 @@ def get_sodium_reactions():
                     print('\t\t', pe['pe']['stIdVersion'], pe['pe']['displayName'], pe['db']['identifier'], pe['db']['displayName'])
                     rows.append([r_stId, r_displayName, pe['pe']['stIdVersion'], pe['pe']['displayName'], pe['db']['identifier'], pe['db']['displayName']])
                 else:
-                    if pe['pe']['schemaClass'] == 'Complex':
-                        pe_stId = pe['pe']["stIdVersion"]
-                        print(f"\t\tcomplex {pe['pe']['schemaClass']}")
-                        complex = expand_complex_uniprot(session, pe_stId)
-                        for c in complex:
-                            c1 = [r_stId, r_displayName] + c
-                            rows.append(c1)
-        import csv
+                    # if pe['pe']['schemaClass'] == 'Complex':
+                    pe_stId = pe['pe']["stIdVersion"]
+                    print(f"\t\tcomplex {pe['pe']['schemaClass']}")
+                    complex = expand_complex_uniprot(session, pe_stId)
+                    for c in complex:
+                        c1 = [r_stId, r_displayName] + c
+                        rows.append(c1)
+
         with open("./data/sodium.csv", 'w', newline='') as file:
             writer = csv.writer(file)
             writer.writerows(rows)
 
 
-get_sodium_reactions()
+# get_sodium_reactions()
 
 
+def get_uniprot_list(db_ids):
+    with driver.session() as session:
+        rows = []
+        cql_get_physical_entities = """MATCH 
+            (r: Reaction)-[:input|output|catalystActivity]->()-[*1..3]->(pe:EntityWithAccessionedSequence)-
+            [:referenceEntity]->(db: DatabaseObject {databaseName: "UniProt", identifier: $db_id}) RETURN r, db"""
+        for db_id in db_ids:
+            res = session.run(cql_get_physical_entities, db_id=db_id)
+            reactions = [record for record in res.data()]
+            print("Reactions associated with", db_id, len(reactions))
+            for r in reactions:
+                rows.append(["https://reactome.org/content/detail/" + r['r']['stIdVersion'], r['r']['displayName'],
+                             r['r']['speciesName'], db_id, r['db']['url'], r['db']['displayName']])
+
+        with open("./data/glygen.csv", 'w', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerows(rows)
+
+
+glygen_ids = [
+    "Q9H553-1", "Q9BYC5-1", "Q11203-1", "Q11206-1", "Q9Y274-1", "P26572-1", "O60512-1", "O60909-1", "P15291-1", "Q10469-1",
+    "Q9H3H5-1", "Q96F25-1", "Q9NP73-1", "Q9BT22-1", "Q9H553-1", "O60512-1", "O60909-1", "P15291-1", "Q9BYC5-1", "Q11203-1",
+    "Q11206-1", "Q9Y274-1", "P26572-1", "Q10469-1", "Q9UBM8-1", "Q9UM21-1", "Q9UQ53-1", "Q09328-1", "Q3V5L5-1", "Q9H3H5-1",
+    "Q96F25-1", "Q9NP73-1", "Q9BT22-1", "Q9H553-1", "Q92685-1", "Q2TAA5-1", "Q9BV10-1", "Q9H6U8-1", "Q9H3H5-1", "Q96F25-1",
+    "Q9NP73-1", "Q9BT22-1", "Q9H553-1", "O60512-1", "O60909-1", "P15291-1", "P26572-1", "Q10469-1", "Q9UBM8-1", "Q9UM21-1",
+    "Q9UQ53-1", "Q09328-1", "Q3V5L5-1", "Q9H3H5-1", "Q96F25-1", "Q9NP73-1", "Q9BT22-1", "Q9H553-1", "O60512-1", "O60909-1",
+    "P15291-1", "Q9BYC5-1", "Q11203-1", "Q11206-1", "Q9Y274-1", "P26572-1", "Q10469-1", "Q7Z7M8-1", "Q9C0J1-1", "Q9NY97-1",
+    "Q9UBM8-1", "Q9UM21-1", "Q9UQ53-1", "Q09328-1", "Q3V5L5-1", "Q9H3H5-1", "Q96F25-1", "Q9NP73-1", "Q9BT22-1", "Q9H553-1",
+    "O60512-1", "O60909-1", "P15291-1", "Q00973-1", "Q8NHY0-1", "P15907-1", "Q96JF0-1", "Q9BYC5-1", "Q11203-1", "Q11206-1",
+    "Q9Y274-1", "P26572-1", "Q10469-1", "Q9UBM8-1", "Q9UM21-1", "Q9UQ53-1", "Q09328-1", "Q3V5L5-1", "Q9H3H5-1", "Q96F25-1",
+    "Q9NP73-1", "Q9BT22-1", "Q9H553-1", "P15907-1", "Q96JF0-1", "P21217-1", "P22083-1", "P51993-1", "Q11128-1", "Q9Y231-1",
+    "P26572-1", "O60512-1", "O60909-1", "P15291-1", "Q11203-1", "Q11206-1", "Q9Y274-1", "Q10469-1", "Q9UBM8-1", "Q9UM21-1",
+    "Q9UQ53-1", "Q9H3H5-1", "Q96F25-1", "Q9NP73-1", "Q9BT22-1", "Q9H553-1", "O60512-1", "O60909-1", "P15291-1", "P21217-1",
+    "P22083-1", "P51993-1", "Q11128-1", "Q9Y231-1", "P26572-1", "Q10469-1", "Q9UBM8-1", "Q9UM21-1", "Q9UQ53-1", "Q09328-1",
+    "Q3V5L5-1", "Q9H3H5-1", "Q96F25-1", "Q9NP73-1", "Q9BT22-1", "Q9H553-1", "Q9BYC5-1", "P26572-1", "O60512-1", "O60909-1",
+    "P15291-1", "Q10469-1", "P19526-1", "Q10981-1", "P16442-1", "Q9H3H5-1", "Q96F25-1", "Q9NP73-1", "Q9BT22-1", "Q9H553-1",
+    "Q09327-1", "P15907-1", "Q96JF0-1", "Q9BYC5-1", "P26572-1", "O60512-1", "O60909-1", "P15291-1", "Q10469-1", "P19526-1",
+    "Q10981-1", "Q9H3H5-1", "Q96F25-1", "Q9NP73-1", "Q9BT22-1"]
+
+uniprot_ids = set(glygen_ids)
+uniprot_ids = [id[:-2] for id in uniprot_ids]
+uniprot_ids.sort()
+print(len(uniprot_ids), "unique ids out of", len(glygen_ids))
+
+# get_uniprot_list(uniprot_ids)
