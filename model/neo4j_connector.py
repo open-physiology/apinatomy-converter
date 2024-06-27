@@ -83,6 +83,21 @@ class NEO4JConnector:
 
     # Create
 
+    def merge_node(self, item, cls_name: str, session: Session = None):
+        if session is None:
+            session = self.driver.session()
+        cql_create = """MERGE (n: {0} {1})"""
+        q = cql_create.format(cls_name, serialize(item))
+        session.run(q)
+
+    def merge_nodes(self, items, cls_name: str, session: Session = None):
+        if session is None:
+            session = self.driver.session()
+        print("# nodes before adding: %d", self.query_node_count())
+        for item in items:
+            self.merge_node(item, cls_name, session)
+        print("# nodes after adding: %d", self.query_node_count())
+
     def create_nodes(self, items, cls_name: str, session: Session = None):
         if session is None:
             session = self.driver.session()
@@ -100,6 +115,17 @@ class NEO4JConnector:
         for item in items:
             query = cql_match.format(item["source"], item["target"]) + cql_create
             session.run(query, rel_type=item["type"])
+        print("# rels after adding: %d", self.query_rel_count())
+
+    def create_links_with_labels(self, items, session: Session = None):
+        if session is None:
+            session = self.driver.session()
+        cql_match = """MATCH (a), (b) WHERE a.nodeID = "{0}" AND b.nodeID = "{1}" """
+        cql_create = """CREATE (a)-[:Connects {type: $rel_type, label: $rel_label, fmaID: $fmaID}]->(b)"""
+        print("# rels before adding: %d", self.query_rel_count())
+        for item in items:
+            query = cql_match.format(item["source"], item["target"]) + cql_create
+            session.run(query, rel_type=item["type"], rel_label=item["label"], fmaID=item["fmaID"])
         print("# rels after adding: %d", self.query_rel_count())
 
     def create_microcirculations(self, items, session: Session = None):
@@ -133,63 +159,136 @@ class NEO4JConnector:
 
         print("# rels after adding: %d", self.query_rel_count())
 
-
-    @staticmethod
-    def create_node(item, cls_name: str, session: Session):
+    def create_node(self, item, cls_name: str, session: Session = None):
+        if session is None:
+            session = self.driver.session()
         cql_create = """CREATE (:{0} {1})"""
         q = cql_create.format(cls_name, serialize(item))
         session.run(q)
 
-    def create_branches_all(self, branches, session: Session = None):
+    def create_network(self, branches, session: Session = None):
         if session is None:
             session = self.driver.session()
 
-        def get_label(type, main_name, prev_name, branch_name):
-            segment = "Arterial" if type == 1 else "Venous"
-            return segment + " segment of " + main_name + " from " + prev_name + " to " + branch_name
+        def get_label(source_name, target_name, order):
+            return "Segment " + order + " from " + source_name + " to " + target_name
 
         print("# relationships before adding: %d", self.query_rel_count())
-        main_name = None
-        prev_name = "origin"
-        prev_s = None
-        prev_m = None
+        prev_s_id = None
+        prev_m_id = None
+        source_name = "origin"
         for branch in branches:
             print(branch)
             s_id = branch["source"]
             t_id = branch["target"]
-            order = branch["order"]
-            type = branch["type"]
+            order = str(branch["order"])
+            total = branch["total"]
 
-            if prev_s and prev_s == s_id:
-                s = prev_m
+            if prev_s_id == s_id:
+                s = self.query_node(prev_m_id)
             else:
                 s = self.query_node(s_id)
-                if s is None:
-                    print("Failed to find resource: ", s_id)
-                    return
-                main_name = s["name"]
-                prev_name = "origin"
+                source_name = s["name"]
+
+            if s is None:
+                print("Failed to find resource: ", s_id)
+                return
 
             t = self.query_node(t_id)
+
             if t is None:
                 print("Failed to find resource: ", t_id)
                 return
-            branch_name = t["name"]
-
-            label = get_label(type, main_name, prev_name, branch_name)
-            m_id = s_id + "_" + t_id + "_" + str(order)
-            m = {"nodeID": m_id, "name": label, "type": 'ART' if type == 1 else 'VEN'}
-            self.create_node(m, "Connector", session)
-            prev_name = branch_name
 
             q = """MATCH (a),(b) WHERE a.nodeID=$s_id AND b.nodeID=$t_id CREATE(a)-[:Connects]->(b)"""
-            session.run(q.format(order), s_id=s["nodeID"], t_id=m_id)
-            session.run(q.format(order), s_id=m_id, t_id=t_id)
+            if total == 1:
+                session.run(q, s_id=s["nodeID"], t_id=t_id)
+                print("Rel: ", s["nodeID"], t_id)
+            else:
+                m_id = s_id + "_" + t_id + "_" + order
+                m_label = get_label(source_name, t["name"], order)
+                self.create_node({"nodeID": m_id, "name": m_label}, "Connector", session)
+                session.run(q, s_id=s["nodeID"], t_id=m_id)
+                session.run(q, s_id=m_id, t_id=t_id)
+                print("Rel 1:", s["nodeID"], m_id)
+                print("Rel 2:", m_id, t_id)
+                prev_m_id = m_id
 
-            prev_s = s_id
-            prev_m = m
+            prev_s_id = s_id
 
         print("# relationships after adding: %d", self.query_rel_count())
+
+    # Update
+
+    def update_relationship_assign_lyph(self, source, target, lyph_template, session: Session = None):
+        if session is None:
+            session = self.driver.session()
+        query = """MATCH (a ) -[r] -> (b {nodeID: $target}) SET r.lyphTemplate=$lyph_template RETURN r """
+        session.run(query, source=source, target=target, lyph_template=lyph_template)
+
+    def update_relationship_assign_fma(self, source, target, fma_id, session: Session = None):
+        if session is None:
+            session = self.driver.session()
+        query = """MATCH (a ) -[r] -> (b {nodeID: $target}) SET r.fmaID=$fma_id RETURN r """
+        session.run(query, source=source, target=target, fma_id=fma_id)
+
+    def update_nodes_color(self, nodes, session: Session = None):
+        if session is None:
+            session = self.driver.session()
+        for node in nodes:
+            node_id = node["nodeID"]
+            node_color = node['color'].capitalize()
+            self.update_node_label(node_id, node_color, session)
+
+    def update_node_label(self, node_id, node_label, session: Session = None):
+        if session is None:
+            session = self.driver.session()
+        query = """MATCH (m) where m.nodeID=$node_id SET m:{0} RETURN m"""
+        session.run(query.format(node_label), node_id=node_id)
+
+    def update_network(self, branches, session: Session = None):
+        if session is None:
+            session = self.driver.session()
+
+        prev_s_id = None
+        prev_m_id = None
+        for branch in branches:
+            print(branch)
+            s_id = branch["source"]
+            t_id = branch["target"]
+            s_fma = branch["source_fma"]
+            t_fma = branch["target_fma"]
+
+            # Lyph template is set for the whole chain
+            if prev_s_id != s_id:
+                lyph_template = branch["lyph_template"]
+
+            order = str(branch["order"])
+            total = branch["total"] if "total" in branch else 1
+            label = branch["color"].capitalize()
+
+            if total == 1:
+                print(s_id, t_id, "FMA: ", t_fma, label)
+                self.update_relationship_assign_fma(s_id, t_id, t_fma, session)
+                self.update_relationship_assign_lyph(s_id, t_id, lyph_template, session)
+            else:
+                s = prev_m_id if prev_s_id == s_id else s_id
+                m_id = s_id + "_" + t_id + "_" + order
+
+                # Lyph 1
+                print(s, m_id, "FMA 1: ", s_fma, label)
+                self.update_relationship_assign_fma(s_id, m_id, s_fma, session)
+                self.update_relationship_assign_lyph(s_id, m_id, lyph_template, session)
+                self.update_node_label(m_id, label, session)
+
+                # Lyph 2
+                print(m_id, t_id, "FMA 2: ", t_fma)
+                self.update_relationship_assign_fma(m_id, t_id, t_fma, session)
+
+                prev_m_id = m_id
+
+            prev_s_id = s_id
+
 
         # To get a path between two resources
         # MATCH p = ({fmaID:"7101"})-[*]->({fmaID:"66363"}) RETURN nodes(p)
@@ -197,4 +296,3 @@ class NEO4JConnector:
         # To get a path between two resources with attached nodes representing FMA structures:
         # MATCH p = ({fmaID:"7101"})-[*]->({fmaID:"66363"}) with  nodes(p)
         # as path unwind path as m match (m:Connector)-[]->(n) return path, n
-

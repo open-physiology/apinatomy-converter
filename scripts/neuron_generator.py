@@ -1,14 +1,10 @@
 import pandas as pd
 import os
-import gspread
-from rdflib import Graph, RDF, URIRef, store
-import rdflib_neo4j
 from neo4j import GraphDatabase
 import json
 import numpy as np
 
 
-# Create a spreadsheet ApiNATOMY model
 def create_local_excel(df_chains, df_groups, df_lyphs, df_links, file_path):
     writer = pd.ExcelWriter(file_path, engine='xlsxwriter')
     # main
@@ -49,7 +45,7 @@ def create_local_excel(df_chains, df_groups, df_lyphs, df_links, file_path):
 
 # Create a dictionary of ontology terms vs lyphs from WBKG
 def create_ontology_term_dict():
-    wbkg = json.load(open('./data/wbrcm-model.json', 'r'))
+    wbkg = json.load(open('../data/wbrcm-model.json', 'r'))
     lyphsByID = {}
     for lyph in wbkg['lyphs']:
         lyphsByID[lyph["id"]] = lyph
@@ -148,7 +144,7 @@ assign_neuron_segment_lyph_tempates()
 
 
 # Access .ttl imported to Neo4j
-login = json.load(open('./data/nlp_db.json', 'r'))
+login = json.load(open('credentials/nlp_db.json', 'r'))
 db_uri, db_pwd = (login.values())
 
 # Populate Neo4J DB (AuraDB instance)
@@ -225,7 +221,7 @@ def extract_housing_lyphs():
 
 # Create ApiNATOMY tables
 LYPH_COLUMNS = ['id', 'name', 'supertype']
-LINK_COLUMNS = ['id', 'name', 'conveyingLyph', 'source', "target"]
+LINK_COLUMNS = ['id', 'name', 'conveyingLyph', 'source', 'target']
 CHAIN_COLUMNS = ['id', 'name', 'housingLyphs', 'lyphs', 'levels']
 GROUP_COLUMNS = ['id', 'name', 'lyphs', "links", "nodes"]
 
