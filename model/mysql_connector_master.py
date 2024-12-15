@@ -97,19 +97,34 @@ class MySQLConnector:
         # WHERE vl1originalvesselname='Aorta' and MAIN_VESSEL='50010931' and sequence > 0 order by MAIN_VESSEL, sequence"""
 
         # Everything without unordered branches
-        query = """
-            SELECT MAIN_VESSEL, BRANCH, vl2trunkname, vl2trunkID, vessel_type, sequence, vl1originalID, vl2originalID, lyph_template_ID, node_colour from (
-                SELECT MAIN_VESSEL, BRANCH, vl2trunkname, vl2trunkID, vessel_type, sequence, vl1originalID, vl2originalID, colour FROM master_vascular
-                WHERE MAIN_VESSEL in (SELECT DISTINCT BRANCH FROM master_vascular WHERE (vl1originalID=50040 OR vl1originalID=50039) and sequence > 0) and sequence > 0
-                union
-                SELECT MAIN_VESSEL, BRANCH, vl2trunkname, vl2trunkID, vessel_type, sequence, vl1originalID, vl2originalID, colour FROM master_vascular
-                        WHERE (vl1originalID=50040 OR vl1originalID=50039) and sequence > 0
-                union
-                SELECT MAIN_VESSEL, BRANCH, vl2trunkname, vl2trunkID, vessel_type, sequence, vl1originalID, vl2originalID, colour FROM `master_vascular`
-                        WHERE vl1originalvesselname='Aorta' and MAIN_VESSEL='50010931' and sequence > 0) as v
-                LEFT OUTER JOIN `master_vascular_lyph_templates` as lt ON v.vl2originalID = lt.VESSEL_FMA_ID  
-                order by vl1originalID, MAIN_VESSEL, sequence
-        """
+        # query = """
+        #     SELECT MAIN_VESSEL, BRANCH, vl2trunkname, vl2trunkID, vessel_type, sequence, vl1originalID, vl2originalID, lyph_template_ID, node_colour from (
+        #         SELECT MAIN_VESSEL, BRANCH, vl2trunkname, vl2trunkID, vessel_type, sequence, vl1originalID, vl2originalID FROM master_vascular
+        #         WHERE MAIN_VESSEL in (SELECT DISTINCT BRANCH FROM master_vascular WHERE (vl1originalID=50040 OR vl1originalID=50039) and sequence > 0) and sequence > 0
+        #         union
+        #         SELECT MAIN_VESSEL, BRANCH, vl2trunkname, vl2trunkID, vessel_type, sequence, vl1originalID, vl2originalID FROM master_vascular
+        #                 WHERE (vl1originalID=50040 OR vl1originalID=50039) and sequence > 0
+        #         union
+        #         SELECT MAIN_VESSEL, BRANCH, vl2trunkname, vl2trunkID, vessel_type, sequence, vl1originalID, vl2originalID FROM `master_vascular`
+        #                 WHERE vl1originalvesselname='Aorta' and MAIN_VESSEL='50010931' and sequence > 0) as v
+        #         LEFT OUTER JOIN `master_vascular_lyph_templates` as lt ON v.vl2originalID = lt.VESSEL_FMA_ID
+        #         order by vl1originalID, MAIN_VESSEL, sequence
+        # """
+        # query = """SELECT MAIN_VESSEL, BRANCH, vl2trunkname, vl2trunkID, vessel_type, sequence, vl1originalID, vl2originalID, lyph_template_ID, node_colour from (
+        #         SELECT * FROM master_vascular WHERE MAIN_VESSEL in
+        #         (SELECT DISTINCT BRANCH FROM master_vascular, master_vascular_lyph_templates WHERE vl2originalID = VESSEL_FMA_ID and sequence > 0 and include)
+        #         and sequence > 0) as v
+        #         LEFT OUTER JOIN `master_vascular_lyph_templates` as lt ON v.vl2originalID = lt.VESSEL_FMA_ID
+        #         order by vl1originalID, MAIN_VESSEL, sequence
+        # """
+        query = """SELECT MAIN_VESSEL, BRANCH, vl2trunkname, vl2trunkID, vessel_type, 
+                     CASE WHEN sequence = 0 THEN 1000 ELSE sequence END as sequence, 
+                     vl1originalID, vl2originalID, lyph_template_ID, node_colour from (
+                     SELECT * FROM master_vascular WHERE MAIN_VESSEL in 
+                     (SELECT DISTINCT BRANCH FROM master_vascular, master_vascular_lyph_templates WHERE vl2originalID = VESSEL_FMA_ID and include)) as v
+                     LEFT OUTER JOIN `master_vascular_lyph_templates` as lt ON v.vl1originalID = lt.VESSEL_FMA_ID  
+                     order by vl1originalID, sequence
+             """
         cursor.execute(query)
         prev = None
         count = 1

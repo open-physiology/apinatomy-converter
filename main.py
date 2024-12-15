@@ -1,267 +1,402 @@
-# Convert vascular data from MySQL to Neo4J
-import pandas as pd
 import json
-from model.neo4j_connector import NEO4JConnector
-from model.mysql_connector_master import MySQLConnector
-
-# DB to read data (MySQL apinatomy)
-login = json.load(open('./credentials/api_mysql_db_nk.json', 'r'))
-db_name, db_user, db_pwd, db_server, db_port = (login.values())
-mysql_db = MySQLConnector(db_name, db_user, db_pwd, db_server, db_port)
-
-# DB to store data (Neo4j Apinatomy vascular)
-# login = json.load(open('credentials/api_neo4j_test_db.json', 'r'))
-# neo4j_address, neo4j_pwd = (login.values())
-# neo4j_db = NEO4JConnector(neo4j_address, "neo4j", neo4j_pwd)
+import csv
+import nltk
 
 
-def convert_vascular_data():
-	# neo4j_db.clear_relationships()
-	# neo4j_db.detach_delete_nodes("Connector")
-
-	# Connected structures
-	# nodes = mysql_db.query_connected_structures()
-	# neo4j_db.merge_nodes(nodes, "Structure")
-
-	# nodes = mysql_db.query_network_map()
-	# branches = mysql_db.query_network()
-	# mysql_db.create_lyphs(branches)
-
-	# filtered = []
-	# found = False
-	# for b in branches:
-	# 	if found:
-	# 		filtered.append(b)
-	# 	if b['source'] == '50010941' and b['target'] == '50010940':
-	# 		found = True
-	# print(len(filtered))
-	# neo4j_db.create_network(filtered)
-	# neo4j_db.update_network(filtered)
-
-	# All rows from branching order table
-	# branches = mysql_db.query_branches_all()
-	# neo4j_db.create_network(branches)
-
-	# # Additional arterial connections
-	# arterial = mysql_db.query_arterial_connections()
-	# neo4j_db.create_links(arterial)
-	#
-	# # Additional venous connections
-	# venous = mysql_db.query_venous_connections()
-	# neo4j_db.create_links(venous)
-
-	# Microcirculation links
-	# links = mysql_db.query_micro()
-	# neo4j_db.create_microcirculations(links)
-
-	# To clean, remove nodes labelled as 'Vascular' and relationships of type 'vascular'
-	# nodes = mysql_db.query_vascular_structures()
-	# neo4j_db.create_nodes(nodes, "Vascular")
-
-	# segments = mysql_db.query_vascular_segments()
-	# neo4j_db.create_links_with_labels(segments)
-	pass
+# String match
+def collect_label_data(data):
+	entries = []
+	for obj in data["graphs"]:
+		if "nodes" in obj:
+			for node in obj["nodes"]:
+				if "lbl" in node:
+					entry = [node["id"], node["lbl"]]
+					entries.append(entry)
+					if "meta" in node:
+						if "synonyms" in node["meta"]:
+							synonyms = node["meta"]["synonyms"]
+							for x in synonyms:
+								entry = [node["id"], x["val"]]
+								entries.append(entry)
+	return entries
 
 
-def convert_master_vascular():
-	# Clear DB
-	# neo4j_db.clear_relationships()
-	# neo4j_db.detach_delete_nodes("Structure")
-	# neo4j_db.detach_delete_nodes("Connector")
+def map_no_snomed_by_labels(icd_file):
+	data = json.load(open('data/icd10/Input/mondo.json', 'r', encoding='utf-8'))
+	entries_mondo = collect_label_data(data)
+	print("Mondo: ", len(entries_mondo))
 
-	# Connected structures
-	# nodes = mysql_db.query_master_vascular_nodes()
-	# neo4j_db.merge_nodes(nodes, "Structure")
+	data = json.load(open('data/icd10/Input/hp.json', 'r', encoding='utf-8'))
+	entries_hpo = collect_label_data(data)
+	print("HPO: ", len(entries_hpo))
 
-	branches = mysql_db.query_master_vascular_edges()
-	# neo4j_db.create_network(branches)
-	neo4j_db.update_network(branches)
+	def match(entries):
+		best_row = None
+		best_score = 10000
+		for row in entries:
+			onto_label = row[1]
+			quick_score = nltk.edit_distance(label.split(' '), onto_label.split(' '))
+			if quick_score < 4:
+				score = nltk.edit_distance(label, onto_label)
+				if score < best_score:
+					best_row = row
+					best_score = score
+		return [best_row, best_score]
+
+	entries = []
+	with open(icd_file, 'r') as csv_file:
+		reader = csv.reader(csv_file, delimiter=',')
+		next(reader, None)
+		for row in reader:
+			id = row[0]
+			label = row[1]
+
+			[best_mondo, best_mondo_score] = match(entries_mondo)
+			[best_hpo, best_hpo_score] = match(entries_hpo)
+
+			codes = []; labels = []; scores = []
+			if best_mondo:
+				codes.append(best_mondo[0])
+				labels.append(best_mondo[1])
+				scores.append(best_mondo_score)
+			if best_hpo:
+				codes.append(best_hpo[0])
+				labels.append(best_hpo[1])
+				scores.append(best_hpo_score)
+
+			entry = [id, label, codes, labels, scores]
+			entries.append(entry)
+
+			print(entry)
+
+	file = open("data/icd10/Output/snomed/result_snomed_no_label_match_1.csv", 'w', encoding='utf-8', newline='')
+	writer = csv.writer(file)
+	writer.writerow(["icd10_id", "icd10_lbl", "mondo/hbo urls", "mondo/hpo labels", "scores"])
+	for entry in entries:
+		writer.writerow(entry)
 
 
-def generate_master_vascular_chains():
-	# Get source data
-	node_map = mysql_db.query_master_vascular_nodes_map()
-	branches = mysql_db.query_master_vascular_edges()
+def collect_union():
+	entries = []
+	id_map = {}
+	with open("data/icd10/result_label_match.csv", 'r') as csv_file:
+		reader = csv.reader(csv_file, delimiter=',')
+		next(reader, None)
+		for row in reader:
+			score1 = int(row[4])
+			score2 = int(row[7])
+			if score1 == 0 or score2 == 0:
+				id = row[0]
+				entry = [id, row[1], "", "", "", ""]
+				if score1 == 0:
+					entry[2] = row[2]
+					entry[3] = row[3]
+				if score2 == 0:
+					entry[4] = row[5]
+					entry[5] = row[6]
+				id_map[id] = entry
+				entries.append(entry)
 
-	def create_local_excel(file_path):
-		writer = pd.ExcelWriter(file_path, engine='xlsxwriter')
-		# main
-		df_main = pd.DataFrame(columns=["id", "name", "author", "namespace", "description", "imports"])
-		df_main.loc[len(df_main.index)] = ["vascular-vessels", "Vascular vessels", "Natallia Kokash",
-										   "vascular", "Generated vascular chains from MySQL data",
-										   "https://raw.githubusercontent.com/open-physiology/apinatomy-models/master/models/wbrcm/source/wbrcm.json"]
-		df_main.to_excel(writer, sheet_name='main', index=False)
-		df_lyphs.to_excel(writer, sheet_name='lyphs', index=False)
-		df_nodes.to_excel(writer, sheet_name='nodes', index=False)
-		df_links.to_excel(writer, sheet_name='links', index=False)
-		df_chains.to_excel(writer, sheet_name='chains', index=False)
-		df_groups.to_excel(writer, sheet_name='groups', index=False)
-		# local conventions
-		local_conventions = {
-			"prefix": ["UBERON", "CHEBI", "FMA", "GO", "ILX", "NLX", "SAO", "PMID", "EMAPA", "CL", "NCBITaxon", "wbkg", "too"],
-			"namespace": [
-				"http://purl.obolibrary.org/obo/UBERON_",
-				"http://purl.obolibrary.org/obo/CHEBI_",
-				"http://purl.org/sig/ont/fma/fma",
-				"http://purl.obolibrary.org/obo/GO_",
-				"http://uri.interlex.org/base/ilx_",
-				"http://uri.neuinfo.org/nif/nifstd/nlx_",
-				"http://uri.neuinfo.org/nif/nifstd/sao",
-				"http://www.ncbi.nlm.nih.gov/pubmed/",
-				"http://purl.obolibrary.org/obo/EMAPA_",
-				"http://purl.obolibrary.org/obo/CL_",
-				"http://purl.obolibrary.org/obo/NCBITaxon_",
-				"https://apinatomy.org/uris/models/wbrcm/ids/",
-				"https://apinatomy.org/uris/models/too-map/ids/"
-			]
-		}
-		df_local_conventions = pd.DataFrame(local_conventions)
-		df_local_conventions.to_excel(writer, sheet_name='localConventions', index=False)
-		writer.close()
+	with open("data/icd10/result.csv", 'r') as csv_file:
+		reader = csv.reader(csv_file, delimiter=',')
+		next(reader, None)
+		for row in reader:
+			id = row[0]
+			if id not in id_map:
+				id_map[id] = row
+				entries.append(row)
 
-	# Create ApiNATOMY tables
-	NODE_COLUMNS = ["id", "name", "ontologyTerms"]
-	LINK_COLUMNS = ["id", "name", "conveyingLyph", "source", "target", "ontologyTerms", "color"]
-	LYPH_COLUMNS = ["id", "name", "supertype", "ontologyTerms"]
-	CHAIN_COLUMNS = ["id", "name", "housingLyphs", "lyphs", "levels"]
-	GROUP_COLUMNS = ["id", "name", "lyphs", "links", "nodes"]
+	file = open("data/icd10/result_all.csv", 'w', encoding='utf-8', newline='')
+	writer = csv.writer(file)
+	writer.writerow(["icd10_id", "icd10_lbl", "mondo_id", "mondo_lbl", "hb_id", "hb_lbl"])
+	for entry in entries:
+		writer.writerow(entry)
 
-	df_nodes = pd.DataFrame([], columns=NODE_COLUMNS)
-	df_lyphs = pd.DataFrame([], columns=LYPH_COLUMNS)
-	df_links = pd.DataFrame([], columns=LINK_COLUMNS)
-	df_chains = pd.DataFrame([], columns=CHAIN_COLUMNS)
-	df_groups = pd.DataFrame([], columns=GROUP_COLUMNS)
 
-	# Fill dataframes with generated chains
-	def create_chains():
-		def get_label(source_name, target_name, order):
-			return "Segment " + order + " from " + source_name + " to " + target_name
+def collect_icd_data(data, prefix):
+	entries = []
+	for obj in data["graphs"]:
+		if "nodes" in obj:
+			for node in obj["nodes"]:
+				if "meta" in node:
+					if "xrefs" in node["meta"]:
+						xrefs = node["meta"]["xrefs"]
+						for x in xrefs:
+							if x["val"].startswith(prefix):
+								entry = [x["val"], node["id"], node["lbl"]]
+								entries.append(entry)
+	return entries
 
-		# Create end nodes
-		used_node_map = {}
-		for branch in branches:
-			s_id = branch["source"]
-			t_id = branch["target"]
 
-			def create_node(x_id):
-				if x_id not in used_node_map:
-					x = node_map[x_id]
-					used_node_map[x["nodeID"]] = {
-						"id": x["nodeID"], "name": x["name"], "ontologyTerms": "FMA:"+x["fmaID"]}
+def collect_mondo_icd():
+	data = json.load(open('data/icd10/Input/mondo.json', 'r', encoding='utf-8'))
+	entries = collect_icd_data(data, "ICD10")
+	file = open("data/icd10/Helpers/mondo.csv", 'w', encoding='utf-8', newline='')
+	writer = csv.writer(file)
+	writer.writerow(["val", "id", "lbl"])
+	for entry in entries:
+		writer.writerow(entry)
 
-			create_node(s_id)
-			create_node(t_id)
 
-		# By dumping nodes here we avoid declaration of connector nodes, they will be generated
-		for key in used_node_map:
-			df_nodes.loc[len(df_nodes.index)] = used_node_map[key].values()
+def collect_hpo_icd():
+	data = json.load(open('data/icd10/Input/hp.json', 'r', encoding='utf-8'))
+	entries = collect_icd_data(data, "ICD-10")
+	file = open("data/icd10/Helpers/hp.csv", 'w', encoding='utf-8', newline='')
+	writer = csv.writer(file)
+	writer.writerow(["val", "id", "lbl"])
+	for entry in entries:
+		writer.writerow(entry)
 
-		# Create links
-		prev_s_id = None
-		prev_m_id = None
-		source_name = "origin"
-		lyph_template = None
 
-		lyph_map = {}
-		group = None
-		g_lyphs = []
-		g_links = []
-		g_nodes = []
+def collect_mondo_snomed():
+	data = json.load(open('data/icd10/Input/mondo.json', 'r', encoding='utf-8'))
+	entries = collect_icd_data(data, "SCTID")
+	file = open("data/icd10/Helpers/mondo_snomed.csv", 'w', encoding='utf-8', newline='')
+	writer = csv.writer(file)
+	writer.writerow(["val", "id", "lbl"])
+	for entry in entries:
+		writer.writerow(entry)
 
-		for branch in branches:
-			print("Processing branch:", branch)
-			s_id = branch["source"]
-			t_id = branch["target"]
-			order = str(branch["order"])
-			total = branch["total"] if "total" in branch else 1
-			color = branch["color"]
 
-			if prev_s_id == s_id:
-				s = used_node_map[prev_m_id]
+def collect_hpo_snomed():
+	data = json.load(open('data/icd10/Input/hp.json', 'r', encoding='utf-8'))
+	entries = collect_icd_data(data, "SNOMEDCT_US")
+	file = open("data/icd10/Helpers/hp_snomed.csv", 'w', encoding='utf-8', newline='')
+	writer = csv.writer(file)
+	writer.writerow(["val", "id", "lbl"])
+	for entry in entries:
+		writer.writerow(entry)
+
+
+def exact_code_mapping():
+	code_map = {}
+	with open("data/icd10/Helpers/mondo.csv", 'r') as csv_file:
+		reader = csv.reader(csv_file, delimiter=',')
+		next(reader, None)
+		for row in reader:
+			id = row[0].replace('.', '')
+			mapped_id = row[1]
+			label = row[2]
+			if id not in code_map:
+				code_map[id] = [id, mapped_id, label, "", ""]
+	with open("data/icd10/Helpers/hp.csv", 'r') as csv_file:
+		reader = csv.reader(csv_file, delimiter=',')
+		next(reader, None)
+		for row in reader:
+			id = row[0].replace('.', '')
+			mapped_id = row[1]
+			label = row[2]
+			if id in code_map:
+				code_map[id][3] = mapped_id
+				code_map[id][4] = label
 			else:
-				s = used_node_map[s_id]
-				source_name = s["name"]
-				lyph_template = "wbkg:" + branch["lyph_template"] if branch["lyph_template"] else ""
-				if group:
-					group["lyphs"] = ",".join(g_lyphs)
-					group["links"] = ",".join(g_links)
-					group["nodes"] = ",".join(g_nodes)
-					df_groups.loc[len(df_groups.index)] = group.values()
-				group = {"id": "g_" + s_id, "name": "Group for " + source_name}
-				g_links = []
-				g_lyphs = []
-				g_nodes = []
+				code_map[id] = [id, "", "", mapped_id, label]
 
-			t = used_node_map[t_id]
+	entries = []
+	count = 0
+	with open("data/icd10/Input/MPRINT_MarketScan_Phenotypes.csv", 'r') as csv_file:
+		reader = csv.reader(csv_file, delimiter=',')
+		next(reader, None)
+		for row in reader:
+			values = row[1].split(' ')
+			id = values[1]
+			label = ' '.join(values[2:])
+			if id in code_map:
+				entry = code_map[id]
+				entry.insert(1, label)
+				count += 1
+				entries.append(entry)
 
-			# Create links
-			if total == 1:
-				lnk_id = "lnk-" + s["id"]+"_"+t_id
-				lnk = {
-					"id": lnk_id, "name": "", "conveyingLyph": lyph_template, "source": s["id"], "target": t_id,
-					"ontologyTerms": "FMA:"+t["ontologyTerms"], "color": color
-				}
-				df_links.loc[len(df_links.index)] = lnk.values()
-				group = None
+	print(count)
+
+	file = open("data/icd10/result.csv", 'w', encoding='utf-8', newline='')
+	writer = csv.writer(file)
+	writer.writerow(["icd10_id", "icd10_lbl", "mondo_id", "mondo_lbl", "hb_id", "hb_lbl"])
+	for entry in entries:
+		writer.writerow(entry)
+
+
+def snomed():
+	entries = []
+	# snomed_icd_map = {}
+	icd_snomed_map = {}
+	with open("data/icd10/snomed/Full/Refset/Map/der2_iisssccRefset_ExtendedMapFull_US1000124_20240901.txt", 'r') as csv_file:
+		reader = csv.reader(csv_file, delimiter='\t')
+		# headers = next(reader)
+		# print(len(headers))
+		# for key in headers:
+		# 	print(key)
+		for row in reader:
+			entries.append([row[5], row[9], row[10]])
+		for entry in entries:
+			snomed_id = entry[0]
+			icd_id = entry[2].replace(".", "")
+			# if snomed_id == "67678004":
+			# 	print(entry)
+			# if snomed_id not in snomed_icd_map:
+			# 	snomed_icd_map[snomed_id] = [icd_id]
+			# else:
+			# 	if icd_id not in snomed_icd_map[snomed_id]:
+			# 		snomed_icd_map[snomed_id].append(icd_id)
+			if icd_id not in icd_snomed_map:
+				icd_snomed_map[icd_id] = [snomed_id]
 			else:
-				m_id = s_id + "_" + t_id + "_" + order
-				m_label = get_label(source_name, t["name"], order)
+				if snomed_id not in icd_snomed_map[icd_id]:
+					icd_snomed_map[icd_id].append(snomed_id)
 
-				# Create connector nodes
-				used_node_map[m_id] = {"id": m_id, "name": m_label, "ontologyTerms": ""}
+	# KN Save maps
+	# full icd_snomed_map
+	with open("data/icd10/Output/icd_snomed.csv", 'w', encoding='utf-8', newline='') as file:
+		writer = csv.writer(file)
+		writer.writerow(["icd10_id", "snomed_ids"])
+		for key in icd_snomed_map:
+			writer.writerow([key, icd_snomed_map[key]])
 
-				lnk1_id = "lnk-" + s["id"] + "_" + m_id
-				lnk1 = {
-					"id": lnk1_id, "name": "", "conveyingLyph": lyph_template, "source": s["id"], "target":m_id,
-					"ontologyTerms": "FMA:"+branch['source_fma'], "color": color
-				}
+	entries = []
+	no_snomed = []
+	with open("data/icd10/Input/MPRINT_MarketScan_Phenotypes.csv", 'r') as csv_file:
+		reader = csv.reader(csv_file, delimiter=',')
+		next(reader, None)
+		for row in reader:
+			values = row[1].split(' ')
+			id = values[1]
+			label = ' '.join(values[2:])
+			if id in icd_snomed_map:
+				entry = icd_snomed_map[id]
+				entry.insert(0, id)
+				entry.insert(1, label)
+				entries.append(entry)
+			else:
+				no_snomed.append([id, label])
 
-				lyph_id = "lyph-" + branch["target_fma"]
-				if lyph_id not in lyph_map:
-					lyph_map[lyph_id] = {
-						"id": lyph_id,
-						"name": t["name"],
-						"supertype": "",
-						"ontologyTerms": "FMA:" + branch["target_fma"]
-					}
+	with open("data/icd10/Output/snomed/result_snomed.csv", 'w', encoding='utf-8', newline='') as file:
+		writer = csv.writer(file)
+		writer.writerow(["icd10_id", "icd10_lbl", "snomed_ids"])
+		for entry in entries:
+			writer.writerow(entry)
 
-				lnk2_id = "lnk-" + m_id + "_" + t_id
-				lnk2 = {
-					"id": lnk2_id, "name": "", "conveyingLyph": lyph_id, "source": m_id, "target": t_id,
-					"ontologyTerms": "FMA:"+branch["target_fma"], "color": color
-				}
+	with open("data/icd10/Output/snomed/result_no_snomed.csv", 'w', encoding='utf-8', newline='') as file:
+		writer = csv.writer(file)
+		writer.writerow(["icd10_id", "icd10_lbl"])
+		for entry in no_snomed:
+			writer.writerow(entry)
 
-				df_links.loc[len(df_links.index)] = lnk1.values()
-				df_links.loc[len(df_links.index)] = lnk2.values()
 
-				if group:
-					g_links.append(lnk1_id)
-					g_links.append(lnk2_id)
-					g_lyphs.append(lyph_id)
-					g_nodes.append(lnk1["source"])
-					g_nodes.append(lnk1["target"])
-					g_nodes.append(lnk2["source"])
-					g_nodes.append(lnk2["target"])
+def add_labels_to_snomed():
+	code_map = {}
+	with open("data/icd10/result_label_found.csv", 'r') as csv_file:
+		reader = csv.reader(csv_file, delimiter=',')
+		next(reader, None)
+		for row in reader:
+			id = row[0]
+			code_map[id] = row
 
-				prev_m_id = m_id
+	with open("data/icd10/Output/snomed/result_snomed_mondo_hpo_no_mapping.csv", 'r') as csv_file:
+		reader = csv.reader(csv_file, delimiter=',')
+		next(reader, None)
+		for row in reader:
+			id = row[0]
+			if id in code_map:
+				print(code_map[id])
 
-			prev_s_id = s_id
 
-		for key in lyph_map:
-			df_lyphs.loc[len(df_lyphs.index)] = lyph_map[key].values()
+def exact_code_mapping_snomed():
+	code_map = {}
+	with open("data/icd10/Helpers/mondo_snomed.csv", 'r') as csv_file:
+		reader = csv.reader(csv_file, delimiter=',')
+		next(reader, None)
+		for row in reader:
+			id = row[0].replace('.', '')
+			mapped_id = row[1]
+			label = row[2]
+			if id not in code_map:
+				code_map[id] = [id, mapped_id, label, "", ""]
+	with open("data/icd10/Helpers/hp_snomed.csv", 'r') as csv_file:
+		reader = csv.reader(csv_file, delimiter=',')
+		next(reader, None)
+		for row in reader:
+			id = row[0].replace('.', '')
+			mapped_id = row[1]
+			label = row[2]
+			if id in code_map:
+				code_map[id][3] = mapped_id
+				code_map[id][4] = label
+			else:
+				code_map[id] = [id, "", "", mapped_id, label]
 
-	create_chains()
-	create_local_excel("data/vascular.xlsx")
+	entries = []
+	with open("data/icd10/Output/snomed/result_snomed.csv", 'r') as csv_file:
+		reader = csv.reader(csv_file, delimiter=',')
+		next(reader, None)
+		for row in reader:
+			label = row[0]
+			icd_id = row[1]
+			snomed_codes = row[2:]
+			codes = []
+			labels = []
+			for id in snomed_codes:
+				if id in code_map:
+					entry = code_map[id]
+					# MONDO and HBO codes at positions 1 and 3
+					if entry[1] != "":
+						codes.append(entry[1])
+						labels.append(entry[2])
+					if entry[3] != "":
+						codes.append(entry[3])
+						labels.append(entry[4])
+				entry = [icd_id, label, codes, labels]
+			if len(codes) == 0:
+				entries.append(entry)
+
+	file = open("data/icd10/Output/snomed/result_snomed_mondo_hpo_no_mapping.csv", 'w', encoding='utf-8', newline='')
+	writer = csv.writer(file)
+	writer.writerow(["icd10_id", "icd10_lbl", "mondo/hbo urls", 'mondo/hpo labels'])
+	for entry in entries:
+		writer.writerow(entry)
+
+
+def split_no_snomed_by_label(input_file,ext=""):
+	matched = []
+	unmatched = []
+	with open(input_file, 'r') as csv_file:
+		reader = csv.reader(csv_file, delimiter=',')
+		next(reader, None)
+		for row in reader:
+			codes = row[2]
+			if len(codes) > 7:
+				matched.append(row)
+			else:
+				unmatched.append(row[:2])
+	with open("data/icd10/result_no_snomed_matched{0}.csv".format(ext), 'w', encoding='utf-8', newline='') as file:
+		writer = csv.writer(file)
+		writer.writerow(["icd10_id", "icd10_lbl", "mondo/hbo urls", 'mondo/hpo labels'])
+		for entry in matched:
+			writer.writerow(entry)
+	with open("data/icd10/result_no_snomed_unmatched{}.csv".format(ext), 'w', encoding='utf-8', newline='') as file:
+		writer = csv.writer(file)
+		writer.writerow(["icd10_id", "icd10_lbl"])
+		for entry in unmatched:
+			writer.writerow(entry)
 
 
 if __name__ == '__main__':
-	# convert_master_vascular()
-	generate_master_vascular_chains()
+	# collect_mondo_icd()
+	# collect_hpo_icd()
+	# exact_code_mapping()
+	# collect_union()
+	# collect_mondo_snomed()
+	# collect_hpo_snomed()
+	snomed()
+	# exact_code_mapping_snomed()
+	# add_labels_to_snomed()
 
+	# map_no_snomed_by_labels("data/icd10/result_snomed_mondo_hpo_no_mapping.csv")
+	# map_no_snomed_by_labels("data/icd10/result_no_snomed.csv")
+	# split_no_snomed_by_label("data/icd10/result_snomed_no_label_match.csv")
+	split_no_snomed_by_label("data/icd10/Output/snomed/result_snomed_no_label_match_1.csv", "_1")
 
-# Graph visualization
-# https://neo4j.com/labs/apoc/4.3/export/graphml/
-# https://www.yworks.com/yed-live/
+# MATCH (phenotype_code:Code {SAB:'HP'})<-[:CODE]-(phenotype_concept:Concept)<-[r:has_phenotype {SAB:'KF'}]-(kfpt_concept:Concept),
+# (phenotype_concept:Concept)-[:PREF_TERM]->(phenotype_term:Term) RETURN DISTINCT phenotype_code.CodeID AS HPO_ID,phenotype_term.name AS HPO_Term
 
 
 

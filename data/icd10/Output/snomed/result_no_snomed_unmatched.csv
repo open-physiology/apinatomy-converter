@@ -1,0 +1,133 @@
+icd10_id,icd10_lbl
+A504,Late congenital neurosyphilis [juvenile neurosyphilis]
+A5044,Late congenital syphilitic optic nerve atrophy
+K4000,"Bilateral inguinal hernia, with obstruction, without gangrene, not specified as recurrent"
+K401,"Bilateral inguinal hernia, with gangrene"
+K4010,"Bilateral inguinal hernia, with gangrene, not specified as recurrent"
+K402,"Bilateral inguinal hernia, without obstruction or gangrene"
+K4020,"Bilateral inguinal hernia, without obstruction or gangrene, not specified as recurrent"
+K403,"Unilateral inguinal hernia, with obstruction, without gangrene"
+K4030,"Unilateral inguinal hernia, with obstruction, without gangrene, not specified as recurrent"
+K4040,"Unilateral inguinal hernia, with gangrene, not specified as recurrent"
+K410,"Bilateral femoral hernia, with obstruction, without gangrene"
+K4100,"Bilateral femoral hernia, with obstruction, without gangrene, not specified as recurrent"
+K411,"Bilateral femoral hernia, with gangrene"
+K4110,"Bilateral femoral hernia, with gangrene, not specified as recurrent"
+K412,"Bilateral femoral hernia, without obstruction or gangrene"
+K4120,"Bilateral femoral hernia, without obstruction or gangrene, not specified as recurrent"
+K413,"Unilateral femoral hernia, with obstruction, without gangrene"
+K4130,"Unilateral femoral hernia, with obstruction, without gangrene, not specified as recurrent"
+K414,"Unilateral femoral hernia, with gangrene"
+K4140,"Unilateral femoral hernia, with gangrene, not specified as recurrent"
+O364,Maternal care for intrauterine death
+P028,Newborn affected by other abnormalities of membranes
+Q149,"Congenital malformation of posterior segment of eye, unspecified"
+Q209,"Congenital malformation of cardiac chambers and connections, unspecified"
+Q370,Cleft hard palate with bilateral cleft lip
+Q374,Cleft hard and soft palate with bilateral cleft lip
+Q408,Other specified congenital malformations of upper alimentary tract
+Q409,"Congenital malformation of upper alimentary tract, unspecified"
+Q420,"Congenital absence, atresia and stenosis of rectum with fistula"
+Q428,"Congenital absence, atresia and stenosis of other parts of large intestine"
+Q517,Congenital fistulae between uterus and digestive and urinary tracts
+Q527,Other and unspecified congenital malformations of vulva
+Q6470,Unspecified congenital malformation of bladder and urethra
+Q6530,"Congenital partial dislocation of unspecified hip, unilateral"
+Q66211,"Congenital metatarsus primus varus, right foot"
+Q66212,"Congenital metatarsus primus varus, left foot"
+Q66221,"Congenital metatarsus adductus, right foot"
+Q66229,"Congenital metatarsus adductus, unspecified foot"
+Q6650,"Congenital pes planus, unspecified foot"
+Q6651,"Congenital pes planus, right foot"
+Q685,"Congenital bowing of long bones of leg, unspecified"
+Q7143,"Longitudinal reduction defect of radius, bilateral"
+Q7151,Longitudinal reduction defect of right ulna
+Q7152,Longitudinal reduction defect of left ulna
+Q7153,"Longitudinal reduction defect of ulna, bilateral"
+Q71891,Other reduction defects of right upper limb
+Q71892,Other reduction defects of left upper limb
+Q7221,"Congenital absence of both lower leg and foot, right lower limb"
+Q7222,"Congenital absence of both lower leg and foot, left lower limb"
+Q7231,Congenital absence of right foot and toe(s)
+Q7232,Congenital absence of left foot and toe(s)
+Q7242,Longitudinal reduction defect of left femur
+Q7262,Longitudinal reduction defect of left fibula
+Q7263,"Longitudinal reduction defect of fibula, bilateral"
+Q795,Other congenital malformations of abdominal wall
+Q920,"Whole chromosome trisomy, nonmosaicism (meiotic nondisjunction)"
+Q9261,Marker chromosomes in normal individual
+Q930,"Whole chromosome monosomy, nonmosaicism (meiotic nondisjunction)"
+Q931,"Whole chromosome monosomy, mosaicism (mitotic nondisjunction)"
+Q950,Balanced translocation and insertion in normal individual
+Q951,Chromosome inversion in normal individual
+Q952,Balanced autosomal rearrangement in abnormal individual
+Q953,Balanced sex/autosomal rearrangement in abnormal individual
+Q959,"Balanced rearrangement and structural marker, unspecified"
+Q972,"Mosaicism, lines with various numbers of X chromosomes"
+Q983,"Other male with 46, XX karyotype"
+Z373,"Twins, one liveborn and one stillborn"
+Z376,"Other multiple births, some liveborn"
+Z377,"Other multiple births, all stillborn"
+icd10_id,icd10_lbl
+D82,Immunodeficiency associated with other major defects
+E78,Disorders of lipoprotein metabolism and other lipidemias
+P02,"Newborn affected by complications of placenta, cord and membranes"
+P37,Other congenital infectious and parasitic diseases
+P96,Other conditions originating in the perinatal period
+Q0703,Arnold-Chiari syndrome with spina bifida and hydrocephalus
+Q10,"Congenital malformations of eyelid, lacrimal apparatus and orbit"
+Q14,Congenital malformations of posterior segment of eye
+Q16,Congenital malformations of ear causing impairment of hearing
+Q18,Other congenital malformations of face and neck
+Q20,Congenital malformations of cardiac chambers and connections
+Q22,Congenital malformations of pulmonary and tricuspid valves
+Q23,Congenital malformations of aortic and mitral valves
+Q27,Other congenital malformations of peripheral vascular system
+Q38,"Other congenital malformations of tongue, mouth and pharynx"
+Q40,Other congenital malformations of upper alimentary tract
+Q41,"Congenital absence, atresia and stenosis of small intestine"
+Q418,"Congenital absence, atresia and stenosis of other specified parts of small intestine"
+Q42,"Congenital absence, atresia and stenosis of large intestine"
+Q44,"Congenital malformations of gallbladder, bile ducts and liver"
+Q50,"Congenital malformations of ovaries, fallopian tubes and broad ligaments"
+Q52,Other congenital malformations of female genitalia
+Q52121,"Longitudinal vaginal septum, obstructing, right side"
+Q52122,"Longitudinal vaginal septum, obstructing, left side"
+Q52123,"Longitudinal vaginal septum, microperforate, right side"
+Q52124,"Longitudinal vaginal septum, microperforate, left side"
+Q60,Renal agenesis and other reduction defects of kidney
+Q62,Congenital obstructive defects of renal pelvis and congenital malformations of ureter
+Q67,"Congenital musculoskeletal deformities of head, face, spine and chest"
+Q7141,Longitudinal reduction defect of right radius
+Q7142,Longitudinal reduction defect of left radius
+Q7191,Unspecified reduction defect of right upper limb
+Q7192,Unspecified reduction defect of left upper limb
+Q7241,Longitudinal reduction defect of right femur
+Q7243,"Longitudinal reduction defect of femur, bilateral"
+Q7251,Longitudinal reduction defect of right tibia
+Q7252,Longitudinal reduction defect of left tibia
+Q7261,Longitudinal reduction defect of right fibula
+Q72891,Other reduction defects of right lower limb
+Q72892,Other reduction defects of left lower limb
+Q7291,Unspecified reduction defect of right lower limb
+Q7292,Unspecified reduction defect of left lower limb
+Q75,Other congenital malformations of skull and face bones
+Q76,Congenital malformations of spine and bony thorax
+Q76428,"Congenital lordosis, sacral and sacrococcygeal region"
+Q77,Osteochondrodysplasia with defects of growth of tubular bones and spine
+Q79,"Congenital malformations of musculoskeletal system, not elsewhere classified"
+Q86,"Congenital malformation syndromes due to known exogenous causes, not elsewhere classified"
+Q87,Other specified congenital malformation syndromes affecting multiple systems
+Q89,"Other congenital malformations, not elsewhere classified"
+Q91,Trisomy 18 and Trisomy 13
+Q92,"Other trisomies and partial trisomies of the autosomes, not elsewhere classified"
+Q9262,Marker chromosomes in abnormal individual
+Q93,"Monosomies and deletions from the autosomes, not elsewhere classified"
+Q95,"Balanced rearrangements and structural markers, not elsewhere classified"
+Q958,Other balanced rearrangements and structural markers
+Q97,"Other sex chromosome abnormalities, female phenotype, not elsewhere classified"
+Q98,"Other sex chromosome abnormalities, male phenotype, not elsewhere classified"
+Q99,"Other chromosome abnormalities, not elsewhere classified"
+Z3760,"Multiple births, unspecified, some liveborn"
+Z3769,"Other multiple births, some liveborn"
+

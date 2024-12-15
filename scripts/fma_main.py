@@ -27,21 +27,21 @@ def explore_fma():
         cursor.execute(query)
         self.driver.commit()
 
-    csv_file_name = "../data/FMA.csv"
-    with open(csv_file_name, newline='', encoding='utf-8') as csv_file:
-		reader = csv.reader(csv_file, delimiter=',')
-		col_str = ""
-		for i, row in enumerate(reader):
-			if i == 0:
-				cols = ['{}'.format(x.replace(" ", "_").replace("-", "_").replace('partition', 'partition_0').replace('union', 'union_0')) for x in row]
-				col_str = "({})".format(', '.join(cols))
-				create_fma_table(row)
-			if i > 0:
-				# print(i)
-				# Insert values
-				mysql_db.insert_fma_record(col_str, row)
-			if i >= 20:
-				break
+    # csv_file_name = "../data/FMA.csv"
+    # with open(csv_file_name, newline='', encoding='utf-8') as csv_file:
+	# 	reader = csv.reader(csv_file, delimiter=',')
+	# 	col_str = ""
+	# 	for i, row in enumerate(reader):
+	# 		if i == 0:
+	# 			cols = ['{}'.format(x.replace(" ", "_").replace("-", "_").replace('partition', 'partition_0').replace('union', 'union_0')) for x in row]
+	# 			col_str = "({})".format(', '.join(cols))
+	# 			create_fma_table(row)
+	# 		if i > 0:
+	# 			# print(i)
+	# 			# Insert values
+	# 			mysql_db.insert_fma_record(col_str, row)
+	# 		if i >= 20:
+	# 			break
 
 
 if __name__ == '__main__':

@@ -1,0 +1,95 @@
+R-HSA-9033949.1,FUT1 transfers Fuc to Type 2 chains to form H antigen-RBC,Homo sapiens,P19526,UniProt:P19526 FUT1
+R-HSA-981497.2,ST3GAL1-4 transfers sialic acid to the T antigen at the alpha 3 position,Homo sapiens,Q11206,UniProt:Q11206 ST3GAL4
+R-HSA-9605600.1,"ST3GAL3,4,6 transfer Neu5Ac to Type 2 chain to form Type 2 MSGG",Homo sapiens,Q11206,UniProt:Q11206 ST3GAL4
+R-HSA-2046285.1,The keratan chain can be capped by N-acetylneuraminic acid,Homo sapiens,Q11206,UniProt:Q11206 ST3GAL4
+R-HSA-1022129.1,ST3GAL4 transfers Neu5Ac to terminal Gal of N-glycans,Homo sapiens,Q11206,UniProt:Q11206 ST3GAL4
+R-HSA-4084984.1,"ST3GAL1-6 transfer Neu5Ac to terminal Gal (alpha-2,3 link)",Homo sapiens,Q11206,UniProt:Q11206 ST3GAL4
+R-HSA-9683769.3,O-glycosylation of 3a is terminated,Homo sapiens,Q11206,UniProt:Q11206 ST3GAL4
+R-HSA-9694718.2,O-glycosylation of 3a is terminated,Homo sapiens,Q11206,UniProt:Q11206 ST3GAL4
+R-HSA-1912378.1,Sialylation of Pre-NOTCH,Homo sapiens,Q11206,UniProt:Q11206 ST3GAL4
+R-HSA-975926.1,Addition of a bifurcating GlcNAc to the N-glycan by MGAT3,Homo sapiens,Q09327,UniProt:Q09327 MGAT3
+R-HSA-977071.2,ST6GAL1 transfers sialic acid to Tn antigens to form sTn antigens,Homo sapiens,P15907,UniProt:P15907 ST6GAL1
+R-HSA-975902.1,ST6GAL1 transfers Neu5Ac to terminal Gal of N-glycans,Homo sapiens,P15907,UniProt:P15907 ST6GAL1
+R-HSA-4085033.1,"ST6GAL1,2 transfer Neu5Ac to terminal Gal (alpha-2,6 link)",Homo sapiens,P15907,UniProt:P15907 ST6GAL1
+R-HSA-9683769.3,O-glycosylation of 3a is terminated,Homo sapiens,P15907,UniProt:P15907 ST6GAL1
+R-HSA-9694718.2,O-glycosylation of 3a is terminated,Homo sapiens,P15907,UniProt:P15907 ST6GAL1
+R-HSA-9603984.1,"FUT4,5,9,(10,11) transfer Fuc to Type 2 chains to form LeX",Homo sapiens,P22083,UniProt:P22083 FUT4
+R-HSA-9605600.1,"ST3GAL3,4,6 transfer Neu5Ac to Type 2 chain to form Type 2 MSGG",Homo sapiens,Q9Y274,UniProt:Q9Y274 ST3GAL6
+R-HSA-2046285.1,The keratan chain can be capped by N-acetylneuraminic acid,Homo sapiens,Q9Y274,UniProt:Q9Y274 ST3GAL6
+R-HSA-4084984.1,"ST3GAL1-6 transfer Neu5Ac to terminal Gal (alpha-2,3 link)",Homo sapiens,Q9Y274,UniProt:Q9Y274 ST3GAL6
+R-HSA-1912378.1,Sialylation of Pre-NOTCH,Homo sapiens,Q9Y274,UniProt:Q9Y274 ST3GAL6
+R-HSA-975903.1,Addition of GlcNAc to position 4 by N-acetylglucosaminyltransferase (GnT)-IV,Homo sapiens,Q9UQ53,UniProt:Q9UQ53 MGAT4B
+R-HSA-9033961.1,ABO-B:Mn2+ transfers Gal to H antigen-RBC to form B antigen-RBC,Homo sapiens,P16442,UniProt:P16442 ABO
+R-HSA-9034042.1,sABO-A:Mn2+ transfers GalNAc to H antigen-sec to form A antigen-sec,Homo sapiens,P16442,UniProt:P16442 ABO
+R-HSA-9034053.1,sABO-B:Mn2+ transfers Gal to H antigen-sec to form B antigen,Homo sapiens,P16442,UniProt:P16442 ABO
+R-HSA-9033959.1,ABO-A:Mn2+ transfers GalNAc to H antigen-RBC to form A antigen-RBC,Homo sapiens,P16442,UniProt:P16442 ABO
+R-HSA-446216.3,ALG9 transfers Man to N-glycan precursor (GlcNAc)2 (Man)8 (PP-Dol)1,Homo sapiens,Q9H6U8,UniProt:Q9H6U8 ALG9
+R-HSA-446215.3,ALG9 transfers Man to N-glycan precursor (GlcNAc)2 (Man)6 (PP-Dol)1,Homo sapiens,Q9H6U8,UniProt:Q9H6U8 ALG9
+R-HSA-1028788.2,FUT8 transfers fucosyl group from GDP-Fuc to GlcNAc of NGP,Homo sapiens,Q9BYC5,UniProt:Q9BYC5 FUT8
+R-HSA-4085033.1,"ST6GAL1,2 transfer Neu5Ac to terminal Gal (alpha-2,6 link)",Homo sapiens,Q96JF0,UniProt:Q96JF0 ST6GAL2
+R-HSA-9605700.1,B4GALNT2 transfers GalNAc to Type 2 MSGG to form Sda,Homo sapiens,Q8NHY0,UniProt:Q8NHY0 B4GALNT2
+R-HSA-8855954.2,B4GALNT2 transfers GalNAc from UDP-GalNAc to Sial-Gal-GlcNAc-Gal to form the Sd(a) antigen on UMOD,Homo sapiens,Q8NHY0,UniProt:Q8NHY0 B4GALNT2
+R-HSA-8856223.2,B4GALNT1 dimer transfers GalNAc from UDP-GalNAc to GM3 and GD3 gangliosides,Homo sapiens,Q00973,UniProt:Q00973 B4GALNT1
+R-HSA-446198.3,ALG12 transfers Man to N-glycan precursor (GlcNAc)2 (Man)7 (PP-Dol)1,Homo sapiens,Q9BV10,UniProt:Q9BV10 ALG12
+R-HSA-446188.3,ALG3 transfers Man to N-glycan precursor (GlcNAc)2 (Man)5 (PP-Dol)1,Homo sapiens,Q92685,UniProt:Q92685 ALG3
+R-HSA-9603984.1,"FUT4,5,9,(10,11) transfer Fuc to Type 2 chains to form LeX",Homo sapiens,Q11128,UniProt:Q11128 FUT5
+R-HSA-9605682.1,"FUT3,5,6,7 transfers Fuc to Type 2 MSGG to form sLeX",Homo sapiens,Q11128,UniProt:Q11128 FUT5
+R-HSA-446187.1,ALG11 transfers the fourth and fifth Man to the N-glycan precursor,Homo sapiens,Q2TAA5,UniProt:Q2TAA5 ALG11
+R-HSA-975829.2,"Addition of a GlcNAc on the alpha 1,4 branch by MGAT2",Homo sapiens,Q10469,UniProt:Q10469 MGAT2
+R-HSA-446218.1,Addition of the first mannose to the N-glycan precursor by ALG1,Homo sapiens,Q9BT22,UniProt:Q9BT22 ALG1
+R-HSA-981497.2,ST3GAL1-4 transfers sialic acid to the T antigen at the alpha 3 position,Homo sapiens,Q11203,UniProt:Q11203 ST3GAL3
+R-HSA-9603987.1,ST3GAL3 transfers Neu5Ac to Type 1 chain to form Type 1 MSGG,Homo sapiens,Q11203,UniProt:Q11203 ST3GAL3
+R-HSA-9605600.1,"ST3GAL3,4,6 transfer Neu5Ac to Type 2 chain to form Type 2 MSGG",Homo sapiens,Q11203,UniProt:Q11203 ST3GAL3
+R-HSA-2046285.1,The keratan chain can be capped by N-acetylneuraminic acid,Homo sapiens,Q11203,UniProt:Q11203 ST3GAL3
+R-HSA-4084984.1,"ST3GAL1-6 transfer Neu5Ac to terminal Gal (alpha-2,3 link)",Homo sapiens,Q11203,UniProt:Q11203 ST3GAL3
+R-HSA-9683769.3,O-glycosylation of 3a is terminated,Homo sapiens,Q11203,UniProt:Q11203 ST3GAL3
+R-HSA-9694718.2,O-glycosylation of 3a is terminated,Homo sapiens,Q11203,UniProt:Q11203 ST3GAL3
+R-HSA-1912378.1,Sialylation of Pre-NOTCH,Homo sapiens,Q11203,UniProt:Q11203 ST3GAL3
+R-HSA-446207.1,ALG13:ALG14 transfers GlcNAc from UDP-GlcNAc to GlcNAcDOLP,Homo sapiens,Q96F25,UniProt:Q96F25 ALG14
+R-HSA-914010.1,Addition of GlcNAc to the Tn antigen forms a Core 3 glycoprotein,Homo sapiens,Q7Z7M8,UniProt:Q7Z7M8 B3GNT8
+R-HSA-9605644.1,FUT3 transfers Fuc to Type 1 DSGG to form dsLeA,Homo sapiens,P21217,UniProt:P21217 FUT3
+R-HSA-9605609.1,FUT3 transfers Fuc to Type 1 MSGG to form sLeA,Homo sapiens,P21217,UniProt:P21217 FUT3
+R-HSA-9605682.1,"FUT3,5,6,7 transfers Fuc to Type 2 MSGG to form sLeX",Homo sapiens,P21217,UniProt:P21217 FUT3
+R-HSA-9603986.1,FUT3 transfers Fuc to Type 1 chains to form LeA,Homo sapiens,P21217,UniProt:P21217 FUT3
+R-HSA-5693925.1,"FUT3 transfers L-fucose to Gal1,3GlcNAc",Homo sapiens,P21217,UniProt:P21217 FUT3
+R-HSA-914010.1,Addition of GlcNAc to the Tn antigen forms a Core 3 glycoprotein,Homo sapiens,Q9NY97,UniProt:Q9NY97 B3GNT2
+R-HSA-2025724.2,"B3GNT1,2,3,4,7 add GlcNAc to form Keratan-PG",Homo sapiens,Q9NY97,UniProt:Q9NY97 B3GNT2
+R-HSA-9605682.1,"FUT3,5,6,7 transfers Fuc to Type 2 MSGG to form sLeX",Homo sapiens,P51993,UniProt:P51993 FUT6
+R-HSA-2025723.2,B4GALTs transfer Gal to the N-glycan precursor,Homo sapiens,O60909,UniProt:O60909 B4GALT2
+R-HSA-2046265.2,B4GALTs transfer Gal to the keratan chain,Homo sapiens,O60909,UniProt:O60909 B4GALT2
+R-HSA-2046298.3,B4GALTs transfer Gal to a branch of keratan,Homo sapiens,O60909,UniProt:O60909 B4GALT2
+R-HSA-975919.2,Addition of galactose by beta 4-galactosyltransferases,Homo sapiens,O60909,UniProt:O60909 B4GALT2
+R-HSA-9603983.1,FUT2 transfers Fuc to LeX to form LeY,Homo sapiens,Q10981,UniProt:Q10981 FUT2
+R-HSA-9036987.1,FUT2 transfers Fuc to Type 1 chains to form H antigen-sec,Homo sapiens,Q10981,UniProt:Q10981 FUT2
+R-HSA-9603982.1,FUT2 transfers Fuc to LeA to form LeB,Homo sapiens,Q10981,UniProt:Q10981 FUT2
+R-HSA-446191.1,Addition of N-acetyl-D-glucosamine to Dolichyl phosphate,Homo sapiens,Q9H3H5,UniProt:Q9H3H5 DPAGT1
+R-HSA-446208.1,Addition of a second mannose to the N-glycan precursor by ALG2,Homo sapiens,Q9H553,UniProt:Q9H553 ALG2
+R-HSA-449718.1,Addition of a third mannose to the N-glycan precursor by ALG2,Homo sapiens,Q9H553,UniProt:Q9H553 ALG2
+R-HSA-975916.1,Addition of GlcNAc to position 5 by MGAT5,Homo sapiens,Q09328,UniProt:Q09328 MGAT5
+R-HSA-964768.1,Addition of GlcNAc to the glycan on the A arm,Homo sapiens,P26572,UniProt:P26572 MGAT1
+R-HSA-9603984.1,"FUT4,5,9,(10,11) transfer Fuc to Type 2 chains to form LeX",Homo sapiens,Q9Y231,UniProt:Q9Y231 FUT9
+R-HSA-5653886.4,B4GALT1 binds LALBA,Homo sapiens,P15291,UniProt:P15291 B4GALT1
+R-HSA-5653878.3,B4GALT1:LALBA transfers Gal from UDP-Gal to Glc to form Lac,Homo sapiens,P15291,UniProt:P15291 B4GALT1
+R-HSA-5653878.3,B4GALT1:LALBA transfers Gal from UDP-Gal to Glc to form Lac,Homo sapiens,P15291,UniProt:P15291 B4GALT1
+R-HSA-2025723.2,B4GALTs transfer Gal to the N-glycan precursor,Homo sapiens,P15291,UniProt:P15291 B4GALT1
+R-HSA-2046265.2,B4GALTs transfer Gal to the keratan chain,Homo sapiens,P15291,UniProt:P15291 B4GALT1
+R-HSA-2046298.3,B4GALTs transfer Gal to a branch of keratan,Homo sapiens,P15291,UniProt:P15291 B4GALT1
+R-HSA-975919.2,Addition of galactose by beta 4-galactosyltransferases,Homo sapiens,P15291,UniProt:P15291 B4GALT1
+R-HSA-1912352.1,Galactosylation of Pre-NOTCH,Homo sapiens,P15291,UniProt:P15291 B4GALT1
+R-HSA-6798739.1,Exocytosis of azurophil granule membrane proteins,Homo sapiens,P15291,UniProt:P15291 B4GALT1
+R-HSA-1297338.2,Association of ADAM and B4GALT1 With ZP3,Homo sapiens,P15291,UniProt:P15291 B4GALT1
+R-HSA-6798743.1,Exocytosis of secretory granule membrane proteins,Homo sapiens,P15291,UniProt:P15291 B4GALT1
+R-HSA-6798739.1,Exocytosis of azurophil granule membrane proteins,Homo sapiens,P15291,UniProt:P15291 B4GALT1
+R-HSA-6798743.1,Exocytosis of secretory granule membrane proteins,Homo sapiens,P15291,UniProt:P15291 B4GALT1
+R-HSA-914010.1,Addition of GlcNAc to the Tn antigen forms a Core 3 glycoprotein,Homo sapiens,Q9C0J1,UniProt:Q9C0J1 B3GNT4
+R-HSA-2025724.2,"B3GNT1,2,3,4,7 add GlcNAc to form Keratan-PG",Homo sapiens,Q9C0J1,UniProt:Q9C0J1 B3GNT4
+R-HSA-975903.1,Addition of GlcNAc to position 4 by N-acetylglucosaminyltransferase (GnT)-IV,Homo sapiens,Q9UM21,UniProt:Q9UM21 MGAT4A
+R-HSA-8952289.2,FAM20C phosphorylates FAM20C substrates,Homo sapiens,Q9UM21,UniProt:Q9UM21 MGAT4A
+R-HSA-8952289.2,FAM20C phosphorylates FAM20C substrates,Homo sapiens,Q9UM21,UniProt:Q9UM21 MGAT4A
+R-HSA-8952289.2,FAM20C phosphorylates FAM20C substrates,Homo sapiens,Q9UM21,UniProt:Q9UM21 MGAT4A
+R-HSA-446207.1,ALG13:ALG14 transfers GlcNAc from UDP-GlcNAc to GlcNAcDOLP,Homo sapiens,Q9NP73,UniProt:Q9NP73 ALG13
+R-HSA-2025723.2,B4GALTs transfer Gal to the N-glycan precursor,Homo sapiens,O60512,UniProt:O60512 B4GALT3
+R-HSA-2046265.2,B4GALTs transfer Gal to the keratan chain,Homo sapiens,O60512,UniProt:O60512 B4GALT3
+R-HSA-2046298.3,B4GALTs transfer Gal to a branch of keratan,Homo sapiens,O60512,UniProt:O60512 B4GALT3
+R-HSA-975919.2,Addition of galactose by beta 4-galactosyltransferases,Homo sapiens,O60512,UniProt:O60512 B4GALT3
+R-HSA-975903.1,Addition of GlcNAc to position 4 by N-acetylglucosaminyltransferase (GnT)-IV,Homo sapiens,Q9UBM8,UniProt:Q9UBM8 MGAT4C

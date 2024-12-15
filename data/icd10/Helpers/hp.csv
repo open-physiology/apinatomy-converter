@@ -1,0 +1,39 @@
+val,id,lbl
+R40.2,http://purl.obolibrary.org/obo/HP_0001259,Coma
+Q21.1,http://purl.obolibrary.org/obo/HP_0001631,Atrial septal defect
+Q21.3,http://purl.obolibrary.org/obo/HP_0001636,Tetralogy of Fallot
+Q24.0,http://purl.obolibrary.org/obo/HP_0001651,Dextrocardia
+Q21.1,http://purl.obolibrary.org/obo/HP_0001655,Patent foramen ovale
+Q20.0,http://purl.obolibrary.org/obo/HP_0001660,Truncus arteriosus
+Q21.1,http://purl.obolibrary.org/obo/HP_0001684,Secundum atrial septal defect
+Q23.2,http://purl.obolibrary.org/obo/HP_0001718,Mitral stenosis
+D35.1,http://purl.obolibrary.org/obo/HP_0002897,Parathyroid adenoma
+M91.1,http://purl.obolibrary.org/obo/HP_0005743,Avascular necrosis of the capital femoral epiphysis
+Q22.5,http://purl.obolibrary.org/obo/HP_0010316,Ebstein anomaly of the tricuspid valve
+Q22.4,http://purl.obolibrary.org/obo/HP_0010446,Tricuspid stenosis
+Q24.2,http://purl.obolibrary.org/obo/HP_0010774,Cor triatriatum
+Q20.6,http://purl.obolibrary.org/obo/HP_0011537,Left atrial isomerism
+Q89.3,http://purl.obolibrary.org/obo/HP_0011538,Atrial situs inversus
+Q20.5,http://purl.obolibrary.org/obo/HP_0011540,Congenitally corrected transposition of the great arteries
+Q20.4,http://purl.obolibrary.org/obo/HP_0011554,Double inlet atrioventricular connection
+Q20.4,http://purl.obolibrary.org/obo/HP_0011555,Double inlet left ventricle
+Q20.4,http://purl.obolibrary.org/obo/HP_0011556,Double inlet right ventricle
+Q23.2,http://purl.obolibrary.org/obo/HP_0011560,Mitral atresia
+Q21.2,http://purl.obolibrary.org/obo/HP_0011565,Common atrium
+Q21.1,http://purl.obolibrary.org/obo/HP_0011567,Sinus venosus atrial septal defect
+Q20.2,http://purl.obolibrary.org/obo/HP_0011581,Double outlet left ventricle
+Q26.8,http://purl.obolibrary.org/obo/HP_0011626,Scimitar anomaly
+Q21.1,http://purl.obolibrary.org/obo/HP_0011643,Coronary sinus atrial septal defect
+Q22.4,http://purl.obolibrary.org/obo/HP_0011662,Tricuspid atresia
+Q26.1,http://purl.obolibrary.org/obo/HP_0011670,Left superior vena cava draining to coronary sinus
+26.8,http://purl.obolibrary.org/obo/HP_0011671,Interrupted inferior vena cava with azygous continuation
+L94.3,http://purl.obolibrary.org/obo/HP_0011838,Sclerodactyly
+F60,http://purl.obolibrary.org/obo/HP_0012075,Personality disorder
+F60.3,http://purl.obolibrary.org/obo/HP_0012076,Borderline personality disorder
+F60.4,http://purl.obolibrary.org/obo/HP_0012077,Histrionic personality disorder
+F63.3,http://purl.obolibrary.org/obo/HP_0012166,Skin-picking
+F98.8,http://purl.obolibrary.org/obo/HP_0012170,Nail-biting
+G44.0,http://purl.obolibrary.org/obo/HP_0012199,Cluster headache
+G44.2,http://purl.obolibrary.org/obo/HP_0012228,Tension-type headache
+Q62.5,http://purl.obolibrary.org/obo/HP_0012571,Ureter fissus
+Q62.5,http://purl.obolibrary.org/obo/HP_0012572,Ureter duplex

@@ -1,0 +1,193 @@
+icd10_id,icd10_lbl
+A50,Congenital syphilis
+A5003,Early congenital syphilitic pharyngitis
+A5004,Early congenital syphilitic pneumonia
+A5032,Late congenital syphilitic chorioretinitis
+A5039,Other late congenital syphilitic oculopathy
+D82,Immunodeficiency associated with other major defects
+E25,Adrenogenital disorders
+E34,Other endocrine disorders
+E78,Disorders of lipoprotein metabolism and other lipidemias
+G12,Spinal muscular atrophy and related syndromes
+G60,Hereditary and idiopathic neuropathy
+G71,Primary disorders of muscles
+G7122,Centronuclear myopathy
+G80,Cerebral palsy
+K40,Inguinal hernia
+K41,Femoral hernia
+L05,Pilonidal cyst and sinus
+L81,Other disorders of pigmentation
+M26,Dentofacial anomalies [including malocclusion]
+M260,Major anomalies of jaw size
+M261,Anomalies of jaw-cranial base relationship
+P02,"Newborn affected by complications of placenta, cord and membranes"
+P35,Congenital viral diseases
+P37,Other congenital infectious and parasitic diseases
+P96,Other conditions originating in the perinatal period
+Q00,Anencephaly and similar malformations
+Q01,Encephalocele
+Q03,Congenital hydrocephalus
+Q04,Other congenital malformations of brain
+Q05,Spina bifida
+Q06,Other congenital malformations of spinal cord
+Q07,Other congenital malformations of nervous system
+Q0703,Arnold-Chiari syndrome with spina bifida and hydrocephalus
+Q10,"Congenital malformations of eyelid, lacrimal apparatus and orbit"
+Q11,"Anophthalmos, microphthalmos and macrophthalmos"
+Q12,Congenital lens malformations
+Q13,Congenital malformations of anterior segment of eye
+Q14,Congenital malformations of posterior segment of eye
+Q15,Other congenital malformations of eye
+Q16,Congenital malformations of ear causing impairment of hearing
+Q17,Other congenital malformations of ear
+Q18,Other congenital malformations of face and neck
+Q20,Congenital malformations of cardiac chambers and connections
+Q21,Congenital malformations of cardiac septa
+Q22,Congenital malformations of pulmonary and tricuspid valves
+Q23,Congenital malformations of aortic and mitral valves
+Q24,Other congenital malformations of heart
+Q25,Congenital malformations of great arteries
+Q259,"Congenital malformation of great arteries, unspecified"
+Q26,Congenital malformations of great veins
+Q27,Other congenital malformations of peripheral vascular system
+Q28,Other congenital malformations of circulatory system
+Q30,Congenital malformations of nose
+Q31,Congenital malformations of larynx
+Q32,Congenital malformations of trachea and bronchus
+Q33,Congenital malformations of lung
+Q34,Other congenital malformations of respiratory system
+Q35,Cleft palate
+Q36,Cleft lip
+Q37,Cleft palate with cleft lip
+Q38,"Other congenital malformations of tongue, mouth and pharynx"
+Q39,Congenital malformations of esophagus
+Q40,Other congenital malformations of upper alimentary tract
+Q41,"Congenital absence, atresia and stenosis of small intestine"
+Q418,"Congenital absence, atresia and stenosis of other specified parts of small intestine"
+Q42,"Congenital absence, atresia and stenosis of large intestine"
+Q43,Other congenital malformations of intestine
+Q44,"Congenital malformations of gallbladder, bile ducts and liver"
+Q45,Other congenital malformations of digestive system
+Q50,"Congenital malformations of ovaries, fallopian tubes and broad ligaments"
+Q51,Congenital malformations of uterus and cervix
+Q5122,Partial doubling of uterus
+Q5181,Other congenital malformations of uterus
+Q5182,Other congenital malformations of cervix
+Q52,Other congenital malformations of female genitalia
+Q5212,Longitudinal vaginal septum
+Q52120,"Longitudinal vaginal septum, nonobstructing"
+Q52121,"Longitudinal vaginal septum, obstructing, right side"
+Q52122,"Longitudinal vaginal septum, obstructing, left side"
+Q52123,"Longitudinal vaginal septum, microperforate, right side"
+Q52124,"Longitudinal vaginal septum, microperforate, left side"
+Q53,Undescended and ectopic testicle
+Q5301,"Ectopic testis, unilateral"
+Q5302,"Ectopic testes, bilateral"
+Q5311,"Abdominal testis, unilateral"
+Q53111,Unilateral intraabdominal testis
+Q53112,Unilateral inguinal testis
+Q5312,"Ectopic perineal testis, unilateral"
+Q5313,Unilateral high scrotal testis
+Q5321,"Abdominal testis, bilateral"
+Q53212,Bilateral inguinal testes
+Q5322,"Ectopic perineal testis, bilateral"
+Q5323,Bilateral high scrotal testes
+Q54,Hypospadias
+Q55,Other congenital malformations of male genital organs
+Q557,Congenital vasocutaneous fistula
+Q56,Indeterminate sex and pseudohermaphroditism
+Q60,Renal agenesis and other reduction defects of kidney
+Q601,"Renal agenesis, bilateral"
+Q61,Cystic kidney disease
+Q6111,Cystic dilatation of collecting ducts
+Q62,Congenital obstructive defects of renal pelvis and congenital malformations of ureter
+Q6260,"Malposition of ureter, unspecified"
+Q6262,Displacement of ureter
+Q6269,Other malposition of ureter
+Q63,Other congenital malformations of kidney
+Q64,Other congenital malformations of urinary system
+Q65,Congenital deformities of hip
+Q66,Congenital deformities of feet
+Q67,"Congenital musculoskeletal deformities of head, face, spine and chest"
+Q671,Congenital compression facies
+Q68,Other congenital musculoskeletal deformities
+Q69,Polydactyly
+Q70,Syndactyly
+Q7001,"Fused fingers, right hand"
+Q7002,"Fused fingers, left hand"
+Q7011,"Webbed fingers, right hand"
+Q7012,"Webbed fingers, left hand"
+Q7013,"Webbed fingers, bilateral"
+Q7021,"Fused toes, right foot"
+Q7022,"Fused toes, left foot"
+Q71,Reduction defects of upper limb
+Q7111,Congenital absence of right upper arm and forearm with hand present
+Q7112,Congenital absence of left upper arm and forearm with hand present
+Q7141,Longitudinal reduction defect of right radius
+Q7142,Longitudinal reduction defect of left radius
+Q7181,Congenital shortening of upper limb
+Q71811,Congenital shortening of right upper limb
+Q71812,Congenital shortening of left upper limb
+Q71813,"Congenital shortening of upper limb, bilateral"
+Q7189,Other reduction defects of upper limb
+Q71893,"Other reduction defects of upper limb, bilateral"
+Q7191,Unspecified reduction defect of right upper limb
+Q7192,Unspecified reduction defect of left upper limb
+Q7193,"Unspecified reduction defect of upper limb, bilateral"
+Q72,Reduction defects of lower limb
+Q7211,Congenital absence of right thigh and lower leg with foot present
+Q7212,Congenital absence of left thigh and lower leg with foot present
+Q7241,Longitudinal reduction defect of right femur
+Q7243,"Longitudinal reduction defect of femur, bilateral"
+Q7251,Longitudinal reduction defect of right tibia
+Q7252,Longitudinal reduction defect of left tibia
+Q7261,Longitudinal reduction defect of right fibula
+Q7281,Congenital shortening of lower limb
+Q72811,Congenital shortening of right lower limb
+Q72812,Congenital shortening of left lower limb
+Q72813,"Congenital shortening of lower limb, bilateral"
+Q7289,Other reduction defects of lower limb
+Q72891,Other reduction defects of right lower limb
+Q72892,Other reduction defects of left lower limb
+Q7291,Unspecified reduction defect of right lower limb
+Q7292,Unspecified reduction defect of left lower limb
+Q7293,"Unspecified reduction defect of lower limb, bilateral"
+Q73,Reduction defects of unspecified limb
+Q74,Other congenital malformations of limb(s)
+Q75,Other congenital malformations of skull and face bones
+Q76,Congenital malformations of spine and bony thorax
+Q7641,Congenital kyphosis
+Q76411,"Congenital kyphosis, occipito-atlanto-axial region"
+Q76415,"Congenital kyphosis, thoracolumbar region"
+Q7642,Congenital lordosis
+Q76427,"Congenital lordosis, lumbosacral region"
+Q76428,"Congenital lordosis, sacral and sacrococcygeal region"
+Q77,Osteochondrodysplasia with defects of growth of tubular bones and spine
+Q78,Other osteochondrodysplasias
+Q79,"Congenital malformations of musculoskeletal system, not elsewhere classified"
+Q80,Congenital ichthyosis
+Q81,Epidermolysis bullosa
+Q82,Other congenital malformations of skin
+Q83,Congenital malformations of breast
+Q84,Other congenital malformations of integument
+Q85,"Phakomatoses, not elsewhere classified"
+Q86,"Congenital malformation syndromes due to known exogenous causes, not elsewhere classified"
+Q87,Other specified congenital malformation syndromes affecting multiple systems
+Q8741,Marfan syndrome with cardiovascular manifestations
+Q89,"Other congenital malformations, not elsewhere classified"
+Q90,Down syndrome
+Q91,Trisomy 18 and Trisomy 13
+Q92,"Other trisomies and partial trisomies of the autosomes, not elsewhere classified"
+Q9262,Marker chromosomes in abnormal individual
+Q93,"Monosomies and deletions from the autosomes, not elsewhere classified"
+Q95,"Balanced rearrangements and structural markers, not elsewhere classified"
+Q958,Other balanced rearrangements and structural markers
+Q96,Turner's syndrome
+Q960,"Karyotype 45, X"
+Q97,"Other sex chromosome abnormalities, female phenotype, not elsewhere classified"
+Q98,"Other sex chromosome abnormalities, male phenotype, not elsewhere classified"
+Q99,"Other chromosome abnormalities, not elsewhere classified"
+R3983,Unilateral non-palpable testicle
+R3984,Bilateral non-palpable testicles
+Z3760,"Multiple births, unspecified, some liveborn"
+Z3769,"Other multiple births, some liveborn"

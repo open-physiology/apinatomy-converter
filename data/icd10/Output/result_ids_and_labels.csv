@@ -1,0 +1,210 @@
+icd10_id,icd10_lbl,mondo_id,mondo_lbl,hb_id,hb_lbl
+A925,Zika virus disease,http://purl.obolibrary.org/obo/MONDO_0018661,Zika virus disease,,
+E7872,Smith-Lemli-Opitz syndrome,http://purl.obolibrary.org/obo/MONDO_0010035,Smith-Lemli-Opitz syndrome,,
+G601,Refsum's disease,http://purl.obolibrary.org/obo/MONDO_0009958,Refsum's disease,,
+G710,Muscular dystrophy,http://purl.obolibrary.org/obo/HP_0003560,Muscular dystrophy,http://purl.obolibrary.org/obo/HP_0003560,Muscular dystrophy
+G71220,X-linked myotubular myopathy,http://purl.obolibrary.org/obo/MONDO_0010683,X-linked myotubular myopathy,,
+G80,Cerebral palsy,,,http://purl.obolibrary.org/obo/HP_0100021,Cerebral palsy
+K40,Inguinal hernia,http://purl.obolibrary.org/obo/HP_0000023,Inguinal hernia,http://purl.obolibrary.org/obo/HP_0000023,Inguinal hernia
+K41,Femoral hernia,,,http://purl.obolibrary.org/obo/HP_0100541,Femoral hernia
+M2601,Maxillary hyperplasia,,,http://purl.obolibrary.org/obo/HP_0430028,Maxillary hyperplasia
+M2602,Maxillary hypoplasia,,,http://purl.obolibrary.org/obo/HP_0000327,Maxillary hypoplasia
+M2603,Mandibular hyperplasia,,,http://purl.obolibrary.org/obo/HP_0000303,Mandibular hyperplasia
+M2604,Mandibular hypoplasia,,,http://purl.obolibrary.org/obo/HP_0000347,Mandibular hypoplasia
+P293,Persistent fetal circulation,,,http://purl.obolibrary.org/obo/HP_0011726,Persistent fetal circulation
+P95,Stillbirth,http://purl.obolibrary.org/obo/HP_0003826,Stillbirth,http://purl.obolibrary.org/obo/HP_0003826,Stillbirth
+Q000,Anencephaly,,,http://purl.obolibrary.org/obo/HP_0002323,Anencephaly
+Q001,Craniorachischisis,,,http://purl.obolibrary.org/obo/HP_0030770,Craniorachischisis
+Q002,Iniencephaly,,,http://purl.obolibrary.org/obo/HP_0034205,Iniencephaly
+Q01,Encephalocele,http://purl.obolibrary.org/obo/MONDO_0016057,Encephalocele,http://purl.obolibrary.org/obo/HP_0002084,Encephalocele
+Q010,Frontal encephalocele,,,http://purl.obolibrary.org/obo/HP_0007330,Frontal encephalocele
+Q011,Nasofrontal encephalocele,,,http://purl.obolibrary.org/obo/HP_0011818,Nasofrontal encephalocele
+Q012,Occipital encephalocele,,,http://purl.obolibrary.org/obo/HP_0002085,Occipital encephalocele
+Q02,Microcephaly,http://purl.obolibrary.org/obo/HP_0000252,Microcephaly,http://purl.obolibrary.org/obo/HP_0000252,Microcephaly
+Q041,Arhinencephaly,,,http://purl.obolibrary.org/obo/HP_0002139,Arhinencephaly
+Q042,Holoprosencephaly,,,http://purl.obolibrary.org/obo/HP_0001360,Holoprosencephaly
+Q045,Megalencephaly,,,http://purl.obolibrary.org/obo/HP_0001355,Megalencephaly
+Q05,Spina bifida,http://purl.obolibrary.org/obo/HP_0002414,Spina bifida,http://purl.obolibrary.org/obo/HP_0002414,Spina bifida
+Q060,Amyelia,,,http://purl.obolibrary.org/obo/HP_0100566,Amyelia
+Q064,Hydromyelia,,,http://purl.obolibrary.org/obo/HP_0100565,Hydromyelia
+Q100,Congenital ptosis,,,http://purl.obolibrary.org/obo/HP_0007970,Congenital ptosis
+Q112,Microphthalmos,,,http://purl.obolibrary.org/obo/HP_0000568,Microphthalmos
+Q120,Congenital cataract,,,http://purl.obolibrary.org/obo/HP_0000519,Congenital cataract
+Q123,Congenital aphakia,http://purl.obolibrary.org/obo/HP_0007707,Congenital aphakia,http://purl.obolibrary.org/obo/HP_0007707,Congenital aphakia
+Q124,Spherophakia,,,http://purl.obolibrary.org/obo/HP_0034375,Spherophakia
+Q130,Coloboma of iris,,,http://purl.obolibrary.org/obo/HP_0000612,Coloboma of iris
+Q135,Blue sclera,,,http://purl.obolibrary.org/obo/HP_0000592,Blue sclera
+Q1381,Rieger's anomaly,http://purl.obolibrary.org/obo/MONDO_0019187,Rieger's anomaly,,
+Q171,Macrotia,http://purl.obolibrary.org/obo/HP_0000400,Macrotia,http://purl.obolibrary.org/obo/HP_0000400,Macrotia
+Q172,Microtia,http://purl.obolibrary.org/obo/HP_0008551,Microtia,http://purl.obolibrary.org/obo/HP_0008551,Microtia
+Q175,Prominent ear,,,http://purl.obolibrary.org/obo/HP_0000411,Prominent ear
+Q184,Macrostomia,,,http://purl.obolibrary.org/obo/HP_0000154,Macrostomia
+Q185,Microstomia,,,http://purl.obolibrary.org/obo/HP_0000160,Microstomia
+Q200,Common arterial trunk,,,http://purl.obolibrary.org/obo/HP_0001660,Common arterial trunk
+Q201,Double outlet right ventricle,,,http://purl.obolibrary.org/obo/HP_0001719,Double outlet right ventricle
+Q202,Double outlet left ventricle,http://purl.obolibrary.org/obo/MONDO_0018090,Double outlet left ventricle,http://purl.obolibrary.org/obo/HP_0011581,Double outlet left ventricle
+Q205,Discordant atrioventricular connection,,,http://purl.obolibrary.org/obo/HP_0011553,Discordant atrioventricular connection
+Q210,Ventricular septal defect,http://purl.obolibrary.org/obo/HP_0001629,Ventricular septal defect,http://purl.obolibrary.org/obo/HP_0001629,Ventricular septal defect
+Q211,Atrial septal defect,http://purl.obolibrary.org/obo/HP_0001631,Atrial septal defect,http://purl.obolibrary.org/obo/HP_0001631,Atrial septal defect
+Q212,Atrioventricular septal defect,,,http://purl.obolibrary.org/obo/HP_0006695,Atrioventricular septal defect
+Q213,Tetralogy of Fallot,,,http://purl.obolibrary.org/obo/HP_0001636,Tetralogy of Fallot
+Q220,Pulmonary valve atresia,http://purl.obolibrary.org/obo/HP_0010882,Pulmonary valve atresia,http://purl.obolibrary.org/obo/HP_0010882,Pulmonary valve atresia
+Q225,Ebstein's anomaly,http://purl.obolibrary.org/obo/MONDO_0009144,Ebstein's anomaly,http://purl.obolibrary.org/obo/HP_0010316,Ebstein's anomaly
+Q226,Hypoplastic right heart syndrome,,,http://purl.obolibrary.org/obo/HP_0010954,Hypoplastic right heart syndrome
+Q232,Congenital mitral stenosis,,,http://purl.obolibrary.org/obo/HP_0011570,Congenital mitral stenosis
+Q240,Dextrocardia,http://purl.obolibrary.org/obo/HP_0001651,Dextrocardia,http://purl.obolibrary.org/obo/HP_0001651,Dextrocardia
+Q242,Cor triatriatum,http://purl.obolibrary.org/obo/MONDO_0015450,Cor triatriatum,http://purl.obolibrary.org/obo/HP_0010774,Cor triatriatum
+Q250,Patent ductus arteriosus,,,http://purl.obolibrary.org/obo/HP_0001643,Patent ductus arteriosus
+Q251,Coarctation of aorta,http://purl.obolibrary.org/obo/HP_0001680,Coarctation of aorta,http://purl.obolibrary.org/obo/HP_0001680,Coarctation of aorta
+Q253,Supravalvular aortic stenosis,http://purl.obolibrary.org/obo/HP_0004381,Supravalvular aortic stenosis,http://purl.obolibrary.org/obo/HP_0004381,Supravalvular aortic stenosis
+Q2545,Double aortic arch,,,http://purl.obolibrary.org/obo/HP_0011590,Double aortic arch
+Q2547,Right aortic arch,,,http://purl.obolibrary.org/obo/HP_0012020,Right aortic arch
+Q261,Persistent left superior vena cava,,,http://purl.obolibrary.org/obo/HP_0005301,Persistent left superior vena cava
+Q262,Total anomalous pulmonary venous connection,,,http://purl.obolibrary.org/obo/HP_0005160,Total anomalous pulmonary venous connection
+Q263,Partial anomalous pulmonary venous connection,,,http://purl.obolibrary.org/obo/HP_0010773,Partial anomalous pulmonary venous connection
+Q300,Choanal atresia,http://purl.obolibrary.org/obo/HP_0000453,Choanal atresia,http://purl.obolibrary.org/obo/HP_0000453,Choanal atresia
+Q312,Laryngeal hypoplasia,http://purl.obolibrary.org/obo/HP_0008749,Laryngeal hypoplasia,http://purl.obolibrary.org/obo/HP_0008749,Laryngeal hypoplasia
+Q35,Cleft palate,http://purl.obolibrary.org/obo/HP_0000175,Cleft palate,http://purl.obolibrary.org/obo/HP_0000175,Cleft palate
+Q351,Cleft hard palate,http://purl.obolibrary.org/obo/HP_0410005,Cleft hard palate,http://purl.obolibrary.org/obo/HP_0410005,Cleft hard palate
+Q353,Cleft soft palate,http://purl.obolibrary.org/obo/HP_0000185,Cleft soft palate,http://purl.obolibrary.org/obo/HP_0000185,Cleft soft palate
+Q357,Cleft uvula,,,http://purl.obolibrary.org/obo/HP_0000193,Cleft uvula
+Q36,Cleft lip,http://purl.obolibrary.org/obo/HP_0410030,Cleft lip,http://purl.obolibrary.org/obo/HP_0410030,Cleft lip
+Q381,Ankyloglossia,,,http://purl.obolibrary.org/obo/HP_0010296,Ankyloglossia
+Q382,Macroglossia,http://purl.obolibrary.org/obo/HP_0000158,Macroglossia,http://purl.obolibrary.org/obo/HP_0000158,Macroglossia
+Q394,Esophageal web,,,http://purl.obolibrary.org/obo/HP_0100594,Esophageal web
+Q431,Hirschsprung's disease,http://purl.obolibrary.org/obo/MONDO_0018309,Hirschsprung's disease,,
+Q435,Ectopic anus,http://purl.obolibrary.org/obo/HP_0004397,Ectopic anus,http://purl.obolibrary.org/obo/HP_0004397,Ectopic anus
+Q437,Persistent cloaca,,,http://purl.obolibrary.org/obo/HP_0012621,Persistent cloaca
+Q444,Choledochal cyst,,,http://purl.obolibrary.org/obo/HP_0100890,Choledochal cyst
+Q451,Annular pancreas,,,http://purl.obolibrary.org/obo/HP_0001734,Annular pancreas
+Q51820,Cervical duplication,,,http://purl.obolibrary.org/obo/HP_6000414,Cervical duplication
+Q5211,Transverse vaginal septum,,,http://purl.obolibrary.org/obo/HP_0000145,Transverse vaginal septum
+Q5212,Longitudinal vaginal septum,,,http://purl.obolibrary.org/obo/HP_0008740,Longitudinal vaginal septum
+Q523,Imperforate hymen,,,http://purl.obolibrary.org/obo/HP_0030011,Imperforate hymen
+Q530,Ectopic testis,,,http://purl.obolibrary.org/obo/HP_6000460,Ectopic testis
+Q54,Hypospadias,http://purl.obolibrary.org/obo/HP_0000047,Hypospadias,http://purl.obolibrary.org/obo/HP_0000047,Hypospadias
+Q5522,Retractile testis,,,http://purl.obolibrary.org/obo/HP_0012646,Retractile testis
+Q5562,Hypoplasia of penis,http://purl.obolibrary.org/obo/HP_0008736,Hypoplasia of penis,http://purl.obolibrary.org/obo/HP_0008736,Hypoplasia of penis
+Q606,Potter's syndrome,http://purl.obolibrary.org/obo/MONDO_0001558,Potter's syndrome,,
+Q61,Cystic kidney disease,,,http://purl.obolibrary.org/obo/HP_0000107,Cystic kidney disease
+Q614,Renal dysplasia,http://purl.obolibrary.org/obo/HP_0000110,Renal dysplasia,http://purl.obolibrary.org/obo/HP_0000110,Renal dysplasia
+Q622,Congenital megaureter,,,http://purl.obolibrary.org/obo/HP_0008676,Congenital megaureter
+Q632,Ectopic kidney,http://purl.obolibrary.org/obo/HP_0000086,Ectopic kidney,http://purl.obolibrary.org/obo/HP_0000086,Ectopic kidney
+Q640,Epispadias,,,http://purl.obolibrary.org/obo/HP_0000039,Epispadias
+Q664,Congenital talipes calcaneovalgus,,,http://purl.obolibrary.org/obo/HP_0005850,Congenital talipes calcaneovalgus
+Q672,Dolichocephaly,,,http://purl.obolibrary.org/obo/HP_0000268,Dolichocephaly
+Q673,Plagiocephaly,,,http://purl.obolibrary.org/obo/HP_0001357,Plagiocephaly
+Q676,Pectus excavatum,http://purl.obolibrary.org/obo/HP_0000767,Pectus excavatum,http://purl.obolibrary.org/obo/HP_0000767,Pectus excavatum
+Q677,Pectus carinatum,http://purl.obolibrary.org/obo/HP_0000768,Pectus carinatum,http://purl.obolibrary.org/obo/HP_0000768,Pectus carinatum
+Q69,Polydactyly,http://purl.obolibrary.org/obo/HP_0010442,Polydactyly,http://purl.obolibrary.org/obo/HP_0010442,Polydactyly
+Q70,Syndactyly,http://purl.obolibrary.org/obo/HP_0001159,Syndactyly,http://purl.obolibrary.org/obo/HP_0001159,Syndactyly
+Q701,Webbed fingers,,,http://purl.obolibrary.org/obo/HP_0010554,Webbed fingers
+Q702,Fused toes,,,http://purl.obolibrary.org/obo/HP_0001770,Fused toes
+Q703,Webbed toes,,,http://purl.obolibrary.org/obo/HP_0001770,Webbed toes
+Q727,Split foot,,,http://purl.obolibrary.org/obo/HP_0001839,Split foot
+Q743,Arthrogryposis multiplex congenita,,,http://purl.obolibrary.org/obo/HP_0002804,Arthrogryposis multiplex congenita
+Q750,Craniosynostosis,,,http://purl.obolibrary.org/obo/HP_0001363,Craniosynostosis
+Q751,Craniofacial dysostosis,,,http://purl.obolibrary.org/obo/HP_0004439,Craniofacial dysostosis
+Q752,Hypertelorism,http://purl.obolibrary.org/obo/HP_0000316,Hypertelorism,http://purl.obolibrary.org/obo/HP_0000316,Hypertelorism
+Q753,Macrocephaly,http://purl.obolibrary.org/obo/HP_0000256,Macrocephaly,http://purl.obolibrary.org/obo/HP_0000256,Macrocephaly
+Q754,Mandibulofacial dysostosis,,,http://purl.obolibrary.org/obo/HP_0005321,Mandibulofacial dysostosis
+Q760,Spina bifida occulta,,,http://purl.obolibrary.org/obo/HP_0003298,Spina bifida occulta
+Q761,Klippel-Feil syndrome,http://purl.obolibrary.org/obo/MONDO_0001029,Klippel-Feil syndrome,http://purl.obolibrary.org/obo/HP_0004602,Klippel-Feil syndrome
+Q774,Achondroplasia,http://purl.obolibrary.org/obo/MONDO_0007037,Achondroplasia,,
+Q776,Chondroectodermal dysplasia,http://purl.obolibrary.org/obo/MONDO_0009162,Chondroectodermal dysplasia,,
+Q777,Spondyloepiphyseal dysplasia,,,http://purl.obolibrary.org/obo/HP_0002655,Spondyloepiphyseal dysplasia
+Q781,Polyostotic fibrous dysplasia,,,http://purl.obolibrary.org/obo/HP_0010735,Polyostotic fibrous dysplasia
+Q782,Osteopetrosis,http://purl.obolibrary.org/obo/HP_0011002,Osteopetrosis,http://purl.obolibrary.org/obo/HP_0011002,Osteopetrosis
+Q785,Metaphyseal dysplasia,http://purl.obolibrary.org/obo/HP_0100255,Metaphyseal dysplasia,http://purl.obolibrary.org/obo/HP_0100255,Metaphyseal dysplasia
+Q790,Congenital diaphragmatic hernia,http://purl.obolibrary.org/obo/HP_0000776,Congenital diaphragmatic hernia,http://purl.obolibrary.org/obo/HP_0000776,Congenital diaphragmatic hernia
+Q792,Exomphalos,,,http://purl.obolibrary.org/obo/HP_0001539,Exomphalos
+Q793,Gastroschisis,,,http://purl.obolibrary.org/obo/HP_0001543,Gastroschisis
+Q796,Ehlers-Danlos syndromes,http://purl.obolibrary.org/obo/MONDO_0020066,Ehlers-Danlos syndromes,,
+Q80,Congenital ichthyosis,,,http://purl.obolibrary.org/obo/HP_0007431,Congenital ichthyosis
+Q801,X-linked ichthyosis,http://purl.obolibrary.org/obo/MONDO_0010622,X-linked ichthyosis,,
+Q803,Congenital bullous ichthyosiform erythroderma,,,http://purl.obolibrary.org/obo/HP_0007475,Congenital bullous ichthyosiform erythroderma
+Q804,Harlequin fetus,http://purl.obolibrary.org/obo/MONDO_0009443,Harlequin fetus,,
+Q832,Absent nipple,http://purl.obolibrary.org/obo/HP_0002561,Absent nipple,http://purl.obolibrary.org/obo/HP_0002561,Absent nipple
+Q833,Accessory nipple,,,http://purl.obolibrary.org/obo/HP_0002558,Accessory nipple
+Q843,Anonychia,http://purl.obolibrary.org/obo/HP_0001798,Anonychia,http://purl.obolibrary.org/obo/HP_0001798,Anonychia
+Q8503,Schwannomatosis,http://purl.obolibrary.org/obo/MONDO_0008075,Schwannomatosis,,
+Q8711,Prader-Willi syndrome,http://purl.obolibrary.org/obo/MONDO_0008300,Prader-Willi syndrome,,
+Q874,Marfan syndrome,http://purl.obolibrary.org/obo/MONDO_0007947,Marfan syndrome,,
+Q8781,Alport syndrome,http://purl.obolibrary.org/obo/MONDO_0018965,Alport syndrome,,
+Q893,Situs inversus,,,http://purl.obolibrary.org/obo/HP_0001696,Situs inversus
+Q90,Down syndrome,http://purl.obolibrary.org/obo/MONDO_0008608,Down syndrome,,
+Q9351,Angelman syndrome,http://purl.obolibrary.org/obo/MONDO_0007113,Angelman syndrome,,
+Q9382,Williams syndrome,http://purl.obolibrary.org/obo/MONDO_0008678,Williams syndrome,,
+A50,Congenital syphilis,http://purl.obolibrary.org/obo/MONDO_0005714,congenital syphilis,,
+E3451,Complete androgen insensitivity syndrome,http://purl.obolibrary.org/obo/MONDO_0021023,complete androgen insensitivity syndrome,,
+E3452,Partial androgen insensitivity syndrome,http://purl.obolibrary.org/obo/MONDO_0010720,partial androgen insensitivity syndrome,,
+G711,Myotonic disorders,http://purl.obolibrary.org/obo/MONDO_0035646,congenital-onset Steinert myotonic dystrophy,,
+G7112,Myotonia congenita,http://purl.obolibrary.org/obo/MONDO_0009710,Thomsen and Becker disease,,
+P350,Congenital rubella syndrome,http://purl.obolibrary.org/obo/MONDO_0017361,congenital rubella syndrome,,
+P371,Congenital toxoplasmosis,http://purl.obolibrary.org/obo/MONDO_0005715,congenital toxoplasmosis,,
+Q03,Congenital hydrocephalus,http://purl.obolibrary.org/obo/MONDO_0016349,congenital hydrocephalus,,
+Q040,Congenital malformations of corpus callosum,http://purl.obolibrary.org/obo/MONDO_0026419,obsolete isolated corpus callosum agenesis,,
+Q062,Diastematomyelia,http://purl.obolibrary.org/obo/MONDO_0009106,diastematomyelia,,
+Q078,Other specified congenital malformations of nervous system,http://purl.obolibrary.org/obo/MONDO_0035159,dermoid or epidermoid cyst of the central nervous system,,
+Q101,Congenital ectropion,http://purl.obolibrary.org/obo/MONDO_0019630,congenital ectropion uveae,,
+Q134,Other congenital corneal malformations,http://purl.obolibrary.org/obo/MONDO_0000733,cornea plana,,
+Q142,Congenital malformation of optic disc,http://purl.obolibrary.org/obo/MONDO_0034979,obsolete peripapillary staphyloma,,
+Q158,Other specified congenital malformations of eye,http://purl.obolibrary.org/obo/MONDO_0031322,triopia,,
+Q204,Double inlet ventricle,,,http://purl.obolibrary.org/obo/HP_0011556,Double inlet right ventricle
+Q206,Isomerism of atrial appendages,,,http://purl.obolibrary.org/obo/HP_0011537,Left atrial isomerism
+Q221,Congenital pulmonary valve stenosis,http://purl.obolibrary.org/obo/MONDO_0017865,congenital pulmonary valve stenosis,,
+Q224,Congenital tricuspid stenosis,http://purl.obolibrary.org/obo/MONDO_0011514,tricuspid atresia,http://purl.obolibrary.org/obo/HP_0011662,Tricuspid atresia
+Q228,Other congenital malformations of tricuspid valve,http://purl.obolibrary.org/obo/MONDO_0035314,obsolete congenital tricuspid valve dysplasia,,
+Q23,Congenital malformations of aortic and mitral valves,http://purl.obolibrary.org/obo/MONDO_0019817,congenital mitral valve insufficiency and/or stenosis,,
+Q234,Hypoplastic left heart syndrome,http://purl.obolibrary.org/obo/MONDO_0004933,hypoplastic left heart syndrome,,
+Q241,Levocardia,http://purl.obolibrary.org/obo/MONDO_0019862,levocardia,,
+Q245,Malformation of coronary vessels,http://purl.obolibrary.org/obo/MONDO_0035249,obsolete anomalous aortic origin of the left coronary artery,,
+Q246,Congenital heart block,http://purl.obolibrary.org/obo/MONDO_0009326,congenital heart block,,
+Q248,Other specified congenital malformations of heart,http://purl.obolibrary.org/obo/MONDO_0021690,obsolete congenital left ventricular aneurysm,,
+Q252,Atresia of aorta,http://purl.obolibrary.org/obo/MONDO_0001863,aorta atresia,,
+Q2521,Interruption of aortic arch,http://purl.obolibrary.org/obo/MONDO_0009010,aortic arch interruption,,
+Q268,Other congenital malformations of great veins,,,http://purl.obolibrary.org/obo/HP_0011626,Scimitar anomaly
+Q271,Congenital renal artery stenosis,http://purl.obolibrary.org/obo/MONDO_0019993,congenital renal artery stenosis,,
+Q311,Congenital subglottic stenosis,http://purl.obolibrary.org/obo/MONDO_0015395,congenital subglottic stenosis,,
+Q313,Laryngocele,http://purl.obolibrary.org/obo/MONDO_0016530,laryngocele,,
+Q315,Congenital laryngomalacia,http://purl.obolibrary.org/obo/MONDO_0007878,congenital laryngomalacia,,
+Q383,Other congenital malformations of tongue,http://purl.obolibrary.org/obo/MONDO_0035410,isolated congenital aglossia,,
+Q400,Congenital hypertrophic pyloric stenosis,http://purl.obolibrary.org/obo/MONDO_0001560,hypertrophic pyloric stenosis,,
+Q401,Congenital hiatus hernia,http://purl.obolibrary.org/obo/MONDO_0001562,displacement of cardia through esophageal hiatus,,
+Q446,Cystic disease of liver,http://purl.obolibrary.org/obo/MONDO_0000447,autosomal dominant polycystic liver disease,,
+Q452,Congenital pancreatic cyst,http://purl.obolibrary.org/obo/MONDO_0017783,congenital pancreatic cyst,,
+Q504,Embryonic cyst of fallopian tube,http://purl.obolibrary.org/obo/MONDO_0024652,embryonic cyst of fallopian tube,,
+Q56,Indeterminate sex and pseudohermaphroditism,http://purl.obolibrary.org/obo/MONDO_0005518,pseudohermaphroditism,,
+Q563,"Pseudohermaphroditism, unspecified",http://purl.obolibrary.org/obo/MONDO_0005518,pseudohermaphroditism,,
+Q600,"Renal agenesis, unilateral",http://purl.obolibrary.org/obo/MONDO_0019636,"renal agenesis, unilateral",,
+Q601,"Renal agenesis, bilateral",http://purl.obolibrary.org/obo/MONDO_0015986,bilateral renal agenesis,,
+Q603,"Renal hypoplasia, unilateral",http://purl.obolibrary.org/obo/MONDO_0019979,"renal hypoplasia, unilateral",,
+Q604,"Renal hypoplasia, bilateral",http://purl.obolibrary.org/obo/MONDO_0007352,renal coloboma syndrome,,
+Q620,Congenital hydronephrosis,http://purl.obolibrary.org/obo/MONDO_0007741,congenital hydronephrosis,,
+Q625,Duplication of ureter,,,http://purl.obolibrary.org/obo/HP_0012572,Ureter duplex
+Q643,Other atresia and stenosis of urethra and bladder neck,http://purl.obolibrary.org/obo/MONDO_0015195,atresia of urethra,,
+Q711,Congenital absence of upper arm and forearm with hand present,http://purl.obolibrary.org/obo/MONDO_0017441,congenital absence of upper arm and forearm with hand present,,
+Q7113,"Congenital absence of upper arm and forearm with hand present, bilateral",http://purl.obolibrary.org/obo/MONDO_0017495,"obsolete congenital absence of upper arm and forearm with hand present, bilateral",,
+Q712,Congenital absence of both forearm and hand,http://purl.obolibrary.org/obo/MONDO_0017443,congenital absence of both forearm and hand,,
+Q7123,"Congenital absence of both forearm and hand, bilateral",http://purl.obolibrary.org/obo/MONDO_0017499,"congenital absence of both forearm and hand, bilateral",,
+Q721,Congenital absence of thigh and lower leg with foot present,http://purl.obolibrary.org/obo/MONDO_0017442,congenital absence of thigh and lower leg with foot present,,
+Q7213,"Congenital absence of thigh and lower leg with foot present, bilateral",http://purl.obolibrary.org/obo/MONDO_0017497,"congenital absence of thigh and lower leg with foot present, bilateral",,
+Q722,Congenital absence of both lower leg and foot,http://purl.obolibrary.org/obo/MONDO_0017444,congenital absence of both lower leg and foot,,
+Q7223,"Congenital absence of both lower leg and foot, bilateral",http://purl.obolibrary.org/obo/MONDO_0017501,"congenital absence of both lower leg and foot, bilateral",,
+Q7273,"Split foot, bilateral",http://purl.obolibrary.org/obo/MONDO_0017514,"split foot, bilateral",,
+Q770,Achondrogenesis,http://purl.obolibrary.org/obo/MONDO_0019648,achondrogenesis,,
+Q773,Chondrodysplasia punctata,http://purl.obolibrary.org/obo/MONDO_0007561,multiple epiphyseal dysplasia type 1,,
+Q775,Diastrophic dysplasia,http://purl.obolibrary.org/obo/MONDO_0009107,diastrophic dysplasia,,
+Q780,Osteogenesis imperfecta,http://purl.obolibrary.org/obo/MONDO_0009803,congenital osteogenesis imperfecta-microcephaly-cataracts syndrome,,
+Q800,Ichthyosis vulgaris,http://purl.obolibrary.org/obo/MONDO_0007809,"ichthyosis histrix, Lambert type",,
+Q81,Epidermolysis bullosa,http://purl.obolibrary.org/obo/MONDO_0006541,epidermolysis bullosa,,
+Q810,Epidermolysis bullosa simplex,http://purl.obolibrary.org/obo/MONDO_0017610,epidermolysis bullosa simplex,,
+Q820,Hereditary lymphedema,http://purl.obolibrary.org/obo/MONDO_0007922,lymphedema-distichiasis syndrome,,
+Q821,Xeroderma pigmentosum,http://purl.obolibrary.org/obo/MONDO_0016354,xeroderma pigmentosum-Cockayne syndrome complex,,
+Q822,Congenital cutaneous mastocytosis,http://purl.obolibrary.org/obo/MONDO_0008876,Bloom syndrome,,
+Q846,Other congenital malformations of nails,http://purl.obolibrary.org/obo/MONDO_0029051,obsolete autosomal recessive nail dysplasia,,
+Q8502,"Neurofibromatosis, type 2",http://purl.obolibrary.org/obo/MONDO_0007039,NF2-related schwannomatosis,,
+Q861,Fetal hydantoin syndrome,http://purl.obolibrary.org/obo/MONDO_0016008,fetal hydantoin syndrome,,
+Q873,Congenital malformation syndromes involving early overgrowth,http://purl.obolibrary.org/obo/MONDO_0035592,congenital infiltrating lipomatosis of the face,,
+Q8782,Arterial tortuosity syndrome,http://purl.obolibrary.org/obo/MONDO_0008818,arterial tortuosity syndrome,,
+Q933,Deletion of short arm of chromosome 4,http://purl.obolibrary.org/obo/MONDO_0008684,Wolf-Hirschhorn syndrome,,

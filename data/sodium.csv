@@ -1,0 +1,801 @@
+R-MMU-9713672.1,cAMP:olfactory CNG channel translocates Na+ and Ca2+ from the extracellular region to the cytosol,R-MMU-9713709.1,Cngb1b [plasma membrane],Q80VQ4,UniProt:Q80VQ4 Cngb1
+R-MMU-9713672.1,cAMP:olfactory CNG channel translocates Na+ and Ca2+ from the extracellular region to the cytosol,R-MMU-9713726.1,Cnga4 [plasma membrane],Q3UW12,UniProt:Q3UW12 Cnga4
+R-MMU-9713672.1,cAMP:olfactory CNG channel translocates Na+ and Ca2+ from the extracellular region to the cytosol,R-MMU-9713722.1,Cnga2 [plasma membrane],Q62398,UniProt:Q62398 Cnga2
+R-RNO-9713740.1,cAMP:olfactory CNG channel translocates Na+ and Ca2+ from the extracellular region to the cytosol,R-RNO-9713702.1,Cnga4 [plasma membrane],Q64359,UniProt:Q64359 Cnga4
+R-RNO-9713740.1,cAMP:olfactory CNG channel translocates Na+ and Ca2+ from the extracellular region to the cytosol,R-RNO-9713670.1,Cngb1 [plasma membrane],A0A0G2JXF2,UniProt:A0A0G2JXF2 Cngb1
+R-RNO-9713740.1,cAMP:olfactory CNG channel translocates Na+ and Ca2+ from the extracellular region to the cytosol,R-RNO-9713707.1,Cnga2 [plasma membrane],Q00195,UniProt:Q00195 Cnga2
+R-HSA-9712190.1,cAMP:olfactory CNG channel translocates Na+ and Ca2+ from the extracellular region to the cytosol,R-HSA-2671917.1,CNGA4 [plasma membrane],Q8IV77,UniProt:Q8IV77 CNGA4
+R-HSA-9712190.1,cAMP:olfactory CNG channel translocates Na+ and Ca2+ from the extracellular region to the cytosol,R-HSA-2671933.1,CNGA2 [plasma membrane],Q16280,UniProt:Q16280 CNGA2
+R-HSA-9712190.1,cAMP:olfactory CNG channel translocates Na+ and Ca2+ from the extracellular region to the cytosol,R-HSA-9712207.1,CNGB1b [plasma membrane],Q14028,UniProt:Q14028-3 CNGB1
+R-MMU-9717444.1,"Scn3a:Scn2b,4b transports Na+ from the extracellular region to the cytosol",R-MMU-9717378.1,Scn3a [plasma membrane],A2ASI5,UniProt:A2ASI5 Scn3a
+R-HSA-9717374.1,"SCN3A:SCN2B,4B transports Na+ from the extracellular region to the cytosol",R-HSA-443375.1,SCN3A [plasma membrane],Q9NY46,UniProt:Q9NY46 SCN3A
+R-MMU-9717433.1,Trpm5 transports Na+ from the extracellular region to the cytosol,R-MMU-9717430.1,Trpm5 [plasma membrane],Q9JJH7,UniProt:Q9JJH7 Trpm5
+R-HSA-9717395.1,TRPM5 transports Na+ from the extracellular region to the cytosol,R-HSA-937284.1,TRPM5 [plasma membrane],Q9NZQ8,UniProt:Q9NZQ8 TRPM5
+R-MMU-9717432.1,Trpm4 transports Na+ from the extracellular region to the cytosol,R-MMU-9717435.1,Trpm4 [plasma membrane],Q7TN37,UniProt:Q7TN37 Trpm4
+R-HSA-9717383.1,TRPM4 transports Na+ from the extracellular region to the cytosol,R-HSA-937288.1,TRPM4 [plasma membrane],Q8TD43,UniProt:Q8TD43 TRPM4
+R-MMU-9717440.1,"Scn9a:Scn1b,2b,4b transports Na+ from the extracellular region to the cytosol",R-MMU-9717370.1,Scn9a [plasma membrane],Q62205,UniProt:Q62205 Scn9a
+R-HSA-9717382.1,"SCN9A:SCN1B,2B,4B transports Na+ from the extracellular region to the cytosol",R-HSA-443374.1,SCN9A [plasma membrane],Q15858,UniProt:Q15858 SCN9A
+R-MMU-9717445.1,"Scn2a:Scn1b,2b,4b transports Na+ from the extracellular region to the cytosol",R-MMU-9717375.1,Scn2a [plasma membrane],B1AWN6,UniProt:B1AWN6 Scn2a
+R-HSA-9717396.1,"SCN2A:SCN1B,2B,4B transports Na+ from the extracellular region to the cytosol",R-HSA-443377.1,SCN2A [plasma membrane],Q99250,UniProt:Q99250 SCN2A
+R-PFA-8865637.1,MFSD2A transports LPC from extracellular region to plasma membrane,R-PFA-5216203.1,MFSD2A [plasma membrane],Q8I3H5,UniProt:Q8I3H5
+R-DDI-8865637.1,MFSD2A transports LPC from extracellular region to plasma membrane,R-DDI-5216203.1,MFSD2A [plasma membrane],Q54SX3,UniProt:Q54SX3
+R-GGA-8865637.1,MFSD2A transports LPC from extracellular region to plasma membrane,R-GGA-5216203.1,MFSD2A [plasma membrane],F1NCD6,UniProt:F1NCD6
+R-XTR-8865637.1,MFSD2A transports LPC from extracellular region to plasma membrane,R-XTR-5216203.1,mfsd2a [plasma membrane],Q0IHM1,UniProt:Q0IHM1
+R-DRE-8865637.1,MFSD2A transports LPC from extracellular region to plasma membrane,R-DRE-5216203.1,mfsd2ab [plasma membrane],Q6DEJ6,UniProt:Q6DEJ6
+R-SSC-8865637.1,MFSD2A transports LPC from extracellular region to plasma membrane,R-SSC-5216203.1,MFSD2A [plasma membrane],A0A5G2QRU8,UniProt:A0A5G2QRU8
+R-BTA-8865637.1,MFSD2A transports LPC from extracellular region to plasma membrane,R-BTA-5216203.1,MFSD2A [plasma membrane],A6QQA1,UniProt:A6QQA1
+R-CFA-8865637.1,MFSD2A transports LPC from extracellular region to plasma membrane,R-CFA-5216203.1,MFSD2A [plasma membrane],A0A5F4D1Q7,UniProt:A0A5F4D1Q7
+R-RNO-8865637.1,MFSD2A transports LPC from extracellular region to plasma membrane,R-RNO-5216203.1,Mfsd2a [plasma membrane],B1WBW6,UniProt:B1WBW6
+R-MMU-8865637.1,MFSD2A transports LPC from extracellular region to plasma membrane,R-MMU-5216203.1,Mfsd2a [plasma membrane],Q9DA75,UniProt:Q9DA75
+R-HSA-8865637.1,MFSD2A transports LPC from extracellular region to plasma membrane,R-HSA-5216203.1,MFSD2A [plasma membrane],Q8NA29,UniProt:Q8NA29 MFSD2A
+R-DRE-9751037.1,"SLC28A2,3 cotransport 6MP and Na+ from extracellular region to cytosol",R-DRE-64025.1,SLC28A2 [plasma membrane],A0A2R8QIQ7,UniProt:A0A2R8QIQ7
+R-CFA-9751037.1,"SLC28A2,3 cotransport 6MP and Na+ from extracellular region to cytosol",R-CFA-83915.1,SLC28A3 [plasma membrane],A0A5F4D6N3,UniProt:A0A5F4D6N3
+R-DRE-9754934.1,"SLC28C2,3 cotransports RBV, Na+ from extracellular region to cytosol",R-DRE-64025.1,SLC28A2 [plasma membrane],A0A2R8QIQ7,UniProt:A0A2R8QIQ7
+R-CFA-9754934.1,"SLC28C2,3 cotransports RBV, Na+ from extracellular region to cytosol",R-CFA-83915.1,SLC28A3 [plasma membrane],A0A5F4D6N3,UniProt:A0A5F4D6N3
+R-BTA-2534148.1,Nckx1 exchanges Na+ for Ca2+/K+,R-BTA-4420237.1,Slc24a1 [plasma membrane],Q28139,UniProt:Q28139 SLC24A1
+R-HSA-2514891.1,"SLC24A1 exchanges 4Na+ for Ca2+, K+",R-HSA-74129.1,SLC24A1 [plasma membrane],O60721,UniProt:O60721 SLC24A1
+R-CEL-2514867.1,cGMP:CNG transports Na+ and Ca2+ into the rod outer segment,R-CEL-74309.1,tax-2 [plasma membrane],G5EEE2,UniProt:G5EEE2
+R-DME-2514867.1,cGMP:CNG transports Na+ and Ca2+ into the rod outer segment,R-DME-74309.1,CngB [plasma membrane],Q9W2D5,UniProt:Q9W2D5
+R-GGA-2514867.1,cGMP:CNG transports Na+ and Ca2+ into the rod outer segment,R-GGA-74309.1,CNGB1 [plasma membrane],A0A1D5NV99,UniProt:A0A1D5NV99
+R-GGA-2514867.1,cGMP:CNG transports Na+ and Ca2+ into the rod outer segment,R-GGA-52425.1,CNGA1 [plasma membrane],Q90980,UniProt:Q90980
+R-XTR-2514867.1,cGMP:CNG transports Na+ and Ca2+ into the rod outer segment,R-XTR-74309.1,CNGB1 [plasma membrane],A0A803K337,UniProt:A0A803K337
+R-XTR-2514867.1,cGMP:CNG transports Na+ and Ca2+ into the rod outer segment,R-XTR-52425.1,cnga1 [plasma membrane],A0A6I8QFI8,UniProt:A0A6I8QFI8
+R-DRE-2514867.1,cGMP:CNG transports Na+ and Ca2+ into the rod outer segment,R-DRE-74309.1,CNGB1 [plasma membrane],A0A2R8QM30,UniProt:A0A2R8QM30
+R-DRE-2514867.1,cGMP:CNG transports Na+ and Ca2+ into the rod outer segment,R-DRE-52425.1,cnga1 [plasma membrane],X1WH66,UniProt:X1WH66
+R-SSC-2514867.1,cGMP:CNG transports Na+ and Ca2+ into the rod outer segment,R-SSC-74309.1,CNGB1 [plasma membrane],F1RF40,UniProt:F1RF40
+R-SSC-2514867.1,cGMP:CNG transports Na+ and Ca2+ into the rod outer segment,R-SSC-52425.1,CNGA1 [plasma membrane],A0A5G2R841,UniProt:A0A5G2R841
+R-BTA-2514867.1,cGMP:CNG transports Na+ and Ca2+ into the rod outer segment,R-BTA-74309.1,CNGB1 [plasma membrane],F1MTS7,UniProt:F1MTS7
+R-BTA-2514867.1,cGMP:CNG transports Na+ and Ca2+ into the rod outer segment,R-BTA-52425.1,CNGA1 [plasma membrane],Q00194,UniProt:Q00194
+R-CFA-2514867.1,cGMP:CNG transports Na+ and Ca2+ into the rod outer segment,R-CFA-74309.1,CNGB1 [plasma membrane],E2QSA3,UniProt:E2QSA3
+R-CFA-2514867.1,cGMP:CNG transports Na+ and Ca2+ into the rod outer segment,R-CFA-52425.1,CNGA1 [plasma membrane],F1Q3U8,UniProt:F1Q3U8
+R-RNO-2514867.1,cGMP:CNG transports Na+ and Ca2+ into the rod outer segment,R-RNO-74309.1,Cngb1 [plasma membrane],F1LQB8,UniProt:F1LQB8
+R-RNO-2514867.1,cGMP:CNG transports Na+ and Ca2+ into the rod outer segment,R-RNO-52425.1,CNGA1 [plasma membrane],Q62927,UniProt:Q62927
+R-HSA-2514867.1,cGMP:CNG transports Na+ and Ca2+ into the rod outer segment,R-HSA-74309.1,CNGB1 [plasma membrane],Q14028,UniProt:Q14028 CNGB1
+R-HSA-2514867.1,cGMP:CNG transports Na+ and Ca2+ into the rod outer segment,R-HSA-52425.1,CNGA1 [plasma membrane],P29973,UniProt:P29973 CNGA1
+R-MMU-2514867.1,cGMP:CNG transports Na+ and Ca2+ into the rod outer segment,R-MMU-74309.1,Cngb1 [plasma membrane],E1AZ71,UniProt:E1AZ71
+R-MMU-2514867.1,cGMP:CNG transports Na+ and Ca2+ into the rod outer segment,R-MMU-52425.1,CNGA1 [plasma membrane],P29974,UniProt:P29974
+R-CEL-194121.1,SLC10A1 co-transport bile salts and Na+ from extracellular region to cytosol,R-CEL-194116.1,SLC10A1 [plasma membrane],Q33BL1,UniProt:Q33BL1
+R-XTR-194121.1,SLC10A1 co-transport bile salts and Na+ from extracellular region to cytosol,R-XTR-194116.1,slc10a1 [plasma membrane],A0A6I8PW47,UniProt:A0A6I8PW47
+R-DRE-194121.1,SLC10A1 co-transport bile salts and Na+ from extracellular region to cytosol,R-DRE-194116.1,SLC10A1 [plasma membrane],A0A2R8RHU6,UniProt:A0A2R8RHU6
+R-SSC-194121.1,SLC10A1 co-transport bile salts and Na+ from extracellular region to cytosol,R-SSC-194116.1,SLC10A1 [plasma membrane],F1S4B1,UniProt:F1S4B1
+R-BTA-194121.1,SLC10A1 co-transport bile salts and Na+ from extracellular region to cytosol,R-BTA-194116.1,SLC10A1 [plasma membrane],Q2KJ85,UniProt:Q2KJ85
+R-CFA-194121.1,SLC10A1 co-transport bile salts and Na+ from extracellular region to cytosol,R-CFA-194116.1,SLC10A1 [plasma membrane],E2R8D7,UniProt:E2R8D7
+R-RNO-194121.1,SLC10A1 co-transport bile salts and Na+ from extracellular region to cytosol,R-RNO-194116.1,Slc10a1 [plasma membrane],P26435,UniProt:P26435
+R-MMU-194121.1,SLC10A1 co-transport bile salts and Na+ from extracellular region to cytosol,R-MMU-194116.1,Slc10a1 [plasma membrane],O08705,UniProt:O08705
+R-HSA-194121.3,SLC10A1 co-transport bile salts and Na+ from extracellular region to cytosol,R-HSA-194116.1,SLC10A1 [plasma membrane],Q14973,UniProt:Q14973 SLC10A1
+R-GGA-199206.1,SLC5A6 cotransports extracellular PanK and 2Na+ to cytosol,R-GGA-5358989.1,PDZD11 [cytosol],Q5ZIK2,UniProt:Q5ZIK2
+R-GGA-199206.1,SLC5A6 cotransports extracellular PanK and 2Na+ to cytosol,R-GGA-199221.1,SLC5A6 [plasma membrane],A0A1D5PFU3,UniProt:A0A1D5PFU3
+R-XTR-199206.1,SLC5A6 cotransports extracellular PanK and 2Na+ to cytosol,R-XTR-5358989.1,pdzd11 [cytosol],A0A6I8S5E3,UniProt:A0A6I8S5E3
+R-XTR-199206.1,SLC5A6 cotransports extracellular PanK and 2Na+ to cytosol,R-XTR-199221.1,slc5a6 [plasma membrane],A0A803JZM2,UniProt:A0A803JZM2
+R-DRE-199206.1,SLC5A6 cotransports extracellular PanK and 2Na+ to cytosol,R-DRE-5358989.1,pdzd11 [cytosol],Q6NXB2,UniProt:Q6NXB2
+R-DRE-199206.1,SLC5A6 cotransports extracellular PanK and 2Na+ to cytosol,R-DRE-199221.1,SLC5A6 [plasma membrane],Q5RIG1,UniProt:Q5RIG1
+R-SSC-199206.1,SLC5A6 cotransports extracellular PanK and 2Na+ to cytosol,R-SSC-5358989.1,PDZD11 [cytosol],Q6QA76,UniProt:Q6QA76
+R-SSC-199206.1,SLC5A6 cotransports extracellular PanK and 2Na+ to cytosol,R-SSC-199221.1,SLC5A6 [plasma membrane],A0A287BEL5,UniProt:A0A287BEL5
+R-BTA-199206.1,SLC5A6 cotransports extracellular PanK and 2Na+ to cytosol,R-BTA-5358989.1,PDZD11 [cytosol],Q32LE7,UniProt:Q32LE7
+R-BTA-199206.1,SLC5A6 cotransports extracellular PanK and 2Na+ to cytosol,R-BTA-199221.1,SLC5A6 [plasma membrane],F1MN65,UniProt:F1MN65
+R-CFA-199206.1,SLC5A6 cotransports extracellular PanK and 2Na+ to cytosol,R-CFA-5358989.1,PDZD11 [cytosol],A0A5F4CUA3,UniProt:A0A5F4CUA3
+R-CFA-199206.1,SLC5A6 cotransports extracellular PanK and 2Na+ to cytosol,R-CFA-199221.1,SLC5A6 [plasma membrane],E2R9T1,UniProt:E2R9T1
+R-RNO-199206.1,SLC5A6 cotransports extracellular PanK and 2Na+ to cytosol,R-RNO-5358989.1,PDZD11 [cytosol],D3Z8K0,UniProt:D3Z8K0
+R-RNO-199206.1,SLC5A6 cotransports extracellular PanK and 2Na+ to cytosol,R-RNO-199221.1,Slc5a6 [plasma membrane],O70247,UniProt:O70247
+R-MMU-199206.1,SLC5A6 cotransports extracellular PanK and 2Na+ to cytosol,R-MMU-5358989.1,Pdzd11 [cytosol],Q9CZG9,UniProt:Q9CZG9
+R-MMU-199206.1,SLC5A6 cotransports extracellular PanK and 2Na+ to cytosol,R-MMU-199221.1,Slc5a6 [plasma membrane],Q5U4D8,UniProt:Q5U4D8
+R-HSA-199206.2,SLC5A6 cotransports extracellular PanK and 2Na+ to cytosol,R-HSA-5358989.1,PDZD11 [cytosol],Q5EBL8,UniProt:Q5EBL8 PDZD11
+R-HSA-199206.2,SLC5A6 cotransports extracellular PanK and 2Na+ to cytosol,R-HSA-199221.1,SLC5A6 [plasma membrane],Q9Y289,UniProt:Q9Y289 SLC5A6
+R-DME-198870.1,"SLC23A1,2 cotransports AscH-, 2Na+ from extracellular region to cytosol",R-DME-198835.1,Dmel\CG6293 [plasma membrane],Q9VH02,UniProt:Q9VH02
+R-CFA-198870.1,"SLC23A1,2 cotransports AscH-, 2Na+ from extracellular region to cytosol",R-CFA-198835.1,SLC23A1 [plasma membrane],F1PRE7,UniProt:F1PRE7
+R-GGA-199219.1,SLC5A6 cotransports extracellular Btn and 2xNa+ to cytosol,R-GGA-5358989.1,PDZD11 [cytosol],Q5ZIK2,UniProt:Q5ZIK2
+R-GGA-199219.1,SLC5A6 cotransports extracellular Btn and 2xNa+ to cytosol,R-GGA-199221.1,SLC5A6 [plasma membrane],A0A1D5PFU3,UniProt:A0A1D5PFU3
+R-XTR-199219.1,SLC5A6 cotransports extracellular Btn and 2xNa+ to cytosol,R-XTR-5358989.1,pdzd11 [cytosol],A0A6I8S5E3,UniProt:A0A6I8S5E3
+R-XTR-199219.1,SLC5A6 cotransports extracellular Btn and 2xNa+ to cytosol,R-XTR-199221.1,slc5a6 [plasma membrane],A0A803JZM2,UniProt:A0A803JZM2
+R-DRE-199219.1,SLC5A6 cotransports extracellular Btn and 2xNa+ to cytosol,R-DRE-5358989.1,pdzd11 [cytosol],Q6NXB2,UniProt:Q6NXB2
+R-DRE-199219.1,SLC5A6 cotransports extracellular Btn and 2xNa+ to cytosol,R-DRE-199221.1,SLC5A6 [plasma membrane],Q5RIG1,UniProt:Q5RIG1
+R-SSC-199219.1,SLC5A6 cotransports extracellular Btn and 2xNa+ to cytosol,R-SSC-5358989.1,PDZD11 [cytosol],Q6QA76,UniProt:Q6QA76
+R-SSC-199219.1,SLC5A6 cotransports extracellular Btn and 2xNa+ to cytosol,R-SSC-199221.1,SLC5A6 [plasma membrane],A0A287BEL5,UniProt:A0A287BEL5
+R-BTA-199219.1,SLC5A6 cotransports extracellular Btn and 2xNa+ to cytosol,R-BTA-5358989.1,PDZD11 [cytosol],Q32LE7,UniProt:Q32LE7
+R-BTA-199219.1,SLC5A6 cotransports extracellular Btn and 2xNa+ to cytosol,R-BTA-199221.1,SLC5A6 [plasma membrane],F1MN65,UniProt:F1MN65
+R-CFA-199219.1,SLC5A6 cotransports extracellular Btn and 2xNa+ to cytosol,R-CFA-5358989.1,PDZD11 [cytosol],A0A5F4CUA3,UniProt:A0A5F4CUA3
+R-CFA-199219.1,SLC5A6 cotransports extracellular Btn and 2xNa+ to cytosol,R-CFA-199221.1,SLC5A6 [plasma membrane],E2R9T1,UniProt:E2R9T1
+R-RNO-199219.1,SLC5A6 cotransports extracellular Btn and 2xNa+ to cytosol,R-RNO-5358989.1,PDZD11 [cytosol],D3Z8K0,UniProt:D3Z8K0
+R-RNO-199219.1,SLC5A6 cotransports extracellular Btn and 2xNa+ to cytosol,R-RNO-199221.1,Slc5a6 [plasma membrane],O70247,UniProt:O70247
+R-MMU-199219.1,SLC5A6 cotransports extracellular Btn and 2xNa+ to cytosol,R-MMU-5358989.1,Pdzd11 [cytosol],Q9CZG9,UniProt:Q9CZG9
+R-MMU-199219.1,SLC5A6 cotransports extracellular Btn and 2xNa+ to cytosol,R-MMU-199221.1,Slc5a6 [plasma membrane],Q5U4D8,UniProt:Q5U4D8
+R-HSA-199219.2,SLC5A6 cotransports extracellular Btn and 2xNa+ to cytosol,R-HSA-5358989.1,PDZD11 [cytosol],Q5EBL8,UniProt:Q5EBL8 PDZD11
+R-HSA-199219.2,SLC5A6 cotransports extracellular Btn and 2xNa+ to cytosol,R-HSA-199221.1,SLC5A6 [plasma membrane],Q9Y289,UniProt:Q9Y289 SLC5A6
+R-GGA-8932955.1,"SLC5A1 cotransports Glc,Gal with Na+ from extracellular region to cytosol",R-GGA-189243.1,SLC5A1 [plasma membrane],F1NZW3,UniProt:F1NZW3
+R-XTR-8932955.1,"SLC5A1 cotransports Glc,Gal with Na+ from extracellular region to cytosol",R-XTR-189243.1,slc5a1.1 [plasma membrane],A0A6I8QKV3,UniProt:A0A6I8QKV3
+R-DRE-8932955.1,"SLC5A1 cotransports Glc,Gal with Na+ from extracellular region to cytosol",R-DRE-189243.1,SLC5A1 [plasma membrane],F1QBX6,UniProt:F1QBX6
+R-SSC-8932955.1,"SLC5A1 cotransports Glc,Gal with Na+ from extracellular region to cytosol",R-SSC-189243.1,SLC5A1 [plasma membrane],F1RLV1,UniProt:F1RLV1
+R-BTA-8932955.1,"SLC5A1 cotransports Glc,Gal with Na+ from extracellular region to cytosol",R-BTA-189243.1,SLC5A1 [plasma membrane],F1MD24,UniProt:F1MD24
+R-CFA-8932955.1,"SLC5A1 cotransports Glc,Gal with Na+ from extracellular region to cytosol",R-CFA-189243.1,SLC5A1 [plasma membrane],Q5U9D0,UniProt:Q5U9D0
+R-RNO-8932955.1,"SLC5A1 cotransports Glc,Gal with Na+ from extracellular region to cytosol",R-RNO-189243.1,SLC5A1 [plasma membrane],P53790,UniProt:P53790
+R-MMU-8932955.1,"SLC5A1 cotransports Glc,Gal with Na+ from extracellular region to cytosol",R-MMU-189243.1,SLC5A1 [plasma membrane],Q8C3K6,UniProt:Q8C3K6
+R-HSA-8932955.3,"SLC5A1 cotransports Glc,Gal with Na+ from extracellular region to cytosol",R-HSA-189243.1,SLC5A1 [plasma membrane],P13866,UniProt:P13866 SLC5A1
+R-GGA-3295580.1,"TRPM4,5 transport extracellular Na+ to cytosol",R-GGA-937284.1,TRPM5 [plasma membrane],E1BXA4,UniProt:E1BXA4
+R-SSC-3295580.1,"TRPM4,5 transport extracellular Na+ to cytosol",R-SSC-937288.1,TRPM4 [plasma membrane],A0A287AUN9,UniProt:A0A287AUN9
+R-CEL-2672334.1,SCNN channels transport extracellular Na+ to cytosol,R-CEL-2671936.1,del-1 [plasma membrane],Q19038,UniProt:Q19038
+R-DME-2672334.1,SCNN channels transport extracellular Na+ to cytosol,R-DME-2671900.1,ppk17 [plasma membrane],Q9VJI4,UniProt:Q9VJI4
+R-DME-2672334.1,SCNN channels transport extracellular Na+ to cytosol,R-DME-2671936.1,ppk17 [plasma membrane],Q9VJI4,UniProt:Q9VJI4
+R-DME-2672334.1,SCNN channels transport extracellular Na+ to cytosol,R-DME-2671922.1,ppk17 [plasma membrane],Q9VJI4,UniProt:Q9VJI4
+R-GGA-2672334.1,SCNN channels transport extracellular Na+ to cytosol,R-GGA-2671900.1,SCNN1B [plasma membrane],F1NE95,UniProt:F1NE95
+R-GGA-2672334.1,SCNN channels transport extracellular Na+ to cytosol,R-GGA-2671936.1,SCNN1G [plasma membrane],F1NW62,UniProt:F1NW62
+R-XTR-2672334.1,SCNN channels transport extracellular Na+ to cytosol,R-XTR-2671900.1,scnn1g [plasma membrane],F6W3N3,UniProt:F6W3N3
+R-XTR-2672334.1,SCNN channels transport extracellular Na+ to cytosol,R-XTR-2671936.1,scnn1g [plasma membrane],F6W3N3,UniProt:F6W3N3
+R-SSC-2672334.1,SCNN channels transport extracellular Na+ to cytosol,R-SSC-2671900.1,SCNN1B [plasma membrane],I3LGX7,UniProt:I3LGX7
+R-SSC-2672334.1,SCNN channels transport extracellular Na+ to cytosol,R-SSC-2671936.1,SCNN1G [plasma membrane],A0A287AGN6,UniProt:A0A287AGN6
+R-BTA-2672334.1,SCNN channels transport extracellular Na+ to cytosol,R-BTA-2671900.1,SCNN1B [plasma membrane],A5D7U4,UniProt:A5D7U4
+R-BTA-2672334.1,SCNN channels transport extracellular Na+ to cytosol,R-BTA-2671936.1,SCNN1G [plasma membrane],F1MJW3,UniProt:F1MJW3
+R-CFA-2672334.1,SCNN channels transport extracellular Na+ to cytosol,R-CFA-2671900.1,SCNN1B [plasma membrane],Q95165,UniProt:Q95165
+R-CFA-2672334.1,SCNN channels transport extracellular Na+ to cytosol,R-CFA-2671936.1,SCNN1G [plasma membrane],A0A5F4BR76,UniProt:A0A5F4BR76
+R-RNO-2672334.1,SCNN channels transport extracellular Na+ to cytosol,R-RNO-2671900.1,Scnn1b [plasma membrane],P37090,UniProt:P37090
+R-RNO-2672334.1,SCNN channels transport extracellular Na+ to cytosol,R-RNO-2671936.1,Scnn1g [plasma membrane],P37091,UniProt:P37091
+R-RNO-2672334.1,SCNN channels transport extracellular Na+ to cytosol,R-RNO-2671922.1,Scnn1a [plasma membrane],P37089,UniProt:P37089
+R-MMU-2672334.1,SCNN channels transport extracellular Na+ to cytosol,R-MMU-2671900.1,Scnn1b [plasma membrane],Q9WU38,UniProt:Q9WU38
+R-MMU-2672334.1,SCNN channels transport extracellular Na+ to cytosol,R-MMU-2671936.1,Scnn1g [plasma membrane],Q9WU39,UniProt:Q9WU39
+R-MMU-2672334.1,SCNN channels transport extracellular Na+ to cytosol,R-MMU-2671922.1,Scnn1a [plasma membrane],Q61180,UniProt:Q61180
+R-HSA-2672334.4,SCNN channels transport extracellular Na+ to cytosol,R-HSA-2671900.1,SCNN1B [plasma membrane],P51168,UniProt:P51168 SCNN1B
+R-HSA-2672334.4,SCNN channels transport extracellular Na+ to cytosol,R-HSA-2671936.1,SCNN1G [plasma membrane],P51170,UniProt:P51170 SCNN1G
+R-MMU-2872452.1,Slc9c1 exchanges Na+ for H+,R-MMU-2872465.1,Slc9c1 [ciliary membrane],Q6UJY2,UniProt:Q6UJY2 Slc9c1
+R-HSA-2872463.1,SLC9C1 exchanges Na+ for H+,R-HSA-2872477.1,SLC9C1 [ciliary membrane],Q4G0N8,UniProt:Q4G0N8 SLC9C1
+R-GGA-2872444.1,SLC9B1/C2 exchange Na+ for H+,R-GGA-2872499.1,SLC9B2 [plasma membrane],E1C3V4,UniProt:E1C3V4
+R-DRE-2872444.1,SLC9B1/C2 exchange Na+ for H+,R-DRE-2872499.1,SLC9B1 [plasma membrane],E7FBR3,UniProt:E7FBR3
+R-BTA-2872444.1,SLC9B1/C2 exchange Na+ for H+,R-BTA-2872499.1,SLC9B1 [plasma membrane],F1MFR7,UniProt:F1MFR7
+R-RNO-2872444.1,SLC9B1/C2 exchange Na+ for H+,R-RNO-2872499.1,SLC9B1 [plasma membrane],F1LPN2,UniProt:F1LPN2
+R-MMU-2872444.1,SLC9B1/C2 exchange Na+ for H+,R-MMU-2872499.1,Slc9b1 [plasma membrane],Q8C0X2,UniProt:Q8C0X2
+R-DME-2730664.1,UNC79:UNC80:NALCN transports Na+ extracellular region to cytosol,R-DME-2730661.1,na [plasma membrane],A8JUW5,UniProt:A8JUW5
+R-DME-2730664.1,UNC79:UNC80:NALCN transports Na+ extracellular region to cytosol,R-DME-2730660.1,unc79 [plasma membrane],Q9VDY5,UniProt:Q9VDY5
+R-DME-2730664.1,UNC79:UNC80:NALCN transports Na+ extracellular region to cytosol,R-DME-2730663.1,unc80 [plasma membrane],Q9VB11,UniProt:Q9VB11
+R-GGA-2730664.1,UNC79:UNC80:NALCN transports Na+ extracellular region to cytosol,R-GGA-2730661.1,NALCN [plasma membrane],E1BSL8,UniProt:E1BSL8
+R-GGA-2730664.1,UNC79:UNC80:NALCN transports Na+ extracellular region to cytosol,R-GGA-2730660.1,UNC79 [plasma membrane],F1NJ76,UniProt:F1NJ76
+R-GGA-2730664.1,UNC79:UNC80:NALCN transports Na+ extracellular region to cytosol,R-GGA-2730663.1,UNC80 [plasma membrane],A0A1D5PE70,UniProt:A0A1D5PE70
+R-XTR-2730664.1,UNC79:UNC80:NALCN transports Na+ extracellular region to cytosol,R-XTR-2730661.1,nalcn [plasma membrane],A0A6I8SEF3,UniProt:A0A6I8SEF3
+R-XTR-2730664.1,UNC79:UNC80:NALCN transports Na+ extracellular region to cytosol,R-XTR-2730660.1,unc79 [plasma membrane],A0A6I8RCN2,UniProt:A0A6I8RCN2
+R-XTR-2730664.1,UNC79:UNC80:NALCN transports Na+ extracellular region to cytosol,R-XTR-2730663.1,UNC80 [plasma membrane],A0A6I8SCS8,UniProt:A0A6I8SCS8
+R-SSC-2730664.1,UNC79:UNC80:NALCN transports Na+ extracellular region to cytosol,R-SSC-2730661.1,NALCN [plasma membrane],A0A286ZM83,UniProt:A0A286ZM83
+R-SSC-2730664.1,UNC79:UNC80:NALCN transports Na+ extracellular region to cytosol,R-SSC-2730660.1,UNC79 [plasma membrane],A0A5G2R5U5,UniProt:A0A5G2R5U5
+R-SSC-2730664.1,UNC79:UNC80:NALCN transports Na+ extracellular region to cytosol,R-SSC-2730663.1,UNC80 [plasma membrane],I3LDL4,UniProt:I3LDL4
+R-BTA-2730664.1,UNC79:UNC80:NALCN transports Na+ extracellular region to cytosol,R-BTA-2730661.1,NALCN [plasma membrane],A0A3Q1LL71,UniProt:A0A3Q1LL71
+R-BTA-2730664.1,UNC79:UNC80:NALCN transports Na+ extracellular region to cytosol,R-BTA-2730660.1,UNC79 [plasma membrane],G3N0G4,UniProt:G3N0G4
+R-BTA-2730664.1,UNC79:UNC80:NALCN transports Na+ extracellular region to cytosol,R-BTA-2730663.1,UNC80 [plasma membrane],F1MJ95,UniProt:F1MJ95
+R-CFA-2730664.1,UNC79:UNC80:NALCN transports Na+ extracellular region to cytosol,R-CFA-2730661.1,NALCN [plasma membrane],F6XK54,UniProt:F6XK54
+R-CFA-2730664.1,UNC79:UNC80:NALCN transports Na+ extracellular region to cytosol,R-CFA-2730660.1,UNC79 [plasma membrane],F1PKX0,UniProt:F1PKX0
+R-CFA-2730664.1,UNC79:UNC80:NALCN transports Na+ extracellular region to cytosol,R-CFA-2730663.1,UNC80 [plasma membrane],F1PR53,UniProt:F1PR53
+R-MMU-2730664.1,UNC79:UNC80:NALCN transports Na+ extracellular region to cytosol,R-MMU-2730661.1,Nalcn [plasma membrane],Q8BXR5,UniProt:Q8BXR5
+R-MMU-2730664.1,UNC79:UNC80:NALCN transports Na+ extracellular region to cytosol,R-MMU-2730660.1,Unc79 [plasma membrane],Q0KK59,UniProt:Q0KK59
+R-MMU-2730664.1,UNC79:UNC80:NALCN transports Na+ extracellular region to cytosol,R-MMU-2730663.1,Unc80 [plasma membrane],Q8BLN6,UniProt:Q8BLN6
+R-HSA-2730664.3,UNC79:UNC80:NALCN transports Na+ extracellular region to cytosol,R-HSA-2730661.1,NALCN [plasma membrane],Q8IZF0,UniProt:Q8IZF0 NALCN
+R-HSA-2730664.3,UNC79:UNC80:NALCN transports Na+ extracellular region to cytosol,R-HSA-2730660.1,UNC79 [plasma membrane],Q9P2D8,UniProt:Q9P2D8 UNC79
+R-HSA-2730664.3,UNC79:UNC80:NALCN transports Na+ extracellular region to cytosol,R-HSA-2730663.1,UNC80 [plasma membrane],Q8N2C7,UniProt:Q8N2C7 UNC80
+R-DME-425661.1,"SLC8A1,2,3 exchange 3Na+ for Ca2+",R-DME-425681.1,Calx [plasma membrane],A0A0B4K6E2,UniProt:A0A0B4K6E2
+R-DME-8876312.1,"SLC5A12 cotransports Na+ with LACT, PYR, NCA from extracellular region to cytosol",R-DME-5215942.1,dSLC5A1 [plasma membrane],Q7K3Q2,UniProt:Q7K3Q2
+R-GGA-8876312.1,"SLC5A12 cotransports Na+ with LACT, PYR, NCA from extracellular region to cytosol",R-GGA-5215942.1,SLC5A12 [plasma membrane],F1NJG7,UniProt:F1NJG7
+R-XTR-8876312.1,"SLC5A12 cotransports Na+ with LACT, PYR, NCA from extracellular region to cytosol",R-XTR-5215942.1,slc5a12 [plasma membrane],A0A6I8R6K5,UniProt:A0A6I8R6K5
+R-DRE-8876312.1,"SLC5A12 cotransports Na+ with LACT, PYR, NCA from extracellular region to cytosol",R-DRE-5215942.1,slc5a12 [plasma membrane],Q7T384,UniProt:Q7T384
+R-SSC-8876312.1,"SLC5A12 cotransports Na+ with LACT, PYR, NCA from extracellular region to cytosol",R-SSC-5215942.1,SLC5A12 [plasma membrane],F1SFZ7,UniProt:F1SFZ7
+R-BTA-8876312.1,"SLC5A12 cotransports Na+ with LACT, PYR, NCA from extracellular region to cytosol",R-BTA-5215942.1,SLC5A12 [plasma membrane],A7MBD8,UniProt:A7MBD8
+R-CFA-8876312.1,"SLC5A12 cotransports Na+ with LACT, PYR, NCA from extracellular region to cytosol",R-CFA-5215942.1,SLC5A12 [plasma membrane],F1P9I1,UniProt:F1P9I1
+R-RNO-8876312.1,"SLC5A12 cotransports Na+ with LACT, PYR, NCA from extracellular region to cytosol",R-RNO-5215942.1,Slc5a12 [plasma membrane],F1LWL8,UniProt:F1LWL8
+R-MMU-8876312.1,"SLC5A12 cotransports Na+ with LACT, PYR, NCA from extracellular region to cytosol",R-MMU-5215942.1,Slc5a12 [plasma membrane],Q49B93,UniProt:Q49B93
+R-HSA-8876312.1,"SLC5A12 cotransports Na+ with LACT, PYR, NCA from extracellular region to cytosol",R-HSA-5215942.1,SLC5A12 [plasma membrane],Q1EHB4,UniProt:Q1EHB4 SLC5A12
+R-DRE-428609.1,Type I Na+-coupled phosphate co-transport,R-DRE-433658.1,SLC17A1 [plasma membrane],E7F467,UniProt:E7F467
+R-SSC-428609.1,Type I Na+-coupled phosphate co-transport,R-SSC-433658.1,SLC17A1 [plasma membrane],Q7YQJ7,UniProt:Q7YQJ7
+R-BTA-428609.1,Type I Na+-coupled phosphate co-transport,R-BTA-433658.1,SLC17A1 [plasma membrane],F1N6Z8,UniProt:F1N6Z8
+R-CFA-428609.1,Type I Na+-coupled phosphate co-transport,R-CFA-433658.1,SLC17A1 [plasma membrane],E2R679,UniProt:E2R679
+R-RNO-428609.1,Type I Na+-coupled phosphate co-transport,R-RNO-433658.1,Slc17a1 [plasma membrane],Q62795,UniProt:Q62795
+R-MMU-428609.1,Type I Na+-coupled phosphate co-transport,R-MMU-433658.1,Slc17a1 [plasma membrane],Q61983,UniProt:Q61983
+R-HSA-428609.1,Type I Na+-coupled phosphate co-transport,R-HSA-433658.1,SLC17A1 [plasma membrane],Q14916,UniProt:Q14916 SLC17A1
+R-CEL-429591.1,SLC5A5 cotransports Na+ with I- from extracellular region to cytosol,R-CEL-209833.1,SLC5A5 [plasma membrane],Q23616,UniProt:Q23616
+R-GGA-429591.1,SLC5A5 cotransports Na+ with I- from extracellular region to cytosol,R-GGA-209833.1,SLC5A5 [plasma membrane],A0A3Q2UFU3,UniProt:A0A3Q2UFU3
+R-XTR-429591.1,SLC5A5 cotransports Na+ with I- from extracellular region to cytosol,R-XTR-209833.1,slc5a5 [plasma membrane],F6RW14,UniProt:F6RW14
+R-DRE-429591.1,SLC5A5 cotransports Na+ with I- from extracellular region to cytosol,R-DRE-209833.1,SLC5A5 [plasma membrane],A4IG60,UniProt:A4IG60
+R-SSC-429591.1,SLC5A5 cotransports Na+ with I- from extracellular region to cytosol,R-SSC-209833.1,SLC5A5 [plasma membrane],A0A287AIH3,UniProt:A0A287AIH3
+R-BTA-429591.1,SLC5A5 cotransports Na+ with I- from extracellular region to cytosol,R-BTA-209833.1,SLC5A5 [plasma membrane],F1MT46,UniProt:F1MT46
+R-CFA-429591.1,SLC5A5 cotransports Na+ with I- from extracellular region to cytosol,R-CFA-209833.1,SLC5A5 [plasma membrane],E2RMU7,UniProt:E2RMU7
+R-RNO-429591.1,SLC5A5 cotransports Na+ with I- from extracellular region to cytosol,R-RNO-209833.1,Slc5a5 [plasma membrane],Q63008,UniProt:Q63008
+R-MMU-429591.1,SLC5A5 cotransports Na+ with I- from extracellular region to cytosol,R-MMU-209833.1,Slc5a5 [plasma membrane],Q99PN0,UniProt:Q99PN0
+R-HSA-429591.1,SLC5A5 cotransports Na+ with I- from extracellular region to cytosol,R-HSA-209833.1,SLC5A5 [plasma membrane],Q92911,UniProt:Q92911 SLC5A5
+R-DME-425994.1,Na+/H+ exchanger transport (at cell membrane),R-DME-425975.1,Nhe2 [plasma membrane],B7YZY2,UniProt:B7YZY2
+R-DME-352371.1,"SLC1A4-mediated exchange of extracellular threonine for cytosolic alanine, serine, or cysteine",R-DME-352349.1,Eaat1 [plasma membrane],A0A6H2EJK0,UniProt:A0A6H2EJK0
+R-GGA-352371.1,"SLC1A4-mediated exchange of extracellular threonine for cytosolic alanine, serine, or cysteine",R-GGA-352349.1,SLC1A4 [plasma membrane],E1BRV6,UniProt:E1BRV6
+R-XTR-352371.1,"SLC1A4-mediated exchange of extracellular threonine for cytosolic alanine, serine, or cysteine",R-XTR-352349.1,slc1a4 [plasma membrane],F6QUP8,UniProt:F6QUP8
+R-DRE-352371.1,"SLC1A4-mediated exchange of extracellular threonine for cytosolic alanine, serine, or cysteine",R-DRE-352349.1,SLC1A4 [plasma membrane],D7RVS1,UniProt:D7RVS1
+R-SSC-352371.1,"SLC1A4-mediated exchange of extracellular threonine for cytosolic alanine, serine, or cysteine",R-SSC-352349.1,SLC1A4 [plasma membrane],I3LAL2,UniProt:I3LAL2
+R-BTA-352371.1,"SLC1A4-mediated exchange of extracellular threonine for cytosolic alanine, serine, or cysteine",R-BTA-352349.1,SLC1A4 [plasma membrane],A2VDL4,UniProt:A2VDL4
+R-CFA-352371.1,"SLC1A4-mediated exchange of extracellular threonine for cytosolic alanine, serine, or cysteine",R-CFA-352349.1,SLC1A4 [plasma membrane],F1Q0H9,UniProt:F1Q0H9
+R-RNO-352371.1,"SLC1A4-mediated exchange of extracellular threonine for cytosolic alanine, serine, or cysteine",R-RNO-352349.1,Slc1a4 [plasma membrane],Q76GL9,UniProt:Q76GL9
+R-MMU-352371.1,"SLC1A4-mediated exchange of extracellular threonine for cytosolic alanine, serine, or cysteine",R-MMU-352349.1,Slc1a4 [plasma membrane],O35874,UniProt:O35874
+R-HSA-352371.1,"SLC1A4-mediated exchange of extracellular threonine for cytosolic alanine, serine, or cysteine",R-HSA-352349.1,SLC1A4 [plasma membrane],P43007,UniProt:P43007 SLC1A4
+R-XTR-352182.1,"SLC38A5-mediated uptake of glutamine, histidine, asparagine, and serine",R-XTR-352167.1,slc38a5 [plasma membrane],A0A6I8SG19,UniProt:A0A6I8SG19
+R-DRE-352182.1,"SLC38A5-mediated uptake of glutamine, histidine, asparagine, and serine",R-DRE-352167.1,slc38a3 [plasma membrane],Q6DG25,UniProt:Q6DG25
+R-SSC-352182.1,"SLC38A5-mediated uptake of glutamine, histidine, asparagine, and serine",R-SSC-352167.1,SLC38A5 [plasma membrane],A0A287B8G2,UniProt:A0A287B8G2
+R-BTA-352182.1,"SLC38A5-mediated uptake of glutamine, histidine, asparagine, and serine",R-BTA-352167.1,SLC38A5 [plasma membrane],Q5E9S9,UniProt:Q5E9S9
+R-CFA-352182.1,"SLC38A5-mediated uptake of glutamine, histidine, asparagine, and serine",R-CFA-352167.1,SLC38A5 [plasma membrane],F1PJV8,UniProt:F1PJV8
+R-RNO-352182.1,"SLC38A5-mediated uptake of glutamine, histidine, asparagine, and serine",R-RNO-352167.1,Slc38a5 [plasma membrane],A2VCW5,UniProt:A2VCW5
+R-MMU-352182.1,"SLC38A5-mediated uptake of glutamine, histidine, asparagine, and serine",R-MMU-352167.1,Slc38a5 [plasma membrane],Q3U1J0,UniProt:Q3U1J0
+R-HSA-352182.2,"SLC38A5-mediated uptake of glutamine, histidine, asparagine, and serine",R-HSA-352167.1,SLC38A5 [plasma membrane],Q8WUX1,UniProt:Q8WUX1 SLC38A5
+R-GGA-352119.1,SLC38A1 (ATA1)-mediated uptake of neutral amino acids,R-GGA-212663.1,SLC38A1 [plasma membrane],F1NYN5,UniProt:F1NYN5
+R-XTR-352119.1,SLC38A1 (ATA1)-mediated uptake of neutral amino acids,R-XTR-212663.1,slc38a1 [plasma membrane],A0A6I8SU71,UniProt:A0A6I8SU71
+R-BTA-352119.1,SLC38A1 (ATA1)-mediated uptake of neutral amino acids,R-BTA-212663.1,SLC38A1 [plasma membrane],F1MTX9,UniProt:F1MTX9
+R-CFA-352119.1,SLC38A1 (ATA1)-mediated uptake of neutral amino acids,R-CFA-212663.1,SLC38A1 [plasma membrane],F6XT35,UniProt:F6XT35
+R-RNO-352119.1,SLC38A1 (ATA1)-mediated uptake of neutral amino acids,R-RNO-212663.1,Slc38a1 [plasma membrane],Q9JM15,UniProt:Q9JM15
+R-MMU-352119.1,SLC38A1 (ATA1)-mediated uptake of neutral amino acids,R-MMU-212663.1,Slc38a1 [plasma membrane],Q8K2P7,UniProt:Q8K2P7
+R-HSA-352119.1,SLC38A1 (ATA1)-mediated uptake of neutral amino acids,R-HSA-212663.1,SLC38A1 [plasma membrane],Q9H2H9,UniProt:Q9H2H9 SLC38A1
+R-GGA-352174.1,"SLC38A3-mediated uptake of glutamine, histidine, asparagine, and alanine",R-GGA-352171.1,SLC38A3 [plasma membrane],R4GIH6,UniProt:R4GIH6
+R-DRE-352174.1,"SLC38A3-mediated uptake of glutamine, histidine, asparagine, and alanine",R-DRE-352171.1,SLC38A3 [plasma membrane],A0A2R8Q531,UniProt:A0A2R8Q531
+R-SSC-352174.1,"SLC38A3-mediated uptake of glutamine, histidine, asparagine, and alanine",R-SSC-352171.1,SLC38A3 [plasma membrane],A0A480TWG2,UniProt:A0A480TWG2
+R-BTA-352174.1,"SLC38A3-mediated uptake of glutamine, histidine, asparagine, and alanine",R-BTA-352171.1,SLC38A3 [plasma membrane],F1MXZ5,UniProt:F1MXZ5
+R-CFA-352174.1,"SLC38A3-mediated uptake of glutamine, histidine, asparagine, and alanine",R-CFA-352171.1,SLC38A3 [plasma membrane],E2R7Z7,UniProt:E2R7Z7
+R-RNO-352174.1,"SLC38A3-mediated uptake of glutamine, histidine, asparagine, and alanine",R-RNO-352171.1,Slc38a3 [plasma membrane],Q9JHZ9,UniProt:Q9JHZ9
+R-MMU-352174.1,"SLC38A3-mediated uptake of glutamine, histidine, asparagine, and alanine",R-MMU-352171.1,Slc38a3 [plasma membrane],Q9DCP2,UniProt:Q9DCP2
+R-HSA-352174.1,"SLC38A3-mediated uptake of glutamine, histidine, asparagine, and alanine",R-HSA-352171.1,SLC38A3 [plasma membrane],Q99624,UniProt:Q99624 SLC38A3
+R-DME-352364.1,"SLC1A4-mediated exchange of extracellular alanine for cytosolic serine, threonine, or cysteine",R-DME-352349.1,Eaat1 [plasma membrane],A0A6H2EJK0,UniProt:A0A6H2EJK0
+R-GGA-352364.1,"SLC1A4-mediated exchange of extracellular alanine for cytosolic serine, threonine, or cysteine",R-GGA-352349.1,SLC1A4 [plasma membrane],E1BRV6,UniProt:E1BRV6
+R-XTR-352364.1,"SLC1A4-mediated exchange of extracellular alanine for cytosolic serine, threonine, or cysteine",R-XTR-352349.1,slc1a4 [plasma membrane],F6QUP8,UniProt:F6QUP8
+R-DRE-352364.1,"SLC1A4-mediated exchange of extracellular alanine for cytosolic serine, threonine, or cysteine",R-DRE-352349.1,SLC1A4 [plasma membrane],D7RVS1,UniProt:D7RVS1
+R-SSC-352364.1,"SLC1A4-mediated exchange of extracellular alanine for cytosolic serine, threonine, or cysteine",R-SSC-352349.1,SLC1A4 [plasma membrane],I3LAL2,UniProt:I3LAL2
+R-BTA-352364.1,"SLC1A4-mediated exchange of extracellular alanine for cytosolic serine, threonine, or cysteine",R-BTA-352349.1,SLC1A4 [plasma membrane],A2VDL4,UniProt:A2VDL4
+R-CFA-352364.1,"SLC1A4-mediated exchange of extracellular alanine for cytosolic serine, threonine, or cysteine",R-CFA-352349.1,SLC1A4 [plasma membrane],F1Q0H9,UniProt:F1Q0H9
+R-RNO-352364.1,"SLC1A4-mediated exchange of extracellular alanine for cytosolic serine, threonine, or cysteine",R-RNO-352349.1,Slc1a4 [plasma membrane],Q76GL9,UniProt:Q76GL9
+R-MMU-352364.1,"SLC1A4-mediated exchange of extracellular alanine for cytosolic serine, threonine, or cysteine",R-MMU-352349.1,Slc1a4 [plasma membrane],O35874,UniProt:O35874
+R-HSA-352364.1,"SLC1A4-mediated exchange of extracellular alanine for cytosolic serine, threonine, or cysteine",R-HSA-352349.1,SLC1A4 [plasma membrane],P43007,UniProt:P43007 SLC1A4
+R-GGA-352108.1,SLC38A2 (ATA2)-mediated uptake of neutral amino acids,R-GGA-352093.1,SLC38A2 [plasma membrane],A0A3Q2U4T5,UniProt:A0A3Q2U4T5
+R-XTR-352108.1,SLC38A2 (ATA2)-mediated uptake of neutral amino acids,R-XTR-352093.1,slc38a2 [plasma membrane],F7CPA5,UniProt:F7CPA5
+R-DRE-352108.1,SLC38A2 (ATA2)-mediated uptake of neutral amino acids,R-DRE-352093.1,SLC38A2 [plasma membrane],Q5SPB1,UniProt:Q5SPB1
+R-SSC-352108.1,SLC38A2 (ATA2)-mediated uptake of neutral amino acids,R-SSC-352093.1,SLC38A2 [plasma membrane],A0A288CFU8,UniProt:A0A288CFU8
+R-BTA-352108.1,SLC38A2 (ATA2)-mediated uptake of neutral amino acids,R-BTA-352093.1,SLC38A2 [plasma membrane],A2VE31,UniProt:A2VE31
+R-CFA-352108.1,SLC38A2 (ATA2)-mediated uptake of neutral amino acids,R-CFA-352093.1,SLC38A2 [plasma membrane],J9P955,UniProt:J9P955
+R-RNO-352108.1,SLC38A2 (ATA2)-mediated uptake of neutral amino acids,R-RNO-352093.1,SLC38A2 [plasma membrane],Q9JHE5,UniProt:Q9JHE5
+R-MMU-352108.1,SLC38A2 (ATA2)-mediated uptake of neutral amino acids,R-MMU-352093.1,SLC38A2 [plasma membrane],Q8CFE6,UniProt:Q8CFE6
+R-HSA-352108.1,SLC38A2 (ATA2)-mediated uptake of neutral amino acids,R-HSA-352093.1,SLC38A2 [plasma membrane],Q96QD8,UniProt:Q96QD8 SLC38A2
+R-DME-379426.1,SLC7A6 (y+LAT2)-mediated exchange of extracellular leucine for cytosolic arginine,R-DME-352179.1,CD98hc [plasma membrane],A0A0B4KGE4,UniProt:A0A0B4KGE4
+R-XTR-379426.1,SLC7A6 (y+LAT2)-mediated exchange of extracellular leucine for cytosolic arginine,R-XTR-352179.1,slc3a2 [plasma membrane],A0A803K247,UniProt:A0A803K247
+R-XTR-379426.1,SLC7A6 (y+LAT2)-mediated exchange of extracellular leucine for cytosolic arginine,R-XTR-379425.1,slc7a6 [plasma membrane],Q28I80,UniProt:Q28I80
+R-DRE-379426.1,SLC7A6 (y+LAT2)-mediated exchange of extracellular leucine for cytosolic arginine,R-DRE-352179.1,SLC3A2 [plasma membrane],F1Q7L6,UniProt:F1Q7L6
+R-DRE-379426.1,SLC7A6 (y+LAT2)-mediated exchange of extracellular leucine for cytosolic arginine,R-DRE-379425.1,slc7a6 [plasma membrane],Q59I64,UniProt:Q59I64
+R-BTA-379426.1,SLC7A6 (y+LAT2)-mediated exchange of extracellular leucine for cytosolic arginine,R-BTA-352179.1,SLC3A2 [plasma membrane],Q08DL0,UniProt:Q08DL0
+R-BTA-379426.1,SLC7A6 (y+LAT2)-mediated exchange of extracellular leucine for cytosolic arginine,R-BTA-379425.1,SLC7A6 [plasma membrane],F1MDA3,UniProt:F1MDA3
+R-CFA-379426.1,SLC7A6 (y+LAT2)-mediated exchange of extracellular leucine for cytosolic arginine,R-CFA-352179.1,SLC3A2 [plasma membrane],F1PRC5,UniProt:F1PRC5
+R-CFA-379426.1,SLC7A6 (y+LAT2)-mediated exchange of extracellular leucine for cytosolic arginine,R-CFA-379425.1,SLC7A6 [plasma membrane],F1PA88,UniProt:F1PA88
+R-RNO-379426.1,SLC7A6 (y+LAT2)-mediated exchange of extracellular leucine for cytosolic arginine,R-RNO-352179.1,Slc3a2 [plasma membrane],Q794F9,UniProt:Q794F9
+R-RNO-379426.1,SLC7A6 (y+LAT2)-mediated exchange of extracellular leucine for cytosolic arginine,R-RNO-379425.1,Slc7a6 [plasma membrane],D3ZMM8,UniProt:D3ZMM8
+R-MMU-379426.1,SLC7A6 (y+LAT2)-mediated exchange of extracellular leucine for cytosolic arginine,R-MMU-352179.1,Slc3a2 [plasma membrane],P10852,UniProt:P10852
+R-MMU-379426.1,SLC7A6 (y+LAT2)-mediated exchange of extracellular leucine for cytosolic arginine,R-MMU-379425.1,Slc7a6 [plasma membrane],Q8BGK6,UniProt:Q8BGK6
+R-HSA-379426.1,SLC7A6 (y+LAT2)-mediated exchange of extracellular leucine for cytosolic arginine,R-HSA-352179.1,SLC3A2 [plasma membrane],P08195,UniProt:P08195 SLC3A2
+R-HSA-379426.1,SLC7A6 (y+LAT2)-mediated exchange of extracellular leucine for cytosolic arginine,R-HSA-379425.1,SLC7A6 [plasma membrane],Q92536,UniProt:Q92536 SLC7A6
+R-DME-352354.1,"SLC1A4-mediated exchange of extracellular cysteine for cytosolic alanine, serine, or threonine",R-DME-352349.1,Eaat1 [plasma membrane],A0A6H2EJK0,UniProt:A0A6H2EJK0
+R-GGA-352354.1,"SLC1A4-mediated exchange of extracellular cysteine for cytosolic alanine, serine, or threonine",R-GGA-352349.1,SLC1A4 [plasma membrane],E1BRV6,UniProt:E1BRV6
+R-XTR-352354.1,"SLC1A4-mediated exchange of extracellular cysteine for cytosolic alanine, serine, or threonine",R-XTR-352349.1,slc1a4 [plasma membrane],F6QUP8,UniProt:F6QUP8
+R-DRE-352354.1,"SLC1A4-mediated exchange of extracellular cysteine for cytosolic alanine, serine, or threonine",R-DRE-352349.1,SLC1A4 [plasma membrane],D7RVS1,UniProt:D7RVS1
+R-SSC-352354.1,"SLC1A4-mediated exchange of extracellular cysteine for cytosolic alanine, serine, or threonine",R-SSC-352349.1,SLC1A4 [plasma membrane],I3LAL2,UniProt:I3LAL2
+R-BTA-352354.1,"SLC1A4-mediated exchange of extracellular cysteine for cytosolic alanine, serine, or threonine",R-BTA-352349.1,SLC1A4 [plasma membrane],A2VDL4,UniProt:A2VDL4
+R-CFA-352354.1,"SLC1A4-mediated exchange of extracellular cysteine for cytosolic alanine, serine, or threonine",R-CFA-352349.1,SLC1A4 [plasma membrane],F1Q0H9,UniProt:F1Q0H9
+R-RNO-352354.1,"SLC1A4-mediated exchange of extracellular cysteine for cytosolic alanine, serine, or threonine",R-RNO-352349.1,Slc1a4 [plasma membrane],Q76GL9,UniProt:Q76GL9
+R-MMU-352354.1,"SLC1A4-mediated exchange of extracellular cysteine for cytosolic alanine, serine, or threonine",R-MMU-352349.1,Slc1a4 [plasma membrane],O35874,UniProt:O35874
+R-HSA-352354.1,"SLC1A4-mediated exchange of extracellular cysteine for cytosolic alanine, serine, or threonine",R-HSA-352349.1,SLC1A4 [plasma membrane],P43007,UniProt:P43007 SLC1A4
+R-DME-352347.1,"SLC1A4-mediated exchange of extracellular serine for cytosolic alanine, threonine, or cysteine",R-DME-352349.1,Eaat1 [plasma membrane],A0A6H2EJK0,UniProt:A0A6H2EJK0
+R-GGA-352347.1,"SLC1A4-mediated exchange of extracellular serine for cytosolic alanine, threonine, or cysteine",R-GGA-352349.1,SLC1A4 [plasma membrane],E1BRV6,UniProt:E1BRV6
+R-XTR-352347.1,"SLC1A4-mediated exchange of extracellular serine for cytosolic alanine, threonine, or cysteine",R-XTR-352349.1,slc1a4 [plasma membrane],F6QUP8,UniProt:F6QUP8
+R-DRE-352347.1,"SLC1A4-mediated exchange of extracellular serine for cytosolic alanine, threonine, or cysteine",R-DRE-352349.1,SLC1A4 [plasma membrane],D7RVS1,UniProt:D7RVS1
+R-SSC-352347.1,"SLC1A4-mediated exchange of extracellular serine for cytosolic alanine, threonine, or cysteine",R-SSC-352349.1,SLC1A4 [plasma membrane],I3LAL2,UniProt:I3LAL2
+R-BTA-352347.1,"SLC1A4-mediated exchange of extracellular serine for cytosolic alanine, threonine, or cysteine",R-BTA-352349.1,SLC1A4 [plasma membrane],A2VDL4,UniProt:A2VDL4
+R-CFA-352347.1,"SLC1A4-mediated exchange of extracellular serine for cytosolic alanine, threonine, or cysteine",R-CFA-352349.1,SLC1A4 [plasma membrane],F1Q0H9,UniProt:F1Q0H9
+R-RNO-352347.1,"SLC1A4-mediated exchange of extracellular serine for cytosolic alanine, threonine, or cysteine",R-RNO-352349.1,Slc1a4 [plasma membrane],Q76GL9,UniProt:Q76GL9
+R-MMU-352347.1,"SLC1A4-mediated exchange of extracellular serine for cytosolic alanine, threonine, or cysteine",R-MMU-352349.1,Slc1a4 [plasma membrane],O35874,UniProt:O35874
+R-HSA-352347.1,"SLC1A4-mediated exchange of extracellular serine for cytosolic alanine, threonine, or cysteine",R-HSA-352349.1,SLC1A4 [plasma membrane],P43007,UniProt:P43007 SLC1A4
+R-DME-379415.1,"SLC7A7:SLC3A2 exchanges L-Arg for L-Leu, Na+ across the plasma membrane",R-DME-352179.1,CD98hc [plasma membrane],A0A0B4KGE4,UniProt:A0A0B4KGE4
+R-XTR-379415.1,"SLC7A7:SLC3A2 exchanges L-Arg for L-Leu, Na+ across the plasma membrane",R-XTR-352179.1,slc3a2 [plasma membrane],A0A803K247,UniProt:A0A803K247
+R-XTR-379415.1,"SLC7A7:SLC3A2 exchanges L-Arg for L-Leu, Na+ across the plasma membrane",R-XTR-379417.1,slc7a7 [plasma membrane],Q6P4M7,UniProt:Q6P4M7
+R-DRE-379415.1,"SLC7A7:SLC3A2 exchanges L-Arg for L-Leu, Na+ across the plasma membrane",R-DRE-352179.1,SLC3A2 [plasma membrane],F1Q7L6,UniProt:F1Q7L6
+R-DRE-379415.1,"SLC7A7:SLC3A2 exchanges L-Arg for L-Leu, Na+ across the plasma membrane",R-DRE-379417.1,SLC7A7 [plasma membrane],F1R8V8,UniProt:F1R8V8
+R-SSC-379415.1,"SLC7A7:SLC3A2 exchanges L-Arg for L-Leu, Na+ across the plasma membrane",R-SSC-352179.1,SLC3A2 [plasma membrane],I3LB80,UniProt:I3LB80
+R-SSC-379415.1,"SLC7A7:SLC3A2 exchanges L-Arg for L-Leu, Na+ across the plasma membrane",R-SSC-379417.1,SLC7A7 [plasma membrane],A0A287ALX4,UniProt:A0A287ALX4
+R-BTA-379415.1,"SLC7A7:SLC3A2 exchanges L-Arg for L-Leu, Na+ across the plasma membrane",R-BTA-352179.1,SLC3A2 [plasma membrane],Q08DL0,UniProt:Q08DL0
+R-BTA-379415.1,"SLC7A7:SLC3A2 exchanges L-Arg for L-Leu, Na+ across the plasma membrane",R-BTA-379417.1,SLC7A7 [plasma membrane],A0A3Q1MGJ2,UniProt:A0A3Q1MGJ2
+R-CFA-379415.1,"SLC7A7:SLC3A2 exchanges L-Arg for L-Leu, Na+ across the plasma membrane",R-CFA-352179.1,SLC3A2 [plasma membrane],F1PRC5,UniProt:F1PRC5
+R-CFA-379415.1,"SLC7A7:SLC3A2 exchanges L-Arg for L-Leu, Na+ across the plasma membrane",R-CFA-379417.1,SLC7A7 [plasma membrane],F1PEK0,UniProt:F1PEK0
+R-RNO-379415.1,"SLC7A7:SLC3A2 exchanges L-Arg for L-Leu, Na+ across the plasma membrane",R-RNO-352179.1,Slc3a2 [plasma membrane],Q794F9,UniProt:Q794F9
+R-RNO-379415.1,"SLC7A7:SLC3A2 exchanges L-Arg for L-Leu, Na+ across the plasma membrane",R-RNO-379417.1,Slc7a7 [plasma membrane],Q9R0S5,UniProt:Q9R0S5
+R-MMU-379415.1,"SLC7A7:SLC3A2 exchanges L-Arg for L-Leu, Na+ across the plasma membrane",R-MMU-352179.1,Slc3a2 [plasma membrane],P10852,UniProt:P10852
+R-MMU-379415.1,"SLC7A7:SLC3A2 exchanges L-Arg for L-Leu, Na+ across the plasma membrane",R-MMU-379417.1,Slc7a7 [plasma membrane],Q9Z1K8,UniProt:Q9Z1K8
+R-HSA-379415.1,"SLC7A7:SLC3A2 exchanges L-Arg for L-Leu, Na+ across the plasma membrane",R-HSA-352179.1,SLC3A2 [plasma membrane],P08195,UniProt:P08195 SLC3A2
+R-HSA-379415.1,"SLC7A7:SLC3A2 exchanges L-Arg for L-Leu, Na+ across the plasma membrane",R-HSA-379417.1,SLC7A7 [plasma membrane],Q9UM01,UniProt:Q9UM01 SLC7A7
+R-DME-352385.1,SLC1A5-mediated exchange of glutamine and alanine across the plasma membrane,R-DME-352376.1,Eaat1 [plasma membrane],A0A6H2EJK0,UniProt:A0A6H2EJK0
+R-XTR-352385.1,SLC1A5-mediated exchange of glutamine and alanine across the plasma membrane,R-XTR-352376.1,slc1a5 [plasma membrane],F7C3I3,UniProt:F7C3I3
+R-DRE-352385.1,SLC1A5-mediated exchange of glutamine and alanine across the plasma membrane,R-DRE-352376.1,SLC1A5 [plasma membrane],A0A0G2L9M2,UniProt:A0A0G2L9M2
+R-SSC-352385.1,SLC1A5-mediated exchange of glutamine and alanine across the plasma membrane,R-SSC-352376.1,SLC1A5 [plasma membrane],F1RM08,UniProt:F1RM08
+R-BTA-352385.1,SLC1A5-mediated exchange of glutamine and alanine across the plasma membrane,R-BTA-352376.1,SLC1A5 [plasma membrane],Q95JC7,UniProt:Q95JC7
+R-CFA-352385.1,SLC1A5-mediated exchange of glutamine and alanine across the plasma membrane,R-CFA-352376.1,SLC1A5 [plasma membrane],A0A5F4C8T4,UniProt:A0A5F4C8T4
+R-RNO-352385.1,SLC1A5-mediated exchange of glutamine and alanine across the plasma membrane,R-RNO-352376.1,Slc1a5 [plasma membrane],D3ZJ25,UniProt:D3ZJ25
+R-MMU-352385.1,SLC1A5-mediated exchange of glutamine and alanine across the plasma membrane,R-MMU-352376.1,SLC1A5 [plasma membrane],P51912,UniProt:P51912
+R-HSA-352385.1,SLC1A5-mediated exchange of glutamine and alanine across the plasma membrane,R-HSA-352376.1,SLC1A5 [plasma membrane],Q15758,UniProt:Q15758 SLC1A5
+R-DME-352379.1,SLC1A5-mediated exchange of alanine and glutamine across the plasma membrane,R-DME-352376.1,Eaat1 [plasma membrane],A0A6H2EJK0,UniProt:A0A6H2EJK0
+R-XTR-352379.1,SLC1A5-mediated exchange of alanine and glutamine across the plasma membrane,R-XTR-352376.1,slc1a5 [plasma membrane],F7C3I3,UniProt:F7C3I3
+R-DRE-352379.1,SLC1A5-mediated exchange of alanine and glutamine across the plasma membrane,R-DRE-352376.1,SLC1A5 [plasma membrane],A0A0G2L9M2,UniProt:A0A0G2L9M2
+R-SSC-352379.1,SLC1A5-mediated exchange of alanine and glutamine across the plasma membrane,R-SSC-352376.1,SLC1A5 [plasma membrane],F1RM08,UniProt:F1RM08
+R-BTA-352379.1,SLC1A5-mediated exchange of alanine and glutamine across the plasma membrane,R-BTA-352376.1,SLC1A5 [plasma membrane],Q95JC7,UniProt:Q95JC7
+R-CFA-352379.1,SLC1A5-mediated exchange of alanine and glutamine across the plasma membrane,R-CFA-352376.1,SLC1A5 [plasma membrane],A0A5F4C8T4,UniProt:A0A5F4C8T4
+R-RNO-352379.1,SLC1A5-mediated exchange of alanine and glutamine across the plasma membrane,R-RNO-352376.1,Slc1a5 [plasma membrane],D3ZJ25,UniProt:D3ZJ25
+R-MMU-352379.1,SLC1A5-mediated exchange of alanine and glutamine across the plasma membrane,R-MMU-352376.1,SLC1A5 [plasma membrane],P51912,UniProt:P51912
+R-HSA-352379.1,SLC1A5-mediated exchange of alanine and glutamine across the plasma membrane,R-HSA-352376.1,SLC1A5 [plasma membrane],Q15758,UniProt:Q15758 SLC1A5
+R-SCE-426130.1,"SLC12A3 cotransports Cl-, Na+ from extracellular region to cytosol",R-SCE-426147.1,VHC1 [plasma membrane],P38329,UniProt:P38329
+R-SPO-426130.1,"SLC12A3 cotransports Cl-, Na+ from extracellular region to cytosol",R-SPO-426147.1,SLC12A3 [plasma membrane],O60146,UniProt:O60146
+R-XTR-426130.1,"SLC12A3 cotransports Cl-, Na+ from extracellular region to cytosol",R-XTR-426147.1,slc12a3 [plasma membrane],L7N3R2,UniProt:L7N3R2
+R-DRE-426130.1,"SLC12A3 cotransports Cl-, Na+ from extracellular region to cytosol",R-DRE-426147.1,SLC12A3 [plasma membrane],Q1LX46,UniProt:Q1LX46
+R-SSC-426130.1,"SLC12A3 cotransports Cl-, Na+ from extracellular region to cytosol",R-SSC-426147.1,SLC12A3 [plasma membrane],A0A287BHP2,UniProt:A0A287BHP2
+R-BTA-426130.1,"SLC12A3 cotransports Cl-, Na+ from extracellular region to cytosol",R-BTA-426147.1,SLC12A3 [plasma membrane],A0A3Q1MAS3,UniProt:A0A3Q1MAS3
+R-CFA-426130.1,"SLC12A3 cotransports Cl-, Na+ from extracellular region to cytosol",R-CFA-426147.1,SLC12A3 [plasma membrane],F6UKR7,UniProt:F6UKR7
+R-RNO-426130.1,"SLC12A3 cotransports Cl-, Na+ from extracellular region to cytosol",R-RNO-426147.1,Slc12a3 [plasma membrane],P55018,UniProt:P55018
+R-MMU-426130.1,"SLC12A3 cotransports Cl-, Na+ from extracellular region to cytosol",R-MMU-426147.1,Slc12a3 [plasma membrane],P59158,UniProt:P59158
+R-HSA-426130.1,"SLC12A3 cotransports Cl-, Na+ from extracellular region to cytosol",R-HSA-426147.1,SLC12A3 [plasma membrane],P55017,UniProt:P55017 SLC12A3
+R-SCE-426086.1,"SLC12A1,2 cotransports Na+, K+, 2Cl- from extracellular region to cytosol",R-SCE-426139.1,VHC1 [plasma membrane],P38329,UniProt:P38329
+R-CEL-425577.1,Na+-driven Cl-/HCO3- exchanger transport,R-CEL-425548.1,abts-1 [plasma membrane],B3WFV9,UniProt:B3WFV9
+R-DME-425577.1,Na+-driven Cl-/HCO3- exchanger transport,R-DME-425548.1,Ndae1 [plasma membrane],Q8IPI3,UniProt:Q8IPI3
+R-SCE-427605.1,"SLC20A1,2 cotransport Pi, Na+ from extracellular region to cytosol",R-SCE-427600.1,PHO89 [plasma membrane],P38361,UniProt:P38361
+R-DME-427605.1,"SLC20A1,2 cotransport Pi, Na+ from extracellular region to cytosol",R-DME-427600.1,NaPi-III [plasma membrane],Q9VTG0,UniProt:Q9VTG0
+R-XTR-427656.1,"SLC34A1,2 cotransports Pi, 3Na+ from extracellular region to cytosol",R-XTR-427586.1,slc34a2 [plasma membrane],A0A6I8QH66,UniProt:A0A6I8QH66
+R-CEL-427645.1,"SLC34A3 cotransports Pi, 2Na+",R-CEL-427665.1,SLC34A3 [plasma membrane],Q23530,UniProt:Q23530
+R-XTR-427645.1,"SLC34A3 cotransports Pi, 2Na+",R-XTR-427665.1,slc34a3 [plasma membrane],F7BEH2,UniProt:F7BEH2
+R-SSC-427645.1,"SLC34A3 cotransports Pi, 2Na+",R-SSC-427665.1,SLC34A3 [plasma membrane],A0A287B355,UniProt:A0A287B355
+R-BTA-427645.1,"SLC34A3 cotransports Pi, 2Na+",R-BTA-427665.1,SLC34A3 [plasma membrane],A0A3Q1N3R7,UniProt:A0A3Q1N3R7
+R-RNO-427645.1,"SLC34A3 cotransports Pi, 2Na+",R-RNO-427665.1,Slc34a3 [plasma membrane],Q8K4R8,UniProt:Q8K4R8
+R-MMU-427645.1,"SLC34A3 cotransports Pi, 2Na+",R-MMU-427665.1,Slc34a3 [plasma membrane],Q80SU6,UniProt:Q80SU6
+R-HSA-427645.1,"SLC34A3 cotransports Pi, 2Na+",R-HSA-427665.1,SLC34A3 [plasma membrane],Q8N130,UniProt:Q8N130 SLC34A3
+R-GGA-429581.1,SLC5A6 transports vitamins from extracellular region to cytosol,R-GGA-5358989.1,PDZD11 [cytosol],Q5ZIK2,UniProt:Q5ZIK2
+R-GGA-429581.1,SLC5A6 transports vitamins from extracellular region to cytosol,R-GGA-199221.1,SLC5A6 [plasma membrane],A0A1D5PFU3,UniProt:A0A1D5PFU3
+R-XTR-429581.1,SLC5A6 transports vitamins from extracellular region to cytosol,R-XTR-5358989.1,pdzd11 [cytosol],A0A6I8S5E3,UniProt:A0A6I8S5E3
+R-XTR-429581.1,SLC5A6 transports vitamins from extracellular region to cytosol,R-XTR-199221.1,slc5a6 [plasma membrane],A0A803JZM2,UniProt:A0A803JZM2
+R-DRE-429581.1,SLC5A6 transports vitamins from extracellular region to cytosol,R-DRE-5358989.1,pdzd11 [cytosol],Q6NXB2,UniProt:Q6NXB2
+R-DRE-429581.1,SLC5A6 transports vitamins from extracellular region to cytosol,R-DRE-199221.1,SLC5A6 [plasma membrane],Q5RIG1,UniProt:Q5RIG1
+R-SSC-429581.1,SLC5A6 transports vitamins from extracellular region to cytosol,R-SSC-5358989.1,PDZD11 [cytosol],Q6QA76,UniProt:Q6QA76
+R-SSC-429581.1,SLC5A6 transports vitamins from extracellular region to cytosol,R-SSC-199221.1,SLC5A6 [plasma membrane],A0A287BEL5,UniProt:A0A287BEL5
+R-BTA-429581.1,SLC5A6 transports vitamins from extracellular region to cytosol,R-BTA-5358989.1,PDZD11 [cytosol],Q32LE7,UniProt:Q32LE7
+R-BTA-429581.1,SLC5A6 transports vitamins from extracellular region to cytosol,R-BTA-199221.1,SLC5A6 [plasma membrane],F1MN65,UniProt:F1MN65
+R-CFA-429581.1,SLC5A6 transports vitamins from extracellular region to cytosol,R-CFA-5358989.1,PDZD11 [cytosol],A0A5F4CUA3,UniProt:A0A5F4CUA3
+R-CFA-429581.1,SLC5A6 transports vitamins from extracellular region to cytosol,R-CFA-199221.1,SLC5A6 [plasma membrane],E2R9T1,UniProt:E2R9T1
+R-RNO-429581.1,SLC5A6 transports vitamins from extracellular region to cytosol,R-RNO-5358989.1,PDZD11 [cytosol],D3Z8K0,UniProt:D3Z8K0
+R-RNO-429581.1,SLC5A6 transports vitamins from extracellular region to cytosol,R-RNO-199221.1,Slc5a6 [plasma membrane],O70247,UniProt:O70247
+R-MMU-429581.1,SLC5A6 transports vitamins from extracellular region to cytosol,R-MMU-5358989.1,Pdzd11 [cytosol],Q9CZG9,UniProt:Q9CZG9
+R-MMU-429581.1,SLC5A6 transports vitamins from extracellular region to cytosol,R-MMU-199221.1,Slc5a6 [plasma membrane],Q5U4D8,UniProt:Q5U4D8
+R-HSA-429581.1,SLC5A6 transports vitamins from extracellular region to cytosol,R-HSA-5358989.1,PDZD11 [cytosol],Q5EBL8,UniProt:Q5EBL8 PDZD11
+R-HSA-429581.1,SLC5A6 transports vitamins from extracellular region to cytosol,R-HSA-199221.1,SLC5A6 [plasma membrane],Q9Y289,UniProt:Q9Y289 SLC5A6
+R-CEL-194187.1,SLC10A2 transports bile salts and acids and Na+ from extracellular region to cytosol,R-CEL-194173.1,SLC10A2 [plasma membrane],Q33BL1,UniProt:Q33BL1
+R-GGA-194187.1,SLC10A2 transports bile salts and acids and Na+ from extracellular region to cytosol,R-GGA-194173.1,SLC10A2 [plasma membrane],E1BSN2,UniProt:E1BSN2
+R-XTR-194187.1,SLC10A2 transports bile salts and acids and Na+ from extracellular region to cytosol,R-XTR-194173.1,LOC100498575 [plasma membrane],A0A6I8PLD6,UniProt:A0A6I8PLD6
+R-DRE-194187.1,SLC10A2 transports bile salts and acids and Na+ from extracellular region to cytosol,R-DRE-194173.1,SLC10A2 [plasma membrane],A0A2R8RW10,UniProt:A0A2R8RW10
+R-SSC-194187.1,SLC10A2 transports bile salts and acids and Na+ from extracellular region to cytosol,R-SSC-194173.1,SLC10A2 [plasma membrane],I3L735,UniProt:I3L735
+R-BTA-194187.1,SLC10A2 transports bile salts and acids and Na+ from extracellular region to cytosol,R-BTA-194173.1,SLC10A2 [plasma membrane],F1N5D8,UniProt:F1N5D8
+R-CFA-194187.1,SLC10A2 transports bile salts and acids and Na+ from extracellular region to cytosol,R-CFA-194173.1,slc10a2 [plasma membrane],Q70HQ9,UniProt:Q70HQ9
+R-RNO-194187.1,SLC10A2 transports bile salts and acids and Na+ from extracellular region to cytosol,R-RNO-194173.1,Slc10a2 [plasma membrane],Q62633,UniProt:Q62633
+R-MMU-194187.1,SLC10A2 transports bile salts and acids and Na+ from extracellular region to cytosol,R-MMU-194173.1,Slc10a2 [plasma membrane],P70172,UniProt:P70172
+R-HSA-194187.3,SLC10A2 transports bile salts and acids and Na+ from extracellular region to cytosol,R-HSA-194173.1,SLC10A2 [plasma membrane],Q12908,UniProt:Q12908 SLC10A2
+R-GGA-109530.1,"Concentrative transport (import) of a nucleoside and a sodium ions by solute carrier family 28 (sodium-coupled nucleoside transporter), member 1",R-GGA-64023.1,SLC28A2 [plasma membrane],A0A1D5P3G6,UniProt:A0A1D5P3G6
+R-XTR-109530.1,"Concentrative transport (import) of a nucleoside and a sodium ions by solute carrier family 28 (sodium-coupled nucleoside transporter), member 1",R-XTR-64023.1,slc28a2 [plasma membrane],A0A6I8QF59,UniProt:A0A6I8QF59
+R-DRE-109530.1,"Concentrative transport (import) of a nucleoside and a sodium ions by solute carrier family 28 (sodium-coupled nucleoside transporter), member 1",R-DRE-64023.1,SLC28A1 [plasma membrane],A0A2R8QIQ7,UniProt:A0A2R8QIQ7
+R-SSC-109530.1,"Concentrative transport (import) of a nucleoside and a sodium ions by solute carrier family 28 (sodium-coupled nucleoside transporter), member 1",R-SSC-64023.1,SLC28A1 [plasma membrane],A0A286ZNF3,UniProt:A0A286ZNF3
+R-BTA-109530.1,"Concentrative transport (import) of a nucleoside and a sodium ions by solute carrier family 28 (sodium-coupled nucleoside transporter), member 1",R-BTA-64023.1,SLC28A1 [plasma membrane],A0A3Q1LFZ9,UniProt:A0A3Q1LFZ9
+R-RNO-109530.1,"Concentrative transport (import) of a nucleoside and a sodium ions by solute carrier family 28 (sodium-coupled nucleoside transporter), member 1",R-RNO-64023.1,Slc28a1 [plasma membrane],Q62674,UniProt:Q62674
+R-MMU-109530.1,"Concentrative transport (import) of a nucleoside and a sodium ions by solute carrier family 28 (sodium-coupled nucleoside transporter), member 1",R-MMU-64023.1,Slc28a1 [plasma membrane],E9PXX9,UniProt:E9PXX9
+R-HSA-109530.1,"Concentrative transport (import) of a nucleoside and a sodium ions by solute carrier family 28 (sodium-coupled nucleoside transporter), member 1",R-HSA-64023.1,SLC28A1 [plasma membrane],O00337,UniProt:O00337 SLC28A1
+R-CEL-109538.1,"Concentrative transport (import) of a nucleoside and two sodium ions by solute carrier family 28 (sodium-coupled nucleoside transporter), member 3",R-CEL-83915.1,slc-28.2 [plasma membrane],A0A131MBV2,UniProt:A0A131MBV2
+R-DME-109538.1,"Concentrative transport (import) of a nucleoside and two sodium ions by solute carrier family 28 (sodium-coupled nucleoside transporter), member 3",R-DME-83915.1,CNT2 [plasma membrane],Q7K4A1,UniProt:Q7K4A1
+R-GGA-109538.1,"Concentrative transport (import) of a nucleoside and two sodium ions by solute carrier family 28 (sodium-coupled nucleoside transporter), member 3",R-GGA-83915.1,SLC28A3 [plasma membrane],F1P2E4,UniProt:F1P2E4
+R-XTR-109538.1,"Concentrative transport (import) of a nucleoside and two sodium ions by solute carrier family 28 (sodium-coupled nucleoside transporter), member 3",R-XTR-83915.1,slc28a3 [plasma membrane],A0A6I8RH58,UniProt:A0A6I8RH58
+R-SSC-109538.1,"Concentrative transport (import) of a nucleoside and two sodium ions by solute carrier family 28 (sodium-coupled nucleoside transporter), member 3",R-SSC-83915.1,SLC28A3 [plasma membrane],F1S4H3,UniProt:F1S4H3
+R-BTA-109538.1,"Concentrative transport (import) of a nucleoside and two sodium ions by solute carrier family 28 (sodium-coupled nucleoside transporter), member 3",R-BTA-83915.1,SLC28A3 [plasma membrane],F1MGR1,UniProt:F1MGR1
+R-CFA-109538.1,"Concentrative transport (import) of a nucleoside and two sodium ions by solute carrier family 28 (sodium-coupled nucleoside transporter), member 3",R-CFA-83915.1,SLC28A3 [plasma membrane],A0A5F4D6N3,UniProt:A0A5F4D6N3
+R-RNO-109538.1,"Concentrative transport (import) of a nucleoside and two sodium ions by solute carrier family 28 (sodium-coupled nucleoside transporter), member 3",R-RNO-83915.1,Slc28a3 [plasma membrane],Q8VIH3,UniProt:Q8VIH3
+R-MMU-109538.1,"Concentrative transport (import) of a nucleoside and two sodium ions by solute carrier family 28 (sodium-coupled nucleoside transporter), member 3",R-MMU-83915.1,Slc28a3 [plasma membrane],Q9ERH8,UniProt:Q9ERH8
+R-HSA-109538.1,"Concentrative transport (import) of a nucleoside and two sodium ions by solute carrier family 28 (sodium-coupled nucleoside transporter), member 3",R-HSA-83915.1,SLC28A3 [plasma membrane],Q9HAS3,UniProt:Q9HAS3 SLC28A3
+R-GGA-109539.1,"Concentrative transport (import) of nucleosides plus sodium ions by solute carrier family 28 (sodium-coupled nucleoside transporter), member 2",R-GGA-64025.1,SLC28A2 [plasma membrane],A0A1D5P3G6,UniProt:A0A1D5P3G6
+R-XTR-109539.1,"Concentrative transport (import) of nucleosides plus sodium ions by solute carrier family 28 (sodium-coupled nucleoside transporter), member 2",R-XTR-64025.1,slc28a2 [plasma membrane],A0A6I8QF59,UniProt:A0A6I8QF59
+R-DRE-109539.1,"Concentrative transport (import) of nucleosides plus sodium ions by solute carrier family 28 (sodium-coupled nucleoside transporter), member 2",R-DRE-64025.1,SLC28A2 [plasma membrane],A0A2R8QIQ7,UniProt:A0A2R8QIQ7
+R-SSC-109539.1,"Concentrative transport (import) of nucleosides plus sodium ions by solute carrier family 28 (sodium-coupled nucleoside transporter), member 2",R-SSC-64025.1,SLC28A2 [plasma membrane],F1SN44,UniProt:F1SN44
+R-BTA-109539.1,"Concentrative transport (import) of nucleosides plus sodium ions by solute carrier family 28 (sodium-coupled nucleoside transporter), member 2",R-BTA-64025.1,SLC28A2 [plasma membrane],F1N428,UniProt:F1N428
+R-RNO-109539.1,"Concentrative transport (import) of nucleosides plus sodium ions by solute carrier family 28 (sodium-coupled nucleoside transporter), member 2",R-RNO-64025.1,Slc28a2 [plasma membrane],Q62773,UniProt:Q62773
+R-MMU-109539.1,"Concentrative transport (import) of nucleosides plus sodium ions by solute carrier family 28 (sodium-coupled nucleoside transporter), member 2",R-MMU-64025.1,Slc28a2 [plasma membrane],O88627,UniProt:O88627
+R-HSA-109539.1,"Concentrative transport (import) of nucleosides plus sodium ions by solute carrier family 28 (sodium-coupled nucleoside transporter), member 2",R-HSA-64025.1,SLC28A2 [plasma membrane],O43868,UniProt:O43868 SLC28A2
+R-GGA-8876283.1,"SLC5A10 cotransports Na+ with Man, Fru from extracellular region to cytosol",R-GGA-5216084.1,SLC5A10 [plasma membrane],A0A3Q2U009,UniProt:A0A3Q2U009
+R-XTR-8876283.1,"SLC5A10 cotransports Na+ with Man, Fru from extracellular region to cytosol",R-XTR-5216084.1,slc5a10 [plasma membrane],A0A6I8RA75,UniProt:A0A6I8RA75
+R-SSC-8876283.1,"SLC5A10 cotransports Na+ with Man, Fru from extracellular region to cytosol",R-SSC-5216084.1,PRPSAP2 [plasma membrane],A0A287BFW1,UniProt:A0A287BFW1
+R-BTA-8876283.1,"SLC5A10 cotransports Na+ with Man, Fru from extracellular region to cytosol",R-BTA-5216084.1,SLC5A10 [plasma membrane],Q6R4Q5,UniProt:Q6R4Q5
+R-CFA-8876283.1,"SLC5A10 cotransports Na+ with Man, Fru from extracellular region to cytosol",R-CFA-5216084.1,SLC5A10 [plasma membrane],F1P9E3,UniProt:F1P9E3
+R-RNO-8876283.1,"SLC5A10 cotransports Na+ with Man, Fru from extracellular region to cytosol",R-RNO-5216084.1,Slc5a10 [plasma membrane],G3V8X5,UniProt:G3V8X5
+R-MMU-8876283.1,"SLC5A10 cotransports Na+ with Man, Fru from extracellular region to cytosol",R-MMU-5216084.1,Slc5a10 [plasma membrane],Q5SWY8,UniProt:Q5SWY8
+R-HSA-8876283.1,"SLC5A10 cotransports Na+ with Man, Fru from extracellular region to cytosol",R-HSA-5216084.1,SLC5A10 [plasma membrane],A0PJK1,UniProt:A0PJK1 SLC5A10
+R-XTR-189208.1,SLC5A2 cotransports Na+ and glucose from extracellular region to cytosol,R-XTR-429568.1,slc5a2 [plasma membrane],A0A6I8RHU0,UniProt:A0A6I8RHU0
+R-DRE-189208.1,SLC5A2 cotransports Na+ and glucose from extracellular region to cytosol,R-DRE-429568.1,SLC5A2 [plasma membrane],A0A0R4IUP3,UniProt:A0A0R4IUP3
+R-SSC-189208.1,SLC5A2 cotransports Na+ and glucose from extracellular region to cytosol,R-SSC-429568.1,SLC5A2 [plasma membrane],A0A5G2R5M2,UniProt:A0A5G2R5M2
+R-BTA-189208.1,SLC5A2 cotransports Na+ and glucose from extracellular region to cytosol,R-BTA-429568.1,SLC5A2 [plasma membrane],Q6XUI1,UniProt:Q6XUI1
+R-CFA-189208.1,SLC5A2 cotransports Na+ and glucose from extracellular region to cytosol,R-CFA-429568.1,SLC5A2 [plasma membrane],E2RT90,UniProt:E2RT90
+R-RNO-189208.1,SLC5A2 cotransports Na+ and glucose from extracellular region to cytosol,R-RNO-429568.1,Slc5a2 [plasma membrane],P53792,UniProt:P53792
+R-MMU-189208.1,SLC5A2 cotransports Na+ and glucose from extracellular region to cytosol,R-MMU-429568.1,Slc5a2 [plasma membrane],Q923I7,UniProt:Q923I7
+R-HSA-189208.5,SLC5A2 cotransports Na+ and glucose from extracellular region to cytosol,R-HSA-429568.1,SLC5A2 [plasma membrane],P31639,UniProt:P31639 SLC5A2
+R-GGA-429567.1,Co-transport (influx) of glucose/mannose and Na+ ions by SGLT4,R-GGA-429650.1,SLC5A9 [plasma membrane],F1NNK3,UniProt:F1NNK3
+R-XTR-429567.1,Co-transport (influx) of glucose/mannose and Na+ ions by SGLT4,R-XTR-429650.1,slc5a9 [plasma membrane],A0A6I8SJC7,UniProt:A0A6I8SJC7
+R-DRE-429567.1,Co-transport (influx) of glucose/mannose and Na+ ions by SGLT4,R-DRE-429650.1,slc5a9 [plasma membrane],A8WHP3,UniProt:A8WHP3
+R-SSC-429567.1,Co-transport (influx) of glucose/mannose and Na+ ions by SGLT4,R-SSC-429650.1,SLC5A9 [plasma membrane],A0A5G2QCF1,UniProt:A0A5G2QCF1
+R-BTA-429567.1,Co-transport (influx) of glucose/mannose and Na+ ions by SGLT4,R-BTA-429650.1,SLC5A9 [plasma membrane],E1B749,UniProt:E1B749
+R-CFA-429567.1,Co-transport (influx) of glucose/mannose and Na+ ions by SGLT4,R-CFA-429650.1,SLC5A9 [plasma membrane],J9P351,UniProt:J9P351
+R-RNO-429567.1,Co-transport (influx) of glucose/mannose and Na+ ions by SGLT4,R-RNO-429650.1,Slc5a9 [plasma membrane],A0A0G2JY02,UniProt:A0A0G2JY02
+R-MMU-429567.1,Co-transport (influx) of glucose/mannose and Na+ ions by SGLT4,R-MMU-429650.1,Slc5a9 [plasma membrane],Q8VDT1,UniProt:Q8VDT1
+R-HSA-429567.1,Co-transport (influx) of glucose/mannose and Na+ ions by SGLT4,R-HSA-429650.1,SLC5A9 [plasma membrane],Q2M3M2,UniProt:Q2M3M2 SLC5A9
+R-XTR-429663.1,SLC5A3 (SMIT1) transports myo-inositol (Ins) with Na+ from extracellular region to cytosol,R-XTR-429592.1,SLC5A3 [plasma membrane],A0A803K154,UniProt:A0A803K154
+R-DRE-429663.1,SLC5A3 (SMIT1) transports myo-inositol (Ins) with Na+ from extracellular region to cytosol,R-DRE-429592.1,SLC5A3 [plasma membrane],E9QDC2,UniProt:E9QDC2
+R-SSC-429663.1,SLC5A3 (SMIT1) transports myo-inositol (Ins) with Na+ from extracellular region to cytosol,R-SSC-429592.1,SLC5A3 [plasma membrane],A0A287A6C9,UniProt:A0A287A6C9
+R-CFA-429663.1,SLC5A3 (SMIT1) transports myo-inositol (Ins) with Na+ from extracellular region to cytosol,R-CFA-429592.1,SLC5A3 [plasma membrane],P31637,UniProt:P31637
+R-MMU-429663.1,SLC5A3 (SMIT1) transports myo-inositol (Ins) with Na+ from extracellular region to cytosol,R-MMU-429592.1,Slc5a3 [plasma membrane],Q9JKZ2,UniProt:Q9JKZ2
+R-HSA-429663.2,SLC5A3 (SMIT1) transports myo-inositol (Ins) with Na+ from extracellular region to cytosol,R-HSA-429592.1,SLC5A3 [plasma membrane],P53794,UniProt:P53794 SLC5A3
+R-GGA-429571.1,Co-transport (influx) of myo-inositol/D-chiro-inositol and two Na+ ions by SGLT6,R-GGA-429589.1,SLC5A11 [plasma membrane],A0A3Q2U0A6,UniProt:A0A3Q2U0A6
+R-XTR-429571.1,Co-transport (influx) of myo-inositol/D-chiro-inositol and two Na+ ions by SGLT6,R-XTR-429589.1,slc5a11 [plasma membrane],A0A6I8QFD0,UniProt:A0A6I8QFD0
+R-DRE-429571.1,Co-transport (influx) of myo-inositol/D-chiro-inositol and two Na+ ions by SGLT6,R-DRE-429589.1,SLC5A11 [plasma membrane],Q5U3A9,UniProt:Q5U3A9
+R-SSC-429571.1,Co-transport (influx) of myo-inositol/D-chiro-inositol and two Na+ ions by SGLT6,R-SSC-429589.1,SLC5A11 [plasma membrane],A0A480E3U0,UniProt:A0A480E3U0
+R-BTA-429571.1,Co-transport (influx) of myo-inositol/D-chiro-inositol and two Na+ ions by SGLT6,R-BTA-429589.1,SLC5A11 [plasma membrane],A0A452DHY8,UniProt:A0A452DHY8
+R-CFA-429571.1,Co-transport (influx) of myo-inositol/D-chiro-inositol and two Na+ ions by SGLT6,R-CFA-429589.1,SLC5A11 [plasma membrane],E2REL3,UniProt:E2REL3
+R-RNO-429571.1,Co-transport (influx) of myo-inositol/D-chiro-inositol and two Na+ ions by SGLT6,R-RNO-429589.1,Slc5a11 [plasma membrane],Q9Z1F2,UniProt:Q9Z1F2
+R-MMU-429571.1,Co-transport (influx) of myo-inositol/D-chiro-inositol and two Na+ ions by SGLT6,R-MMU-429589.1,Slc5a11 [plasma membrane],Q8K0E3,UniProt:Q8K0E3
+R-HSA-429571.1,Co-transport (influx) of myo-inositol/D-chiro-inositol and two Na+ ions by SGLT6,R-HSA-429589.1,SLC5A11 [plasma membrane],Q8WWX8,UniProt:Q8WWX8 SLC5A11
+R-CEL-433131.1,NaDC1 co-transports dicarboxylic acids and a sodium ion,R-CEL-433093.1,nac-1 [plasma membrane],Q93655,UniProt:Q93655
+R-DME-433131.1,NaDC1 co-transports dicarboxylic acids and a sodium ion,R-DME-433093.1,Indy [plasma membrane],Q9VVT2,UniProt:Q9VVT2
+R-GGA-433131.1,NaDC1 co-transports dicarboxylic acids and a sodium ion,R-GGA-433093.1,SLC13A2 [plasma membrane],A0A3Q3A4N4,UniProt:A0A3Q3A4N4
+R-DRE-433131.1,NaDC1 co-transports dicarboxylic acids and a sodium ion,R-DRE-433093.1,SLC13A2 [plasma membrane],F1QZ08,UniProt:F1QZ08
+R-SSC-433131.1,NaDC1 co-transports dicarboxylic acids and a sodium ion,R-SSC-433093.1,SLC13A2 [plasma membrane],F1RNC8,UniProt:F1RNC8
+R-BTA-433131.1,NaDC1 co-transports dicarboxylic acids and a sodium ion,R-BTA-433093.1,SLC13A2 [plasma membrane],Q3SYV8,UniProt:Q3SYV8
+R-CFA-433131.1,NaDC1 co-transports dicarboxylic acids and a sodium ion,R-CFA-433093.1,SLC13A2 [plasma membrane],E2R656,UniProt:E2R656
+R-RNO-433131.1,NaDC1 co-transports dicarboxylic acids and a sodium ion,R-RNO-433093.1,Slc13a2 [plasma membrane],P70545,UniProt:P70545
+R-MMU-433131.1,NaDC1 co-transports dicarboxylic acids and a sodium ion,R-MMU-433093.1,Slc13a2 [plasma membrane],Q9ES88,UniProt:Q9ES88
+R-HSA-433131.1,NaDC1 co-transports dicarboxylic acids and a sodium ion,R-HSA-433093.1,SLC13A2 [plasma membrane],Q13183,UniProt:Q13183 SLC13A2
+R-GGA-433099.1,NaS2 co-transports sulphate and two sodium ions,R-GGA-433098.1,SLC13A4 [plasma membrane],E1C2V8,UniProt:E1C2V8
+R-XTR-433099.1,NaS2 co-transports sulphate and two sodium ions,R-XTR-433098.1,slc13a4l [plasma membrane],A0A6I8PVH5,UniProt:A0A6I8PVH5
+R-DRE-433099.1,NaS2 co-transports sulphate and two sodium ions,R-DRE-433098.1,SLC13A4 [plasma membrane],B8A5J0,UniProt:B8A5J0
+R-BTA-433099.1,NaS2 co-transports sulphate and two sodium ions,R-BTA-433098.1,SLC13A4 [plasma membrane],F6R7G2,UniProt:F6R7G2
+R-CFA-433099.1,NaS2 co-transports sulphate and two sodium ions,R-CFA-433098.1,SLC13A4 [plasma membrane],E2R3J2,UniProt:E2R3J2
+R-RNO-433099.1,NaS2 co-transports sulphate and two sodium ions,R-RNO-433098.1,Slc13a4 [plasma membrane],Q5EC47,UniProt:Q5EC47
+R-MMU-433099.1,NaS2 co-transports sulphate and two sodium ions,R-MMU-433098.1,Slc13a4 [plasma membrane],Q8BZ82,UniProt:Q8BZ82
+R-HSA-433099.1,NaS2 co-transports sulphate and two sodium ions,R-HSA-433098.1,SLC13A4 [plasma membrane],Q9UKG4,UniProt:Q9UKG4 SLC13A4
+R-GGA-433114.1,NaS1 co-transports sulphate and a sodium ion,R-GGA-433136.1,SLC13A1 [plasma membrane],E1BYV5,UniProt:E1BYV5
+R-XTR-433114.1,NaS1 co-transports sulphate and a sodium ion,R-XTR-433136.1,slc13a1 [plasma membrane],A0A6I8SEG7,UniProt:A0A6I8SEG7
+R-DRE-433114.1,NaS1 co-transports sulphate and a sodium ion,R-DRE-433136.1,SLC13A1 [plasma membrane],A0A2R8QHF0,UniProt:A0A2R8QHF0
+R-SSC-433114.1,NaS1 co-transports sulphate and a sodium ion,R-SSC-433136.1,SLC13A1 [plasma membrane],A0A287AWR1,UniProt:A0A287AWR1
+R-BTA-433114.1,NaS1 co-transports sulphate and a sodium ion,R-BTA-433136.1,SLC13A1 [plasma membrane],A0A3Q1LUW1,UniProt:A0A3Q1LUW1
+R-CFA-433114.1,NaS1 co-transports sulphate and a sodium ion,R-CFA-433136.1,SLC13A1 [plasma membrane],F6XGI7,UniProt:F6XGI7
+R-RNO-433114.1,NaS1 co-transports sulphate and a sodium ion,R-RNO-433136.1,Slc13a1 [plasma membrane],Q07782,UniProt:Q07782
+R-MMU-433114.1,NaS1 co-transports sulphate and a sodium ion,R-MMU-433136.1,Slc13a1 [plasma membrane],Q9JHI4,UniProt:Q9JHI4
+R-HSA-433114.1,NaS1 co-transports sulphate and a sodium ion,R-HSA-433136.1,SLC13A1 [plasma membrane],Q9BZW2,UniProt:Q9BZW2 SLC13A1
+R-GGA-433101.1,NaDC3 co-transports the dicarboxylic acid succinate and three sodium ion,R-GGA-433095.1,SLC13A3 [plasma membrane],A0A3Q2TZV5,UniProt:A0A3Q2TZV5
+R-XTR-433101.1,NaDC3 co-transports the dicarboxylic acid succinate and three sodium ion,R-XTR-433095.1,slc13a3 [plasma membrane],F6THH1,UniProt:F6THH1
+R-DRE-433101.1,NaDC3 co-transports the dicarboxylic acid succinate and three sodium ion,R-DRE-433095.1,SLC13A3 [plasma membrane],A0A2R8QG62,UniProt:A0A2R8QG62
+R-SSC-433101.1,NaDC3 co-transports the dicarboxylic acid succinate and three sodium ion,R-SSC-433095.1,SLC13A3 [plasma membrane],A0A287AXW9,UniProt:A0A287AXW9
+R-BTA-433101.1,NaDC3 co-transports the dicarboxylic acid succinate and three sodium ion,R-BTA-433095.1,SLC13A3 [plasma membrane],A1A4I3,UniProt:A1A4I3
+R-CFA-433101.1,NaDC3 co-transports the dicarboxylic acid succinate and three sodium ion,R-CFA-433095.1,SLC13A3 [plasma membrane],A0A5F4D4Z7,UniProt:A0A5F4D4Z7
+R-RNO-433101.1,NaDC3 co-transports the dicarboxylic acid succinate and three sodium ion,R-RNO-433095.1,Slc13a3 [plasma membrane],Q9Z0Z5,UniProt:Q9Z0Z5
+R-MMU-433101.1,NaDC3 co-transports the dicarboxylic acid succinate and three sodium ion,R-MMU-433095.1,Slc13a3 [plasma membrane],Q91Y63,UniProt:Q91Y63
+R-HSA-433101.1,NaDC3 co-transports the dicarboxylic acid succinate and three sodium ion,R-HSA-433095.1,SLC13A3 [plasma membrane],Q8WWT9,UniProt:Q8WWT9 SLC13A3
+R-GGA-433104.1,NACT co-transports trivalent citrate and a sodium ion,R-GGA-433135.1,SLC13A5 [plasma membrane],A0A3Q2TTU5,UniProt:A0A3Q2TTU5
+R-DRE-433104.1,NACT co-transports trivalent citrate and a sodium ion,R-DRE-433135.1,SLC13A5 [plasma membrane],X1WE78,UniProt:X1WE78
+R-SSC-433104.1,NACT co-transports trivalent citrate and a sodium ion,R-SSC-433135.1,SLC13A5 [plasma membrane],F1RGN5,UniProt:F1RGN5
+R-BTA-433104.1,NACT co-transports trivalent citrate and a sodium ion,R-BTA-433135.1,SLC13A5 [plasma membrane],E1B8V0,UniProt:E1B8V0
+R-CFA-433104.1,NACT co-transports trivalent citrate and a sodium ion,R-CFA-433135.1,SLC13A5 [plasma membrane],E2RDZ2,UniProt:E2RDZ2
+R-RNO-433104.1,NACT co-transports trivalent citrate and a sodium ion,R-RNO-433135.1,Slc13a5 [plasma membrane],Q8CJ44,UniProt:Q8CJ44
+R-MMU-433104.1,NACT co-transports trivalent citrate and a sodium ion,R-MMU-433135.1,Slc13a5 [plasma membrane],Q67BT3,UniProt:Q67BT3
+R-HSA-433104.1,NACT co-transports trivalent citrate and a sodium ion,R-HSA-433135.1,SLC13A5 [plasma membrane],Q86YT5,UniProt:Q86YT5 SLC13A5
+R-CEL-433089.1,SOAT can transport taurolithocholate-3-sulphate,R-CEL-433091.1,SLC10A6 [plasma membrane],Q33BL1,UniProt:Q33BL1
+R-XTR-433089.1,SOAT can transport taurolithocholate-3-sulphate,R-XTR-433091.1,slc10a6 [plasma membrane],F7AXK4,UniProt:F7AXK4
+R-SSC-433089.1,SOAT can transport taurolithocholate-3-sulphate,R-SSC-433091.1,SLC10A6 [plasma membrane],I3LIG7,UniProt:I3LIG7
+R-BTA-433089.1,SOAT can transport taurolithocholate-3-sulphate,R-BTA-433091.1,SLC10A6 [plasma membrane],A0A452DJI9,UniProt:A0A452DJI9
+R-CFA-433089.1,SOAT can transport taurolithocholate-3-sulphate,R-CFA-433091.1,SLC10A6 [plasma membrane],F1PLP1,UniProt:F1PLP1
+R-RNO-433089.1,SOAT can transport taurolithocholate-3-sulphate,R-RNO-433091.1,Slc10a6 [plasma membrane],Q70EX6,UniProt:Q70EX6
+R-MMU-433089.1,SOAT can transport taurolithocholate-3-sulphate,R-MMU-433091.1,Slc10a6 [plasma membrane],Q9CXB2,UniProt:Q9CXB2
+R-HSA-433089.1,SOAT can transport taurolithocholate-3-sulphate,R-HSA-433091.1,SLC10A6 [plasma membrane],Q3KNW5,UniProt:Q3KNW5 SLC10A6
+R-GGA-549241.1,"SLC22A4 cotransports ERGT, Na+ from extracellular region to cytosol",R-GGA-549252.1,SLC22A4 [plasma membrane],A0A1D5PH68,UniProt:A0A1D5PH68
+R-XTR-549241.1,"SLC22A4 cotransports ERGT, Na+ from extracellular region to cytosol",R-XTR-549252.1,slc22a5 [plasma membrane],A0A6I8RD12,UniProt:A0A6I8RD12
+R-DRE-549241.1,"SLC22A4 cotransports ERGT, Na+ from extracellular region to cytosol",R-DRE-549252.1,SLC22A4 [plasma membrane],A0A0R4IKJ8,UniProt:A0A0R4IKJ8
+R-SSC-549241.1,"SLC22A4 cotransports ERGT, Na+ from extracellular region to cytosol",R-SSC-549252.1,SLC22A4 [plasma membrane],A0A287ABQ9,UniProt:A0A287ABQ9
+R-BTA-549241.1,"SLC22A4 cotransports ERGT, Na+ from extracellular region to cytosol",R-BTA-549252.1,SLC22A4 [plasma membrane],E1BEU0,UniProt:E1BEU0
+R-RNO-549241.1,"SLC22A4 cotransports ERGT, Na+ from extracellular region to cytosol",R-RNO-549252.1,SLC22A4 [plasma membrane],Q9R141,UniProt:Q9R141
+R-MMU-549241.1,"SLC22A4 cotransports ERGT, Na+ from extracellular region to cytosol",R-MMU-549252.1,SLC22A4 [plasma membrane],Q9Z306,UniProt:Q9Z306
+R-HSA-549241.2,"SLC22A4 cotransports ERGT, Na+ from extracellular region to cytosol",R-HSA-549252.1,SLC22A4 [plasma membrane],Q9H015,UniProt:Q9H015 SLC22A4
+R-GGA-352059.1,SLC6A15-mediated amino acid uptake,R-GGA-352060.1,SLC6A15 [plasma membrane],E1BS25,UniProt:E1BS25
+R-XTR-352059.1,SLC6A15-mediated amino acid uptake,R-XTR-352060.1,slc6a15 [plasma membrane],F6Z2P7,UniProt:F6Z2P7
+R-SSC-352059.1,SLC6A15-mediated amino acid uptake,R-SSC-352060.1,SLC6A15 [plasma membrane],F1RYN4,UniProt:F1RYN4
+R-BTA-352059.1,SLC6A15-mediated amino acid uptake,R-BTA-352060.1,SLC6A15 [plasma membrane],Q9XS59,UniProt:Q9XS59
+R-CFA-352059.1,SLC6A15-mediated amino acid uptake,R-CFA-352060.1,SLC6A15 [plasma membrane],E2R9L9,UniProt:E2R9L9
+R-RNO-352059.1,SLC6A15-mediated amino acid uptake,R-RNO-352060.1,Slc6a15 [plasma membrane],Q08469,UniProt:Q08469
+R-MMU-352059.1,SLC6A15-mediated amino acid uptake,R-MMU-352060.1,Slc6a15 [plasma membrane],Q8BG16,UniProt:Q8BG16
+R-HSA-352059.1,SLC6A15-mediated amino acid uptake,R-HSA-352060.1,SLC6A15 [plasma membrane],Q9H2J7,UniProt:Q9H2J7 SLC6A15
+R-CEL-444120.1,"SLC6A5,9 cotransport Gly, Cl-, Na+ from extracellular region to cytosol",R-CEL-444127.1,snf-6 [plasma membrane],O76689,UniProt:O76689
+R-CEL-443997.1,"SLC6A2 cotransports NAd, Na+ from extracellular region to cytosol",R-CEL-444009.1,SLC6A2 [plasma membrane],Q03614,UniProt:Q03614
+R-DME-443997.1,"SLC6A2 cotransports NAd, Na+ from extracellular region to cytosol",R-DME-444009.1,SLC6A2 [plasma membrane],Q7K4Y6,UniProt:Q7K4Y6
+R-GGA-443997.1,"SLC6A2 cotransports NAd, Na+ from extracellular region to cytosol",R-GGA-444009.1,SLC6A2 [plasma membrane],A0A1D5P472,UniProt:A0A1D5P472
+R-XTR-443997.1,"SLC6A2 cotransports NAd, Na+ from extracellular region to cytosol",R-XTR-444009.1,slc6a2 [plasma membrane],A0A6I8RGG2,UniProt:A0A6I8RGG2
+R-DRE-443997.1,"SLC6A2 cotransports NAd, Na+ from extracellular region to cytosol",R-DRE-444009.1,si:dkey-182h7.3 [plasma membrane],F1R3H6,UniProt:F1R3H6
+R-SSC-443997.1,"SLC6A2 cotransports NAd, Na+ from extracellular region to cytosol",R-SSC-444009.1,SLC6A2 [plasma membrane],F1RF13,UniProt:F1RF13
+R-BTA-443997.1,"SLC6A2 cotransports NAd, Na+ from extracellular region to cytosol",R-BTA-444009.1,SLC6A2 [plasma membrane],A0A3Q1M4L9,UniProt:A0A3Q1M4L9
+R-CFA-443997.1,"SLC6A2 cotransports NAd, Na+ from extracellular region to cytosol",R-CFA-444009.1,slc6A2 [plasma membrane],B6F0U1,UniProt:B6F0U1
+R-RNO-443997.1,"SLC6A2 cotransports NAd, Na+ from extracellular region to cytosol",R-RNO-444009.1,Slc6a2 [plasma membrane],F1LNR9,UniProt:F1LNR9
+R-MMU-443997.1,"SLC6A2 cotransports NAd, Na+ from extracellular region to cytosol",R-MMU-444009.1,SLC6A2 [plasma membrane],O55192,UniProt:O55192
+R-HSA-443997.1,"SLC6A2 cotransports NAd, Na+ from extracellular region to cytosol",R-HSA-444009.1,SLC6A2 [plasma membrane],P23975,UniProt:P23975 SLC6A2
+R-GGA-375487.1,"SLC6A14 cotransports SLC6A14 ligands, Cl-, 2Na+ from extracellular region to cytosol",R-GGA-375471.1,SLC6A14 [plasma membrane],E1C8K0,UniProt:E1C8K0
+R-XTR-375487.1,"SLC6A14 cotransports SLC6A14 ligands, Cl-, 2Na+ from extracellular region to cytosol",R-XTR-375471.1,slc6a14.2 [plasma membrane],A0A6I8ST49,UniProt:A0A6I8ST49
+R-DRE-375487.1,"SLC6A14 cotransports SLC6A14 ligands, Cl-, 2Na+ from extracellular region to cytosol",R-DRE-375471.1,SLC6A14 [plasma membrane],F6NN04,UniProt:F6NN04
+R-SSC-375487.1,"SLC6A14 cotransports SLC6A14 ligands, Cl-, 2Na+ from extracellular region to cytosol",R-SSC-375471.1,SLC6A14 [plasma membrane],I3LKJ8,UniProt:I3LKJ8
+R-BTA-375487.1,"SLC6A14 cotransports SLC6A14 ligands, Cl-, 2Na+ from extracellular region to cytosol",R-BTA-375471.1,SLC6A14 [plasma membrane],A0A3Q1MNF2,UniProt:A0A3Q1MNF2
+R-CFA-375487.1,"SLC6A14 cotransports SLC6A14 ligands, Cl-, 2Na+ from extracellular region to cytosol",R-CFA-375471.1,SLC6A14 [plasma membrane],J9PB96,UniProt:J9PB96
+R-RNO-375487.1,"SLC6A14 cotransports SLC6A14 ligands, Cl-, 2Na+ from extracellular region to cytosol",R-RNO-375471.1,Slc6a14 [plasma membrane],Q334I2,UniProt:Q334I2
+R-MMU-375487.1,"SLC6A14 cotransports SLC6A14 ligands, Cl-, 2Na+ from extracellular region to cytosol",R-MMU-375471.1,Slc6a14 [plasma membrane],Q9JMA9,UniProt:Q9JMA9
+R-HSA-375487.1,"SLC6A14 cotransports SLC6A14 ligands, Cl-, 2Na+ from extracellular region to cytosol",R-HSA-375471.1,SLC6A14 [plasma membrane],Q9UN76,UniProt:Q9UN76 SLC6A14
+R-GGA-351987.1,SLC6A6-mediated uptake of taurine and beta-alanine,R-GGA-351960.1,SLC6A6 [plasma membrane],A0A3Q2U273,UniProt:A0A3Q2U273
+R-XTR-351987.1,SLC6A6-mediated uptake of taurine and beta-alanine,R-XTR-351960.1,slc6a6 [plasma membrane],A0A6I8QRW3,UniProt:A0A6I8QRW3
+R-DRE-351987.1,SLC6A6-mediated uptake of taurine and beta-alanine,R-DRE-351960.1,SLC6A6 [plasma membrane],A0A0G2KCU6,UniProt:A0A0G2KCU6
+R-SSC-351987.1,SLC6A6-mediated uptake of taurine and beta-alanine,R-SSC-351960.1,SLC6A6 [plasma membrane],A0A5K1V0Y8,UniProt:A0A5K1V0Y8
+R-BTA-351987.1,SLC6A6-mediated uptake of taurine and beta-alanine,R-BTA-351960.1,SLC6A6 [plasma membrane],A0A3Q1MVF2,UniProt:A0A3Q1MVF2
+R-CFA-351987.1,SLC6A6-mediated uptake of taurine and beta-alanine,R-CFA-351960.1,SLC6A6 [plasma membrane],A0A5F4BSE0,UniProt:A0A5F4BSE0
+R-RNO-351987.1,SLC6A6-mediated uptake of taurine and beta-alanine,R-RNO-351960.1,Slc6a6 [plasma membrane],P31643,UniProt:P31643
+R-MMU-351987.1,SLC6A6-mediated uptake of taurine and beta-alanine,R-MMU-351960.1,Slc6a6 [plasma membrane],O35316,UniProt:O35316
+R-HSA-351987.1,SLC6A6-mediated uptake of taurine and beta-alanine,R-HSA-351960.1,SLC6A6 [plasma membrane],P31641,UniProt:P31641 SLC6A6
+R-GGA-375473.1,"SLC6A19 cotransports neutral amino acids, Na+ from extracellular region to cytosol",R-GGA-375483.1,SLC6A19 [plasma membrane],F1NPI1,UniProt:F1NPI1
+R-XTR-375473.1,"SLC6A19 cotransports neutral amino acids, Na+ from extracellular region to cytosol",R-XTR-375483.1,slc6a19 [plasma membrane],F6WWA2,UniProt:F6WWA2
+R-DRE-375473.1,"SLC6A19 cotransports neutral amino acids, Na+ from extracellular region to cytosol",R-DRE-375483.1,slc6a19 [plasma membrane],Q6PBA3,UniProt:Q6PBA3
+R-SSC-375473.1,"SLC6A19 cotransports neutral amino acids, Na+ from extracellular region to cytosol",R-SSC-375483.1,SLC6A19 [plasma membrane],A0A5G2QRJ4,UniProt:A0A5G2QRJ4
+R-BTA-375473.1,"SLC6A19 cotransports neutral amino acids, Na+ from extracellular region to cytosol",R-BTA-375483.1,SLC6A19 [plasma membrane],G5E6L1,UniProt:G5E6L1
+R-CFA-375473.1,"SLC6A19 cotransports neutral amino acids, Na+ from extracellular region to cytosol",R-CFA-375483.1,SLC6A19 [plasma membrane],E2RIQ1,UniProt:E2RIQ1
+R-RNO-375473.1,"SLC6A19 cotransports neutral amino acids, Na+ from extracellular region to cytosol",R-RNO-375483.1,Slc6a19 [plasma membrane],Q2A865,UniProt:Q2A865
+R-MMU-375473.1,"SLC6A19 cotransports neutral amino acids, Na+ from extracellular region to cytosol",R-MMU-375483.1,Slc6a19 [plasma membrane],Q9D687,UniProt:Q9D687
+R-HSA-375473.1,"SLC6A19 cotransports neutral amino acids, Na+ from extracellular region to cytosol",R-HSA-375483.1,SLC6A19 [plasma membrane],Q695T7,UniProt:Q695T7 SLC6A19
+R-GGA-352052.1,"SLC6A20 cotransports L-Pro, Na+ from the extracellular region to cytosol",R-GGA-352058.1,SLC6A20 [plasma membrane],A0A1D5PGL0,UniProt:A0A1D5PGL0
+R-XTR-352052.1,"SLC6A20 cotransports L-Pro, Na+ from the extracellular region to cytosol",R-XTR-352058.1,slc6a20 [plasma membrane],A0A6I8SHF1,UniProt:A0A6I8SHF1
+R-SSC-352052.1,"SLC6A20 cotransports L-Pro, Na+ from the extracellular region to cytosol",R-SSC-352058.1,SLC6A20 [plasma membrane],A0A5K1V2Y0,UniProt:A0A5K1V2Y0
+R-BTA-352052.1,"SLC6A20 cotransports L-Pro, Na+ from the extracellular region to cytosol",R-BTA-352058.1,SLC6A20 [plasma membrane],A1A4L2,UniProt:A1A4L2
+R-CFA-352052.1,"SLC6A20 cotransports L-Pro, Na+ from the extracellular region to cytosol",R-CFA-352058.1,SLC6A20 [plasma membrane],F1PPE0,UniProt:F1PPE0
+R-RNO-352052.1,"SLC6A20 cotransports L-Pro, Na+ from the extracellular region to cytosol",R-RNO-352058.1,Slc6a20 [plasma membrane],Q64093,UniProt:Q64093
+R-MMU-352052.1,"SLC6A20 cotransports L-Pro, Na+ from the extracellular region to cytosol",R-MMU-352058.1,Slc6a20a [plasma membrane],Q8VDB9,UniProt:Q8VDB9
+R-HSA-352052.2,"SLC6A20 cotransports L-Pro, Na+ from the extracellular region to cytosol",R-HSA-352058.1,SLC6A20 [plasma membrane],Q9NP91,UniProt:Q9NP91 SLC6A20
+R-GGA-444100.1,PROT mediates L-proline uptake,R-GGA-444137.1,SLC6A7 [plasma membrane],F1NG92,UniProt:F1NG92
+R-XTR-444100.1,PROT mediates L-proline uptake,R-XTR-444137.1,slc6a7 [plasma membrane],A0A6I8R146,UniProt:A0A6I8R146
+R-SSC-444100.1,PROT mediates L-proline uptake,R-SSC-444137.1,SLC6A7 [plasma membrane],F1RL70,UniProt:F1RL70
+R-BTA-444100.1,PROT mediates L-proline uptake,R-BTA-444137.1,SLC6A7 [plasma membrane],A6QLU4,UniProt:A6QLU4
+R-CFA-444100.1,PROT mediates L-proline uptake,R-CFA-444137.1,SLC6A7 [plasma membrane],F1PA54,UniProt:F1PA54
+R-RNO-444100.1,PROT mediates L-proline uptake,R-RNO-444137.1,Slc6a7 [plasma membrane],P28573,UniProt:P28573
+R-MMU-444100.1,PROT mediates L-proline uptake,R-MMU-444137.1,Slc6a7 [plasma membrane],Q6PGE7,UniProt:Q6PGE7
+R-HSA-444100.1,PROT mediates L-proline uptake,R-HSA-444137.1,SLC6A7 [plasma membrane],Q99884,UniProt:Q99884 SLC6A7
+R-GGA-451310.1,Activation of Edited Kainate receptors,R-GGA-451318.1,GRIK2 [plasma membrane],F1NU20,UniProt:F1NU20
+R-GGA-451310.1,Activation of Edited Kainate receptors,R-GGA-451322.1,GRIK1 [plasma membrane],A0A1D5PHB3,UniProt:A0A1D5PHB3
+R-XTR-451310.1,Activation of Edited Kainate receptors,R-XTR-451318.1,grik2 [plasma membrane],A0A6I8SEA9,UniProt:A0A6I8SEA9
+R-XTR-451310.1,Activation of Edited Kainate receptors,R-XTR-451322.1,grik1 [plasma membrane],A0A6I8S113,UniProt:A0A6I8S113
+R-DRE-451310.1,Activation of Edited Kainate receptors,R-DRE-451318.1,Edited GRIK2 (GluR6) [plasma membrane],A0A2R8QF68,UniProt:A0A2R8QF68
+R-DRE-451310.1,Activation of Edited Kainate receptors,R-DRE-451322.1,Edited GRIK 1 (GluR5) [plasma membrane],A0A286YAY2,UniProt:A0A286YAY2
+R-SSC-451310.1,Activation of Edited Kainate receptors,R-SSC-451318.1,GRIK2 [plasma membrane],F1RYR0,UniProt:F1RYR0
+R-SSC-451310.1,Activation of Edited Kainate receptors,R-SSC-451322.1,GRIK1 [plasma membrane],I3LT35,UniProt:I3LT35
+R-BTA-451310.1,Activation of Edited Kainate receptors,R-BTA-451318.1,GRIK2 [plasma membrane],F1MG21,UniProt:F1MG21
+R-BTA-451310.1,Activation of Edited Kainate receptors,R-BTA-451322.1,GRIK1 [plasma membrane],A2VE57,UniProt:A2VE57
+R-CFA-451310.1,Activation of Edited Kainate receptors,R-CFA-451318.1,Edited GRIK2 (GluR6) [plasma membrane],F1P7K5,UniProt:F1P7K5
+R-CFA-451310.1,Activation of Edited Kainate receptors,R-CFA-451322.1,Edited GRIK 1 (GluR5) [plasma membrane],A0A5F4DEH8,UniProt:A0A5F4DEH8
+R-RNO-451310.1,Activation of Edited Kainate receptors,R-RNO-451318.1,Edited GRIK2 (GluR6) [plasma membrane],P42260,UniProt:P42260
+R-RNO-451310.1,Activation of Edited Kainate receptors,R-RNO-451322.1,Edited GRIK 1 (GluR5) [plasma membrane],P22756,UniProt:P22756
+R-HSA-451310.3,Activation of Edited Kainate receptors,R-HSA-451318.1,Edited GRIK2 (GluR6) [plasma membrane],Q13002,UniProt:Q13002 GRIK2
+R-HSA-451310.3,Activation of Edited Kainate receptors,R-HSA-451322.1,Edited GRIK 1 (GluR5) [plasma membrane],P39086,UniProt:P39086 GRIK1
+R-MMU-451310.1,Activation of Edited Kainate receptors,R-MMU-451318.1,Edited GRIK2 (GluR6) [plasma membrane],P39087,UniProt:P39087
+R-MMU-451310.1,Activation of Edited Kainate receptors,R-MMU-451322.1,Edited GRIK 1 (GluR5) [plasma membrane],Q60934,UniProt:Q60934
+R-CEL-429594.1,"SLC5A7 cotransports Cho, Cl-, Na+ from extracellular region to cytosol",R-CEL-429572.1,cho-1 [plasma membrane],O02228,UniProt:O02228
+R-DME-429594.1,"SLC5A7 cotransports Cho, Cl-, Na+ from extracellular region to cytosol",R-DME-429572.1,ChT [plasma membrane],Q9VE46,UniProt:Q9VE46
+R-GGA-429594.1,"SLC5A7 cotransports Cho, Cl-, Na+ from extracellular region to cytosol",R-GGA-429572.1,SLC5A7 [plasma membrane],F1P4Q0,UniProt:F1P4Q0
+R-XTR-429594.1,"SLC5A7 cotransports Cho, Cl-, Na+ from extracellular region to cytosol",R-XTR-429572.1,slc5a7 [plasma membrane],F7AVH2,UniProt:F7AVH2
+R-DRE-429594.1,"SLC5A7 cotransports Cho, Cl-, Na+ from extracellular region to cytosol",R-DRE-429572.1,LOC799259 [plasma membrane],A0A0G2KQP1,UniProt:A0A0G2KQP1
+R-SSC-429594.1,"SLC5A7 cotransports Cho, Cl-, Na+ from extracellular region to cytosol",R-SSC-429572.1,SLC5A7 [plasma membrane],A0A287BN48,UniProt:A0A287BN48
+R-BTA-429594.1,"SLC5A7 cotransports Cho, Cl-, Na+ from extracellular region to cytosol",R-BTA-429572.1,SLC5A7 [plasma membrane],Q2KI26,UniProt:Q2KI26
+R-CFA-429594.1,"SLC5A7 cotransports Cho, Cl-, Na+ from extracellular region to cytosol",R-CFA-429572.1,SLC5A7 [plasma membrane],E2RAJ0,UniProt:E2RAJ0
+R-RNO-429594.1,"SLC5A7 cotransports Cho, Cl-, Na+ from extracellular region to cytosol",R-RNO-429572.1,Slc5a7 [plasma membrane],Q9JMD7,UniProt:Q9JMD7
+R-MMU-429594.1,"SLC5A7 cotransports Cho, Cl-, Na+ from extracellular region to cytosol",R-MMU-429572.1,Slc5a7 [plasma membrane],Q8BGY9,UniProt:Q8BGY9
+R-HSA-429594.1,"SLC5A7 cotransports Cho, Cl-, Na+ from extracellular region to cytosol",R-HSA-429572.1,SLC5A7 [plasma membrane],Q9GZV3,UniProt:Q9GZV3 SLC5A7
+R-CEL-444008.1,"SLC6A4 co-transports 5HT, Cl-, Na+ from extracellular region to cytosol",R-CEL-444015.1,mod-5 [plasma membrane],Q9N3C7,UniProt:Q9N3C7
+R-DME-444008.1,"SLC6A4 co-transports 5HT, Cl-, Na+ from extracellular region to cytosol",R-DME-444015.1,SLC6A4 [plasma membrane],P51905,UniProt:P51905
+R-GGA-444008.1,"SLC6A4 co-transports 5HT, Cl-, Na+ from extracellular region to cytosol",R-GGA-444015.1,SLC6A4 [plasma membrane],F1NZ44,UniProt:F1NZ44
+R-XTR-444008.1,"SLC6A4 co-transports 5HT, Cl-, Na+ from extracellular region to cytosol",R-XTR-444015.1,slc6a4 [plasma membrane],A0A6I8RCX3,UniProt:A0A6I8RCX3
+R-DRE-444008.1,"SLC6A4 co-transports 5HT, Cl-, Na+ from extracellular region to cytosol",R-DRE-444015.1,SLC6A4 [plasma membrane],Q1WGB5,UniProt:Q1WGB5
+R-SSC-444008.1,"SLC6A4 co-transports 5HT, Cl-, Na+ from extracellular region to cytosol",R-SSC-444015.1,SLC6A4 [plasma membrane],F1RN70,UniProt:F1RN70
+R-BTA-444008.1,"SLC6A4 co-transports 5HT, Cl-, Na+ from extracellular region to cytosol",R-BTA-444015.1,SLC6A4 [plasma membrane],Q9XT49,UniProt:Q9XT49
+R-CFA-444008.1,"SLC6A4 co-transports 5HT, Cl-, Na+ from extracellular region to cytosol",R-CFA-444015.1,SLC6A4 [plasma membrane],F1PXA1,UniProt:F1PXA1
+R-RNO-444008.1,"SLC6A4 co-transports 5HT, Cl-, Na+ from extracellular region to cytosol",R-RNO-444015.1,SLC6A4 [plasma membrane],P31652,UniProt:P31652
+R-MMU-444008.1,"SLC6A4 co-transports 5HT, Cl-, Na+ from extracellular region to cytosol",R-MMU-444015.1,SLC6A4 [plasma membrane],Q60857,UniProt:Q60857
+R-HSA-444008.3,"SLC6A4 co-transports 5HT, Cl-, Na+ from extracellular region to cytosol",R-HSA-444015.2,SLC6A4 [plasma membrane],P31645,UniProt:P31645 SLC6A4
+R-CEL-379393.1,"SLC6A3 cotransports DA, Na+ from extracellular region to cytosol",R-CEL-379482.1,SLC6A3 [plasma membrane],Q03614,UniProt:Q03614
+R-DME-379393.1,"SLC6A3 cotransports DA, Na+ from extracellular region to cytosol",R-DME-379482.1,SLC6A3 [plasma membrane],Q7K4Y6,UniProt:Q7K4Y6
+R-XTR-379393.1,"SLC6A3 cotransports DA, Na+ from extracellular region to cytosol",R-XTR-379482.1,slc6a3 [plasma membrane],A0A6I8QNF6,UniProt:A0A6I8QNF6
+R-DRE-379393.1,"SLC6A3 cotransports DA, Na+ from extracellular region to cytosol",R-DRE-379482.1,SLC6A3 [plasma membrane],F1QGM4,UniProt:F1QGM4
+R-SSC-379393.1,"SLC6A3 cotransports DA, Na+ from extracellular region to cytosol",R-SSC-379482.1,SLC6A3 [plasma membrane],F1S024,UniProt:F1S024
+R-BTA-379393.1,"SLC6A3 cotransports DA, Na+ from extracellular region to cytosol",R-BTA-379482.1,SLC6A3 [plasma membrane],F1MAX1,UniProt:F1MAX1
+R-CFA-379393.1,"SLC6A3 cotransports DA, Na+ from extracellular region to cytosol",R-CFA-379482.1,SLC6A3 [plasma membrane],A0A5F4C8S4,UniProt:A0A5F4C8S4
+R-RNO-379393.1,"SLC6A3 cotransports DA, Na+ from extracellular region to cytosol",R-RNO-379482.1,SLC6A3 [plasma membrane],P23977,UniProt:P23977
+R-MMU-379393.1,"SLC6A3 cotransports DA, Na+ from extracellular region to cytosol",R-MMU-379482.1,SLC6A3 [plasma membrane],Q61327,UniProt:Q61327
+R-HSA-379393.3,"SLC6A3 cotransports DA, Na+ from extracellular region to cytosol",R-HSA-379482.1,SLC6A3 [plasma membrane],Q01959,UniProt:Q01959 SLC6A3
+R-CEL-209910.1,Iodide is taken up by thyroid epithelial cells,R-CEL-209833.1,SLC5A5 [plasma membrane],Q23616,UniProt:Q23616
+R-GGA-209910.1,Iodide is taken up by thyroid epithelial cells,R-GGA-209833.1,SLC5A5 [plasma membrane],A0A3Q2UFU3,UniProt:A0A3Q2UFU3
+R-XTR-209910.1,Iodide is taken up by thyroid epithelial cells,R-XTR-209833.1,slc5a5 [plasma membrane],F6RW14,UniProt:F6RW14
+R-DRE-209910.1,Iodide is taken up by thyroid epithelial cells,R-DRE-209833.1,SLC5A5 [plasma membrane],A4IG60,UniProt:A4IG60
+R-SSC-209910.1,Iodide is taken up by thyroid epithelial cells,R-SSC-209833.1,SLC5A5 [plasma membrane],A0A287AIH3,UniProt:A0A287AIH3
+R-BTA-209910.1,Iodide is taken up by thyroid epithelial cells,R-BTA-209833.1,SLC5A5 [plasma membrane],F1MT46,UniProt:F1MT46
+R-CFA-209910.1,Iodide is taken up by thyroid epithelial cells,R-CFA-209833.1,SLC5A5 [plasma membrane],E2RMU7,UniProt:E2RMU7
+R-RNO-209910.1,Iodide is taken up by thyroid epithelial cells,R-RNO-209833.1,Slc5a5 [plasma membrane],Q63008,UniProt:Q63008
+R-MMU-209910.1,Iodide is taken up by thyroid epithelial cells,R-MMU-209833.1,Slc5a5 [plasma membrane],Q99PN0,UniProt:Q99PN0
+R-HSA-209910.1,Iodide is taken up by thyroid epithelial cells,R-HSA-209833.1,SLC5A5 [plasma membrane],Q92911,UniProt:Q92911 SLC5A5
+R-CEL-429749.1,SLC5A8 transports monocarboxylates from extracellular region to cytosol,R-CEL-429769.1,SLC5A8 [plasma membrane],Q23616,UniProt:Q23616
+R-GGA-429749.1,SLC5A8 transports monocarboxylates from extracellular region to cytosol,R-GGA-429769.1,SLC5A8 [plasma membrane],F1P5L0,UniProt:F1P5L0
+R-XTR-429749.1,SLC5A8 transports monocarboxylates from extracellular region to cytosol,R-XTR-429769.1,LOC100488353 [plasma membrane],A0A6I8SA52,UniProt:A0A6I8SA52
+R-DRE-429749.1,SLC5A8 transports monocarboxylates from extracellular region to cytosol,R-DRE-429769.1,SLC5A8 [plasma membrane],A0A0H2UJX9,UniProt:A0A0H2UJX9
+R-SSC-429749.1,SLC5A8 transports monocarboxylates from extracellular region to cytosol,R-SSC-429769.1,SLC5A8 [plasma membrane],F1SRH7,UniProt:F1SRH7
+R-BTA-429749.1,SLC5A8 transports monocarboxylates from extracellular region to cytosol,R-BTA-429769.1,SLC5A8 [plasma membrane],C8KIL7,UniProt:C8KIL7
+R-CFA-429749.1,SLC5A8 transports monocarboxylates from extracellular region to cytosol,R-CFA-429769.1,SLC5A8 [plasma membrane],E2RI16,UniProt:E2RI16
+R-RNO-429749.1,SLC5A8 transports monocarboxylates from extracellular region to cytosol,R-RNO-429769.1,Slc5a8 [plasma membrane],D3Z9E5,UniProt:D3Z9E5
+R-MMU-429749.1,SLC5A8 transports monocarboxylates from extracellular region to cytosol,R-MMU-429769.1,Slc5a8 [plasma membrane],Q8BYF6,UniProt:Q8BYF6
+R-HSA-429749.2,SLC5A8 transports monocarboxylates from extracellular region to cytosol,R-HSA-429769.1,SLC5A8 [plasma membrane],Q8N695,UniProt:Q8N695 SLC5A8
+R-GGA-165026.1,OCTN2 / SLC22A5 transports CAR from extracellular space to cytosol,R-GGA-549319.1,SLC22A5 [plasma membrane],A0A1D5PQ51,UniProt:A0A1D5PQ51
+R-BTA-165026.1,OCTN2 / SLC22A5 transports CAR from extracellular space to cytosol,R-BTA-549319.1,SLC22A5 [plasma membrane],Q2KJE9,UniProt:Q2KJE9
+R-CFA-165026.1,OCTN2 / SLC22A5 transports CAR from extracellular space to cytosol,R-CFA-549319.1,SLC22A5 [plasma membrane],A0A5F4DDB5,UniProt:A0A5F4DDB5
+R-RNO-165026.1,OCTN2 / SLC22A5 transports CAR from extracellular space to cytosol,R-RNO-549319.1,SLC22A5 [plasma membrane],O70594,UniProt:O70594
+R-MMU-165026.1,OCTN2 / SLC22A5 transports CAR from extracellular space to cytosol,R-MMU-549319.1,SLC22A5 [plasma membrane],Q9Z0E8,UniProt:Q9Z0E8
+R-HSA-165026.2,OCTN2 / SLC22A5 transports CAR from extracellular space to cytosol,R-HSA-549319.1,SLC22A5 [plasma membrane],O76082,UniProt:O76082 SLC22A5
+R-GGA-212642.1,L-Glutamine transport into neurons,R-GGA-352093.1,SLC38A2 [plasma membrane],A0A3Q2U4T5,UniProt:A0A3Q2U4T5
+R-XTR-212642.1,L-Glutamine transport into neurons,R-XTR-352093.1,slc38a2 [plasma membrane],F7CPA5,UniProt:F7CPA5
+R-DRE-212642.1,L-Glutamine transport into neurons,R-DRE-352093.1,SLC38A2 [plasma membrane],Q5SPB1,UniProt:Q5SPB1
+R-DME-444007.1,GAT1-3 mediate Na+/Cl- dependent GABA transport,R-DME-444027.1,Gat [plasma membrane],Q9V4E7,UniProt:Q9V4E7
+R-HSA-352029.1,SLC6A12 (BGT-1)-mediated uptake of GABA and betaine,R-HSA-351969.1,SLC6A12 [plasma membrane],P48065,UniProt:P48065 SLC6A12
+R-MMU-352029.1,SLC6A12 (BGT-1)-mediated uptake of GABA and betaine,R-MMU-351969.1,Slc6a12 [plasma membrane],P31651,UniProt:P31651
+R-RNO-352029.1,SLC6A12 (BGT-1)-mediated uptake of GABA and betaine,R-RNO-351969.1,Slc6a12 [plasma membrane],P48056,UniProt:P48056
+R-CFA-352029.1,SLC6A12 (BGT-1)-mediated uptake of GABA and betaine,R-CFA-351969.1,SLC6A12 [plasma membrane],P27799,UniProt:P27799
+R-BTA-352029.1,SLC6A12 (BGT-1)-mediated uptake of GABA and betaine,R-BTA-351969.1,SLC6A12 [plasma membrane],A0A3Q1LJ84,UniProt:A0A3Q1LJ84
+R-SSC-352029.1,SLC6A12 (BGT-1)-mediated uptake of GABA and betaine,R-SSC-351969.1,SLC6A12 [plasma membrane],A0A287AYA7,UniProt:A0A287AYA7
+R-DRE-352029.1,SLC6A12 (BGT-1)-mediated uptake of GABA and betaine,R-DRE-351969.1,slc6a13 [plasma membrane],F1QZU3,UniProt:F1QZU3
+R-XTR-352029.1,SLC6A12 (BGT-1)-mediated uptake of GABA and betaine,R-XTR-351969.1,slc6a12 [plasma membrane],A0A803JFV1,UniProt:A0A803JFV1
+R-GGA-352029.1,SLC6A12 (BGT-1)-mediated uptake of GABA and betaine,R-GGA-351969.1,SLC6A12 [plasma membrane],E1BQT4,UniProt:E1BQT4
+R-XTR-9648983.1,"HTR3A pentamer:5HT transports Na+,K+,Ca2+",R-XTR-975301.1,HTR3A [plasma membrane],A0A6I8QAS1,UniProt:A0A6I8QAS1
+R-HSA-9648983.1,"HTR3A pentamer:5HT transports Na+,K+,Ca2+",R-HSA-975301.1,HTR3A [plasma membrane],P46098,UniProt:P46098 HTR3A
+R-MMU-9648983.1,"HTR3A pentamer:5HT transports Na+,K+,Ca2+",R-MMU-975301.1,Htr3a [plasma membrane],P23979,UniProt:P23979
+R-RNO-9648983.1,"HTR3A pentamer:5HT transports Na+,K+,Ca2+",R-RNO-975301.1,Htr3a [plasma membrane],P35563,UniProt:P35563
+R-CFA-9648983.1,"HTR3A pentamer:5HT transports Na+,K+,Ca2+",R-CFA-975301.1,HTR3A [plasma membrane],A0A5F4D994,UniProt:A0A5F4D994
+R-BTA-9648983.1,"HTR3A pentamer:5HT transports Na+,K+,Ca2+",R-BTA-975301.1,HTR3A [plasma membrane],F1N4Y2,UniProt:F1N4Y2
+R-SSC-9648983.1,"HTR3A pentamer:5HT transports Na+,K+,Ca2+",R-SSC-975301.1,HTR3A [plasma membrane],I3LTU2,UniProt:I3LTU2
+R-DRE-9648983.1,"HTR3A pentamer:5HT transports Na+,K+,Ca2+",R-DRE-975301.1,HTR3A [plasma membrane],A0A0R4IP48,UniProt:A0A0R4IP48
+R-CEL-9648983.1,"HTR3A pentamer:5HT transports Na+,K+,Ca2+",R-CEL-975301.1,acr-21 [plasma membrane],A0A3P6P985,UniProt:A0A3P6P985
+R-MMU-975311.1,"HTR3 pentamers:5HT transport Na+,K+,Ca2+",R-MMU-975301.1,Htr3a [plasma membrane],P23979,UniProt:P23979
+R-MMU-975311.1,"HTR3 pentamers:5HT transport Na+,K+,Ca2+",R-MMU-975360.1,Htr3b [plasma membrane],Q9JHJ5,UniProt:Q9JHJ5
+R-RNO-975311.1,"HTR3 pentamers:5HT transport Na+,K+,Ca2+",R-RNO-975301.1,Htr3a [plasma membrane],P35563,UniProt:P35563
+R-RNO-975311.1,"HTR3 pentamers:5HT transport Na+,K+,Ca2+",R-RNO-975360.1,Htr3b [plasma membrane],Q9JJ16,UniProt:Q9JJ16
+R-HSA-212642.2,L-Glutamine transport into neurons,R-HSA-352093.1,SLC38A2 [plasma membrane],Q96QD8,UniProt:Q96QD8 SLC38A2
+R-MMU-212642.1,L-Glutamine transport into neurons,R-MMU-352093.1,SLC38A2 [plasma membrane],Q8CFE6,UniProt:Q8CFE6
+R-RNO-212642.1,L-Glutamine transport into neurons,R-RNO-352093.1,SLC38A2 [plasma membrane],Q9JHE5,UniProt:Q9JHE5
+R-CFA-212642.1,L-Glutamine transport into neurons,R-CFA-352093.1,SLC38A2 [plasma membrane],J9P955,UniProt:J9P955
+R-BTA-212642.1,L-Glutamine transport into neurons,R-BTA-352093.1,SLC38A2 [plasma membrane],A2VE31,UniProt:A2VE31
+R-SSC-212642.1,L-Glutamine transport into neurons,R-SSC-352093.1,SLC38A2 [plasma membrane],A0A288CFU8,UniProt:A0A288CFU8
+R-XTR-936897.1,ATP1A:ATP1B:FXYD exchanges 3Na+ for 2K+,R-XTR-2752104.1,fxyd6 [plasma membrane],A0A803JU39,UniProt:A0A803JU39
+R-DRE-2872498.1,SLC17A3-1 cotransports extracellular Na+ and Pi to cytosol,R-DRE-2872467.1,SLC17A3 [endoplasmic reticulum membrane],E7F467,UniProt:E7F467
+R-SSC-2872498.1,SLC17A3-1 cotransports extracellular Na+ and Pi to cytosol,R-SSC-2872467.1,SLC17A3 [endoplasmic reticulum membrane],A0A286ZLE7,UniProt:A0A286ZLE7
+R-BTA-2872498.1,SLC17A3-1 cotransports extracellular Na+ and Pi to cytosol,R-BTA-2872467.1,SLC17A3 [endoplasmic reticulum membrane],Q17QE9,UniProt:Q17QE9
+R-CFA-2872498.1,SLC17A3-1 cotransports extracellular Na+ and Pi to cytosol,R-CFA-2872467.1,SLC17A3 [endoplasmic reticulum membrane],F1PS54,UniProt:F1PS54
+R-RNO-2872498.1,SLC17A3-1 cotransports extracellular Na+ and Pi to cytosol,R-RNO-2872467.1,Slc17a3 [endoplasmic reticulum membrane],E9PTR8,UniProt:E9PTR8
+R-MMU-2872498.1,SLC17A3-1 cotransports extracellular Na+ and Pi to cytosol,R-MMU-2872467.1,Slc17a3 [endoplasmic reticulum membrane],G3UWD9,UniProt:G3UWD9
+R-HSA-2872498.1,SLC17A3-1 cotransports extracellular Na+ and Pi to cytosol,R-HSA-2872467.1,SLC17A3 [endoplasmic reticulum membrane],O00476,UniProt:O00476 SLC17A3
+R-DME-5626316.1,"SLC24A5 exchanges cytosolic 4Na+ for Golgi luminal Ca2+, K+",R-DME-425660.1,SLC24A5 [trans-Golgi network membrane],Q9VN12,UniProt:Q9VN12
+R-GGA-5626316.1,"SLC24A5 exchanges cytosolic 4Na+ for Golgi luminal Ca2+, K+",R-GGA-425660.1,SLC24A5 [trans-Golgi network membrane],B5G557,UniProt:B5G557
+R-XTR-5626316.1,"SLC24A5 exchanges cytosolic 4Na+ for Golgi luminal Ca2+, K+",R-XTR-425660.1,slc24a5 [trans-Golgi network membrane],A0A6I8SU97,UniProt:A0A6I8SU97
+R-DRE-5626316.1,"SLC24A5 exchanges cytosolic 4Na+ for Golgi luminal Ca2+, K+",R-DRE-425660.1,SLC24A5 [trans-Golgi network membrane],B0V3S7,UniProt:B0V3S7
+R-SSC-5626316.1,"SLC24A5 exchanges cytosolic 4Na+ for Golgi luminal Ca2+, K+",R-SSC-425660.1,SLC24A5 [trans-Golgi network membrane],F1SN62,UniProt:F1SN62
+R-BTA-5626316.1,"SLC24A5 exchanges cytosolic 4Na+ for Golgi luminal Ca2+, K+",R-BTA-425660.1,SLC24A5 [trans-Golgi network membrane],F1MIZ1,UniProt:F1MIZ1
+R-CFA-5626316.1,"SLC24A5 exchanges cytosolic 4Na+ for Golgi luminal Ca2+, K+",R-CFA-425660.1,SLC24A5 [trans-Golgi network membrane],A0A5F4CGC3,UniProt:A0A5F4CGC3
+R-RNO-5626316.1,"SLC24A5 exchanges cytosolic 4Na+ for Golgi luminal Ca2+, K+",R-RNO-425660.1,Slc24a5 [trans-Golgi network membrane],D3ZFG9,UniProt:D3ZFG9
+R-MMU-5626316.1,"SLC24A5 exchanges cytosolic 4Na+ for Golgi luminal Ca2+, K+",R-MMU-425660.1,Slc24a5 [trans-Golgi network membrane],Q8C261,UniProt:Q8C261
+R-HSA-5626316.1,"SLC24A5 exchanges cytosolic 4Na+ for Golgi luminal Ca2+, K+",R-HSA-425660.1,SLC24A5 [trans-Golgi network membrane],Q71RS6,UniProt:Q71RS6 SLC24A5
+R-SCE-425965.1,SLC9A9 exchanges Na+ for H+ across the late endosome membrane,R-SCE-425972.1,NHX1 [late endosome membrane],Q04121,UniProt:Q04121
+R-SPO-425965.1,SLC9A9 exchanges Na+ for H+ across the late endosome membrane,R-SPO-425972.1,SLC9A9 [late endosome membrane],O13726,UniProt:O13726
+R-CEL-425965.1,SLC9A9 exchanges Na+ for H+ across the late endosome membrane,R-CEL-425972.1,nhx-5 [late endosome membrane],G5ED88,UniProt:G5ED88
+R-DME-425965.1,SLC9A9 exchanges Na+ for H+ across the late endosome membrane,R-DME-425972.1,Nhe3 [late endosome membrane],Q8IPJ4,UniProt:Q8IPJ4
+R-GGA-425965.1,SLC9A9 exchanges Na+ for H+ across the late endosome membrane,R-GGA-425972.1,SLC9A9 [late endosome membrane],F1NYM1,UniProt:F1NYM1
+R-XTR-425965.1,SLC9A9 exchanges Na+ for H+ across the late endosome membrane,R-XTR-425972.1,slc9a9 [late endosome membrane],F6RC40,UniProt:F6RC40
+R-SSC-425965.1,SLC9A9 exchanges Na+ for H+ across the late endosome membrane,R-SSC-425972.1,SLC9A9 [late endosome membrane],F1SKE4,UniProt:F1SKE4
+R-BTA-425965.1,SLC9A9 exchanges Na+ for H+ across the late endosome membrane,R-BTA-425972.1,SLC9A9 [late endosome membrane],F1N798,UniProt:F1N798
+R-CFA-425965.1,SLC9A9 exchanges Na+ for H+ across the late endosome membrane,R-CFA-425972.1,SLC9A9 [late endosome membrane],F1Q0X9,UniProt:F1Q0X9
+R-RNO-425965.1,SLC9A9 exchanges Na+ for H+ across the late endosome membrane,R-RNO-425972.1,Slc9a9 [late endosome membrane],D4A7H1,UniProt:D4A7H1
+R-MMU-425965.1,SLC9A9 exchanges Na+ for H+ across the late endosome membrane,R-MMU-425972.1,Slc9a9 [late endosome membrane],Q8BZ00,UniProt:Q8BZ00
+R-HSA-425965.1,SLC9A9 exchanges Na+ for H+ across the late endosome membrane,R-HSA-425972.1,SLC9A9 [late endosome membrane],Q8IVB4,UniProt:Q8IVB4 SLC9A9
+R-SCE-426015.1,Na+/H+ exchanger transport (at trans-golgi membrane),R-SCE-425960.1,NHX1 [Golgi membrane],Q04121,UniProt:Q04121
+R-SPO-426015.1,Na+/H+ exchanger transport (at trans-golgi membrane),R-SPO-425960.1,SLC9A7 [Golgi membrane],O13726,UniProt:O13726
+R-DDI-426015.1,Na+/H+ exchanger transport (at trans-golgi membrane),R-DDI-426003.1,nhe2 [Golgi membrane],Q54TB5,UniProt:Q54TB5
+R-RNO-426015.1,Na+/H+ exchanger transport (at trans-golgi membrane),R-RNO-426003.1,Slc9a8 [Golgi membrane],Q4L208,UniProt:Q4L208
+R-SCE-425983.1,"SLC9A6,7 exchange Na+ for H+ across the early endosome membrane",R-SCE-425984.1,NHX1 [early endosome membrane],Q04121,UniProt:Q04121
+R-CEL-425983.1,"SLC9A6,7 exchange Na+ for H+ across the early endosome membrane",R-CEL-425984.1,nhx-5 [early endosome membrane],G5ED88,UniProt:G5ED88
+R-DME-425983.1,"SLC9A6,7 exchange Na+ for H+ across the early endosome membrane",R-DME-425984.1,Nhe3 [early endosome membrane],Q8IPJ4,UniProt:Q8IPJ4
+R-RNO-425983.1,"SLC9A6,7 exchange Na+ for H+ across the early endosome membrane",R-RNO-425984.1,Slc9a6 [early endosome membrane],D3ZJ86,UniProt:D3ZJ86
+R-DME-352371.1,"SLC1A4-mediated exchange of extracellular threonine for cytosolic alanine, serine, or cysteine",R-DME-352349.1,Eaat1 [plasma membrane],A0A6H2EJK0,UniProt:A0A6H2EJK0
+R-GGA-352371.1,"SLC1A4-mediated exchange of extracellular threonine for cytosolic alanine, serine, or cysteine",R-GGA-352349.1,SLC1A4 [plasma membrane],E1BRV6,UniProt:E1BRV6
+R-XTR-352371.1,"SLC1A4-mediated exchange of extracellular threonine for cytosolic alanine, serine, or cysteine",R-XTR-352349.1,slc1a4 [plasma membrane],F6QUP8,UniProt:F6QUP8
+R-DRE-352371.1,"SLC1A4-mediated exchange of extracellular threonine for cytosolic alanine, serine, or cysteine",R-DRE-352349.1,SLC1A4 [plasma membrane],D7RVS1,UniProt:D7RVS1
+R-SSC-352371.1,"SLC1A4-mediated exchange of extracellular threonine for cytosolic alanine, serine, or cysteine",R-SSC-352349.1,SLC1A4 [plasma membrane],I3LAL2,UniProt:I3LAL2
+R-BTA-352371.1,"SLC1A4-mediated exchange of extracellular threonine for cytosolic alanine, serine, or cysteine",R-BTA-352349.1,SLC1A4 [plasma membrane],A2VDL4,UniProt:A2VDL4
+R-CFA-352371.1,"SLC1A4-mediated exchange of extracellular threonine for cytosolic alanine, serine, or cysteine",R-CFA-352349.1,SLC1A4 [plasma membrane],F1Q0H9,UniProt:F1Q0H9
+R-RNO-352371.1,"SLC1A4-mediated exchange of extracellular threonine for cytosolic alanine, serine, or cysteine",R-RNO-352349.1,Slc1a4 [plasma membrane],Q76GL9,UniProt:Q76GL9
+R-MMU-352371.1,"SLC1A4-mediated exchange of extracellular threonine for cytosolic alanine, serine, or cysteine",R-MMU-352349.1,Slc1a4 [plasma membrane],O35874,UniProt:O35874
+R-HSA-352371.1,"SLC1A4-mediated exchange of extracellular threonine for cytosolic alanine, serine, or cysteine",R-HSA-352349.1,SLC1A4 [plasma membrane],P43007,UniProt:P43007 SLC1A4
+R-DME-352364.1,"SLC1A4-mediated exchange of extracellular alanine for cytosolic serine, threonine, or cysteine",R-DME-352349.1,Eaat1 [plasma membrane],A0A6H2EJK0,UniProt:A0A6H2EJK0
+R-GGA-352364.1,"SLC1A4-mediated exchange of extracellular alanine for cytosolic serine, threonine, or cysteine",R-GGA-352349.1,SLC1A4 [plasma membrane],E1BRV6,UniProt:E1BRV6
+R-XTR-352364.1,"SLC1A4-mediated exchange of extracellular alanine for cytosolic serine, threonine, or cysteine",R-XTR-352349.1,slc1a4 [plasma membrane],F6QUP8,UniProt:F6QUP8
+R-DRE-352364.1,"SLC1A4-mediated exchange of extracellular alanine for cytosolic serine, threonine, or cysteine",R-DRE-352349.1,SLC1A4 [plasma membrane],D7RVS1,UniProt:D7RVS1
+R-SSC-352364.1,"SLC1A4-mediated exchange of extracellular alanine for cytosolic serine, threonine, or cysteine",R-SSC-352349.1,SLC1A4 [plasma membrane],I3LAL2,UniProt:I3LAL2
+R-BTA-352364.1,"SLC1A4-mediated exchange of extracellular alanine for cytosolic serine, threonine, or cysteine",R-BTA-352349.1,SLC1A4 [plasma membrane],A2VDL4,UniProt:A2VDL4
+R-CFA-352364.1,"SLC1A4-mediated exchange of extracellular alanine for cytosolic serine, threonine, or cysteine",R-CFA-352349.1,SLC1A4 [plasma membrane],F1Q0H9,UniProt:F1Q0H9
+R-RNO-352364.1,"SLC1A4-mediated exchange of extracellular alanine for cytosolic serine, threonine, or cysteine",R-RNO-352349.1,Slc1a4 [plasma membrane],Q76GL9,UniProt:Q76GL9
+R-MMU-352364.1,"SLC1A4-mediated exchange of extracellular alanine for cytosolic serine, threonine, or cysteine",R-MMU-352349.1,Slc1a4 [plasma membrane],O35874,UniProt:O35874
+R-HSA-352364.1,"SLC1A4-mediated exchange of extracellular alanine for cytosolic serine, threonine, or cysteine",R-HSA-352349.1,SLC1A4 [plasma membrane],P43007,UniProt:P43007 SLC1A4
+R-DME-352354.1,"SLC1A4-mediated exchange of extracellular cysteine for cytosolic alanine, serine, or threonine",R-DME-352349.1,Eaat1 [plasma membrane],A0A6H2EJK0,UniProt:A0A6H2EJK0
+R-GGA-352354.1,"SLC1A4-mediated exchange of extracellular cysteine for cytosolic alanine, serine, or threonine",R-GGA-352349.1,SLC1A4 [plasma membrane],E1BRV6,UniProt:E1BRV6
+R-XTR-352354.1,"SLC1A4-mediated exchange of extracellular cysteine for cytosolic alanine, serine, or threonine",R-XTR-352349.1,slc1a4 [plasma membrane],F6QUP8,UniProt:F6QUP8
+R-DRE-352354.1,"SLC1A4-mediated exchange of extracellular cysteine for cytosolic alanine, serine, or threonine",R-DRE-352349.1,SLC1A4 [plasma membrane],D7RVS1,UniProt:D7RVS1
+R-SSC-352354.1,"SLC1A4-mediated exchange of extracellular cysteine for cytosolic alanine, serine, or threonine",R-SSC-352349.1,SLC1A4 [plasma membrane],I3LAL2,UniProt:I3LAL2
+R-BTA-352354.1,"SLC1A4-mediated exchange of extracellular cysteine for cytosolic alanine, serine, or threonine",R-BTA-352349.1,SLC1A4 [plasma membrane],A2VDL4,UniProt:A2VDL4
+R-CFA-352354.1,"SLC1A4-mediated exchange of extracellular cysteine for cytosolic alanine, serine, or threonine",R-CFA-352349.1,SLC1A4 [plasma membrane],F1Q0H9,UniProt:F1Q0H9
+R-RNO-352354.1,"SLC1A4-mediated exchange of extracellular cysteine for cytosolic alanine, serine, or threonine",R-RNO-352349.1,Slc1a4 [plasma membrane],Q76GL9,UniProt:Q76GL9
+R-MMU-352354.1,"SLC1A4-mediated exchange of extracellular cysteine for cytosolic alanine, serine, or threonine",R-MMU-352349.1,Slc1a4 [plasma membrane],O35874,UniProt:O35874
+R-HSA-352354.1,"SLC1A4-mediated exchange of extracellular cysteine for cytosolic alanine, serine, or threonine",R-HSA-352349.1,SLC1A4 [plasma membrane],P43007,UniProt:P43007 SLC1A4
+R-DME-352347.1,"SLC1A4-mediated exchange of extracellular serine for cytosolic alanine, threonine, or cysteine",R-DME-352349.1,Eaat1 [plasma membrane],A0A6H2EJK0,UniProt:A0A6H2EJK0
+R-GGA-352347.1,"SLC1A4-mediated exchange of extracellular serine for cytosolic alanine, threonine, or cysteine",R-GGA-352349.1,SLC1A4 [plasma membrane],E1BRV6,UniProt:E1BRV6
+R-XTR-352347.1,"SLC1A4-mediated exchange of extracellular serine for cytosolic alanine, threonine, or cysteine",R-XTR-352349.1,slc1a4 [plasma membrane],F6QUP8,UniProt:F6QUP8
+R-DRE-352347.1,"SLC1A4-mediated exchange of extracellular serine for cytosolic alanine, threonine, or cysteine",R-DRE-352349.1,SLC1A4 [plasma membrane],D7RVS1,UniProt:D7RVS1
+R-SSC-352347.1,"SLC1A4-mediated exchange of extracellular serine for cytosolic alanine, threonine, or cysteine",R-SSC-352349.1,SLC1A4 [plasma membrane],I3LAL2,UniProt:I3LAL2
+R-BTA-352347.1,"SLC1A4-mediated exchange of extracellular serine for cytosolic alanine, threonine, or cysteine",R-BTA-352349.1,SLC1A4 [plasma membrane],A2VDL4,UniProt:A2VDL4
+R-CFA-352347.1,"SLC1A4-mediated exchange of extracellular serine for cytosolic alanine, threonine, or cysteine",R-CFA-352349.1,SLC1A4 [plasma membrane],F1Q0H9,UniProt:F1Q0H9
+R-RNO-352347.1,"SLC1A4-mediated exchange of extracellular serine for cytosolic alanine, threonine, or cysteine",R-RNO-352349.1,Slc1a4 [plasma membrane],Q76GL9,UniProt:Q76GL9
+R-MMU-352347.1,"SLC1A4-mediated exchange of extracellular serine for cytosolic alanine, threonine, or cysteine",R-MMU-352349.1,Slc1a4 [plasma membrane],O35874,UniProt:O35874
+R-HSA-352347.1,"SLC1A4-mediated exchange of extracellular serine for cytosolic alanine, threonine, or cysteine",R-HSA-352349.1,SLC1A4 [plasma membrane],P43007,UniProt:P43007 SLC1A4
+R-DME-352385.1,SLC1A5-mediated exchange of glutamine and alanine across the plasma membrane,R-DME-352376.1,Eaat1 [plasma membrane],A0A6H2EJK0,UniProt:A0A6H2EJK0
+R-XTR-352385.1,SLC1A5-mediated exchange of glutamine and alanine across the plasma membrane,R-XTR-352376.1,slc1a5 [plasma membrane],F7C3I3,UniProt:F7C3I3
+R-DRE-352385.1,SLC1A5-mediated exchange of glutamine and alanine across the plasma membrane,R-DRE-352376.1,SLC1A5 [plasma membrane],A0A0G2L9M2,UniProt:A0A0G2L9M2
+R-SSC-352385.1,SLC1A5-mediated exchange of glutamine and alanine across the plasma membrane,R-SSC-352376.1,SLC1A5 [plasma membrane],F1RM08,UniProt:F1RM08
+R-BTA-352385.1,SLC1A5-mediated exchange of glutamine and alanine across the plasma membrane,R-BTA-352376.1,SLC1A5 [plasma membrane],Q95JC7,UniProt:Q95JC7
+R-CFA-352385.1,SLC1A5-mediated exchange of glutamine and alanine across the plasma membrane,R-CFA-352376.1,SLC1A5 [plasma membrane],A0A5F4C8T4,UniProt:A0A5F4C8T4
+R-RNO-352385.1,SLC1A5-mediated exchange of glutamine and alanine across the plasma membrane,R-RNO-352376.1,Slc1a5 [plasma membrane],D3ZJ25,UniProt:D3ZJ25
+R-MMU-352385.1,SLC1A5-mediated exchange of glutamine and alanine across the plasma membrane,R-MMU-352376.1,SLC1A5 [plasma membrane],P51912,UniProt:P51912
+R-HSA-352385.1,SLC1A5-mediated exchange of glutamine and alanine across the plasma membrane,R-HSA-352376.1,SLC1A5 [plasma membrane],Q15758,UniProt:Q15758 SLC1A5
+R-DME-352379.1,SLC1A5-mediated exchange of alanine and glutamine across the plasma membrane,R-DME-352376.1,Eaat1 [plasma membrane],A0A6H2EJK0,UniProt:A0A6H2EJK0
+R-XTR-352379.1,SLC1A5-mediated exchange of alanine and glutamine across the plasma membrane,R-XTR-352376.1,slc1a5 [plasma membrane],F7C3I3,UniProt:F7C3I3
+R-DRE-352379.1,SLC1A5-mediated exchange of alanine and glutamine across the plasma membrane,R-DRE-352376.1,SLC1A5 [plasma membrane],A0A0G2L9M2,UniProt:A0A0G2L9M2
+R-SSC-352379.1,SLC1A5-mediated exchange of alanine and glutamine across the plasma membrane,R-SSC-352376.1,SLC1A5 [plasma membrane],F1RM08,UniProt:F1RM08
+R-BTA-352379.1,SLC1A5-mediated exchange of alanine and glutamine across the plasma membrane,R-BTA-352376.1,SLC1A5 [plasma membrane],Q95JC7,UniProt:Q95JC7
+R-CFA-352379.1,SLC1A5-mediated exchange of alanine and glutamine across the plasma membrane,R-CFA-352376.1,SLC1A5 [plasma membrane],A0A5F4C8T4,UniProt:A0A5F4C8T4
+R-RNO-352379.1,SLC1A5-mediated exchange of alanine and glutamine across the plasma membrane,R-RNO-352376.1,Slc1a5 [plasma membrane],D3ZJ25,UniProt:D3ZJ25
+R-MMU-352379.1,SLC1A5-mediated exchange of alanine and glutamine across the plasma membrane,R-MMU-352376.1,SLC1A5 [plasma membrane],P51912,UniProt:P51912
+R-HSA-352379.1,SLC1A5-mediated exchange of alanine and glutamine across the plasma membrane,R-HSA-352376.1,SLC1A5 [plasma membrane],Q15758,UniProt:Q15758 SLC1A5
+R-CEL-8878664.1,SLC4A4 cotransports Na+ with 3HCO3-,R-CEL-425545.1,abts-1 [plasma membrane],B3WFV9,UniProt:B3WFV9
+R-DME-8878664.1,SLC4A4 cotransports Na+ with 3HCO3-,R-DME-425545.1,Ndae1 [plasma membrane],Q8IPI3,UniProt:Q8IPI3
+R-GGA-8878664.1,SLC4A4 cotransports Na+ with 3HCO3-,R-GGA-425545.1,SLC4A4 [plasma membrane],A0A1D5NX03,UniProt:A0A1D5NX03
+R-XTR-8878664.1,SLC4A4 cotransports Na+ with 3HCO3-,R-XTR-425545.1,slc4a4 [plasma membrane],A0A6I8RPM1,UniProt:A0A6I8RPM1
+R-DRE-8878664.1,SLC4A4 cotransports Na+ with 3HCO3-,R-DRE-425545.1,SLC4A4 [plasma membrane],A0A2R8PYB9,UniProt:A0A2R8PYB9
+R-SSC-8878664.1,SLC4A4 cotransports Na+ with 3HCO3-,R-SSC-425545.1,SLC4A4 [plasma membrane],A0A287B5P5,UniProt:A0A287B5P5
+R-BTA-8878664.1,SLC4A4 cotransports Na+ with 3HCO3-,R-BTA-425545.1,SLC4A4 [plasma membrane],A0A3Q1LUF6,UniProt:A0A3Q1LUF6
+R-CFA-8878664.1,SLC4A4 cotransports Na+ with 3HCO3-,R-CFA-425545.1,SLC4A4 [plasma membrane],A0A5F4CUE1,UniProt:A0A5F4CUE1
+R-RNO-8878664.1,SLC4A4 cotransports Na+ with 3HCO3-,R-RNO-425545.1,Slc4a4 [plasma membrane],Q9JI66,UniProt:Q9JI66
+R-MMU-8878664.1,SLC4A4 cotransports Na+ with 3HCO3-,R-MMU-425545.1,Slc4a4 [plasma membrane],O88343,UniProt:O88343
+R-HSA-8878664.3,SLC4A4 cotransports Na+ with 3HCO3-,R-HSA-425545.1,SLC4A4 [plasma membrane],Q9Y6R1,UniProt:Q9Y6R1 SLC4A4
+R-CEL-425483.1,"SLC4A5,7,9 cotransport Na+ with 3HCO3-",R-CEL-425546.1,abts-1 [plasma membrane],B3WFV9,UniProt:B3WFV9
+R-DME-425483.1,"SLC4A5,7,9 cotransport Na+ with 3HCO3-",R-DME-425546.1,Ndae1 [plasma membrane],Q8IPI3,UniProt:Q8IPI3
+R-NUL-8951809.2,Slc8a3 (NCX3) exchanges sodium (cytosol) for calcium (mitochondrial intermembrane space),R-RNO-8951807.1,Slc8a3 [mitochondrial outer membrane],P70549,UniProt:P70549 Slc8a3
+R-NUL-8951809.2,Slc8a3 (NCX3) exchanges sodium (cytosol) for calcium (mitochondrial intermembrane space),R-MMU-8951818.1,Akap1 [mitochondrial outer membrane],O08715,UniProt:O08715 Akap1
+R-HSA-8949703.1,SLC8A3 (NCX3) exchanges sodium (cytosol) for calcium (mitochondrial intermembrane space),R-HSA-8949711.1,SLC8A3 [mitochondrial outer membrane],P57103,UniProt:P57103 SLC8A3
+R-HSA-8949703.1,SLC8A3 (NCX3) exchanges sodium (cytosol) for calcium (mitochondrial intermembrane space),R-HSA-8951815.1,AKAP1 [mitochondrial outer membrane],Q92667,UniProt:Q92667 AKAP1
+R-CEL-2889070.1,SLC9B2 exchanges Na+ for H+,R-CEL-2889045.1,slc-9b.1 [mitochondrial inner membrane],Q20273,UniProt:Q20273
+R-DME-2889070.1,SLC9B2 exchanges Na+ for H+,R-DME-2889045.1,Nha1 [mitochondrial inner membrane],Q9VM74,UniProt:Q9VM74
+R-GGA-2889070.1,SLC9B2 exchanges Na+ for H+,R-GGA-2889045.1,SLC9B2 [mitochondrial inner membrane],E1C3V4,UniProt:E1C3V4
+R-XTR-2889070.1,SLC9B2 exchanges Na+ for H+,R-XTR-2889045.1,slc9b2 [mitochondrial inner membrane],A0A6I8RRR1,UniProt:A0A6I8RRR1
+R-DRE-2889070.1,SLC9B2 exchanges Na+ for H+,R-DRE-2889045.1,SLC9B2 [mitochondrial inner membrane],E7FBR3,UniProt:E7FBR3
+R-SSC-2889070.1,SLC9B2 exchanges Na+ for H+,R-SSC-2889045.1,SLC9B2 [mitochondrial inner membrane],A0A287BGM9,UniProt:A0A287BGM9
+R-BTA-2889070.1,SLC9B2 exchanges Na+ for H+,R-BTA-2889045.1,SLC9B2 [mitochondrial inner membrane],E1BFC4,UniProt:E1BFC4
+R-CFA-2889070.1,SLC9B2 exchanges Na+ for H+,R-CFA-2889045.1,SLC9B2 [mitochondrial inner membrane],F6XZG7,UniProt:F6XZG7
+R-RNO-2889070.1,SLC9B2 exchanges Na+ for H+,R-RNO-2889045.1,Slc9b2 [mitochondrial inner membrane],B2RYK8,UniProt:B2RYK8
+R-MMU-2889070.1,SLC9B2 exchanges Na+ for H+,R-MMU-2889045.1,Slc9b2 [mitochondrial inner membrane],Q5BKR2,UniProt:Q5BKR2
+R-HSA-2889070.2,SLC9B2 exchanges Na+ for H+,R-HSA-2889045.1,SLC9B2 [mitochondrial inner membrane],Q86UD5,UniProt:Q86UD5 SLC9B2
+R-SCE-8949688.1,SLC8B1 (NCLX) exchanges sodium (mitochondrial intermembrane space) for calcium (mitochondrial matrix),R-SCE-8949706.1,ECM27 [mitochondrial inner membrane],P47144,UniProt:P47144
+R-SPO-8949688.1,SLC8B1 (NCLX) exchanges sodium (mitochondrial intermembrane space) for calcium (mitochondrial matrix),R-SPO-8949706.1,SLC8B1 [mitochondrial inner membrane],P87122,UniProt:P87122
+R-CEL-8949688.1,SLC8B1 (NCLX) exchanges sodium (mitochondrial intermembrane space) for calcium (mitochondrial matrix),R-CEL-8949706.1,ncx-7 [mitochondrial inner membrane],P34322,UniProt:P34322
+R-DME-8949688.1,SLC8B1 (NCLX) exchanges sodium (mitochondrial intermembrane space) for calcium (mitochondrial matrix),R-DME-8949706.1,Dmel\CG5348 [mitochondrial inner membrane],A1ZAJ4,UniProt:A1ZAJ4
+R-XTR-8949688.1,SLC8B1 (NCLX) exchanges sodium (mitochondrial intermembrane space) for calcium (mitochondrial matrix),R-XTR-8949706.1,slc8b1 [mitochondrial inner membrane],A0A6I8SHY1,UniProt:A0A6I8SHY1
+R-SSC-8949688.1,SLC8B1 (NCLX) exchanges sodium (mitochondrial intermembrane space) for calcium (mitochondrial matrix),R-SSC-8949706.1,SLC8B1 [mitochondrial inner membrane],F1RKA8,UniProt:F1RKA8
+R-BTA-8949688.1,SLC8B1 (NCLX) exchanges sodium (mitochondrial intermembrane space) for calcium (mitochondrial matrix),R-BTA-8949706.1,SLC8B1 [mitochondrial inner membrane],A0A3Q1LSB1,UniProt:A0A3Q1LSB1
+R-CFA-8949688.1,SLC8B1 (NCLX) exchanges sodium (mitochondrial intermembrane space) for calcium (mitochondrial matrix),R-CFA-8949706.1,SLC8B1 [mitochondrial inner membrane],J9P9F6,UniProt:J9P9F6
+R-RNO-8949688.1,SLC8B1 (NCLX) exchanges sodium (mitochondrial intermembrane space) for calcium (mitochondrial matrix),R-RNO-8949706.1,Slc8b1 [mitochondrial inner membrane],Q6AXS0,UniProt:Q6AXS0
+R-MMU-8949688.1,SLC8B1 (NCLX) exchanges sodium (mitochondrial intermembrane space) for calcium (mitochondrial matrix),R-MMU-8949706.1,Slc8b1 [mitochondrial inner membrane],Q925Q3,UniProt:Q925Q3
+R-HSA-8949688.1,SLC8B1 (NCLX) exchanges sodium (mitochondrial intermembrane space) for calcium (mitochondrial matrix),R-HSA-8949706.1,SLC8B1 [mitochondrial inner membrane],Q6J4K2,UniProt:Q6J4K2 SLC8B1

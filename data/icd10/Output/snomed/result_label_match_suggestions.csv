@@ -1,0 +1,363 @@
+icd10_id,icd10_lbl,mondo/hbo urls,mondo/hpo labels,scores
+A500,"Early congenital syphilis, symptomatic","['http://purl.obolibrary.org/obo/MONDO_0002896', 'http://purl.obolibrary.org/obo/HP_6000833']","['early syphilis, symptomatic', 'Hyperkalemia while symptomatic']","[12, 19]"
+A5001,Early congenital syphilitic oculopathy,"['http://purl.obolibrary.org/obo/MONDO_0000333', 'http://purl.obolibrary.org/obo/HP_0007642']","['early congenital syphilis', 'Static congenital hemeralopia']","[15, 22]"
+A503,Late congenital syphilitic oculopathy,"['http://purl.obolibrary.org/obo/MONDO_0005821', 'http://purl.obolibrary.org/obo/HP_0007642']","['late congenital syphilis', 'Static congenital hemeralopia']","[15, 21]"
+A5031,Late congenital syphilitic interstitial keratitis,['http://purl.obolibrary.org/obo/MONDO_0017789'],['idiopathic linear interstitial keratitis'],[22]
+A504,Late congenital neurosyphilis [juvenile neurosyphilis],[],[],[]
+A5044,Late congenital syphilitic optic nerve atrophy,[],[],[]
+A5045,Juvenile general paresis,"['http://purl.obolibrary.org/obo/MONDO_0016848', 'http://purl.obolibrary.org/obo/HP_0004784']","['juvenile temporal arteritis', 'Juvenile GI polyposis']","[10, 10]"
+A5054,Late congenital cardiovascular syphilis,"['http://purl.obolibrary.org/obo/MONDO_0022822', 'http://purl.obolibrary.org/obo/HP_0010948']","['congenital cardiovascular shunt', 'Abnormal fetal cardiovascular morphology']","[11, 19]"
+K4000,"Bilateral inguinal hernia, with obstruction, without gangrene, not specified as recurrent",[],[],[]
+K401,"Bilateral inguinal hernia, with gangrene",[],[],[]
+K4010,"Bilateral inguinal hernia, with gangrene, not specified as recurrent",[],[],[]
+K402,"Bilateral inguinal hernia, without obstruction or gangrene",[],[],[]
+K4020,"Bilateral inguinal hernia, without obstruction or gangrene, not specified as recurrent",[],[],[]
+K403,"Unilateral inguinal hernia, with obstruction, without gangrene",[],[],[]
+K4030,"Unilateral inguinal hernia, with obstruction, without gangrene, not specified as recurrent",[],[],[]
+K4040,"Unilateral inguinal hernia, with gangrene, not specified as recurrent",[],[],[]
+K410,"Bilateral femoral hernia, with obstruction, without gangrene",[],[],[]
+K4100,"Bilateral femoral hernia, with obstruction, without gangrene, not specified as recurrent",[],[],[]
+K411,"Bilateral femoral hernia, with gangrene",[],[],[]
+K4110,"Bilateral femoral hernia, with gangrene, not specified as recurrent",[],[],[]
+K412,"Bilateral femoral hernia, without obstruction or gangrene",[],[],[]
+K4120,"Bilateral femoral hernia, without obstruction or gangrene, not specified as recurrent",[],[],[]
+K413,"Unilateral femoral hernia, with obstruction, without gangrene",[],[],[]
+K4130,"Unilateral femoral hernia, with obstruction, without gangrene, not specified as recurrent",[],[],[]
+K414,"Unilateral femoral hernia, with gangrene",[],[],[]
+K4140,"Unilateral femoral hernia, with gangrene, not specified as recurrent",[],[],[]
+M2603,Mandibular hyperplasia,"['http://purl.obolibrary.org/obo/HP_0009939', 'http://purl.obolibrary.org/obo/HP_0000303']","['Mandibular aplasia', 'Mandibular hyperplasia']","[5, 0]"
+M2605,Macrogenia,"['http://purl.obolibrary.org/obo/MONDO_0008716', 'http://purl.obolibrary.org/obo/HP_0001302']","['acrogeria', 'Macrogyria']","[2, 2]"
+M2606,Microgenia,"['http://purl.obolibrary.org/obo/HP_0000054', 'http://purl.obolibrary.org/obo/HP_0000054']","['Micropenis', 'Micropenis']","[2, 2]"
+O364,Maternal care for intrauterine death,[],[],[]
+P028,Newborn affected by other abnormalities of membranes,[],[],[]
+P370,Congenital tuberculosis,"['http://purl.obolibrary.org/obo/MONDO_0006002', 'http://purl.obolibrary.org/obo/HP_0007875']","['urogenital tuberculosis', 'Congenital amaurosis']","[3, 7]"
+Q030,Malformations of aqueduct of Sylvius,"['http://purl.obolibrary.org/obo/MONDO_0021164', 'http://purl.obolibrary.org/obo/HP_0002410']","['inflammation of prepuce of penis', 'Narrowing of aqueduct of Sylvius']","[17, 9]"
+Q038,Other congenital hydrocephalus,"['http://purl.obolibrary.org/obo/MONDO_0014085', 'http://purl.obolibrary.org/obo/HP_0004488']","['MPDZ congenital hydrocephalus', 'Congenital macrocephaly']","[5, 12]"
+Q052,Lumbar spina bifida with hydrocephalus,"['http://purl.obolibrary.org/obo/MONDO_0010172', 'http://purl.obolibrary.org/obo/HP_0005857']","['Vater association with hydrocephalus', 'Cervical spina bifida']","[16, 26]"
+Q053,Sacral spina bifida with hydrocephalus,"['http://purl.obolibrary.org/obo/MONDO_0010172', 'http://purl.obolibrary.org/obo/HP_0005857']","['Vater association with hydrocephalus', 'Cervical spina bifida']","[15, 25]"
+Q061,Hypoplasia and dysplasia of spinal cord,"['http://purl.obolibrary.org/obo/MONDO_0003544', 'http://purl.obolibrary.org/obo/HP_0100562']","['malignant neoplasm of spinal cord', 'Duplication of spinal cord']","[15, 20]"
+Q063,Other congenital cauda equina malformations,['http://purl.obolibrary.org/obo/MONDO_0037738'],['malignant cauda equina neoplasm'],[24]
+Q129,"Congenital lens malformation, unspecified","['http://purl.obolibrary.org/obo/MONDO_1012808', 'http://purl.obolibrary.org/obo/HP_0005853']","['congenital eye malformation, dog', 'Congenital foot contraction deformities']","[15, 20]"
+Q149,"Congenital malformation of posterior segment of eye, unspecified",[],[],[]
+Q186,Macrocheilia,"['http://purl.obolibrary.org/obo/HP_0002983', 'http://purl.obolibrary.org/obo/HP_0000256']","['Micromelia', 'Macrocrania']","[4, 4]"
+Q209,"Congenital malformation of cardiac chambers and connections, unspecified",[],[],[]
+Q229,"Congenital malformation of tricuspid valve, unspecified","['http://purl.obolibrary.org/obo/HP_0011603', 'http://purl.obolibrary.org/obo/HP_0011603']","['Congenital malformation of the great arteries', 'Congenital malformation of the great arteries']","[22, 22]"
+Q2541,Absence and aplasia of aorta,"['http://purl.obolibrary.org/obo/MONDO_0001863', 'http://purl.obolibrary.org/obo/HP_0000528']","['atresia and stenosis of aorta', 'Absence of globes of eyes']","[12, 14]"
+Q2544,Congenital dilation of aorta,"['http://purl.obolibrary.org/obo/HP_0001680', 'http://purl.obolibrary.org/obo/HP_0001374']","['Coarctation of aorta', 'Congenital dislocation of the hip']","[11, 10]"
+Q2546,Tortuous aortic arch,"['http://purl.obolibrary.org/obo/MONDO_0017991', 'http://purl.obolibrary.org/obo/HP_0011590']","['cervical aortic arch', 'Double aortic arch']","[7, 6]"
+Q2548,Anomalous origin of subclavian artery,"['http://purl.obolibrary.org/obo/UBERON_0036352', 'http://purl.obolibrary.org/obo/HP_0031253']","['wall of subclavian artery', 'Anomalous origin of left subclavian artery']","[14, 5]"
+Q2571,Coarctation of pulmonary artery,"['http://purl.obolibrary.org/obo/MONDO_0003506', 'http://purl.obolibrary.org/obo/HP_0004974']","['syncytioma of pulmonary artery', 'Coarctation of abdominal aorta']","[8, 11]"
+Q265,Anomalous portal venous connection,"['http://purl.obolibrary.org/obo/MONDO_0017705', 'http://purl.obolibrary.org/obo/HP_0005160']","['anomalous pulmonary venous return', 'Total anomalous pulmonary venous connection']","[15, 14]"
+Q266,Portal vein-hepatic artery fistula,"['http://purl.obolibrary.org/obo/MONDO_0016077', 'http://purl.obolibrary.org/obo/HP_0011641']","['aorta-pulmonary artery fistula', 'Coronary artery fistula']","[14, 15]"
+Q272,Other congenital malformations of renal artery,['http://purl.obolibrary.org/obo/MONDO_0001389'],['congenital anomaly of coronary artery'],[20]
+Q2731,Arteriovenous malformation of vessel of upper limb,['http://purl.obolibrary.org/obo/MONDO_0005012'],['malignant melanoma of skin of upper limb'],[24]
+Q2732,Arteriovenous malformation of vessel of lower limb,['http://purl.obolibrary.org/obo/MONDO_0005012'],['malignant melanoma of skin of lower limb'],[24]
+Q2734,Arteriovenous malformation of renal vessel,"['http://purl.obolibrary.org/obo/MONDO_0015402', 'http://purl.obolibrary.org/obo/HP_0031257']","['arteriovenous malformation of mandible', 'Arteriovenous malformation of the maxilla']","[11, 11]"
+Q274,Congenital phlebectasia,"['http://purl.obolibrary.org/obo/HP_0004399', 'http://purl.obolibrary.org/obo/HP_0001319']","['Congenital pyloric atresia', 'Congenital hypotonia']","[8, 8]"
+Q303,Congenital perforated nasal septum,"['http://purl.obolibrary.org/obo/HP_0004399', 'http://purl.obolibrary.org/obo/HP_0007968']","['Congenital pyloric atresia', 'Congenital retinal septum']","[17, 11]"
+Q331,Accessory lobe of lung,"['http://purl.obolibrary.org/obo/HP_0430008', 'http://purl.obolibrary.org/obo/HP_0000191']","['Accessory eyelid', 'Accessory oral frenum']","[10, 10]"
+Q334,Congenital bronchiectasis,"['http://purl.obolibrary.org/obo/MONDO_0004822', 'http://purl.obolibrary.org/obo/HP_0030715']","['Polynesian bronchiectasis', 'Congenital bronchial atresia']","[7, 7]"
+Q335,Ectopic tissue in lung,"['http://purl.obolibrary.org/obo/HP_0010517', 'http://purl.obolibrary.org/obo/HP_0010517']","['Ectopic thymus tissue', 'Ectopic thymus tissue']","[10, 10]"
+Q341,Congenital cyst of mediastinum,"['http://purl.obolibrary.org/obo/MONDO_0003034', 'http://purl.obolibrary.org/obo/HP_0000851']","['angiosarcoma of mediastinum', 'Congenital hypothyroidism']","[11, 14]"
+Q349,"Congenital malformation of respiratory system, unspecified","['http://purl.obolibrary.org/obo/HP_0011603', 'http://purl.obolibrary.org/obo/HP_0011603']","['Congenital malformation of the great arteries', 'Congenital malformation of the great arteries']","[24, 24]"
+Q370,Cleft hard palate with bilateral cleft lip,[],[],[]
+Q374,Cleft hard and soft palate with bilateral cleft lip,[],[],[]
+Q387,Congenital pharyngeal pouch,"['http://purl.obolibrary.org/obo/MONDO_0015316', 'http://purl.obolibrary.org/obo/HP_0004886']","['congenital laryngeal palsy', 'Congenital laryngeal stridor']","[7, 9]"
+Q403,"Congenital malformation of stomach, unspecified","['http://purl.obolibrary.org/obo/HP_0011603', 'http://purl.obolibrary.org/obo/HP_0011603']","['Congenital malformation of the great arteries', 'Congenital malformation of the great arteries']","[17, 17]"
+Q408,Other specified congenital malformations of upper alimentary tract,[],[],[]
+Q409,"Congenital malformation of upper alimentary tract, unspecified",[],[],[]
+Q420,"Congenital absence, atresia and stenosis of rectum with fistula",[],[],[]
+Q428,"Congenital absence, atresia and stenosis of other parts of large intestine",[],[],[]
+Q501,Developmental ovarian cyst,"['http://purl.obolibrary.org/obo/MONDO_0043154', 'http://purl.obolibrary.org/obo/HP_0000519']","['neonatal ovarian cyst', 'Developmental cataract']","[8, 8]"
+Q502,Congenital torsion of ovary,"['http://purl.obolibrary.org/obo/MONDO_0007879', 'http://purl.obolibrary.org/obo/HP_0001374']","['congenital atresia of larynx', 'Congenital hip anomaly']","[10, 11]"
+Q5031,Accessory ovary,"['http://purl.obolibrary.org/obo/HP_0004249', 'http://purl.obolibrary.org/obo/HP_0009934']","['Accessory lunate', 'Accessory nares']","[5, 4]"
+Q514,Unicornate uterus,"['http://purl.obolibrary.org/obo/MONDO_0015831', 'http://purl.obolibrary.org/obo/HP_0031909']","['unicornuate uterus', 'Unicornuate uterus']","[2, 1]"
+Q516,Embryonic cyst of cervix,"['http://purl.obolibrary.org/obo/MONDO_0040700', 'http://purl.obolibrary.org/obo/HP_0002323']","['dermoid cyst of orbit', 'Embryonic anencephaly']","[10, 13]"
+Q517,Congenital fistulae between uterus and digestive and urinary tracts,[],[],[]
+Q51810,Arcuate uterus,"['http://purl.obolibrary.org/obo/MONDO_0015839', 'http://purl.obolibrary.org/obo/HP_0000151']","['septate uterus', 'Absent uterus']","[4, 5]"
+Q51828,Other congenital malformations of cervix,"['http://purl.obolibrary.org/obo/MONDO_0016231', 'http://purl.obolibrary.org/obo/HP_0031522']","['congenital malformation of capillary', 'Clear cell carcinoma of cervix']","[15, 21]"
+Q525,Fusion of labia,"['http://purl.obolibrary.org/obo/HP_0012292', 'http://purl.obolibrary.org/obo/HP_0011090']","['Fusion of gums', 'Fusion of teeth']","[5, 5]"
+Q526,Congenital malformation of clitoris,"['http://purl.obolibrary.org/obo/MONDO_0016231', 'http://purl.obolibrary.org/obo/HP_0045017']","['congenital malformation of capillary', 'Congenital malformation of the left heart']","[8, 12]"
+Q527,Other and unspecified congenital malformations of vulva,[],[],[]
+Q5270,Unspecified congenital malformations of vulva,['http://purl.obolibrary.org/obo/MONDO_0016231'],['congenital malformation of capillary'],[20]
+Q5271,Congenital absence of vulva,"['http://purl.obolibrary.org/obo/MONDO_0010144', 'http://purl.obolibrary.org/obo/HP_0010292']","['congenital absence of tibia', 'Congenital absence of uvula']","[5, 2]"
+Q5279,Other congenital malformations of vulva,['http://purl.obolibrary.org/obo/MONDO_0016231'],['congenital malformation of capillary'],[14]
+Q530,Ectopic testis,"['http://purl.obolibrary.org/obo/HP_0001083', 'http://purl.obolibrary.org/obo/HP_6000460']","['Ectopia lentis', 'Ectopic testis']","[3, 0]"
+Q5300,"Ectopic testis, unspecified","['http://purl.obolibrary.org/obo/MONDO_0003472', 'http://purl.obolibrary.org/obo/HP_6000460']","['pediculosis, unspecified', 'Ectopic testis']","[9, 13]"
+Q5561,Curvature of penis (lateral),"['http://purl.obolibrary.org/obo/MONDO_0008231', 'http://purl.obolibrary.org/obo/HP_0004209']","['Induratio penis plastica', 'Curvature of pinkie finger']","[15, 10]"
+Q5563,Congenital torsion of penis,"['http://purl.obolibrary.org/obo/MONDO_0018846', 'http://purl.obolibrary.org/obo/HP_0001905']","['congenital absence of penis', 'Congenital thrombocytopenia']","[8, 10]"
+Q5564,Hidden penis,"['http://purl.obolibrary.org/obo/HP_0030265', 'http://purl.obolibrary.org/obo/HP_0030265']","['Wide penis', 'Wide penis']","[3, 3]"
+Q624,Agenesis of ureter,"['http://purl.obolibrary.org/obo/MONDO_0001926', 'http://purl.obolibrary.org/obo/HP_0010292']","['disease of ureter', 'Agenesis of uvula']","[7, 5]"
+Q626,Malposition of ureter,"['http://purl.obolibrary.org/obo/ENVO_09200017', 'http://purl.obolibrary.org/obo/HP_0000692']","['composition of water', 'Malposition of teeth']","[6, 4]"
+Q6261,Deviation of ureter,"['http://purl.obolibrary.org/obo/MONDO_0001399', 'http://purl.obolibrary.org/obo/HP_0004097']","['leiomyoma of ureter', 'Deviation of finger']","[7, 4]"
+Q6263,Anomalous implantation of ureter,"['http://purl.obolibrary.org/obo/MONDO_0002077', 'http://purl.obolibrary.org/obo/HP_0009623']","['low implantation of placenta', 'Low implantation of the thumb']","[14, 15]"
+Q6432,Congenital stricture of urethra,"['http://purl.obolibrary.org/obo/MONDO_0001560', 'http://purl.obolibrary.org/obo/HP_0030723']","['congenital stricture of the pylorus', 'Congenital megalourethra']","[10, 12]"
+Q645,Congenital absence of bladder and urethra,"['http://purl.obolibrary.org/obo/MONDO_0010164', 'http://purl.obolibrary.org/obo/HP_0009892']","['congenital absence of ulna and fibula', 'Congenital absence of external ear']","[13, 13]"
+Q6470,Unspecified congenital malformation of bladder and urethra,[],[],[]
+Q6473,Congenital urethrorectal fistula,"['http://purl.obolibrary.org/obo/MONDO_0020296', 'http://purl.obolibrary.org/obo/HP_0025407']","['congenital arteriovenous fistula', 'Urethrorectal fistula']","[10, 12]"
+Q6500,"Congenital dislocation of unspecified hip, unilateral",['http://purl.obolibrary.org/obo/HP_0001374'],['Congenital dislocation of the hip'],[22]
+Q6530,"Congenital partial dislocation of unspecified hip, unilateral",[],[],[]
+Q662,Congenital metatarsus (primus) varus,"['http://purl.obolibrary.org/obo/HP_0002612', 'http://purl.obolibrary.org/obo/HP_0001838']","['Congenital hepatic fibrosis', 'Congenital vertical talus']","[19, 18]"
+Q66211,"Congenital metatarsus primus varus, right foot",[],[],[]
+Q66212,"Congenital metatarsus primus varus, left foot",[],[],[]
+Q6622,Congenital metatarsus adductus,"['http://purl.obolibrary.org/obo/MONDO_0005453', 'http://purl.obolibrary.org/obo/HP_0000519']","['congenital heart defects', 'Congenital cataracts']","[13, 11]"
+Q66221,"Congenital metatarsus adductus, right foot",[],[],[]
+Q66222,"Congenital metatarsus adductus, left foot",['http://purl.obolibrary.org/obo/HP_0005129'],['Congenital hypertrophy of left ventricle'],[26]
+Q66229,"Congenital metatarsus adductus, unspecified foot",[],[],[]
+Q6650,"Congenital pes planus, unspecified foot",[],[],[]
+Q6651,"Congenital pes planus, right foot",[],[],[]
+Q6652,"Congenital pes planus, left foot",['http://purl.obolibrary.org/obo/HP_0005129'],['Congenital hypertrophy of left ventricle'],[20]
+Q669,"Congenital deformity of feet, unspecified","['http://purl.obolibrary.org/obo/HP_0011628', 'http://purl.obolibrary.org/obo/HP_0011628']","['Congenital defect of the pericardium', 'Congenital defect of the pericardium']","[19, 19]"
+Q683,Congenital bowing of femur,"['http://purl.obolibrary.org/obo/MONDO_0000839', 'http://purl.obolibrary.org/obo/HP_0005855']","['congenital anomalies of fetus', 'Congenital bone fractures']","[10, 10]"
+Q685,"Congenital bowing of long bones of leg, unspecified",[],[],[]
+Q686,Discoid meniscus,"['http://purl.obolibrary.org/obo/UBERON_0005475', 'http://purl.obolibrary.org/obo/HP_0032191']","['sigmoid sinus', 'Torn meniscus']","[8, 6]"
+Q7031,"Webbed toes, right foot","['http://purl.obolibrary.org/obo/HP_0030264', 'http://purl.obolibrary.org/obo/HP_0001770']","['Webbed penis', 'Webbed toes']","[14, 12]"
+Q7032,"Webbed toes, left foot","['http://purl.obolibrary.org/obo/HP_0011301', 'http://purl.obolibrary.org/obo/HP_0001770']","['Absent foot', 'Webbed toes']","[13, 11]"
+Q712,Congenital absence of both forearm and hand,['http://purl.obolibrary.org/obo/MONDO_0017443'],['congenital absence of both forearm and hand'],[1]
+Q7123,"Congenital absence of both forearm and hand, bilateral",['http://purl.obolibrary.org/obo/MONDO_0017499'],"['congenital absence of both forearm and hand, bilateral']",[1]
+Q7143,"Longitudinal reduction defect of radius, bilateral",[],[],[]
+Q715,Longitudinal reduction defect of ulna,"['http://purl.obolibrary.org/obo/MONDO_0002078', 'http://purl.obolibrary.org/obo/HP_0001809']","['congenital septal defect of heart', 'Longitudinal splitting of nail']","[18, 17]"
+Q7151,Longitudinal reduction defect of right ulna,[],[],[]
+Q7152,Longitudinal reduction defect of left ulna,[],[],[]
+Q7153,"Longitudinal reduction defect of ulna, bilateral",[],[],[]
+Q71819,Congenital shortening of unspecified upper limb,"['http://purl.obolibrary.org/obo/HP_0002817', 'http://purl.obolibrary.org/obo/HP_0007911']","['Abnormality of the upper limb', 'Congenital drooping of both upper eyelids']","[27, 22]"
+Q71891,Other reduction defects of right upper limb,[],[],[]
+Q71892,Other reduction defects of left upper limb,[],[],[]
+Q719,Unspecified reduction defect of upper limb,"['http://purl.obolibrary.org/obo/HP_0100554', 'http://purl.obolibrary.org/obo/HP_0010484']","['Hemihypertrophy of upper limb', 'Increased size of upper limb']","[23, 21]"
+Q7221,"Congenital absence of both lower leg and foot, right lower limb",[],[],[]
+Q7222,"Congenital absence of both lower leg and foot, left lower limb",[],[],[]
+Q7223,"Congenital absence of both lower leg and foot, bilateral",['http://purl.obolibrary.org/obo/MONDO_0017501'],"['congenital absence of both lower leg and foot, bilateral']",[1]
+Q7231,Congenital absence of right foot and toe(s),[],[],[]
+Q7232,Congenital absence of left foot and toe(s),[],[],[]
+Q7242,Longitudinal reduction defect of left femur,[],[],[]
+Q726,Longitudinal reduction defect of fibula,"['http://purl.obolibrary.org/obo/MONDO_0002078', 'http://purl.obolibrary.org/obo/HP_0001809']","['congenital septal defect of heart', 'Longitudinal splitting of nail']","[19, 18]"
+Q7262,Longitudinal reduction defect of left fibula,[],[],[]
+Q7263,"Longitudinal reduction defect of fibula, bilateral",[],[],[]
+Q72819,Congenital shortening of unspecified lower limb,"['http://purl.obolibrary.org/obo/HP_0002814', 'http://purl.obolibrary.org/obo/HP_0002814']","['Abnormality of the lower limb', 'Abnormality of the lower limb']","[27, 27]"
+Q755,Oculomandibular dysostosis,"['http://purl.obolibrary.org/obo/MONDO_0019771', 'http://purl.obolibrary.org/obo/HP_0012048']","['oromandibular dystonia', 'Oromandibular dystonia']","[8, 7]"
+Q76414,"Congenital kyphosis, thoracic region","['http://purl.obolibrary.org/obo/HP_0004399', 'http://purl.obolibrary.org/obo/HP_0008453']","['Congenital pyloric atresia', 'Congenital kyphoscoliosis']","[17, 16]"
+Q76419,"Congenital kyphosis, unspecified region","['http://purl.obolibrary.org/obo/MONDO_0001268', 'http://purl.obolibrary.org/obo/HP_0007970']","['gingival recession, unspecified', 'Congenital drooping upper eyelid']","[19, 19]"
+Q76425,"Congenital lordosis, thoracolumbar region","['http://purl.obolibrary.org/obo/HP_0000776', 'http://purl.obolibrary.org/obo/HP_0001491']","['Congenital diaphragmatic hernia', 'Congenital ophthalmoplegia']","[23, 21]"
+Q76426,"Congenital lordosis, lumbar region","['http://purl.obolibrary.org/obo/MONDO_0005965', 'http://purl.obolibrary.org/obo/HP_0007970']","['spinal stenosis of lumbar region', 'Congenital drooping upper eyelid']","[14, 15]"
+Q769,"Congenital malformation of bony thorax, unspecified","['http://purl.obolibrary.org/obo/HP_0011603', 'http://purl.obolibrary.org/obo/HP_0011603']","['Congenital malformation of the great arteries', 'Congenital malformation of the great arteries']","[18, 18]"
+Q795,Other congenital malformations of abdominal wall,[],[],[]
+Q7951,Congenital hernia of bladder,"['http://purl.obolibrary.org/obo/MONDO_0007879', 'http://purl.obolibrary.org/obo/HP_0001385']","['congenital atresia of larynx', 'Congenital hip dysplasia']","[10, 12]"
+Q831,Accessory breast,"['http://purl.obolibrary.org/obo/MONDO_0015854', 'http://purl.obolibrary.org/obo/HP_0009934']","['accessory breasts', 'Accessory nares']","[2, 4]"
+Q8503,Schwannomatosis,"['http://purl.obolibrary.org/obo/MONDO_0008075', 'http://purl.obolibrary.org/obo/HP_0100008']","['Schwannomatosis', 'Schwannomas']","[0, 4]"
+Q912,"Trisomy 18, translocation","['http://purl.obolibrary.org/obo/MONDO_0000153', 'http://purl.obolibrary.org/obo/HP_0001083']","['complete transposition', 'Lens dislocation']","[12, 14]"
+Q916,"Trisomy 13, translocation","['http://purl.obolibrary.org/obo/MONDO_0000153', 'http://purl.obolibrary.org/obo/HP_0001083']","['complete transposition', 'Lens dislocation']","[12, 14]"
+Q920,"Whole chromosome trisomy, nonmosaicism (meiotic nondisjunction)",[],[],[]
+Q9261,Marker chromosomes in normal individual,[],[],[]
+Q930,"Whole chromosome monosomy, nonmosaicism (meiotic nondisjunction)",[],[],[]
+Q931,"Whole chromosome monosomy, mosaicism (mitotic nondisjunction)",[],[],[]
+Q9381,Velo-cardio-facial syndrome,"['http://purl.obolibrary.org/obo/MONDO_0008564', 'http://purl.obolibrary.org/obo/HP_0012327']","['velo-cardio-facial syndrome', 'Celiac axis syndrome']","[1, 13]"
+Q950,Balanced translocation and insertion in normal individual,[],[],[]
+Q951,Chromosome inversion in normal individual,[],[],[]
+Q952,Balanced autosomal rearrangement in abnormal individual,[],[],[]
+Q953,Balanced sex/autosomal rearrangement in abnormal individual,[],[],[]
+Q955,Individual with autosomal fragile site,['http://purl.obolibrary.org/obo/MONDO_0007988'],['microcephaly with autosomal dominant inheritance'],[25]
+Q959,"Balanced rearrangement and structural marker, unspecified",[],[],[]
+Q972,"Mosaicism, lines with various numbers of X chromosomes",[],[],[]
+Q983,"Other male with 46, XX karyotype",[],[],[]
+Q984,"Klinefelter syndrome, unspecified","['http://purl.obolibrary.org/obo/MONDO_0006823', 'http://purl.obolibrary.org/obo/HP_0004602']","['Klinefelter syndrome', 'Klippel-Feil syndrome']","[13, 20]"
+Q987,Male with sex chromosome mosaicism,['http://purl.obolibrary.org/obo/GO_0000803'],['sex chromosome'],[20]
+Q990,"Chimera 46, XX/46, XY",['http://purl.obolibrary.org/obo/MONDO_0010765'],"['46, XY CGD']",[16]
+Z371,Single stillbirth,"['http://purl.obolibrary.org/obo/HP_0003826', 'http://purl.obolibrary.org/obo/HP_0003826']","['Stillbirth', 'Stillbirth']","[7, 7]"
+Z373,"Twins, one liveborn and one stillborn",[],[],[]
+Z374,"Twins, both stillborn","['http://purl.obolibrary.org/obo/CHEBI_6067', 'http://purl.obolibrary.org/obo/HP_0000233']","['isotretinoin', 'Thin vermillion']","[13, 12]"
+Z376,"Other multiple births, some liveborn",[],[],[]
+Z3761,"Triplets, some liveborn","['http://purl.obolibrary.org/obo/MONDO_0005154', 'http://purl.obolibrary.org/obo/HP_0001622']","['disease of liver', 'Preterm delivery']","[12, 14]"
+Z3763,"Quintuplets, some liveborn","['http://purl.obolibrary.org/obo/MONDO_0024477', 'http://purl.obolibrary.org/obo/HP_0006114']","['neoplasm of liver', 'Multiple palm lines']","[14, 16]"
+Z377,"Other multiple births, all stillborn",[],[],[]
+A50,Congenital syphilis,"['http://purl.obolibrary.org/obo/MONDO_0005714', 'http://purl.obolibrary.org/obo/HP_0007707']","['congenital syphilis', 'Congenital aphakia']","[1, 5]"
+A5003,Early congenital syphilitic pharyngitis,"['http://purl.obolibrary.org/obo/MONDO_0000333', 'http://purl.obolibrary.org/obo/HP_0000670']","['early congenital syphilis', 'Early dental caries']","[15, 22]"
+A5004,Early congenital syphilitic pneumonia,"['http://purl.obolibrary.org/obo/MONDO_0000333', 'http://purl.obolibrary.org/obo/HP_0011945']","['early congenital syphilis', 'Cryptogenic organising pneumonia']","[14, 18]"
+A5032,Late congenital syphilitic chorioretinitis,"['http://purl.obolibrary.org/obo/MONDO_0005821', 'http://purl.obolibrary.org/obo/HP_0007573']","['late congenital syphilis', 'Late onset atopic dermatitis']","[19, 23]"
+A5039,Other late congenital syphilitic oculopathy,['http://purl.obolibrary.org/obo/MONDO_0005821'],['late congenital syphilis'],[20]
+D82,Immunodeficiency associated with other major defects,[],[],[]
+E25,Adrenogenital disorders,"['http://purl.obolibrary.org/obo/MONDO_0015898', 'http://purl.obolibrary.org/obo/HP_0000840']","['adrenogenital disorder', 'Adrenogenital syndrome']","[2, 8]"
+E34,Other endocrine disorders,"['http://purl.obolibrary.org/obo/MONDO_0100070', 'http://purl.obolibrary.org/obo/HP_0000708']","['neuroendocrine disorder', 'Behavioral disorders']","[6, 12]"
+E78,Disorders of lipoprotein metabolism and other lipidemias,[],[],[]
+G12,Spinal muscular atrophy and related syndromes,"['http://purl.obolibrary.org/obo/HP_0007269', 'http://purl.obolibrary.org/obo/HP_0007269']","['Spinal muscular atrophy', 'Spinal muscular atrophy']","[22, 22]"
+G60,Hereditary and idiopathic neuropathy,"['http://purl.obolibrary.org/obo/MONDO_0020249', 'http://purl.obolibrary.org/obo/HP_0003434']","['hereditary optic neuropathy', 'Sensory ataxic neuropathy']","[10, 17]"
+G71,Primary disorders of muscles,"['http://purl.obolibrary.org/obo/MONDO_0021167', 'http://purl.obolibrary.org/obo/HP_0000271']","['inflammatory disorder of muscle', 'Disorder of face']","[10, 15]"
+G7122,Centronuclear myopathy,"['http://purl.obolibrary.org/obo/MONDO_0002921', 'http://purl.obolibrary.org/obo/HP_0002318']","['centronuclear myopathy', 'Cervical myelopathy']","[1, 10]"
+G80,Cerebral palsy,"['http://purl.obolibrary.org/obo/MONDO_0006497', 'http://purl.obolibrary.org/obo/HP_0100021']","['cerebral palsy', 'Cerebral palsy']","[1, 0]"
+K40,Inguinal hernia,"['http://purl.obolibrary.org/obo/HP_0000023', 'http://purl.obolibrary.org/obo/HP_0000023']","['Inguinal hernia', 'Inguinal hernia']","[0, 0]"
+K41,Femoral hernia,"['http://purl.obolibrary.org/obo/HP_0002933', 'http://purl.obolibrary.org/obo/HP_0100541']","['Ventral hernia', 'Femoral hernia']","[3, 0]"
+L05,Pilonidal cyst and sinus,"['http://purl.obolibrary.org/obo/MONDO_0008249', 'http://purl.obolibrary.org/obo/HP_0010769']","['pilonidal sinus', 'Pilonidal sinus']","[10, 9]"
+L81,Other disorders of pigmentation,"['http://purl.obolibrary.org/obo/MONDO_0006600', 'http://purl.obolibrary.org/obo/HP_0000953']","['disorder of pigmentation', 'Increased skin pigmentation']","[7, 14]"
+M26,Dentofacial anomalies [including malocclusion],"['http://purl.obolibrary.org/obo/MONDO_0000839', 'http://purl.obolibrary.org/obo/HP_0000164']","['congenital anomalies of fetus', 'Dental anomalies']","[29, 30]"
+M260,Major anomalies of jaw size,"['http://purl.obolibrary.org/obo/HP_0000240', 'http://purl.obolibrary.org/obo/HP_0000240']","['Abnormality of skull size', 'Abnormality of head size']","[14, 12]"
+M261,Anomalies of jaw-cranial base relationship,"['http://purl.obolibrary.org/obo/MONDO_0002785', 'http://purl.obolibrary.org/obo/HP_0011095']","['neoplasm of skull base', 'Abnormality of horizontal incisor relationship']","[30, 18]"
+P02,"Newborn affected by complications of placenta, cord and membranes",[],[],[]
+P35,Congenital viral diseases,"['http://purl.obolibrary.org/obo/MONDO_0018958', 'http://purl.obolibrary.org/obo/HP_0011570']","['congenital rod disease', 'Congenital mitral stenosis']","[6, 8]"
+P37,Other congenital infectious and parasitic diseases,[],[],[]
+P96,Other conditions originating in the perinatal period,[],[],[]
+Q00,Anencephaly and similar malformations,"['http://purl.obolibrary.org/obo/MONDO_0000820', 'http://purl.obolibrary.org/obo/HP_0006576']","['cerebral capillary malformations', 'Hepatic vascular malformations']","[15, 16]"
+Q01,Encephalocele,"['http://purl.obolibrary.org/obo/MONDO_0016057', 'http://purl.obolibrary.org/obo/HP_0002084']","['Encephalocele', 'Encephalocele']","[0, 0]"
+Q03,Congenital hydrocephalus,"['http://purl.obolibrary.org/obo/MONDO_0016349', 'http://purl.obolibrary.org/obo/HP_0004488']","['congenital hydrocephalus', 'Congenital macrocephaly']","[1, 5]"
+Q04,Other congenital malformations of brain,"['http://purl.obolibrary.org/obo/MONDO_0007154', 'http://purl.obolibrary.org/obo/HP_0002181']","['arteriovenous malformations of the brain', 'Swelling of brain']","[15, 25]"
+Q05,Spina bifida,"['http://purl.obolibrary.org/obo/HP_0002414', 'http://purl.obolibrary.org/obo/HP_0002414']","['Spina bifida', 'Spina bifida']","[0, 0]"
+Q06,Other congenital malformations of spinal cord,"['http://purl.obolibrary.org/obo/MONDO_0002565', 'http://purl.obolibrary.org/obo/HP_0012486']","['inflammation of spinal cord', 'Inflammation of spinal cord']","[21, 21]"
+Q07,Other congenital malformations of nervous system,"['http://purl.obolibrary.org/obo/MONDO_0002320', 'http://purl.obolibrary.org/obo/HP_0012639']","['congenital abnormality of the nervous system', 'Abnormal shape of nervous system']","[17, 25]"
+Q0703,Arnold-Chiari syndrome with spina bifida and hydrocephalus,[],[],[]
+Q10,"Congenital malformations of eyelid, lacrimal apparatus and orbit",[],[],[]
+Q11,"Anophthalmos, microphthalmos and macrophthalmos","['http://purl.obolibrary.org/obo/MONDO_0023538', 'http://purl.obolibrary.org/obo/HP_0011480']","['congenital hypopituitarism and microphthalmia', 'Unilateral microphthalmos']","[26, 28]"
+Q12,Congenital lens malformations,"['http://purl.obolibrary.org/obo/MONDO_0019054', 'http://purl.obolibrary.org/obo/HP_0000356']","['congenital limb malformation', 'External ear malformations']","[5, 10]"
+Q13,Congenital malformations of anterior segment of eye,['http://purl.obolibrary.org/obo/CL_1000444'],['mesothelial cell of anterior chamber of eye'],[25]
+Q14,Congenital malformations of posterior segment of eye,[],[],[]
+Q15,Other congenital malformations of eye,"['http://purl.obolibrary.org/obo/MONDO_0016231', 'http://purl.obolibrary.org/obo/HP_0000528']","['congenital malformation of capillary', 'Missing globe of eye']","[16, 25]"
+Q16,Congenital malformations of ear causing impairment of hearing,[],[],[]
+Q17,Other congenital malformations of ear,"['http://purl.obolibrary.org/obo/MONDO_0016231', 'http://purl.obolibrary.org/obo/HP_0000363']","['congenital malformation of capillary', 'Abnormal lobe of ear']","[14, 24]"
+Q18,Other congenital malformations of face and neck,[],[],[]
+Q20,Congenital malformations of cardiac chambers and connections,[],[],[]
+Q21,Congenital malformations of cardiac septa,"['http://purl.obolibrary.org/obo/MONDO_0020779', 'http://purl.obolibrary.org/obo/HP_0001374']","['Congenital anomaly of cartilage', 'Congenital dislocation of the hip']","[17, 18]"
+Q22,Congenital malformations of pulmonary and tricuspid valves,[],[],[]
+Q23,Congenital malformations of aortic and mitral valves,[],[],[]
+Q24,Other congenital malformations of heart,"['http://purl.obolibrary.org/obo/MONDO_0016231', 'http://purl.obolibrary.org/obo/HP_0006695']","['congenital malformation of capillary', 'Hole in center of heart']","[14, 24]"
+Q25,Congenital malformations of great arteries,"['http://purl.obolibrary.org/obo/HP_0011603', 'http://purl.obolibrary.org/obo/HP_0011603']","['Congenital malformation of the great arteries', 'Congenital malformation of the great arteries']","[5, 5]"
+Q259,"Congenital malformation of great arteries, unspecified","['http://purl.obolibrary.org/obo/HP_0011603', 'http://purl.obolibrary.org/obo/HP_0011603']","['Congenital malformation of the great arteries', 'Congenital malformation of the great arteries']","[17, 17]"
+Q26,Congenital malformations of great veins,"['http://purl.obolibrary.org/obo/HP_0011603', 'http://purl.obolibrary.org/obo/HP_0011603']","['Congenital malformation of the great arteries', 'Congenital malformation of the great arteries']","[10, 10]"
+Q27,Other congenital malformations of peripheral vascular system,[],[],[]
+Q28,Other congenital malformations of circulatory system,['http://purl.obolibrary.org/obo/MONDO_0024239'],['congenital Abnormality of the circulatory system'],[18]
+Q30,Congenital malformations of nose,"['http://purl.obolibrary.org/obo/MONDO_0008666', 'http://purl.obolibrary.org/obo/HP_0008394']","['congenital malrotation of intestine', 'Congenital malformed nails']","[11, 12]"
+Q31,Congenital malformations of larynx,"['http://purl.obolibrary.org/obo/MONDO_0016231', 'http://purl.obolibrary.org/obo/HP_0001374']","['congenital malformation of capillary', 'Congenital dislocation of the hip']","[9, 14]"
+Q32,Congenital malformations of trachea and bronchus,['http://purl.obolibrary.org/obo/MONDO_0020724'],['cavernous malformations of CNS and retina'],[23]
+Q33,Congenital malformations of lung,"['http://purl.obolibrary.org/obo/MONDO_0016231', 'http://purl.obolibrary.org/obo/HP_0008394']","['congenital malformation of capillary', 'Congenital malformed nails']","[10, 12]"
+Q34,Other congenital malformations of respiratory system,['http://purl.obolibrary.org/obo/MAXO_0000499'],['therapeutic procedure of respiratory system'],[22]
+Q35,Cleft palate,"['http://purl.obolibrary.org/obo/HP_0000175', 'http://purl.obolibrary.org/obo/HP_0000175']","['Cleft palate', 'Cleft palate']","[0, 0]"
+Q36,Cleft lip,"['http://purl.obolibrary.org/obo/HP_0410030', 'http://purl.obolibrary.org/obo/HP_0410030']","['Cleft lip', 'Cleft lip']","[0, 0]"
+Q37,Cleft palate with cleft lip,"['http://purl.obolibrary.org/obo/MONDO_0010560', 'http://purl.obolibrary.org/obo/HP_5201011']","['cleft palate with ankyloglossia', 'Complete bilateral cleft lip']","[12, 12]"
+Q38,"Other congenital malformations of tongue, mouth and pharynx",[],[],[]
+Q39,Congenital malformations of esophagus,"['http://purl.obolibrary.org/obo/MONDO_0001044', 'http://purl.obolibrary.org/obo/HP_0001374']","['congenital atresia of esophagus', 'Congenital dislocation of the hips']","[11, 14]"
+Q40,Other congenital malformations of upper alimentary tract,[],[],[]
+Q41,"Congenital absence, atresia and stenosis of small intestine",[],[],[]
+Q418,"Congenital absence, atresia and stenosis of other specified parts of small intestine",[],[],[]
+Q42,"Congenital absence, atresia and stenosis of large intestine",[],[],[]
+Q43,Other congenital malformations of intestine,['http://purl.obolibrary.org/obo/MONDO_0008666'],['congenital malrotation of intestine'],[10]
+Q44,"Congenital malformations of gallbladder, bile ducts and liver",[],[],[]
+Q45,Other congenital malformations of digestive system,['http://purl.obolibrary.org/obo/MAXO_0001409'],['therapeutic procedure of digestive system'],[22]
+Q50,"Congenital malformations of ovaries, fallopian tubes and broad ligaments",[],[],[]
+Q51,Congenital malformations of uterus and cervix,['http://purl.obolibrary.org/obo/MONDO_0010173'],['congenital absence of uterus and vagina'],[19]
+Q5122,Partial doubling of uterus,"['http://purl.obolibrary.org/obo/HP_0009659', 'http://purl.obolibrary.org/obo/HP_0003762']","['Partial absence of thumb', 'Doubling of uterus']","[12, 9]"
+Q5181,Other congenital malformations of uterus,"['http://purl.obolibrary.org/obo/MONDO_0000839', 'http://purl.obolibrary.org/obo/HP_0003762']","['congenital anomalies of fetus', 'Duplication of uterus']","[16, 24]"
+Q5182,Other congenital malformations of cervix,"['http://purl.obolibrary.org/obo/MONDO_0016231', 'http://purl.obolibrary.org/obo/HP_0031522']","['congenital malformation of capillary', 'Clear cell carcinoma of cervix']","[15, 21]"
+Q52,Other congenital malformations of female genitalia,[],[],[]
+Q5212,Longitudinal vaginal septum,"['http://purl.obolibrary.org/obo/MONDO_0015849', 'http://purl.obolibrary.org/obo/HP_0008740']","['longitudinal vaginal septum', 'Longitudinal vaginal septum']","[1, 0]"
+Q52120,"Longitudinal vaginal septum, nonobstructing","['http://purl.obolibrary.org/obo/MONDO_0015849', 'http://purl.obolibrary.org/obo/HP_0008740']","['longitudinal vaginal septum', 'Longitudinal vaginal septum']","[17, 16]"
+Q52121,"Longitudinal vaginal septum, obstructing, right side",[],[],[]
+Q52122,"Longitudinal vaginal septum, obstructing, left side",[],[],[]
+Q52123,"Longitudinal vaginal septum, microperforate, right side",[],[],[]
+Q52124,"Longitudinal vaginal septum, microperforate, left side",[],[],[]
+Q53,Undescended and ectopic testicle,"['http://purl.obolibrary.org/obo/MONDO_0009047', 'http://purl.obolibrary.org/obo/HP_0000028']","['undescended testicle', 'Undescended testis']","[13, 15]"
+Q5301,"Ectopic testis, unilateral","['http://purl.obolibrary.org/obo/MONDO_0015312', 'http://purl.obolibrary.org/obo/HP_0009900']","['choanal atresia, unilateral', 'Deafness, unilateral']","[10, 11]"
+Q5302,"Ectopic testes, bilateral","['http://purl.obolibrary.org/obo/MONDO_0017518', 'http://purl.obolibrary.org/obo/HP_0001349']","['short toes, bilateral', 'Facial paresis, bilateral']","[9, 11]"
+Q5311,"Abdominal testis, unilateral","['http://purl.obolibrary.org/obo/MONDO_0015312', 'http://purl.obolibrary.org/obo/HP_0001349']","['choanal atresia, unilateral', 'Facial paresis, bilateral']","[9, 12]"
+Q53111,Unilateral intraabdominal testis,"['http://purl.obolibrary.org/obo/HP_0008993', 'http://purl.obolibrary.org/obo/HP_0008993']","['Increased intraabdominal fat', 'Increased intraabdominal fat']","[13, 13]"
+Q53112,Unilateral inguinal testis,"['http://purl.obolibrary.org/obo/MONDO_0020110', 'http://purl.obolibrary.org/obo/HP_0030707']","['unilateral lung agenesis', 'Unilateral lung agenesis']","[10, 9]"
+Q5312,"Ectopic perineal testis, unilateral","['http://purl.obolibrary.org/obo/MONDO_0015312', 'http://purl.obolibrary.org/obo/HP_0009900']","['choanal atresia, unilateral', 'Deafness, unilateral']","[15, 18]"
+Q5313,Unilateral high scrotal testis,"['http://purl.obolibrary.org/obo/MONDO_0006882', 'http://purl.obolibrary.org/obo/HP_0000122']","['Inflammation of testis', 'Unilateral kidney agenesis']","[16, 13]"
+Q5321,"Abdominal testis, bilateral","['http://purl.obolibrary.org/obo/MONDO_0015313', 'http://purl.obolibrary.org/obo/HP_0001349']","['choanal atresia, bilateral', 'Facial paresis, bilateral']","[9, 10]"
+Q53212,Bilateral inguinal testes,"['http://purl.obolibrary.org/obo/MONDO_0015986', 'http://purl.obolibrary.org/obo/HP_0001349']","['bilateral renal agenesis', 'Bilateral facial weakness']","[12, 10]"
+Q5322,"Ectopic perineal testis, bilateral","['http://purl.obolibrary.org/obo/MONDO_0008136', 'http://purl.obolibrary.org/obo/HP_0001349']","['optic nerve aplasia, bilateral', 'Facial paresis, bilateral']","[14, 16]"
+Q5323,Bilateral high scrotal testes,"['http://purl.obolibrary.org/obo/HP_0002069', 'http://purl.obolibrary.org/obo/HP_0005707']","['Bilateral tonic-clonic seizure', 'Bilateral triphalangeal thumbs']","[16, 13]"
+Q54,Hypospadias,"['http://purl.obolibrary.org/obo/HP_0000047', 'http://purl.obolibrary.org/obo/HP_0000047']","['Hypospadias', 'Hypospadias']","[0, 0]"
+Q55,Other congenital malformations of male genital organs,['http://purl.obolibrary.org/obo/MONDO_0005836'],['malignant neoplasm of male genital organs'],[24]
+Q557,Congenital vasocutaneous fistula,"['http://purl.obolibrary.org/obo/MONDO_0020296', 'http://purl.obolibrary.org/obo/HP_0033279']","['congenital arteriovenous fistula', 'Enterocutaneous fistula']","[10, 12]"
+Q56,Indeterminate sex and pseudohermaphroditism,"['http://purl.obolibrary.org/obo/MONDO_0005518', 'http://purl.obolibrary.org/obo/HP_0008656']","['indeterminate sex and pseudohermaphroditism', 'Incomplete male pseudohermaphroditism']","[1, 14]"
+Q60,Renal agenesis and other reduction defects of kidney,[],[],[]
+Q601,"Renal agenesis, bilateral","['http://purl.obolibrary.org/obo/MONDO_0015986', 'http://purl.obolibrary.org/obo/HP_0001349']","['renal agenesis, bilateral', 'Facial paresis, bilateral']","[1, 8]"
+Q61,Cystic kidney disease,"['http://purl.obolibrary.org/obo/MONDO_0002473', 'http://purl.obolibrary.org/obo/HP_0000107']","['cystic kidney disease', 'Cystic kidney disease']","[1, 0]"
+Q6111,Cystic dilatation of collecting ducts,"['http://purl.obolibrary.org/obo/MONDO_0015268', 'http://purl.obolibrary.org/obo/HP_0010723']","['cystic dilatation of renal collecting tubes', 'Cystic lesions of the pinnae']","[10, 20]"
+Q62,Congenital obstructive defects of renal pelvis and congenital malformations of ureter,[],[],[]
+Q6260,"Malposition of ureter, unspecified","['http://purl.obolibrary.org/obo/MONDO_0002246', 'http://purl.obolibrary.org/obo/HP_0000692']","['perichondritis of pinna, unspecified', 'Malposition of teeth']","[17, 16]"
+Q6262,Displacement of ureter,"['http://purl.obolibrary.org/obo/MONDO_0001926', 'http://purl.obolibrary.org/obo/HP_0010051']","['disease of ureter', 'Displacement of big toe']","[8, 6]"
+Q6269,Other malposition of ureter,"['http://purl.obolibrary.org/obo/ENVO_09200017', 'http://purl.obolibrary.org/obo/HP_0000692']","['composition of water', 'Malposition of teeth']","[11, 11]"
+Q63,Other congenital malformations of kidney,"['http://purl.obolibrary.org/obo/MONDO_0016231', 'http://purl.obolibrary.org/obo/HP_0100542']","['congenital malformation of capillary', 'Abnormal localization of kidney']","[14, 21]"
+Q64,Other congenital malformations of urinary system,['http://purl.obolibrary.org/obo/MONDO_0004180'],['neoplasm of urinary system'],[25]
+Q65,Congenital deformities of hip,"['http://purl.obolibrary.org/obo/MONDO_0017427', 'http://purl.obolibrary.org/obo/HP_0001374']","['congenital deformities of limbs', 'Congenital dislocation of the hip']","[5, 12]"
+Q66,Congenital deformities of feet,"['http://purl.obolibrary.org/obo/MONDO_0017427', 'http://purl.obolibrary.org/obo/HP_0001627']","['congenital deformities of limbs', 'Congenital heart defect']","[6, 12]"
+Q67,"Congenital musculoskeletal deformities of head, face, spine and chest",[],[],[]
+Q671,Congenital compression facies,"['http://purl.obolibrary.org/obo/MONDO_0008829', 'http://purl.obolibrary.org/obo/HP_0002953']","['congenital chylous ascites', 'Vertebral compression fractures']","[13, 11]"
+Q68,Other congenital musculoskeletal deformities,"['http://purl.obolibrary.org/obo/MONDO_0024287', 'http://purl.obolibrary.org/obo/HP_0005853']","['congenital vascular malformation', 'Congenital foot contraction deformities']","[21, 21]"
+Q69,Polydactyly,"['http://purl.obolibrary.org/obo/HP_0010442', 'http://purl.obolibrary.org/obo/HP_0010442']","['Polydactyly', 'Polydactyly']","[0, 0]"
+Q70,Syndactyly,"['http://purl.obolibrary.org/obo/HP_0001159', 'http://purl.obolibrary.org/obo/HP_0001159']","['Syndactyly', 'Syndactyly']","[0, 0]"
+Q7001,"Fused fingers, right hand","['http://purl.obolibrary.org/obo/MONDO_0017516', 'http://purl.obolibrary.org/obo/HP_0009700']","['short fingers, bilateral', 'Fused finger bones']","[12, 12]"
+Q7002,"Fused fingers, left hand","['http://purl.obolibrary.org/obo/MONDO_0008364', 'http://purl.obolibrary.org/obo/HP_0009700']","['cold fingers, hereditary', 'Fused finger bones']","[12, 11]"
+Q7011,"Webbed fingers, right hand","['http://purl.obolibrary.org/obo/MONDO_0017516', 'http://purl.obolibrary.org/obo/HP_0001159']","['short fingers, bilateral', 'Webbed fingers or toes']","[13, 10]"
+Q7012,"Webbed fingers, left hand","['http://purl.obolibrary.org/obo/MONDO_0008364', 'http://purl.obolibrary.org/obo/HP_0001159']","['cold fingers, hereditary', 'Webbed fingers or toes']","[13, 9]"
+Q7013,"Webbed fingers, bilateral","['http://purl.obolibrary.org/obo/MONDO_0017516', 'http://purl.obolibrary.org/obo/HP_0001159']","['short fingers, bilateral', 'Webbed fingers or toes']","[6, 9]"
+Q7021,"Fused toes, right foot","['http://purl.obolibrary.org/obo/MONDO_0017850', 'http://purl.obolibrary.org/obo/HP_0001770']","['Fused legs and feet', 'Fused toes']","[11, 12]"
+Q7022,"Fused toes, left foot","['http://purl.obolibrary.org/obo/MONDO_0017850', 'http://purl.obolibrary.org/obo/HP_0001770']","['Fused legs and feet', 'Fused toes']","[10, 11]"
+Q71,Reduction defects of upper limb,"['http://purl.obolibrary.org/obo/MONDO_0002130', 'http://purl.obolibrary.org/obo/HP_0006986']","['mononeuritis of upper limb', 'Spasticity of upper limb']","[13, 14]"
+Q7111,Congenital absence of right upper arm and forearm with hand present,['http://purl.obolibrary.org/obo/MONDO_0017441'],['congenital absence of upper arm and forearm with hand present'],[7]
+Q7112,Congenital absence of left upper arm and forearm with hand present,['http://purl.obolibrary.org/obo/MONDO_0017441'],['congenital absence of upper arm and forearm with hand present'],[6]
+Q7141,Longitudinal reduction defect of right radius,[],[],[]
+Q7142,Longitudinal reduction defect of left radius,[],[],[]
+Q7181,Congenital shortening of upper limb,"['http://purl.obolibrary.org/obo/HP_0006402', 'http://purl.obolibrary.org/obo/HP_0000188']","['Distal shortening of limbs', 'Shortening of upper lip']","[14, 14]"
+Q71811,Congenital shortening of right upper limb,"['http://purl.obolibrary.org/obo/HP_0002817', 'http://purl.obolibrary.org/obo/HP_0007911']","['Abnormality of the upper limb', 'Congenital drooping of both upper eyelids']","[21, 15]"
+Q71812,Congenital shortening of left upper limb,"['http://purl.obolibrary.org/obo/HP_0002817', 'http://purl.obolibrary.org/obo/HP_0007911']","['Abnormality of the upper limb', 'Congenital drooping of both upper eyelids']","[21, 15]"
+Q71813,"Congenital shortening of upper limb, bilateral",['http://purl.obolibrary.org/obo/MONDO_0017479'],"['amelia of upper limb, bilateral']",[18]
+Q7189,Other reduction defects of upper limb,"['http://purl.obolibrary.org/obo/MONDO_0003607', 'http://purl.obolibrary.org/obo/HP_0010484']","['neuritis of upper limb', 'Increased size of upper limb']","[18, 19]"
+Q71893,"Other reduction defects of upper limb, bilateral",['http://purl.obolibrary.org/obo/MONDO_0017479'],"['amelia of upper limb, bilateral']",[21]
+Q7191,Unspecified reduction defect of right upper limb,[],[],[]
+Q7192,Unspecified reduction defect of left upper limb,[],[],[]
+Q7193,"Unspecified reduction defect of upper limb, bilateral",['http://purl.obolibrary.org/obo/MONDO_0017479'],"['amelia of upper limb, bilateral']",[26]
+Q72,Reduction defects of lower limb,"['http://purl.obolibrary.org/obo/MONDO_0004797', 'http://purl.obolibrary.org/obo/HP_0002061']","['mononeuritis of lower limb', 'Spasticity of lower limb']","[13, 14]"
+Q7211,Congenital absence of right thigh and lower leg with foot present,['http://purl.obolibrary.org/obo/MONDO_0017442'],['congenital absence of thigh and lower leg with foot present'],[7]
+Q7212,Congenital absence of left thigh and lower leg with foot present,['http://purl.obolibrary.org/obo/MONDO_0017442'],['congenital absence of thigh and lower leg with foot present'],[6]
+Q7241,Longitudinal reduction defect of right femur,[],[],[]
+Q7243,"Longitudinal reduction defect of femur, bilateral",[],[],[]
+Q7251,Longitudinal reduction defect of right tibia,[],[],[]
+Q7252,Longitudinal reduction defect of left tibia,[],[],[]
+Q7261,Longitudinal reduction defect of right fibula,[],[],[]
+Q7281,Congenital shortening of lower limb,"['http://purl.obolibrary.org/obo/HP_0006402', 'http://purl.obolibrary.org/obo/HP_0012435']","['Distal shortening of limbs', 'Ventral shortening of foreskin']","[14, 13]"
+Q72811,Congenital shortening of right lower limb,"['http://purl.obolibrary.org/obo/HP_0002814', 'http://purl.obolibrary.org/obo/HP_0002814']","['Abnormality of the lower limb', 'Abnormality of the lower limb']","[21, 21]"
+Q72812,Congenital shortening of left lower limb,"['http://purl.obolibrary.org/obo/HP_0002814', 'http://purl.obolibrary.org/obo/HP_0005129']","['Abnormality of the lower limb', 'Congenital hypertrophy of left ventricle']","[21, 18]"
+Q72813,"Congenital shortening of lower limb, bilateral",['http://purl.obolibrary.org/obo/MONDO_0017481'],"['amelia of lower limb, bilateral']",[18]
+Q7289,Other reduction defects of lower limb,"['http://purl.obolibrary.org/obo/MONDO_0004797', 'http://purl.obolibrary.org/obo/HP_0002061']","['mononeuritis of lower limb', 'Spasticity of lower limb']","[19, 20]"
+Q72891,Other reduction defects of right lower limb,[],[],[]
+Q72892,Other reduction defects of left lower limb,[],[],[]
+Q7291,Unspecified reduction defect of right lower limb,[],[],[]
+Q7292,Unspecified reduction defect of left lower limb,[],[],[]
+Q7293,"Unspecified reduction defect of lower limb, bilateral",['http://purl.obolibrary.org/obo/MONDO_0017481'],"['amelia of lower limb, bilateral']",[26]
+Q73,Reduction defects of unspecified limb,"['http://purl.obolibrary.org/obo/MONDO_0002281', 'http://purl.obolibrary.org/obo/HP_0003979']","['macrocytic anaemia of unspecified cause', 'Lytic defects of the radius']","[19, 20]"
+Q74,Other congenital malformations of limb(s),['http://purl.obolibrary.org/obo/MONDO_0017427'],['congenital deformities of limbs'],[14]
+Q75,Other congenital malformations of skull and face bones,[],[],[]
+Q76,Congenital malformations of spine and bony thorax,[],[],[]
+Q7641,Congenital kyphosis,"['http://purl.obolibrary.org/obo/MONDO_0005714', 'http://purl.obolibrary.org/obo/HP_0007970']","['congenital syphilis', 'Congenital ptosis']","[4, 3]"
+Q76411,"Congenital kyphosis, occipito-atlanto-axial region","['http://purl.obolibrary.org/obo/HP_0004399', 'http://purl.obolibrary.org/obo/HP_0007534']","['Congenital pyloric atresia', 'Congenital posterior occipital alopecia']","[30, 24]"
+Q76415,"Congenital kyphosis, thoracolumbar region","['http://purl.obolibrary.org/obo/HP_0004399', 'http://purl.obolibrary.org/obo/HP_0001491']","['Congenital pyloric atresia', 'Congenital ophthalmoplegia']","[22, 20]"
+Q7642,Congenital lordosis,"['http://purl.obolibrary.org/obo/MONDO_0007989', 'http://purl.obolibrary.org/obo/HP_0007728']","['congenital miosis', 'Congenital miosis']","[5, 4]"
+Q76427,"Congenital lordosis, lumbosacral region","['http://purl.obolibrary.org/obo/HP_0004399', 'http://purl.obolibrary.org/obo/HP_0001374']","['Congenital pyloric atresia', 'Congenital hip dislocation']","[21, 19]"
+Q76428,"Congenital lordosis, sacral and sacrococcygeal region",[],[],[]
+Q77,Osteochondrodysplasia with defects of growth of tubular bones and spine,[],[],[]
+Q78,Other osteochondrodysplasias,"['http://purl.obolibrary.org/obo/MONDO_0005516', 'http://purl.obolibrary.org/obo/HP_0005871']","['osteochondrodysplasia', 'Metaphyseal chondrodysplasia']","[7, 12]"
+Q79,"Congenital malformations of musculoskeletal system, not elsewhere classified",[],[],[]
+Q80,Congenital ichthyosis,"['http://purl.obolibrary.org/obo/MONDO_0015947', 'http://purl.obolibrary.org/obo/HP_0007431']","['congenital ichthyosis', 'Congenital ichthyosis']","[1, 0]"
+Q81,Epidermolysis bullosa,"['http://purl.obolibrary.org/obo/MONDO_0006541', 'http://purl.obolibrary.org/obo/HP_0200040']","['epidermolysis bullosa', 'Epidermoid cyst']","[1, 10]"
+Q82,Other congenital malformations of skin,"['http://purl.obolibrary.org/obo/MONDO_0016231', 'http://purl.obolibrary.org/obo/HP_0011356']","['congenital malformation of capillary', 'Regional abnormality of skin']","[15, 18]"
+Q83,Congenital malformations of breast,"['http://purl.obolibrary.org/obo/MONDO_0016231', 'http://purl.obolibrary.org/obo/HP_0100783']","['congenital malformation of capillary', 'Congenital absence of breast']","[10, 12]"
+Q84,Other congenital malformations of integument,['http://purl.obolibrary.org/obo/MONDO_0008666'],['congenital malrotation of intestine'],[15]
+Q85,"Phakomatoses, not elsewhere classified","['http://purl.obolibrary.org/obo/MONDO_0021141', 'http://purl.obolibrary.org/obo/HP_0003680']","['not genetically inherited', 'Does not worsen']","[29, 26]"
+Q86,"Congenital malformation syndromes due to known exogenous causes, not elsewhere classified",[],[],[]
+Q87,Other specified congenital malformation syndromes affecting multiple systems,[],[],[]
+Q8741,Marfan syndrome with cardiovascular manifestations,['http://purl.obolibrary.org/obo/MONDO_0008832'],['asplenia with cardiovascular anomalies'],[22]
+Q89,"Other congenital malformations, not elsewhere classified",[],[],[]
+Q90,Down syndrome,"['http://purl.obolibrary.org/obo/MONDO_0008608', 'http://purl.obolibrary.org/obo/HP_0031622']","['Down syndrome', 'Brown syndrome']","[0, 2]"
+Q91,Trisomy 18 and Trisomy 13,[],[],[]
+Q92,"Other trisomies and partial trisomies of the autosomes, not elsewhere classified",[],[],[]
+Q9262,Marker chromosomes in abnormal individual,[],[],[]
+Q93,"Monosomies and deletions from the autosomes, not elsewhere classified",[],[],[]
+Q95,"Balanced rearrangements and structural markers, not elsewhere classified",[],[],[]
+Q958,Other balanced rearrangements and structural markers,[],[],[]
+Q96,Turner's syndrome,"['http://purl.obolibrary.org/obo/MONDO_0001294', 'http://purl.obolibrary.org/obo/HP_0002277']","[""Horner's syndrome"", ""Horner's syndrome""]","[2, 2]"
+Q960,"Karyotype 45, X","['http://purl.obolibrary.org/obo/MONDO_0019499', 'http://purl.obolibrary.org/obo/HP_0000733']","['karyotype 45, X', 'Stereotyped']","[1, 10]"
+Q97,"Other sex chromosome abnormalities, female phenotype, not elsewhere classified",[],[],[]
+Q98,"Other sex chromosome abnormalities, male phenotype, not elsewhere classified",[],[],[]
+Q99,"Other chromosome abnormalities, not elsewhere classified",[],[],[]
+R3983,Unilateral non-palpable testicle,"['http://purl.obolibrary.org/obo/MONDO_0019636', 'http://purl.obolibrary.org/obo/HP_0000122']","['unilateral renal agenesis', 'Unilateral renal agenesis']","[14, 13]"
+R3984,Bilateral non-palpable testicles,"['http://purl.obolibrary.org/obo/MONDO_0015986', 'http://purl.obolibrary.org/obo/HP_0010958']","['bilateral renal agenesis', 'Bilateral renal agenesis']","[14, 13]"
+Z3760,"Multiple births, unspecified, some liveborn",[],[],[]
+Z3769,"Other multiple births, some liveborn",[],[],[]
